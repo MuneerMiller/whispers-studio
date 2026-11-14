@@ -24,7 +24,7 @@ All keys are environment variables of the cloud environment: `IG_STORIES_*`, `IG
 2. `node scripts/render.mjs <code>` renders `work/<code>.mp4` and `work/<code>.txt` from `plan/queue.json`.
 3. Look at frames 0, 1.5s and the end (`ffmpeg -ss`) before posting. Check that the hook is readable on frame 0, nothing is cut off and the spelling is right.
 4. `node scripts/publish.mjs --account <stories|brand> --file work/<code>.mp4 --caption-file work/<code>.txt --code <code> --format "<format>"`
-5. Commit `log/posts.jsonl` and any `plan/` changes. Push to `main`.
+5. If this session can push to GitHub, commit `log/posts.jsonl` and push to `main`. Scheduled runs usually can't, and don't need to: `scripts/next.mjs` reads what's already posted from Instagram itself.
 6. Add the post to the tracker Sheet "Whispers content experiments" (Posts tab: code, date, platform, account, format, content type, hook, background, length).
 
 ## Cleanup (Muneer's rule: no clutter)
