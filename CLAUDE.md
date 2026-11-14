@@ -13,10 +13,14 @@ TikTok, YouTube and X have no posting API set up. For those, render the same vid
 
 ## Keys
 
-All keys are environment variables of the cloud environment: `IG_STORIES_*`, `IG_BRAND_*`, `CLOUDINARY_*` (names are in `.env.example`).
+All keys are environment variables of the cloud environment: `IG_STORIES_*`, `IG_BRAND_*`, `CLOUDINARY_*`, `GITHUB_TOKEN` (write access to this repo only) (names are in `.env.example`).
 - Never print, log, commit or paste a key value. Never write a `.env` file.
 - If a key is missing or invalid, run `node scripts/check.mjs` and tell Muneer which one, by name only.
 - Instagram tokens last 60 days from 14 Nov 2026. Check them with `scripts/check.mjs`. From mid-December, remind Muneer to generate new ones (the "Generate token" button in the Meta dashboard).
+
+## Scheduled runs
+
+The scheduled task's prompt only says to clone this repo and follow `RUN.md`. To change what the runs do, change `RUN.md`, not the task.
 
 ## How to post
 
@@ -24,7 +28,7 @@ All keys are environment variables of the cloud environment: `IG_STORIES_*`, `IG
 2. `node scripts/render.mjs <code>` renders `work/<code>.mp4` and `work/<code>.txt` from `plan/queue.json`.
 3. Look at frames 0, 1.5s and the end (`ffmpeg -ss`) before posting. Check that the hook is readable on frame 0, nothing is cut off and the spelling is right.
 4. `node scripts/publish.mjs --account <stories|brand> --file work/<code>.mp4 --caption-file work/<code>.txt --code <code> --format "<format>"`
-5. If this session can push to GitHub, commit `log/posts.jsonl` and push to `main`. Scheduled runs usually can't, and don't need to: `scripts/next.mjs` reads what's already posted from Instagram itself.
+5. Save `log/` and `plan/` with `node scripts/save.mjs "<message>"` (it uses `GITHUB_TOKEN`). `scripts/next.mjs` reads what's already posted from Instagram, so a failed save never causes a double post.
 6. Add the post to the tracker Sheet "Whispers content experiments" (Posts tab: code, date, platform, account, format, content type, hook, background, length).
 
 ## Cleanup (Muneer's rule: no clutter)
