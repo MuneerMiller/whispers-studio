@@ -17,7 +17,7 @@ try {
   const res = await fetch(`https://api.cloudinary.com/v1_1/${cloud}/usage`, { headers: { Authorization: `Basic ${auth}` } });
   const u = await res.json();
   if (!res.ok) throw new Error(u.error?.message ?? res.status);
-  console.log(`cloudinary: OK (storage used ${(u.storage?.usage / 1e6).toFixed(1)} MB)`);
+  console.log(`cloudinary: OK (storage used ${Math.max(0, (u.storage?.usage ?? 0) / 1e6).toFixed(1)} MB; Cloudinary's usage figure updates with a delay)`);
   env('CLOUDINARY_UPLOAD_PRESET');
 } catch (e) { console.log(`cloudinary: FAIL ${e.message}`); ok = false; }
 process.exit(ok ? 0 : 1);

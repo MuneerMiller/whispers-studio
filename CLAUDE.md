@@ -20,7 +20,7 @@ All keys are environment variables of the cloud environment: `IG_STORIES_*`, `IG
 
 ## How to post
 
-1. First run in a session only: `cd remotion && npm ci && cd ..` and `pip install --break-system-packages -r audio/requirements.txt`.
+1. First run in a session only: `cd remotion && npm ci && cd ..` and `python3 -m pip install --break-system-packages -r audio/requirements.txt` (render.mjs also does this by itself if the packages are missing).
 2. `node scripts/render.mjs <code>` renders `work/<code>.mp4` and `work/<code>.txt` from `plan/queue.json`.
 3. Look at frames 0, 1.5s and the end (`ffmpeg -ss`) before posting. Check that the hook is readable on frame 0, nothing is cut off and the spelling is right.
 4. `node scripts/publish.mjs --account <stories|brand> --file work/<code>.mp4 --caption-file work/<code>.txt --code <code> --format "<format>"`

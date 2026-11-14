@@ -14,6 +14,9 @@ if (!a.account || !a.file) throw new Error('Need --account and --file');
 const acct = account(a.account);
 const caption = a.caption ?? (a['caption-file'] ? fs.readFileSync(a['caption-file'], 'utf8').trim() : '');
 const isVideo = /\.(mp4|mov)$/i.test(a.file);
+// Cover frame chosen by render.mjs (milliseconds into the video), so the grid shows the whole post, not frame 0.
+const coverFile = a.file.replace(/\.[^.]+$/, '.cover');
+const thumbOffset = fs.existsSync(coverFile) ? fs.readFileSync(coverFile, 'utf8').trim() : null;
 
 let asset;
 let published;
@@ -21,7 +24,7 @@ try {
   asset = await cloudinaryUpload(a.file);
   console.log(`uploaded to Cloudinary (${asset.type})`);
   const container = await ig('POST', `/${acct.userId}/media`, isVideo
-    ? { media_type: 'REELS', video_url: asset.url, caption, share_to_feed: 'true' }
+    ? { media_type: 'REELS', video_url: asset.url, caption, share_to_feed: 'true', ...(thumbOffset ? { thumb_offset: thumbOffset } : {}) }
     : { image_url: asset.url, caption }, acct.token);
 
   // Instagram fetches and processes the file; wait for FINISHED (up to ~5 minutes).
@@ -44,7 +47,7 @@ try {
 }
 
 if (published) {
-  if (!a['keep-local']) for (const f of [a.file, a['caption-file']]) if (f && fs.existsSync(f)) fs.rmSync(f);
+  if (!a['keep-local']) for (const f of [a.file, a['caption-file'], coverFile]) if (f && fs.existsSync(f)) fs.rmSync(f);
   fs.mkdirSync('log', { recursive: true });
   fs.appendFileSync('log/posts.jsonl', JSON.stringify({
     code: a.code ?? null, account: a.account, format: a.format ?? null, media_id: published.id,

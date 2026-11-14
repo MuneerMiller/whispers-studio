@@ -24,6 +24,9 @@ fs.mkdirSync('work', { recursive: true });
 const audio = `bed-${code}.wav`;
 const audioPath = path.join('remotion', 'public', audio);
 const seconds = post.seconds ?? 8;
+// Scheduled runs start on a fresh machine: install the music generator's packages if they're missing.
+try { execFileSync('python3', ['-c', 'import numpy, scipy, soundfile'], { stdio: 'ignore' }); }
+catch { execFileSync('python3', ['-m', 'pip', 'install', '--break-system-packages', '-q', '-r', 'audio/requirements.txt'], { stdio: 'inherit' }); }
 execFileSync('python3', ['audio/mixgen.py', 'none', audioPath, String(seconds), String(post.props?.seed ?? 1)], { stdio: 'inherit' });
 
 const out = path.resolve('work', `${code}.mp4`);
@@ -36,4 +39,7 @@ try {
   fs.rmSync(audioPath, { force: true });
 }
 fs.writeFileSync(path.join('work', `${code}.txt`), post.caption);
+// Cover frame: when everything is on screen (just after the call to action appears), unless the plan says otherwise.
+const cover = post.cover_seconds ?? Math.max(1, seconds - 1.5);
+fs.writeFileSync(path.join('work', `${code}.cover`), String(Math.round(cover * 1000)));
 console.log(`rendered work/${code}.mp4`);
