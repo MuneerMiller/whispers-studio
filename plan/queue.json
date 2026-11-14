@@ -1,0 +1,17 @@
+[
+  {
+    "code": "ig-prm-01",
+    "account": "stories",
+    "format": "Prompt post",
+    "content_type": "Prompt",
+    "composition": "PromptPost",
+    "seconds": 8,
+    "props": {
+      "question": "What have you never said out loud?",
+      "sub": "Not to anyone. Not even once.",
+      "cta": "Say it in the comments",
+      "seed": 0
+    },
+    "caption": "What have you never said out loud? 🤫\n\nSay it in the comments. No judgement here.\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #unsaid"
+  }
+]

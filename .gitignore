@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+work/
+remotion/out/
+remotion/public/*.wav
+remotion/public/*.mp4
+*.mp4
+*.mov
+*.wav
