@@ -684,13 +684,13 @@
     "props": {
       "layout": "scale",
       "bg": "gradient",
-      "title": "How okay are you, honestly?",
+      "title": "How chaotic was your week?",
       "cta": "Drop a number",
       "seconds": 9,
       "seed": 2,
-      "kicker": "Check-in"
+      "kicker": "Rate it"
     },
-    "caption": "No explanations needed. Just a number 🤍\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
+    "caption": "How chaotic was your week? 1 = calm, 10 = complete chaos 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
   },
   {
     "code": "igb-prm-02",
