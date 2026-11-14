@@ -13,5 +13,175 @@
       "seed": 0
     },
     "caption": "What have you never said out loud? 🤫\n\nSay it in the comments. No judgement here.\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #unsaid"
+  },
+  {
+    "code": "ig-fin-01",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "The thing I'd never tell my mum is…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 1,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "Finish the sentence 👇 The thing I'd never tell my mum is…\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-cho-01",
+    "account": "stories",
+    "format": "This or that",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "drop",
+      "title": "Which would you rather admit?",
+      "cta": "Comment A or B",
+      "seconds": 10,
+      "seed": 2,
+      "items": [
+        "You read their messages while they slept",
+        "You still check your ex's profile every week"
+      ]
+    },
+    "caption": "Be honest. Which one would you rather admit to? A or B 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-rnk-01",
+    "account": "stories",
+    "format": "Ranking",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 13,
+    "props": {
+      "layout": "rank",
+      "bg": "spiro",
+      "title": "Rank these from most to least relatable",
+      "cta": "Comment your order, like 3-1-4-2",
+      "seconds": 13,
+      "seed": 3,
+      "items": [
+        "Pretending to be on a call to avoid someone",
+        "Rehearsing arguments in the shower",
+        "Saying 'on my way' before leaving the house",
+        "Liking a post, then panicking and unliking it"
+      ]
+    },
+    "caption": "Rank them. Most relatable first 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-flg-01",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "title": "Checking your partner's location every night.",
+      "cta": "Vote in the comments",
+      "seconds": 9,
+      "seed": 1,
+      "kicker": "Red flag or fair enough?"
+    },
+    "caption": "Red flag 🚩 or fair enough? Tell us why 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-prm-02",
+    "account": "stories",
+    "format": "Prompt post",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "question",
+      "bg": "ring",
+      "title": "What's a secret you'd only tell a stranger?",
+      "cta": "Tell us in the comments",
+      "seconds": 9,
+      "seed": 2
+    },
+    "caption": "What's a secret you'd only tell a stranger? 🤫\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-prm-03",
+    "account": "stories",
+    "format": "Prompt post",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "question",
+      "bg": "drop",
+      "title": "What's the nicest thing you've never told someone?",
+      "cta": "Say it in the comments",
+      "seconds": 9,
+      "seed": 0
+    },
+    "caption": "Not every secret is a bad one. What's the nicest thing you've never told someone? 💛\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "igb-prm-01",
+    "account": "brand",
+    "format": "Prompt post",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "question",
+      "bg": "gradient",
+      "title": "What do you wish you could say to someone, but can't?",
+      "cta": "Say it in the comments",
+      "seconds": 9,
+      "seed": 3
+    },
+    "caption": "What do you wish you could say to someone, but can't? 🤍\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "igb-cho-01",
+    "account": "brand",
+    "format": "This or that",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "gradient",
+      "title": "Which is harder to say?",
+      "cta": "Comment A or B",
+      "seconds": 10,
+      "seed": 0,
+      "items": [
+        "I'm sorry",
+        "I need help"
+      ]
+    },
+    "caption": "Which is harder to say out loud? A or B 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "igb-fin-01",
+    "account": "brand",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "gradient",
+      "title": "If I could say one thing anonymously, it would be…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 2,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "Finish the sentence 👇 If I could say one thing anonymously, it would be…\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
   }
 ]
