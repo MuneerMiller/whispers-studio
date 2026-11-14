@@ -40,3 +40,5 @@ All keys are environment variables of the cloud environment: `IG_STORIES_*`, `IG
 - Pre-launch (now): the app isn't open yet. Don't say "link in bio" or "download the app". Use "Opening soon. Follow to be first in" and invite answers in the comments.
 - Never repost a comment or DM as a confession. Every DM gets the same reply: the app link (once it's live) plus the SADAG line, 0800 567 567, for anyone who sounds at risk.
 - If a comment sounds like someone is in danger, reply with the SADAG line and tell Muneer straight away.
+- Every caption must start differently from every other caption (`next.mjs` recognises posted items by the first 80 characters).
+- Write for everyone, wherever they are. Don't target one country.

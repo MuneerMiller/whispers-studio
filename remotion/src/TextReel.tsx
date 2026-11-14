@@ -9,7 +9,7 @@ import {EscapeRing, BallDrop, Spiro} from './Backgrounds';
 // Text formats with no voice and no invented whispers: questions, finish-the-sentence, this-or-that,
 // rankings and "red flag or fair enough". Every one asks the viewer for an answer in the comments.
 export type TextReelProps = {
-  layout: 'question' | 'finish' | 'choice' | 'rank' | 'flag';
+  layout: 'question' | 'finish' | 'choice' | 'rank' | 'flag' | 'scale';
   bg: 'gradient' | 'ring' | 'drop' | 'spiro';
   kicker?: string;
   title: string;
@@ -90,8 +90,16 @@ export const TextReel: React.FC<TextReelProps> = ({layout, bg, kicker, title, it
 
         {layout === 'flag' && (
           <div style={{marginTop: 50, display: 'flex', gap: 24}}>
-            <div style={{transform: `scale(${pop(t, 1.6)})`, fontFamily: sans, fontWeight: 700, fontSize: 48, color: PAPER, background: '#c2414b', padding: '22px 36px', borderRadius: 999}}>Red flag</div>
-            <div style={{transform: `scale(${pop(t, 1.9)})`, fontFamily: sans, fontWeight: 700, fontSize: 48, color: INK, background: '#7fd1a8', padding: '22px 36px', borderRadius: 999}}>Fair enough</div>
+            <div style={{transform: `scale(${pop(t, 1.6)})`, fontFamily: sans, fontWeight: 700, fontSize: 48, color: PAPER, background: '#c2414b', padding: '22px 36px', borderRadius: 999}}>{items[0] ?? 'Red flag'}</div>
+            <div style={{transform: `scale(${pop(t, 1.9)})`, fontFamily: sans, fontWeight: 700, fontSize: 48, color: INK, background: '#7fd1a8', padding: '22px 36px', borderRadius: 999}}>{items[1] ?? 'Fair enough'}</div>
+          </div>
+        )}
+
+        {layout === 'scale' && (
+          <div style={{marginTop: 50, display: 'flex', gap: 10, flexWrap: 'wrap'}}>
+            {Array.from({length: 10}).map((_, i) => (
+              <div key={i} style={{transform: `scale(${pop(t, 1.2 + i * 0.08)})`, width: 80, height: 80, borderRadius: 20, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: sans, fontWeight: 700, fontSize: 40, color: INK, background: `hsl(${i * 12}, 70%, ${72 - i * 2}%)`}}>{i + 1}</div>
+            ))}
           </div>
         )}
 
