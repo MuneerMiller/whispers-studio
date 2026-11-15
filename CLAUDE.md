@@ -9,7 +9,7 @@ Claude runs the Whispers social accounts from here: it renders posts, publishes 
 | `stories` | @whispers_anon | whispers.mark@gmail.com | Story-account formats: prompt posts, dramatised stories (labelled), verdicts, rankings |
 | `brand` | @whispers_app | theee.confessions@gmail.com | The app's own feed: carousels, whisper of the day, wholesome posts. Once the app is live, real whispers come from the app's own pipeline, not from here |
 
-TikTok, YouTube and X have no posting API set up. For those, render the same videos into a daily pack and tell Muneer. He uploads them by hand.
+Instagram only for now (Muneer's decision, Nov 2026). Don't make TikTok, YouTube or X packs unless he asks.
 
 ## Keys
 
@@ -35,7 +35,6 @@ The scheduled task's prompt only says to clone this repo and follow `RUN.md`. To
 
 - `publish.mjs` deletes the Cloudinary copy after every attempt and deletes the local files after a successful post.
 - Never commit videos, audio or images of posts. `.gitignore` blocks them; keep it that way.
-- Daily packs for TikTok, YouTube and X: delete each file once Muneer says it is up, or after 3 days.
 
 ## Content rules (non-negotiable)
 
