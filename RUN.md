@@ -6,7 +6,7 @@ Each run starts on a fresh machine and follows this file from top to bottom. CLA
 1. `python3 -m pip install --break-system-packages -q -r audio/requirements.txt`, then `cd remotion && npm ci && cd ..`.
 2. `node scripts/check.mjs`. If anything says FAIL, stop and report which check failed (variable names only).
 
-## 2. Numbers (first run of the day only, the 08:40 run; runs are at 08:40, 11:40, 14:40, 17:40 and 20:40)
+## 2. Numbers (first run of the day only, the 07:40 run; runs are at 07:40, 09:40, 10:40, 12:40, 13:40, 15:40, 17:40, 18:40, 20:40 and 22:40, so 10 posts per account a day)
 1. `node scripts/metrics.mjs`. It writes `log/metrics.json` and prints which formats get the most comments, likes and views.
 2. Keep the table for the report and for step 4.
 
@@ -33,8 +33,8 @@ For each account, stories first, then brand:
    - About the app: "opening soon, follow so you're first in 🤫". Never "link in bio".
    - Never repeat or quote back anything personal someone shared; just respond to it.
 
-## 4. Refill the queue (only when an account has fewer than 6 unposted posts)
-Write 12 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
+## 4. Refill the queue (only when an account has fewer than 12 unposted posts)
+Write 20 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
 - **Formats:** use what's working. Base it on `log/metrics.json` if there are at least 10 posts with numbers; give the top 2 formats by comments per post 2 posts each out of 3, and try the rest in the remaining slots. Without enough numbers, mix all the formats evenly.
 - **What works best:**
   - These come from research on the 2026 algorithm: DM sends are the strongest signal for reaching new people, followed by watch time and real comments.
@@ -64,4 +64,4 @@ Write 12 new posts for that account into `plan/queue.json`, using the same shape
 
 ## 5. Save and report
 1. `node scripts/save.mjs "Run <date> <time>: <what happened>"` saves `log/` and `plan/` to GitHub. If it fails, report the error; don't retry by other means.
-2. Report: anything URGENT from comments first; then for each account, the code, format and post link (or why it was skipped), and the number of comments replied to and skipped; whether the queue was refilled; and, on the 08:40 run, the top 3 formats by comments per post. Keep it short.
+2. Report: anything URGENT from comments first; then for each account, the code, format and post link (or why it was skipped), and the number of comments replied to and skipped; whether the queue was refilled; and, on the 07:40 run, the top 3 formats by comments per post. Keep it short.
