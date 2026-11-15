@@ -52,8 +52,19 @@ Write 20 new posts for that account into `plan/queue.json`, using the same shape
     - Specific beats vague: "What are you still waiting for someone to apologise for?", not "What makes you sad?".
     - Never ask directly about self-harm, abuse or trauma.
     - About 1 in 4 brand posts and 1 in 6 stories posts.
+  - **Tier list** (`TierList`): 4–8 items dropped into S/A/B/C/D rows, best last for suspense ("Breakup excuses, ranked by honesty"). People comment to argue about the tiers.
+  - **Guess the ending** (`TwistReel`, stories, fiction): 2–4 setup lines, a 3-2-1 countdown, then the twist. The caption must say "Dramatised story.".
+  - **Voice story** (`VoiceStory`, stories, fiction): a 60–100 word story narrated with captions over a moving background. It needs a twist or a warm payoff in the last line, and the caption must say "Dramatised story.". Put the text in `props.story`; the narration is generated automatically.
+  - **Unsent note** (`NotesReel`, fiction): a notes-app screen typing out an unsent text (to an ex, a best friend, a younger self). The caption must say "Dramatised story.".
+  - **3am searches** (`SearchReel`): a search bar types a query, then relatable suggestions drop in. They're written as "things we'd search", never presented as real search data.
+  - **Bingo** (`BingoCard`, a single image): 24 cells ("Toxic ex bingo", "Good friend bingo"). People comment their score.
+  - **POV** (`TextReel`, layout `question`, kicker "POV"): one specific, relatable situation.
+  - **Meme carousel ideas:** before vs after ("Dating at 18 vs dating at 28"), "Things that are NOT love", red flags, green flags, toxic traits, lies we tell.
   - **TextReel layouts:** `question`, `finish` (finish the sentence), `choice` (would you rather: exactly 2 items), `rank` (3–5 items), `flag` (red flag or not), `scale` (rate it 1–10).
-- **Mix:** for stories, of every 3 posts, 1 carousel, 1 text story, and 1 hot take or other TextReel. For brand, alternate carousels (warm, wholesome, "things we never say") with TextReels.
+- **Mix:**
+  - **Stories:** rotate through all formats, never the same format twice in a row. Favour fiction with a twist (text story, guess the ending, voice story), meme carousels, tier lists and bingo, then hot takes, POV and deep questions.
+  - **Brand:** warmer. Carousels, bingo, tier lists, unsent notes to a younger self, deep questions and POV.
+  - Plain prompt posts last.
 - **Backgrounds:** stories rotate `ring`, `drop`, `spiro` and `gradient`; brand always uses `gradient`.
 - **Writing:**
   - Questions people can answer in one second (A or B, a number, one word) and topics they'll argue about: dating, friendships, family, work, money habits, guilty habits, petty behaviour, social etiquette.

@@ -23,6 +23,16 @@ const findChrome = () => {
 fs.mkdirSync('work', { recursive: true });
 const chrome0 = findChrome();
 
+if (post.composition === 'BingoCard') {
+  const out = path.resolve('work', `${code}.jpg`);
+  const args = ['remotion', 'still', 'src/index.ts', 'BingoCard', out, '--frame=0', '--image-format=jpeg', '--jpeg-quality=92', `--props=${JSON.stringify(post.props)}`, '--log=error'];
+  if (chrome0) args.push(`--browser-executable=${chrome0}`);
+  execFileSync('npx', args, { cwd: 'remotion', stdio: 'inherit' });
+  fs.writeFileSync(path.join('work', `${code}.txt`), post.caption);
+  console.log(`rendered work/${code}.jpg`);
+  process.exit(0);
+}
+
 // Carousels are stills, one JPEG per slide (Instagram only takes JPEG), into work/<code>/.
 if (post.composition === 'MemeCarousel') {
   const dir = path.resolve('work', code);
@@ -42,20 +52,41 @@ const audio = `bed-${code}.wav`;
 const audioPath = path.join('remotion', 'public', audio);
 // Chat stories: length comes from the messages (same timing as ChatReel.tsx).
 const chatSeconds = (msgs) => { let t = 1.6; for (const m of msgs) { const at = t + (m.from === 'them' ? 0.9 : 0.35); t = at + Math.min(3.2, 0.9 + m.text.length * 0.045); } return t + 3.2; };
-const seconds = post.composition === 'ChatReel' ? Math.ceil(chatSeconds(post.props.messages)) : (post.seconds ?? 8);
+// Lengths for the other timed templates (same formulas as MoreReels.tsx, plus the 3.2s question card).
+const P = post.props ?? {};
+const lengths = {
+  ChatReel: () => chatSeconds(P.messages),
+  TierList: () => 1.3 + P.items.length * 1.25 + 0.6 + 3.2,
+  NotesReel: () => P.lines.reduce((t, l) => t + 0.5 + l.length * 0.05, 1.2) + 1.2 + 3.2,
+  SearchReel: () => 1.4 + P.query.length * 0.07 + 0.4 + P.suggestions.length * 0.55 + 1.8 + 3.2,
+  TwistReel: () => P.setup.reduce((t, l) => t + 1 + l.length * 0.05, 1.4) + 0.3 + 3.3 + 1.6 + P.ending.length * 0.045 + 3.2,
+};
+// Voice stories: narrate first (Kokoro TTS), then the video length follows the narration.
+let voice = null;
+if (post.composition === 'VoiceStory') {
+  const story = path.join('work', `${code}.story.txt`);
+  fs.writeFileSync(story, P.story);
+  const vo = path.join('work', `${code}.vo.wav`), words = path.join('work', `${code}.words.json`);
+  execFileSync('python3', ['audio/tts_story.py', story, vo, words], { stdio: 'inherit' });
+  voice = JSON.parse(fs.readFileSync(words, 'utf8'));
+  voice.vo = vo;
+  lengths.VoiceStory = () => voice.duration + 3.4;
+}
+const seconds = lengths[post.composition] ? Math.ceil(lengths[post.composition]()) : (post.seconds ?? 8);
 // Scheduled runs start on a fresh machine: install the music generator's packages if they're missing.
 try { execFileSync('python3', ['-c', 'import numpy, scipy, soundfile'], { stdio: 'ignore' }); }
 catch { execFileSync('python3', ['-m', 'pip', 'install', '--break-system-packages', '-q', '-r', 'audio/requirements.txt'], { stdio: 'inherit' }); }
-execFileSync('python3', ['audio/mixgen.py', 'none', audioPath, String(seconds), String(post.props?.seed ?? 1)], { stdio: 'inherit' });
+execFileSync('python3', ['audio/mixgen.py', voice ? voice.vo : 'none', audioPath, String(seconds), String(post.props?.seed ?? 1)], { stdio: 'inherit' });
 
 const out = path.resolve('work', `${code}.mp4`);
-const args = ['remotion', 'render', 'src/index.ts', post.composition, out, `--props=${JSON.stringify({ ...post.props, audio })}`, '--log=error'];
+const args = ['remotion', 'render', 'src/index.ts', post.composition, out, `--props=${JSON.stringify({ ...post.props, ...(voice ? { words: voice.words, duration: voice.duration, story: undefined } : {}), audio })}`, '--log=error'];
 const chrome = findChrome();
 if (chrome) args.push(`--browser-executable=${chrome}`);
 try {
   execFileSync('npx', args, { cwd: 'remotion', stdio: 'inherit' });
 } finally {
   fs.rmSync(audioPath, { force: true });
+  for (const f of fs.readdirSync('work')) if (f.startsWith(`${code}.`) && /\.(story\.txt|vo\.wav|words\.json)$/.test(f)) fs.rmSync(path.join('work', f));
 }
 fs.writeFileSync(path.join('work', `${code}.txt`), post.caption);
 // Cover frame: when everything is on screen (just after the call to action appears), unless the plan says otherwise.
