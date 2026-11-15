@@ -20,15 +20,19 @@ For each account, stories first, then brand:
 ## 4. Refill the queue (only when an account has fewer than 6 unposted posts)
 Write 12 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
 - **Formats:** use what's working. Base it on `log/metrics.json` if there are at least 10 posts with numbers; give the top 2 formats by comments per post 2 posts each out of 3, and try the rest in the remaining slots. Without enough numbers, mix all the formats evenly.
-- **Available layouts:** `question`, `finish` (finish the sentence), `choice` (would you rather / this or that: exactly 2 items), `rank` (3–5 items), `flag` (red flag or fair, or Agree/Disagree with `items`), `scale` (rate it 1–10).
-- **Backgrounds:** stories rotate `ring`, `drop`, `spiro` and `gradient`; brand always uses `gradient`.
+- **Available layouts:** `question`, `finish` (finish the sentence), `choice` (would you rather / this or that: exactly 2 items), `rank` (3–5 items), `flag` (red flag or fair, or Agree/Disagree with `items`), `scale` (rate it 1–10), `meme` (title = the setup, `items` = 2–4 beats that land one at a time; the last beat is the punchline; format "Meme", codes `ig-mem-NN` / `igb-mem-NN`).
+- **Mix:** until the numbers say otherwise, about 1 in 3 posts is a `meme` and 1 in 3 is a debate (unpopular opinion, red flag or fair, would you rather).
+- **Backgrounds:** stories rotate `ring`, `drop`, `spiro` and `gradient`; brand always uses `gradient`. Memes always use `gradient` (they're text-heavy).
 - **Writing:**
   - Questions people can answer in one second (A or B, a number, one word) and topics they'll argue about: dating, friendships, family, work, money habits, guilty habits, petty behaviour, social etiquette.
+  - Aim for things people send to a friend: memes about everyday habits ("Me: I'm going to bed early" → 2am), "things I say vs what I mean", group chat behaviour. Sends and rewatches matter most for reach, so keep posts 8–10 seconds.
+  - Debate bait is fine when it's about habits and etiquette (lateness, voice notes, splitting bills, exes). Never about groups of people (gender, nationality, religion, politics, bodies); that's the kind of rage bait that gets accounts reported.
+  - **Never ask for the engagement itself.** Instagram won't recommend posts that say "comment A or B", "tag a friend", "share this", "drop a number". Ask the question ("A or B?", "Agree or disagree?", "Just me?") and stop. `validate-queue.mjs` checks this.
   - Stories can be cheeky and spicy, within Instagram's rules. Brand is warmer: kindness, honesty, growth, nostalgia, small wins.
   - Write for everyone, wherever they are; never target one country.
   - No real people or brands. Nothing sexual, nothing about self-harm, and no "how are you really" check-ins (nobody replies to comments yet).
   - Don't repeat a question already in the queue.
-- **Captions:** start with the question or statement itself, so every caption starts differently. Then add one short nudge to comment, then this paragraph, then 4–5 general hashtags:
+- **Captions:** start with the question or statement itself, so every caption starts differently. Then add one short follow-up question or line (not "comment…", "tag…" or "share…"), then this paragraph, then 4–5 general hashtags:
   "Whispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in."
 - **Codes:** continue the numbering: stories codes are `ig-<format>-NN`, brand codes are `igb-<format>-NN`.
 - Run `node scripts/validate-queue.mjs` and fix everything it lists. Then render 2 of the new posts and check their frames as in step 3.

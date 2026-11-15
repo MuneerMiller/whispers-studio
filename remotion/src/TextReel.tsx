@@ -7,9 +7,10 @@ import '@fontsource/instrument-sans/700.css';
 import {EscapeRing, BallDrop, Spiro} from './Backgrounds';
 
 // Text formats with no voice and no invented whispers: questions, finish-the-sentence, this-or-that,
-// rankings and "red flag or fair enough". Every one asks the viewer for an answer in the comments.
+// rankings, "red flag or fair enough" and text memes. Every one asks the viewer a question they can answer in a second.
+// meme: the title is the setup, items are the beats; they land one at a time and the last one (the punchline) is in brass.
 export type TextReelProps = {
-  layout: 'question' | 'finish' | 'choice' | 'rank' | 'flag' | 'scale';
+  layout: 'question' | 'finish' | 'choice' | 'rank' | 'flag' | 'scale' | 'meme';
   bg: 'gradient' | 'ring' | 'drop' | 'spiro';
   kicker?: string;
   title: string;
@@ -92,6 +93,18 @@ export const TextReel: React.FC<TextReelProps> = ({layout, bg, kicker, title, it
           <div style={{marginTop: 50, display: 'flex', gap: 24}}>
             <div style={{transform: `scale(${pop(t, 1.6)})`, fontFamily: sans, fontWeight: 700, fontSize: 48, color: PAPER, background: '#c2414b', padding: '22px 36px', borderRadius: 999}}>{items[0] ?? 'Red flag'}</div>
             <div style={{transform: `scale(${pop(t, 1.9)})`, fontFamily: sans, fontWeight: 700, fontSize: 48, color: INK, background: '#7fd1a8', padding: '22px 36px', borderRadius: 999}}>{items[1] ?? 'Fair enough'}</div>
+          </div>
+        )}
+
+        {layout === 'meme' && (
+          <div style={{marginTop: 44, display: 'flex', flexDirection: 'column', gap: 26}}>
+            {items.map((it, i) => {
+              const at = 1.0 + i * 1.1;
+              const last = i === items.length - 1;
+              return (
+                <div key={i} style={{opacity: fade(t, at), transform: `scale(${pop(t, at)})`, transformOrigin: 'left center', fontFamily: sans, fontWeight: 700, fontSize: last ? 60 : 52, lineHeight: 1.15, color: last ? BRASS : PAPER, ...(busy ? stroke : {})}}>{it}</div>
+              );
+            })}
           </div>
         )}
 

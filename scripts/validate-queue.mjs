@@ -1,9 +1,13 @@
 // Check plan/queue.json before saving it. Exits 1 with the problems listed.  node scripts/validate-queue.mjs
 import fs from 'node:fs';
 const q = JSON.parse(fs.readFileSync('plan/queue.json', 'utf8'));
-const LAYOUTS = ['question', 'finish', 'choice', 'rank', 'flag', 'scale'];
+const LAYOUTS = ['question', 'finish', 'choice', 'rank', 'flag', 'scale', 'meme'];
 const BGS = ['gradient', 'ring', 'drop', 'spiro'];
 const BANNED = [/link in bio/i, /download (the|our) app/i, /dramatised/i, /whisper #\d/i, /#southafrica/i];
+// Instagram won't recommend posts that explicitly ask for comments, tags or shares ("comment A or B", "tag a friend").
+// Ask the question itself instead. Checked on the on-screen CTA (all of it) and the caption (the bait phrases).
+const BAIT_CTA = /comment|tag |share|send (this|it)|in the comments|drop a/i;
+const BAIT_CAPTION = /tag (a|your|someone)|share (this|with)|send this to|comment (a|b|yes|no|\d|[^a-z\s])/i;
 const norm = (s) => String(s ?? '').normalize('NFC').replace(/\s+/g, ' ').trim().slice(0, 80);
 const problems = [];
 const codes = new Set(), starts = new Map();
@@ -21,11 +25,15 @@ for (const p of q) {
     if (!pr.cta || pr.cta.length > 34) problems.push(`${where}: cta missing or over 34 characters`);
     if (pr.layout === 'choice' && (pr.items?.length !== 2 || pr.items.some((i) => i.length > 60))) problems.push(`${where}: choice needs exactly 2 items, each up to 60 characters`);
     if (pr.layout === 'rank' && (!(pr.items?.length >= 3 && pr.items.length <= 5) || pr.items.some((i) => i.length > 55))) problems.push(`${where}: rank needs 3-5 items, each up to 55 characters`);
+    if (pr.layout === 'meme' && (!(pr.items?.length >= 2 && pr.items.length <= 4) || pr.items.some((i) => i.length > 70))) problems.push(`${where}: meme needs 2-4 beats, each up to 70 characters`);
+    if (pr.layout === 'meme' && pr.bg !== 'gradient') problems.push(`${where}: memes are text-heavy, use the gradient background`);
+    if (BAIT_CTA.test(pr.cta ?? '')) problems.push(`${where}: cta "${pr.cta}" asks for engagement outright (Instagram demotes that); ask the question instead`);
     if (p.account === 'brand' && pr.bg !== 'gradient') problems.push(`${where}: brand posts use the gradient background`);
   }
   if (!p.caption || p.caption.length > 2000) problems.push(`${where}: caption missing or too long`);
   const k = norm(p.caption);
   if (starts.has(k)) problems.push(`${where}: caption starts the same as ${starts.get(k)} (first 80 characters must differ)`); else starts.set(k, p.code);
+  if (BAIT_CAPTION.test(p.caption ?? '')) problems.push(`${where}: caption asks for tags, shares or a set comment (Instagram demotes that)`);
   const text = `${p.caption} ${JSON.stringify(p.props ?? {})}`;
   for (const b of BANNED) if (b.test(text)) problems.push(`${where}: contains banned text ${b} (see CLAUDE.md content rules)`);
 }
