@@ -1,0 +1,65 @@
+{
+  "updated": "2026-11-15T06:41:24.884Z",
+  "posts": [
+    {
+      "code": "ig-hot-01",
+      "account": "stories",
+      "format": "Unpopular opinion",
+      "posted_at": "2026-11-14T23:29:02+0000",
+      "permalink": "https://www.instagram.com/reel/DfvYw5ykXCp/",
+      "views": 170,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "ig-fin-01",
+      "account": "stories",
+      "format": "Finish the sentence",
+      "posted_at": "2026-11-14T22:52:13+0000",
+      "permalink": "https://www.instagram.com/reel/DfvUjEfDg5l/",
+      "views": 177,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "ig-prm-01",
+      "account": "stories",
+      "format": "Prompt post",
+      "posted_at": "2026-11-14T16:12:01+0000",
+      "permalink": "https://www.instagram.com/reel/DfumwHvEhsd/",
+      "views": 5,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-wyr-01",
+      "account": "brand",
+      "format": "Would you rather",
+      "posted_at": "2026-11-14T23:30:20+0000",
+      "permalink": "https://www.instagram.com/reel/DfvY6TtAOiO/",
+      "views": 143,
+      "likes": 1,
+      "comments": 0
+    },
+    {
+      "code": "igb-cho-01",
+      "account": "brand",
+      "format": "This or that",
+      "posted_at": "2026-11-14T22:53:29+0000",
+      "permalink": "https://www.instagram.com/reel/DfvUsXHDe_b/",
+      "views": 175,
+      "likes": 2,
+      "comments": 1
+    },
+    {
+      "code": "igb-prm-01",
+      "account": "brand",
+      "format": "Prompt post",
+      "posted_at": "2026-11-14T16:12:44+0000",
+      "permalink": "https://www.instagram.com/reel/Dfum1VAie0j/",
+      "views": 132,
+      "likes": 0,
+      "comments": 0
+    }
+  ]
+}
