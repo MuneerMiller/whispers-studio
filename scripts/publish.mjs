@@ -63,7 +63,12 @@ try {
     if (i === 59) throw new Error('Instagram did not finish processing within 5 minutes');
     await sleep(5000);
   }
-  const pub = await ig('POST', `/${acct.userId}/media_publish`, { creation_id: container.id }, acct.token);
+  // Instagram sometimes says "media not ready" for a few seconds after FINISHED; a failed publish posts nothing, so retry.
+  let pub;
+  for (let i = 0; ; i++) {
+    try { pub = await ig('POST', `/${acct.userId}/media_publish`, { creation_id: container.id }, acct.token); break; }
+    catch (e) { if (i >= 5 || !/not ready|9007|2207027/i.test(e.message)) throw e; await sleep(10000); }
+  }
   published = await ig('GET', `/${pub.id}`, { fields: 'id,permalink,timestamp,media_type' }, acct.token);
   console.log(`PUBLISHED ${published.media_type} on ${a.account}: ${published.permalink}`);
 } finally {
