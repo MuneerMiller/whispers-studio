@@ -60,7 +60,7 @@
       "layout": "choice",
       "bg": "gradient",
       "title": "Which is harder to say?",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 0,
       "items": [
@@ -81,7 +81,7 @@
       "layout": "flag",
       "bg": "ring",
       "title": "Splitting the bill on a first date is fine.",
-      "cta": "Agree or disagree? Comment",
+      "cta": "Agree? Tell us why",
       "seconds": 9,
       "seed": 1,
       "kicker": "Unpopular opinion",
@@ -91,6 +91,94 @@
       ]
     },
     "caption": "Unpopular opinion: splitting the bill on a first date is fine. Agree or disagree? Fight it out 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-wyr-01",
+    "account": "brand",
+    "format": "Would you rather",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "gradient",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 1,
+      "items": [
+        "Get a letter from your future self",
+        "Send one to your past self"
+      ]
+    },
+    "caption": "Get a letter from your future self / Send one to your past self? A or B? 🤍\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-meme-01",
+    "account": "stories",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Things everyone does but nobody admits",
+      "slides": [
+        "Rehearsing an argument in the shower and winning every time",
+        "Saying 'I'm 5 minutes away' while still lying in bed",
+        "Reading their message from the notification so they don't see you opened it",
+        "Pretending to text when you walk past someone you know",
+        "Laughing at a voice note you can't actually hear",
+        "Checking who viewed your story before checking who messaged you"
+      ],
+      "question": "Which one are you guilty of? Be honest.",
+      "sendTo": "Send this to the friend who does number 2.",
+      "handle": "whispers_anon",
+      "dark": false
+    },
+    "caption": "Things everyone does but nobody admits. Which number is you? 👀\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#relatable #memes #funny #truth #whispers"
+  },
+  {
+    "code": "ig-chat-01",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "I called in sick. My manager replied with this.",
+      "contact": "Manager",
+      "messages": [
+        {
+          "from": "me",
+          "text": "hi, I'm really sick today, won't make it in"
+        },
+        {
+          "from": "them",
+          "text": "no problem, feel better"
+        },
+        {
+          "from": "them",
+          "text": "quick question though"
+        },
+        {
+          "from": "them",
+          "text": "how's the beach?"
+        },
+        {
+          "from": "me",
+          "text": "what beach"
+        },
+        {
+          "from": "them",
+          "text": "you tagged the location"
+        },
+        {
+          "from": "them",
+          "text": "the whole team is watching your story right now"
+        }
+      ],
+      "question": "Fire them or let it slide?",
+      "seed": 10
+    },
+    "caption": "I called in sick. My manager replied with this 💀 Fire them or let it slide?\n\nDramatised story.\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#storytime #work #fail #relatable #whispers"
   },
   {
     "code": "ig-cho-01",
@@ -103,7 +191,7 @@
       "layout": "choice",
       "bg": "drop",
       "title": "Which would you rather admit?",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 2,
       "items": [
@@ -112,6 +200,51 @@
       ]
     },
     "caption": "Be honest. Which one would you rather admit to? A or B 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-hot-04",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "kicker": "Hot take",
+      "title": "If they take 3 hours to reply, they're just not that into you.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 1
+    },
+    "caption": "If they take 3 hours to reply, they're just not that into you. Agree or are we overthinking? 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#hottake #relationships #datingadvice #unpopularopinion"
+  },
+  {
+    "code": "ig-meme-02",
+    "account": "stories",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Red flags we all ignore at the start",
+      "slides": [
+        "They're 'bad at texting' but always online",
+        "Every single ex is 'crazy'",
+        "They only call after 11pm",
+        "Their best friend is someone they used to date",
+        "They 'don't do labels' four months in",
+        "They want your password but won't share theirs"
+      ],
+      "question": "Which one did you ignore?",
+      "sendTo": "Send this to the friend who's ignoring number 5 right now.",
+      "handle": "whispers_anon",
+      "dark": false
+    },
+    "caption": "Red flags we all ignore at the start 🚩 Which one did you ignore?\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#redflags #dating #relationships #relatable #whispers"
   },
   {
     "code": "ig-wyr-01",
@@ -124,7 +257,7 @@
       "layout": "choice",
       "bg": "drop",
       "title": "Would you rather…",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 2,
       "items": [
@@ -133,6 +266,72 @@
       ]
     },
     "caption": "Would you rather? No skipping 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-chat-02",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "My best friend found out what I said about her",
+      "contact": "Bestie",
+      "messages": [
+        {
+          "from": "them",
+          "text": "so are we going to talk about the screenshot"
+        },
+        {
+          "from": "me",
+          "text": "what screenshot"
+        },
+        {
+          "from": "them",
+          "text": "the one where you called my boyfriend 'temporary'"
+        },
+        {
+          "from": "me",
+          "text": "ok in my defence"
+        },
+        {
+          "from": "me",
+          "text": "you've had four 'forever' boyfriends this year"
+        },
+        {
+          "from": "them",
+          "text": "..."
+        },
+        {
+          "from": "them",
+          "text": "he proposed last night"
+        }
+      ],
+      "question": "Who's in the wrong here?",
+      "seed": 10
+    },
+    "caption": "My best friend found out what I said about her boyfriend… then she dropped this. Who's wrong here?\n\nDramatised story.\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#storytime #friendship #drama #relatable #whispers"
+  },
+  {
+    "code": "ig-hot-05",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "drop",
+      "kicker": "Hot take",
+      "title": "Your partner's phone should be an open book.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 2
+    },
+    "caption": "Your partner's phone should be an open book. Fair, or a massive invasion of privacy? 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#hottake #relationships #datingadvice #unpopularopinion"
   },
   {
     "code": "ig-rnk-01",
@@ -158,6 +357,81 @@
     "caption": "Rank them. Most relatable first 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
+    "code": "ig-meme-03",
+    "account": "stories",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Lies we tell every single day",
+      "slides": [
+        "I'm fine",
+        "I read the terms and conditions",
+        "I'm on my way",
+        "I'll start on Monday",
+        "I'm not mad",
+        "Just one more episode"
+      ],
+      "question": "Which lie did you already tell today?",
+      "sendTo": "Send this to the friend who says 'I'm on my way' from bed.",
+      "handle": "whispers_anon",
+      "dark": false
+    },
+    "caption": "Lies we tell every single day 🤥 Which one did you already tell today?\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#relatable #memes #funny #truth #whispers"
+  },
+  {
+    "code": "ig-chat-03",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "A stranger texted me by mistake… then this happened",
+      "contact": "Unknown number",
+      "messages": [
+        {
+          "from": "them",
+          "text": "hey it's me, did you tell him yet??"
+        },
+        {
+          "from": "me",
+          "text": "who is this?"
+        },
+        {
+          "from": "them",
+          "text": "omg wrong number sorry"
+        },
+        {
+          "from": "them",
+          "text": "actually can I ask you something weird"
+        },
+        {
+          "from": "me",
+          "text": "go on"
+        },
+        {
+          "from": "them",
+          "text": "if your fiancé had a second phone would you say something or wait?"
+        },
+        {
+          "from": "me",
+          "text": "say something. obviously"
+        },
+        {
+          "from": "them",
+          "text": "ok. I'm at our wedding rehearsal"
+        },
+        {
+          "from": "them",
+          "text": "he's three tables away texting someone saved as 'Dentist'"
+        }
+      ],
+      "question": "What would you do in her place?",
+      "seed": 10
+    },
+    "caption": "A stranger texted me by mistake… and I wasn't ready for the last message. What would you do?\n\nDramatised story.\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#storytime #wrongnumber #drama #relationships #whispers"
+  },
+  {
     "code": "ig-rate-01",
     "account": "stories",
     "format": "Rate it 1-10",
@@ -176,6 +450,50 @@
     "caption": "How bad is this, 1 to 10? 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
   },
   {
+    "code": "ig-hot-06",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "spiro",
+      "kicker": "Hot take",
+      "title": "Staying friends with your ex means you're not over them.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 3
+    },
+    "caption": "Staying friends with your ex means you're not over them. Agree? 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#hottake #relationships #datingadvice #unpopularopinion"
+  },
+  {
+    "code": "ig-meme-04",
+    "account": "stories",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Toxic traits that are lowkey self-care",
+      "slides": [
+        "Leaving a group chat without saying anything",
+        "Cancelling plans and feeling instantly relieved",
+        "Muting someone instead of unfollowing",
+        "Not replying until you have the energy",
+        "Calling a 9pm bedtime 'a night in'"
+      ],
+      "question": "Which toxic trait is yours?",
+      "sendTo": "Send this to the friend who cancelled on you this week.",
+      "handle": "whispers_anon",
+      "dark": false
+    },
+    "caption": "Toxic traits that are lowkey self-care 😌 Which one is yours?\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#relatable #memes #funny #truth #whispers"
+  },
+  {
     "code": "ig-flg-01",
     "account": "stories",
     "format": "Red flag or fair",
@@ -186,12 +504,78 @@
       "layout": "flag",
       "bg": "gradient",
       "title": "Checking your partner's location every night.",
-      "cta": "Vote in the comments",
+      "cta": "Say why in the comments",
       "seconds": 9,
       "seed": 1,
       "kicker": "Red flag or fair enough?"
     },
     "caption": "Red flag 🚩 or fair enough? Tell us why 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-chat-04",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "My mom sent this to me instead of my dad",
+      "contact": "Mom",
+      "messages": [
+        {
+          "from": "them",
+          "text": "don't tell her yet but I already paid for it"
+        },
+        {
+          "from": "them",
+          "text": "she's going to cry when she sees it"
+        },
+        {
+          "from": "me",
+          "text": "mom… this is me"
+        },
+        {
+          "from": "them",
+          "text": "WRONG CHAT"
+        },
+        {
+          "from": "them",
+          "text": "forget you saw that"
+        },
+        {
+          "from": "me",
+          "text": "you bought me something??"
+        },
+        {
+          "from": "them",
+          "text": "no. go to sleep"
+        }
+      ],
+      "question": "Would you pretend you never saw it?",
+      "seed": 10
+    },
+    "caption": "My mom sent this to me instead of my dad… would you pretend you never saw it?\n\nDramatised story.\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#storytime #family #wholesome #funny #whispers"
+  },
+  {
+    "code": "ig-hot-07",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "kicker": "Hot take",
+      "title": "If your friends don't like your partner, they're usually right.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 0
+    },
+    "caption": "If your friends don't like your partner, they're usually right. Agree? 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#hottake #relationships #datingadvice #unpopularopinion"
   },
   {
     "code": "ig-flg-04",
@@ -204,7 +588,7 @@
       "layout": "flag",
       "bg": "ring",
       "title": "They still follow their ex's mom on Instagram.",
-      "cta": "Vote in the comments",
+      "cta": "Say why in the comments",
       "seconds": 9,
       "seed": 0,
       "kicker": "Red flag or fair enough?"
@@ -239,7 +623,7 @@
       "layout": "flag",
       "bg": "drop",
       "title": "You don't owe anyone a reply.",
-      "cta": "Agree or disagree? Comment",
+      "cta": "Agree? Tell us why",
       "seconds": 9,
       "seed": 2,
       "kicker": "Unpopular opinion",
@@ -278,7 +662,7 @@
       "layout": "choice",
       "bg": "spiro",
       "title": "Would you rather…",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 1,
       "items": [
@@ -299,7 +683,7 @@
       "layout": "flag",
       "bg": "ring",
       "title": "Still having your ex's number saved under a fake name.",
-      "cta": "Vote in the comments",
+      "cta": "Say why in the comments",
       "seconds": 9,
       "seed": 2,
       "kicker": "Red flag or fair enough?"
@@ -335,7 +719,7 @@
       "layout": "choice",
       "bg": "spiro",
       "title": "Which secret would you rather keep forever?",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 1,
       "items": [
@@ -391,7 +775,7 @@
       "layout": "flag",
       "bg": "spiro",
       "title": "Best friends shouldn't date each other's exes. Ever.",
-      "cta": "Agree or disagree? Comment",
+      "cta": "Agree? Tell us why",
       "seconds": 9,
       "seed": 2,
       "kicker": "Unpopular opinion",
@@ -436,7 +820,7 @@
       "layout": "choice",
       "bg": "ring",
       "title": "Would you rather…",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 3,
       "items": [
@@ -492,7 +876,7 @@
       "layout": "flag",
       "bg": "drop",
       "title": "Going through your partner's phone when they ask you to hold it.",
-      "cta": "Vote in the comments",
+      "cta": "Say why in the comments",
       "seconds": 9,
       "seed": 3,
       "kicker": "Red flag or fair enough?"
@@ -527,7 +911,7 @@
       "layout": "choice",
       "bg": "ring",
       "title": "Which would you rather they never find out?",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 2,
       "items": [
@@ -596,25 +980,26 @@
     "caption": "Most awkward first 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
-    "code": "igb-wyr-01",
+    "code": "igb-meme-01",
     "account": "brand",
-    "format": "Would you rather",
+    "format": "Meme carousel",
     "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
+    "composition": "MemeCarousel",
     "props": {
-      "layout": "choice",
-      "bg": "gradient",
-      "title": "Would you rather…",
-      "cta": "Comment A or B",
-      "seconds": 10,
-      "seed": 1,
-      "items": [
-        "Get a letter from your future self",
-        "Send one to your past self"
-      ]
+      "hook": "Small things that mean a lot",
+      "slides": [
+        "Someone remembering how you take your coffee",
+        "A voice note instead of a text",
+        "'Text me when you get home'",
+        "Being included in the group photo",
+        "Someone saving you a seat"
+      ],
+      "question": "What small thing means the most to you?",
+      "sendTo": "Send this to someone who does one of these for you.",
+      "handle": "whispers_app",
+      "dark": true
     },
-    "caption": "Get a letter from your future self / Send one to your past self? A or B? 🤍\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
+    "caption": "Small things that mean a lot 🤍 What's yours?\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#wholesome #relatable #friendship #kindness #whispers"
   },
   {
     "code": "igb-fin-01",
@@ -635,6 +1020,28 @@
     "caption": "Finish the sentence 👇 If I could say one thing anonymously, it would be…\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
+    "code": "igb-meme-02",
+    "account": "brand",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Things we never say out loud",
+      "slides": [
+        "I miss who we used to be",
+        "I'm scared of falling behind",
+        "I wish I'd said goodbye properly",
+        "I'm jealous of how easy it looks for you",
+        "I'm actually proud of how far I've come"
+      ],
+      "question": "Which one have you never said?",
+      "sendTo": "Send this to someone you'd say one of these to.",
+      "handle": "whispers_app",
+      "dark": true
+    },
+    "caption": "Things we never say out loud. Which one have you never said? 🤍\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#unsaid #feelings #relatable #honesty #whispers"
+  },
+  {
     "code": "igb-hot-01",
     "account": "brand",
     "format": "Unpopular opinion",
@@ -645,7 +1052,7 @@
       "layout": "flag",
       "bg": "gradient",
       "title": "It's okay to outgrow your friends.",
-      "cta": "Agree or disagree? Comment",
+      "cta": "Agree? Tell us why",
       "seconds": 9,
       "seed": 0,
       "kicker": "Unpopular opinion",
@@ -655,6 +1062,28 @@
       ]
     },
     "caption": "Hard truth or hot take? 👇\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-hot-04",
+    "account": "brand",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "kicker": "Hot take",
+      "title": "Saying sorry first doesn't mean you were wrong.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 1
+    },
+    "caption": "Saying sorry first doesn't mean you were wrong. Agree? 🤍\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#hottake #relationships #datingadvice #unpopularopinion"
   },
   {
     "code": "igb-fin-02",
@@ -673,6 +1102,28 @@
       "kicker": "Finish the sentence"
     },
     "caption": "Some things stay unsaid. Finish the sentence 🤍\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "igb-meme-03",
+    "account": "brand",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Green flags in a friend",
+      "slides": [
+        "They hype you up when you're not in the room",
+        "They remember the small things you said months ago",
+        "They don't make you compete for their attention",
+        "They tell you the truth, kindly",
+        "You can sit in silence and it's not awkward"
+      ],
+      "question": "Which green flag do your friends have?",
+      "sendTo": "Send this to the friend with the most green flags.",
+      "handle": "whispers_app",
+      "dark": true
+    },
+    "caption": "Green flags in a friend 💚 Which one does your best friend have?\n\nWhispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in.\n\n#greenflags #friendship #wholesome #bestfriend #whispers"
   },
   {
     "code": "igb-rate-01",
@@ -737,7 +1188,7 @@
       "layout": "choice",
       "bg": "gradient",
       "title": "Which would you rather hear?",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 2,
       "items": [
@@ -758,7 +1209,7 @@
       "layout": "choice",
       "bg": "gradient",
       "title": "Would you rather…",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 0,
       "items": [
@@ -796,7 +1247,7 @@
       "layout": "flag",
       "bg": "gradient",
       "title": "Some apologies come too late to matter.",
-      "cta": "Agree or disagree? Comment",
+      "cta": "Agree? Tell us why",
       "seconds": 9,
       "seed": 1,
       "kicker": "Unpopular opinion",
@@ -888,7 +1339,7 @@
       "layout": "choice",
       "bg": "gradient",
       "title": "Which is harder to admit?",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 3,
       "items": [
@@ -945,7 +1396,7 @@
       "layout": "choice",
       "bg": "gradient",
       "title": "Would you rather…",
-      "cta": "Comment A or B",
+      "cta": "Which one, and why?",
       "seconds": 10,
       "seed": 2,
       "items": [
@@ -1017,7 +1468,7 @@
       "layout": "flag",
       "bg": "gradient",
       "title": "Being single is underrated.",
-      "cta": "Agree or disagree? Comment",
+      "cta": "Agree? Tell us why",
       "seconds": 9,
       "seed": 3,
       "kicker": "Unpopular opinion",

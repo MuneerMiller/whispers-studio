@@ -3,7 +3,7 @@ import fs from 'node:fs';
 const q = JSON.parse(fs.readFileSync('plan/queue.json', 'utf8'));
 const LAYOUTS = ['question', 'finish', 'choice', 'rank', 'flag', 'scale'];
 const BGS = ['gradient', 'ring', 'drop', 'spiro'];
-const BANNED = [/link in bio/i, /download (the|our) app/i, /dramatised/i, /whisper #\d/i, /#southafrica/i];
+const BANNED = [/link in bio/i, /download (the|our) app/i, /whisper #\d/i, /#southafrica/i];
 const norm = (s) => String(s ?? '').normalize('NFC').replace(/\s+/g, ' ').trim().slice(0, 80);
 const problems = [];
 const codes = new Set(), starts = new Map();
@@ -23,6 +23,20 @@ for (const p of q) {
     if (pr.layout === 'rank' && (!(pr.items?.length >= 3 && pr.items.length <= 5) || pr.items.some((i) => i.length > 55))) problems.push(`${where}: rank needs 3-5 items, each up to 55 characters`);
     if (p.account === 'brand' && pr.bg !== 'gradient') problems.push(`${where}: brand posts use the gradient background`);
   }
+  if (p.composition === 'MemeCarousel') {
+    const pr = p.props ?? {};
+    if (!pr.hook || pr.hook.length > 70) problems.push(`${where}: hook missing or over 70 characters`);
+    if (!(pr.slides?.length >= 3 && pr.slides.length <= 8) || pr.slides.some((x) => x.length > 140)) problems.push(`${where}: 3-8 slides, each up to 140 characters`);
+    if (!pr.question || pr.question.length > 80) problems.push(`${where}: question missing or over 80 characters`);
+  }
+  if (p.composition === 'ChatReel') {
+    const pr = p.props ?? {};
+    if (!pr.hook || pr.hook.length > 60) problems.push(`${where}: hook missing or over 60 characters`);
+    if (!(pr.messages?.length >= 4 && pr.messages.length <= 12) || pr.messages.some((m) => !['me', 'them'].includes(m.from) || !m.text || m.text.length > 90)) problems.push(`${where}: 4-12 messages, from me/them, each up to 90 characters`);
+    if (!/dramatised story/i.test(p.caption ?? '')) problems.push(`${where}: chat stories must say "Dramatised story" in the caption`);
+    if (/\p{Extended_Pictographic}/u.test(JSON.stringify(pr))) problems.push(`${where}: no emoji inside the video text (they don't render); use them in the caption only`);
+  }
+  if (p.composition !== 'ChatReel' && /dramatised/i.test(p.caption ?? '')) problems.push(`${where}: only chat stories are dramatised; prompt posts must not invent stories`);
   if (!p.caption || p.caption.length > 2000) problems.push(`${where}: caption missing or too long`);
   const k = norm(p.caption);
   if (starts.has(k)) problems.push(`${where}: caption starts the same as ${starts.get(k)} (first 80 characters must differ)`); else starts.set(k, p.code);

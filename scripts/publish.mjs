@@ -14,18 +14,36 @@ if (!a.account || !a.file) throw new Error('Need --account and --file');
 const acct = account(a.account);
 const caption = a.caption ?? (a['caption-file'] ? fs.readFileSync(a['caption-file'], 'utf8').trim() : '');
 const isVideo = /\.(mp4|mov)$/i.test(a.file);
+// a.file may be a directory of slides (carousel); its cover file doesn't apply.
 // Cover frame chosen by render.mjs (milliseconds into the video), so the grid shows the whole post, not frame 0.
-const coverFile = a.file.replace(/\.[^.]+$/, '.cover');
-const thumbOffset = fs.existsSync(coverFile) ? fs.readFileSync(coverFile, 'utf8').trim() : null;
+const coverFile = fs.statSync(a.file).isDirectory() ? null : a.file.replace(/\.[^.]+$/, '.cover');
+const thumbOffset = coverFile && fs.existsSync(coverFile) ? fs.readFileSync(coverFile, 'utf8').trim() : null;
 
-let asset;
+const isCarousel = fs.statSync(a.file).isDirectory();
+const assets = [];
 let published;
 try {
-  asset = await cloudinaryUpload(a.file);
-  console.log(`uploaded to Cloudinary (${asset.type})`);
-  const container = await ig('POST', `/${acct.userId}/media`, isVideo
-    ? { media_type: 'REELS', video_url: asset.url, caption, share_to_feed: 'true', ...(thumbOffset ? { thumb_offset: thumbOffset } : {}) }
-    : { image_url: asset.url, caption }, acct.token);
+  let container;
+  if (isCarousel) {
+    // Carousel: each slide is uploaded, becomes a carousel item, then one CAROUSEL container holds them (max 10).
+    const slides = fs.readdirSync(a.file).filter((f) => /\.jpe?g$/i.test(f)).sort().slice(0, 10);
+    if (slides.length < 2) throw new Error('A carousel needs at least 2 JPEG slides');
+    const children = [];
+    for (const f of slides) {
+      const up = await cloudinaryUpload(`${a.file}/${f}`);
+      assets.push(up);
+      children.push((await ig('POST', `/${acct.userId}/media`, { image_url: up.url, is_carousel_item: 'true' }, acct.token)).id);
+    }
+    console.log(`uploaded ${slides.length} slides to Cloudinary`);
+    container = await ig('POST', `/${acct.userId}/media`, { media_type: 'CAROUSEL', children: children.join(','), caption }, acct.token);
+  } else {
+    const asset = await cloudinaryUpload(a.file);
+    assets.push(asset);
+    console.log(`uploaded to Cloudinary (${asset.type})`);
+    container = await ig('POST', `/${acct.userId}/media`, isVideo
+      ? { media_type: 'REELS', video_url: asset.url, caption, share_to_feed: 'true', ...(thumbOffset ? { thumb_offset: thumbOffset } : {}) }
+      : { image_url: asset.url, caption }, acct.token);
+  }
 
   // Instagram fetches and processes the file; wait for FINISHED (up to ~5 minutes).
   for (let i = 0; i < 60; i++) {
@@ -40,14 +58,15 @@ try {
   console.log(`PUBLISHED ${published.media_type} on ${a.account}: ${published.permalink}`);
 } finally {
   // The post lives on Instagram now; nothing else is kept. Cloudinary copy is removed whether or not publishing worked.
-  if (asset) {
-    try { await cloudinaryDelete(asset); console.log('deleted Cloudinary copy'); }
-    catch (e) { console.error(`WARNING: ${e.message}`); process.exitCode = 1; }
+  let failed = 0;
+  for (const asset of assets) {
+    try { await cloudinaryDelete(asset); } catch (e) { failed++; console.error(`WARNING: ${e.message}`); process.exitCode = 1; }
   }
+  if (assets.length && !failed) console.log('deleted Cloudinary copy');
 }
 
 if (published) {
-  if (!a['keep-local']) for (const f of [a.file, a['caption-file'], coverFile]) if (f && fs.existsSync(f)) fs.rmSync(f);
+  if (!a['keep-local']) for (const f of [a.file, a['caption-file'], coverFile]) if (f && fs.existsSync(f)) fs.rmSync(f, { recursive: true });
   fs.mkdirSync('log', { recursive: true });
   fs.appendFileSync('log/posts.jsonl', JSON.stringify({
     code: a.code ?? null, account: a.account, format: a.format ?? null, media_id: published.id,

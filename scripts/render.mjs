@@ -21,9 +21,28 @@ const findChrome = () => {
 };
 
 fs.mkdirSync('work', { recursive: true });
+const chrome0 = findChrome();
+
+// Carousels are stills, one JPEG per slide (Instagram only takes JPEG), into work/<code>/.
+if (post.composition === 'MemeCarousel') {
+  const dir = path.resolve('work', code);
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.mkdirSync(dir, { recursive: true });
+  const n = post.props.slides.length + 2;
+  for (let i = 0; i < n; i++) {
+    const args = ['remotion', 'still', 'src/index.ts', 'MemeCarousel', path.join(dir, `slide-${String(i + 1).padStart(2, '0')}.jpg`), `--frame=${i}`, '--image-format=jpeg', '--jpeg-quality=92', `--props=${JSON.stringify(post.props)}`, '--log=error'];
+    if (chrome0) args.push(`--browser-executable=${chrome0}`);
+    execFileSync('npx', args, { cwd: 'remotion', stdio: 'inherit' });
+  }
+  fs.writeFileSync(path.join('work', `${code}.txt`), post.caption);
+  console.log(`rendered work/${code}/ (${n} slides)`);
+  process.exit(0);
+}
 const audio = `bed-${code}.wav`;
 const audioPath = path.join('remotion', 'public', audio);
-const seconds = post.seconds ?? 8;
+// Chat stories: length comes from the messages (same timing as ChatReel.tsx).
+const chatSeconds = (msgs) => { let t = 1.6; for (const m of msgs) { const at = t + (m.from === 'them' ? 0.9 : 0.35); t = at + Math.min(3.2, 0.9 + m.text.length * 0.045); } return t + 3.2; };
+const seconds = post.composition === 'ChatReel' ? Math.ceil(chatSeconds(post.props.messages)) : (post.seconds ?? 8);
 // Scheduled runs start on a fresh machine: install the music generator's packages if they're missing.
 try { execFileSync('python3', ['-c', 'import numpy, scipy, soundfile'], { stdio: 'ignore' }); }
 catch { execFileSync('python3', ['-m', 'pip', 'install', '--break-system-packages', '-q', '-r', 'audio/requirements.txt'], { stdio: 'inherit' }); }

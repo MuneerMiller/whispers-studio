@@ -13,14 +13,27 @@ Each run starts on a fresh machine and follows this file from top to bottom. CLA
 ## 3. Post
 For each account, stories first, then brand:
 1. `CODE=$(node scripts/next.mjs <account>)`. If it exits with an error, skip that account and report why. Never guess: a guess could double-post. If it prints nothing, the queue is empty: go to step 4 first, then come back.
-2. `node scripts/render.mjs $CODE`. Then check frames at 0s, 1.5s and the last second (`ffmpeg -ss <t> -i work/$CODE.mp4 -frames:v 1 <png>`, then look at them): the hook must be readable, nothing cut off, no typos. If it's broken, fix the entry in `plan/queue.json` (shorter text usually fixes it) and render again. If it's still broken, skip it and report.
-3. `node scripts/publish.mjs --account <account> --file work/$CODE.mp4 --caption-file work/$CODE.txt --code $CODE --format "<format>"`. Run it once only: if it errors after "PUBLISHED" was printed, don't run it again.
+2. `node scripts/render.mjs $CODE`. A video lands in `work/$CODE.mp4`; a carousel lands as JPEG slides in the folder `work/$CODE/`. Check it: for a video, frames at 0s, 1.5s and the last second (`ffmpeg -ss <t> -i work/$CODE.mp4 -frames:v 1 <png>`); for a carousel, look at every slide. The hook must be readable, with nothing cut off and no typos. If it's broken, fix the entry in `plan/queue.json` (shorter text usually fixes it) and render again. If it's still broken, skip it and report.
+3. `node scripts/publish.mjs --account <account> --file <work/$CODE.mp4, or the folder work/$CODE for a carousel> --caption-file work/$CODE.txt --code $CODE --format "<format>"`. Run it once only: if it errors after "PUBLISHED" was printed, don't run it again.
 4. Confirm it printed "deleted Cloudinary copy" and that `work/` is empty.
 
 ## 4. Refill the queue (only when an account has fewer than 6 unposted posts)
 Write 12 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
 - **Formats:** use what's working. Base it on `log/metrics.json` if there are at least 10 posts with numbers; give the top 2 formats by comments per post 2 posts each out of 3, and try the rest in the remaining slots. Without enough numbers, mix all the formats evenly.
-- **Available layouts:** `question`, `finish` (finish the sentence), `choice` (would you rather / this or that: exactly 2 items), `rank` (3–5 items), `flag` (red flag or fair, or Agree/Disagree with `items`), `scale` (rate it 1–10).
+- **What works best:**
+  - These come from research on the 2026 algorithm: DM sends are the strongest signal for reaching new people, followed by watch time and real comments.
+  - **Keyword-fishing CTAs are penalised:** "comment YES", "tag a friend", "share if…".
+  - So ask for an opinion and a reason ("Agree? Tell us why", "Which one, and why?"). On carousels, name who to send it to ("Send this to the friend who…").
+- **Formats, in order of priority:**
+  - **Meme carousel** (`MemeCarousel`): a hook slide, then 3–8 relatable one-liners in a post-card look, then a question slide with `sendTo`. This is built to be sent to friends. Use `dark: true` for brand.
+  - **Text story** (`ChatReel`, stories only): a fictional chat that builds to a twist in the last 1–2 messages, then a question ("Who's wrong?", "What would you do?").
+    - It is always fiction, and the caption must contain "Dramatised story." The video labels itself.
+    - Keep 5–9 messages, short and texting-style.
+    - No emoji inside the messages, because they don't render.
+  - **Hot take** (`TextReel` with layout `flag`, `items: ["Agree","Disagree"]`, kicker "Hot take"): a confident, divisive statement about dating, friendship, work or etiquette that people will argue about.
+    - It must be spicy, but never about race, religion, gender stereotypes, bodies, politics, or real people or brands.
+  - **TextReel layouts:** `question`, `finish` (finish the sentence), `choice` (would you rather: exactly 2 items), `rank` (3–5 items), `flag` (red flag or not), `scale` (rate it 1–10).
+- **Mix:** for stories, of every 3 posts, 1 carousel, 1 text story, and 1 hot take or other TextReel. For brand, alternate carousels (warm, wholesome, "things we never say") with TextReels.
 - **Backgrounds:** stories rotate `ring`, `drop`, `spiro` and `gradient`; brand always uses `gradient`.
 - **Writing:**
   - Questions people can answer in one second (A or B, a number, one word) and topics they'll argue about: dating, friendships, family, work, money habits, guilty habits, petty behaviour, social etiquette.
