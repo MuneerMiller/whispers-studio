@@ -34,6 +34,16 @@ try {
       assets.push(up);
       children.push((await ig('POST', `/${acct.userId}/media`, { image_url: up.url, is_carousel_item: 'true' }, acct.token)).id);
     }
+    // Instagram fetches each slide in the background; wait until every one is ready ("media not ready" otherwise).
+    for (const id of children) {
+      for (let i = 0; i < 30; i++) {
+        const st = await ig('GET', `/${id}`, { fields: 'status_code' }, acct.token);
+        if (st.status_code === 'FINISHED') break;
+        if (st.status_code === 'ERROR' || st.status_code === 'EXPIRED') throw new Error(`Instagram could not process slide ${id}`);
+        if (i === 29) throw new Error('Instagram did not finish a slide within 60 seconds');
+        await sleep(2000);
+      }
+    }
     console.log(`uploaded ${slides.length} slides to Cloudinary`);
     container = await ig('POST', `/${acct.userId}/media`, { media_type: 'CAROUSEL', children: children.join(','), caption }, acct.token);
   } else {
