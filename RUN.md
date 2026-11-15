@@ -48,6 +48,10 @@ Write 20 new posts for that account into `plan/queue.json`, using the same shape
     - No emoji inside the messages, because they don't render.
   - **Hot take** (`TextReel` with layout `flag`, `items: ["Agree","Disagree"]`, kicker "Hot take"): a confident, divisive statement about dating, friendship, work or etiquette that people will argue about.
     - It must be spicy, but never about race, religion, gender stereotypes, bodies, politics, or real people or brands.
+  - **Deep question** (`TextReel`, layout `question`, kicker "Deep question", cta "Sit with it. Then answer.", 11 seconds): one question that stays in someone's head for days. It's about forgiveness, regret, who people really are, friendships that faded, things left unsaid.
+    - Specific beats vague: "What are you still waiting for someone to apologise for?", not "What makes you sad?".
+    - Never ask directly about self-harm, abuse or trauma.
+    - About 1 in 4 brand posts and 1 in 6 stories posts.
   - **TextReel layouts:** `question`, `finish` (finish the sentence), `choice` (would you rather: exactly 2 items), `rank` (3–5 items), `flag` (red flag or not), `scale` (rate it 1–10).
 - **Mix:** for stories, of every 3 posts, 1 carousel, 1 text story, and 1 hot take or other TextReel. For brand, alternate carousels (warm, wholesome, "things we never say") with TextReels.
 - **Backgrounds:** stories rotate `ring`, `drop`, `spiro` and `gradient`; brand always uses `gradient`.
