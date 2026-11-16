@@ -43,7 +43,18 @@ Write 20 new posts for that account into `plan/queue.json`, using the same shape
   - These come from research on the 2026 algorithm: DM sends are the strongest signal for reaching new people, followed by watch time and real comments.
   - **Keyword-fishing CTAs are penalised:** "comment YES", "tag a friend", "share if…".
   - So ask for an opinion and a reason ("Agree? Tell us why", "Which one, and why?"). On carousels, name who to send it to ("Send this to the friend who…").
-- **Formats, in order of priority:**
+- **Storyboards come first** (`StoryboardReel`): about half of all new posts. Each one is a short animated story told in 3–6 scenes, with a sound effect on every cut. Plan it like a storyboard:
+  - **Scene 1 (the hook, under 2s):** a statement that stops the scroll: drama, a secret, a hot take, "don't show this to…". Use `slam`, `zoom` or `glitch`, with `transition: "cut"`.
+  - **Middle (build-up):** `chat` for texts, `type` for diary or notes, `list` for "things that…", `versus` for picking a side, `emoji` for a beat of reaction.
+  - **The payoff:** `redact`, so the punchline is hidden and then wiped open.
+  - **Last scene:** always a `question`, plus an optional `sub` like "be honest" or "send it to…".
+  - Vary the background colour per scene (`ink`, `black`, `red`, `yellow`, `blue`, `pink`, `green`, `cream`, `purple`); bold colours stop the scroll.
+  - **Emoji:** only in an `emoji` scene's `emoji` field.
+  - **Fiction:** made-up stories get `"tag": "dramatised"` and end the caption with "(dramatised story)".
+  - **Push it:** cheating, betrayal, family secrets, money fights, petty revenge, brutal honesty, "unpopular opinion", "rate this excuse", birth-month and zodiac memes, "send this to…".
+  - **Never:** sexual content, real people, race, religion, gender stereotypes, bodies, self-harm, or anything presented as real when it isn't.
+- **Captions:** they sound like a person, not an ad. Lowercase is fine. Write one or two lines (the hook or question), then 3–4 hashtags. Never "Whispers is a place…", "opening soon", "follow" or "link in bio".
+- **Other formats, in order of priority:**
   - **Meme carousel** (`MemeCarousel`): a hook slide, then 3–8 relatable one-liners in a post-card look, then a question slide with `sendTo`. This is built to be sent to friends. Use `dark: true` for brand.
   - **Text story** (`ChatReel`, stories only): a fictional chat that builds to a twist in the last 1–2 messages, then a question ("Who's wrong?", "What would you do?").
     - It is always fiction, and the caption must contain "Dramatised story." The video labels itself.

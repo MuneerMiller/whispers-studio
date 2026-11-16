@@ -37,8 +37,8 @@ for (const p of q) {
     if (/\p{Extended_Pictographic}/u.test(JSON.stringify(pr))) problems.push(`${where}: no emoji inside the video text (they don't render); use them in the caption only`);
   }
   const FICTION = ['ChatReel', 'NotesReel', 'TwistReel', 'VoiceStory'];
-  if (FICTION.includes(p.composition) && !/dramatised story/i.test(p.caption ?? '')) problems.push(`${where}: fiction formats must say "Dramatised story." in the caption`);
-  if (!FICTION.includes(p.composition) && /dramatised/i.test(p.caption ?? '')) problems.push(`${where}: only chat stories are dramatised; prompt posts must not invent stories`);
+  if ((FICTION.includes(p.composition) || p.props?.tag) && !/dramatised story/i.test(p.caption ?? '')) problems.push(`${where}: fiction formats must say "Dramatised story." in the caption`);
+  if (!FICTION.includes(p.composition) && !p.props?.tag && /dramatised/i.test(p.caption ?? '')) problems.push(`${where}: only chat stories are dramatised; prompt posts must not invent stories`);
   const pr2 = p.props ?? {};
   if (p.composition === 'TierList' && (!(pr2.items?.length >= 4 && pr2.items.length <= 8) || pr2.items.some((x) => !'SABCD'.includes(x.tier) || x.text.length > 40))) problems.push(`${where}: tier list needs 4-8 items, tier S/A/B/C/D, each up to 40 characters`);
   if (p.composition === 'NotesReel' && (!(pr2.lines?.length >= 3 && pr2.lines.length <= 7) || pr2.lines.some((x) => x.length > 70))) problems.push(`${where}: notes need 3-7 lines, each up to 70 characters`);
@@ -46,6 +46,16 @@ for (const p of q) {
   if (p.composition === 'TwistReel' && (!(pr2.setup?.length >= 2 && pr2.setup.length <= 4) || pr2.setup.some((x) => x.length > 70) || !pr2.ending || pr2.ending.length > 110)) problems.push(`${where}: twist needs 2-4 setup lines up to 70 characters and an ending up to 110`);
   if (p.composition === 'VoiceStory' && (!pr2.story || pr2.story.split(/\s+/).length < 40 || pr2.story.split(/\s+/).length > 110)) problems.push(`${where}: voice story needs 40-110 words`);
   if (p.composition === 'BingoCard' && (pr2.cells?.length !== 24 || pr2.cells.some((x) => x.length > 40))) problems.push(`${where}: bingo needs exactly 24 cells, each up to 40 characters`);
+  if (p.composition === 'StoryboardReel') {
+    const sc = p.props?.scenes ?? [];
+    const TYPES = ['slam', 'type', 'chat', 'emoji', 'versus', 'redact', 'list', 'glitch', 'zoom', 'question'];
+    if (sc.length < 2 || sc.length > 8) problems.push(`${where}: storyboard needs 2-8 scenes`);
+    if (sc.some((x) => !TYPES.includes(x.type))) problems.push(`${where}: scene type must be one of ${TYPES}`);
+    if (sc.some((x) => (x.text ?? '').length > 90 || (x.items ?? []).some((i) => i.length > 55))) problems.push(`${where}: scene text up to 90 characters, list items up to 55`);
+    if (sc.some((x) => /\p{Extended_Pictographic}/u.test(`${x.text ?? ''}${x.sub ?? ''}${(x.items ?? []).join('')}`))) problems.push(`${where}: emoji only in an 'emoji' scene's emoji field (inline emoji don't render)`);
+    if (sc.at(-1)?.type !== 'question') problems.push(`${where}: a storyboard ends on a question scene`);
+  }
+  if (/\bwhispers?\b is a place|opening soon|follow to be first/i.test(p.caption ?? '')) problems.push(`${where}: no ad lines in captions; keep them organic`);
   if (!p.caption || p.caption.length > 2000) problems.push(`${where}: caption missing or too long`);
   const k = norm(p.caption);
   if (starts.has(k)) problems.push(`${where}: caption starts the same as ${starts.get(k)} (first 80 characters must differ)`); else starts.set(k, p.code);

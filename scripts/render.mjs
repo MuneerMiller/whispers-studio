@@ -72,11 +72,23 @@ if (post.composition === 'VoiceStory') {
   voice.vo = vo;
   lengths.VoiceStory = () => voice.duration + 3.4;
 }
+if (post.composition === 'StoryboardReel') {
+  const { totalSeconds } = await import('../remotion/src/storyboard-timing.mjs');
+  lengths.StoryboardReel = () => totalSeconds(P.scenes);
+}
 const seconds = lengths[post.composition] ? Math.ceil(lengths[post.composition]()) : (post.seconds ?? 8);
 // Scheduled runs start on a fresh machine: install the music generator's packages if they're missing.
 try { execFileSync('python3', ['-c', 'import numpy, scipy, soundfile'], { stdio: 'ignore' }); }
 catch { execFileSync('python3', ['-m', 'pip', 'install', '--break-system-packages', '-q', '-r', 'audio/requirements.txt'], { stdio: 'inherit' }); }
 execFileSync('python3', ['audio/mixgen.py', voice ? voice.vo : 'none', audioPath, String(seconds), String(post.props?.seed ?? 1)], { stdio: 'inherit' });
+// Storyboards get sound effects on every cut and hit, timed from the same timeline the picture uses.
+if (post.composition === 'StoryboardReel') {
+  const { soundCues } = await import('../remotion/src/storyboard-timing.mjs');
+  const cuesFile = path.join('work', `${code}.cues.json`);
+  fs.writeFileSync(cuesFile, JSON.stringify(soundCues(P.scenes)));
+  execFileSync('python3', ['audio/sfx.py', audioPath, cuesFile, audioPath], { stdio: 'inherit' });
+  fs.rmSync(cuesFile);
+}
 
 const out = path.resolve('work', `${code}.mp4`);
 const args = ['remotion', 'render', 'src/index.ts', post.composition, out, `--props=${JSON.stringify({ ...post.props, ...(voice ? { words: voice.words, duration: voice.duration, story: undefined } : {}), audio })}`, '--log=error'];
