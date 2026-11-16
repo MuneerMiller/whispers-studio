@@ -13,12 +13,17 @@ for (const name of ['stories', 'brand']) {
   const media = await ig('GET', `/${acct.userId}/media`, { fields: 'id,caption,permalink,timestamp,like_count,comments_count', limit: '100' }, acct.token);
   for (const m of media.data ?? []) {
     const p = byCaption.get(norm(m.caption));
-    let views = null;
-    try {
-      const ins = await ig('GET', `/${m.id}/insights`, { metric: 'views' }, acct.token);
-      views = ins.data?.[0]?.values?.[0]?.value ?? null;
-    } catch { /* the token may not include insights; likes and comments still count */ }
-    out.posts.push({ code: p?.code ?? null, account: name, format: p?.format ?? null, posted_at: m.timestamp, permalink: m.permalink, views, likes: m.like_count ?? 0, comments: m.comments_count ?? 0 });
+    // Views for Reels; carousels and images sometimes only report reach, so ask for both and keep what comes back.
+    let views = null, reach = null, shares = null, saves = null;
+    for (const metric of ['views', 'reach', 'shares', 'saved']) {
+      try {
+        const ins = await ig('GET', `/${m.id}/insights`, { metric }, acct.token);
+        const v = ins.data?.[0]?.values?.[0]?.value ?? ins.data?.[0]?.total_value?.value ?? null;
+        if (metric === 'views') views = v; else if (metric === 'reach') reach = v; else if (metric === 'shares') shares = v; else saves = v;
+      } catch { /* not available for this media type or token */ }
+    }
+    if (!views && reach) views = reach;
+    out.posts.push({ code: p?.code ?? null, account: name, format: p?.format ?? null, posted_at: m.timestamp, permalink: m.permalink, views, reach, shares, saves, likes: m.like_count ?? 0, comments: m.comments_count ?? 0 });
   }
 }
 fs.mkdirSync('log', { recursive: true });
@@ -27,9 +32,9 @@ fs.writeFileSync('log/metrics.json', JSON.stringify(out, null, 2));
 // Per-format summary, best first by comments per post (the engagement we care about most), then views.
 const fmt = {};
 for (const p of out.posts) {
-  const f = (fmt[p.format ?? 'unknown'] ??= { posts: 0, comments: 0, likes: 0, views: 0 });
-  f.posts++; f.comments += p.comments; f.likes += p.likes; f.views += p.views ?? 0;
+  const f = (fmt[p.format ?? 'unknown'] ??= { posts: 0, comments: 0, likes: 0, views: 0, shares: 0 });
+  f.posts++; f.comments += p.comments; f.likes += p.likes; f.views += p.views ?? 0; f.shares += p.shares ?? 0;
 }
-const rows = Object.entries(fmt).map(([k, v]) => ({ format: k, posts: v.posts, comments_per_post: +(v.comments / v.posts).toFixed(2), likes_per_post: +(v.likes / v.posts).toFixed(2), views_per_post: Math.round(v.views / v.posts) }))
+const rows = Object.entries(fmt).map(([k, v]) => ({ format: k, posts: v.posts, comments_per_post: +(v.comments / v.posts).toFixed(2), likes_per_post: +(v.likes / v.posts).toFixed(2), shares_per_post: +(v.shares / v.posts).toFixed(2), views_per_post: Math.round(v.views / v.posts) }))
   .sort((a, b) => b.comments_per_post - a.comments_per_post || b.views_per_post - a.views_per_post);
 console.table(rows);
