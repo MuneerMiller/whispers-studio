@@ -15,6 +15,395 @@
     "caption": "What have you never said out loud? 🤫\n\nSay it in the comments. No judgement here.\n\n#whispers #anonymous #confessions #secrets #unsaid"
   },
   {
+    "code": "ig-sb-09",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "glitch",
+          "text": "Not everyone who keeps your secrets is keeping them for you.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "some are saving them",
+            "some are trading them",
+            "some just haven't needed them yet"
+          ],
+          "bg": "purple"
+        },
+        {
+          "type": "redact",
+          "text": "The worst one is the friend who says",
+          "hidden": "'you can tell me anything.'",
+          "bg": "red"
+        },
+        {
+          "type": "question",
+          "text": "Who would you trust with your worst secret?",
+          "sub": "send it to them",
+          "bg": "ink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "not everyone who keeps your secrets is keeping them for you. who's the one friend you'd actually trust?\n\n#friendship #secrets #trustissues #relatable"
+  },
+  {
+    "code": "ig-hot-08",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "kicker": "Hot take",
+      "title": "Lending money to a friend is just paying to lose them.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 4
+    },
+    "caption": "lending money to a friend is just paying to lose them. true, or have you been paid back? 👇\n\n#hottake #money #friendship #unpopularopinion"
+  },
+  {
+    "code": "ig-sb-10",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Dramatised",
+    "composition": "StoryboardReel",
+    "props": {
+      "tag": "dramatised",
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "02:47. He's still typing.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "chat",
+          "bg": "ink",
+          "messages": [
+            {
+              "from": "them",
+              "text": "can I ask you something"
+            },
+            {
+              "from": "me",
+              "text": "it's nearly 3am"
+            },
+            {
+              "from": "them",
+              "text": "did you ever tell her about us"
+            },
+            {
+              "from": "me",
+              "text": "there is no us"
+            },
+            {
+              "from": "them",
+              "text": "then why is she asking me"
+            }
+          ]
+        },
+        {
+          "type": "emoji",
+          "emoji": "😳",
+          "bg": "yellow"
+        },
+        {
+          "type": "redact",
+          "text": "She found out from",
+          "hidden": "my own screenshot in the group chat.",
+          "bg": "red"
+        },
+        {
+          "type": "question",
+          "text": "Who's really to blame here?",
+          "sub": "be honest",
+          "bg": "black",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "02:47 and he's still typing… then the real problem came out. who's to blame?\n\nDramatised story.\n\n#storytime #drama #relationships #situationship"
+  },
+  {
+    "code": "ig-tier-03",
+    "account": "stories",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Excuses for leaving someone on read, ranked",
+      "items": [
+        {
+          "text": "'my phone died'",
+          "tier": "D"
+        },
+        {
+          "text": "'I thought I replied in my head'",
+          "tier": "C"
+        },
+        {
+          "text": "'I was busy'",
+          "tier": "B"
+        },
+        {
+          "text": "'I saw it at work and forgot'",
+          "tier": "A"
+        },
+        {
+          "text": "'honestly I needed a break'",
+          "tier": "S"
+        }
+      ],
+      "question": "Which one have you used this week?"
+    },
+    "caption": "excuses for leaving someone on read, ranked by honesty. which tier is wrong? 👀\n\n#leftonread #relatable #texting #funny"
+  },
+  {
+    "code": "ig-sb-11",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Me: I'm completely over him.",
+          "bg": "pink",
+          "transition": "cut"
+        },
+        {
+          "type": "zoom",
+          "text": "Also me at 2am:",
+          "bg": "black"
+        },
+        {
+          "type": "type",
+          "text": "rereading our chat from March to see who texted first",
+          "bg": "ink"
+        },
+        {
+          "type": "emoji",
+          "emoji": "💀",
+          "bg": "yellow"
+        },
+        {
+          "type": "question",
+          "text": "What's your 2am relapse?",
+          "sub": "we won't judge. much.",
+          "bg": "purple",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "me: totally over it. also me at 2am: rereading the whole chat 💀 what's your 2am relapse?\n\n#relatable #exes #2am #memes"
+  },
+  {
+    "code": "ig-chat-05",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "My sister borrowed my car. Then this text.",
+      "contact": "Sis",
+      "seed": 11,
+      "messages": [
+        {
+          "from": "them",
+          "text": "quick question"
+        },
+        {
+          "from": "them",
+          "text": "does your car normally make a beeping sound"
+        },
+        {
+          "from": "me",
+          "text": "what did you do"
+        },
+        {
+          "from": "them",
+          "text": "nothing!! it just started"
+        },
+        {
+          "from": "me",
+          "text": "is the orange light on"
+        },
+        {
+          "from": "them",
+          "text": "which one there are 6"
+        },
+        {
+          "from": "me",
+          "text": "where are you"
+        },
+        {
+          "from": "them",
+          "text": "at your ex's house. long story"
+        }
+      ],
+      "question": "What's worse: the car or the location?"
+    },
+    "caption": "my sister borrowed my car and the last text ended me. what's worse here?\n\nDramatised story.\n\n#storytime #siblings #drama #textstory"
+  },
+  {
+    "code": "ig-sb-12",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Dramatised",
+    "composition": "StoryboardReel",
+    "props": {
+      "tag": "dramatised",
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "A box showed up with my name on it. From my ex's mom.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "type",
+          "text": "inside: every note I ever wrote her in school",
+          "bg": "cream"
+        },
+        {
+          "type": "emoji",
+          "emoji": "📦",
+          "bg": "blue"
+        },
+        {
+          "type": "redact",
+          "text": "And at the very bottom",
+          "hidden": "a letter addressed to me. Never sent.",
+          "bg": "red"
+        },
+        {
+          "type": "question",
+          "text": "Open it or burn it?",
+          "sub": "be honest",
+          "bg": "ink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "a box showed up from my ex's mom. at the bottom: a letter she never sent me. open it or burn it?\n\nDramatised story.\n\n#storytime #exes #drama #whatwouldyoudo"
+  },
+  {
+    "code": "ig-pause-02",
+    "account": "stories",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "it's on screen for one frame",
+            "most people scroll past",
+            "you'll need to scrub back"
+          ],
+          "bg": "green",
+          "secret": "The group chat has a second group chat. You're not in it.",
+          "secretAt": 1.6
+        },
+        {
+          "type": "question",
+          "text": "What did it say?",
+          "sub": "no reading the comments first",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% catch it on the first try 👀 what did the hidden line say?\n\n#pausechallenge #challenge #groupchat #relatable"
+  },
+  {
+    "code": "ig-flg-05",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "spiro",
+      "kicker": "Red flag or fair enough?",
+      "title": "They keep their ex's number 'for emergencies'.",
+      "items": [
+        "Red flag",
+        "Fair enough"
+      ],
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 5
+    },
+    "caption": "they keep their ex's number 'for emergencies'. red flag 🚩 or fair enough? say why\n\n#redflag #dating #exes #relationships"
+  },
+  {
+    "code": "ig-sb-13",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Dramatised",
+    "composition": "StoryboardReel",
+    "props": {
+      "tag": "dramatised",
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Part 2: I opened the letter.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "type",
+          "text": "'I know you'll find this one day. I'm sorry for what I said at prom.'",
+          "bg": "cream"
+        },
+        {
+          "type": "zoom",
+          "text": "I never knew she'd said anything.",
+          "bg": "blue"
+        },
+        {
+          "type": "redact",
+          "text": "So I asked my best friend. She went quiet. Then:",
+          "hidden": "'she said it to me. I never told you.'",
+          "bg": "red"
+        },
+        {
+          "type": "question",
+          "text": "Who's the real villain now?",
+          "sub": "the ex or the best friend",
+          "bg": "ink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "part 2: i finally opened the letter, and the person who hid it wasn't my ex. who's the villain?\n\nDramatised story.\n\n#storytime #part2 #betrayal #drama"
+  },
+  {
     "code": "ig-fin-01",
     "account": "stories",
     "format": "Finish the sentence",
@@ -1682,6 +2071,314 @@
       "seed": 3
     },
     "caption": "What do you wish you could say to someone, but can't? 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "igb-sb-05",
+    "account": "brand",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "glitch",
+          "text": "Not everyone who stays quiet has nothing to say.",
+          "bg": "ink",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "some are choosing their words",
+            "some were laughed at once",
+            "some are just waiting for you to ask"
+          ],
+          "bg": "blue"
+        },
+        {
+          "type": "question",
+          "text": "Who's the quiet one in your group?",
+          "sub": "send this to them",
+          "bg": "purple",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "not everyone who stays quiet has nothing to say. who's the quiet one in your group?\n\n#friendship #introvert #relatable #kindness"
+  },
+  {
+    "code": "igb-tier-02",
+    "account": "brand",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Ways friends say sorry, ranked",
+      "items": [
+        {
+          "text": "'sorry you feel that way'",
+          "tier": "D"
+        },
+        {
+          "text": "A meme and acting normal",
+          "tier": "C"
+        },
+        {
+          "text": "Showing up with your favourite snack",
+          "tier": "B"
+        },
+        {
+          "text": "A voice note that rambles",
+          "tier": "A"
+        },
+        {
+          "text": "'I was wrong. I'm sorry.'",
+          "tier": "S"
+        }
+      ],
+      "question": "Which one is underrated?"
+    },
+    "caption": "ways friends say sorry, ranked. which one deserves a higher tier? 🤍\n\n#friendship #apology #wholesome #relatable"
+  },
+  {
+    "code": "igb-sb-06",
+    "account": "brand",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Money comes back. These years don't.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "long talks in a parked car",
+            "the friend who always picks up",
+            "dinners that run past midnight",
+            "the 'we should do this more' nights"
+          ],
+          "bg": "cream"
+        },
+        {
+          "type": "question",
+          "text": "Which moment would you go back to for one more hour?",
+          "bg": "ink",
+          "transition": "flash",
+          "dur": 4
+        }
+      ]
+    },
+    "caption": "money comes back. these years don't. which moment would you go back to for one more hour?\n\n#nostalgia #friendship #deepthoughts #memories"
+  },
+  {
+    "code": "igb-hot-05",
+    "account": "brand",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "kicker": "Hot take",
+      "title": "You don't owe someone a birthday invite just because they invited you.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 3
+    },
+    "caption": "you don't owe someone a birthday invite just because they invited you. fair, or petty? 👇\n\n#hottake #friendship #etiquette #unpopularopinion"
+  },
+  {
+    "code": "igb-sb-07",
+    "account": "brand",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Me: I don't need anyone's help.",
+          "bg": "green",
+          "transition": "cut"
+        },
+        {
+          "type": "zoom",
+          "text": "Also me:",
+          "bg": "black"
+        },
+        {
+          "type": "type",
+          "text": "texting my mum 'how long do you boil an egg'",
+          "bg": "cream"
+        },
+        {
+          "type": "emoji",
+          "emoji": "🥚",
+          "bg": "yellow"
+        },
+        {
+          "type": "question",
+          "text": "What do you still ask your parents?",
+          "sub": "no shame",
+          "bg": "pink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "me: fully independent adult. also me: texting my mum about eggs 🥚 what do you still ask your parents?\n\n#relatable #adulting #family #funny"
+  },
+  {
+    "code": "igb-deep-09",
+    "account": "brand",
+    "format": "Deep question",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 11,
+    "props": {
+      "layout": "question",
+      "bg": "gradient",
+      "kicker": "Deep question",
+      "title": "Who taught you something they don't know they taught you?",
+      "cta": "Sit with it. Then answer.",
+      "seconds": 11,
+      "seed": 4
+    },
+    "caption": "who taught you something they don't even know they taught you? tell us what it was.\n\n#deepquestions #gratitude #selfreflection #thoughts"
+  },
+  {
+    "code": "igb-pause-02",
+    "account": "brand",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "it's there for one frame",
+            "blink and it's gone",
+            "scrub back slowly"
+          ],
+          "bg": "blue",
+          "secret": "If you found this: someone is quietly proud of you today.",
+          "secretAt": 1.6
+        },
+        {
+          "type": "question",
+          "text": "What did it say?",
+          "sub": "then send it to someone who needs it",
+          "bg": "pink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% find the hidden line 👀 what did it say?\n\n#pausechallenge #challenge #wholesome #goodvibes"
+  },
+  {
+    "code": "igb-sb-08",
+    "account": "brand",
+    "format": "Storyboard",
+    "content_type": "Dramatised",
+    "composition": "StoryboardReel",
+    "props": {
+      "tag": "dramatised",
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "06:04. A text from Dad.",
+          "bg": "ink",
+          "transition": "cut"
+        },
+        {
+          "type": "chat",
+          "bg": "black",
+          "messages": [
+            {
+              "from": "them",
+              "text": "you up"
+            },
+            {
+              "from": "me",
+              "text": "now I am. everything ok?"
+            },
+            {
+              "from": "them",
+              "text": "saw a bird that looks like the one you drew when you were 6"
+            },
+            {
+              "from": "me",
+              "text": "you remember that?"
+            }
+          ]
+        },
+        {
+          "type": "redact",
+          "text": "He's kept that drawing",
+          "hidden": "in his wallet for 20 years.",
+          "bg": "cream"
+        },
+        {
+          "type": "question",
+          "text": "What small thing has someone kept for you?",
+          "bg": "purple",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "06:04, a text from dad about a bird. then i found out what's in his wallet 🥹 what has someone kept for you?\n\nDramatised story.\n\n#wholesome #family #dad #storytime"
+  },
+  {
+    "code": "igb-pov-02",
+    "account": "brand",
+    "format": "POV",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "question",
+      "bg": "gradient",
+      "kicker": "POV",
+      "title": "A friend sends a photo with 'this reminded me of you' and it's oddly accurate.",
+      "cta": "Who sends you these?",
+      "seconds": 9,
+      "seed": 2
+    },
+    "caption": "pov: a friend sends 'this reminded me of you' and it's weirdly accurate. who does this for you?\n\n#pov #friendship #wholesome #bestfriend"
+  },
+  {
+    "code": "igb-rate-03",
+    "account": "brand",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "gradient",
+      "kicker": "How bad is it?",
+      "title": "An apology that starts with 'I'm sorry you felt that way'.",
+      "cta": "Rate it 1 to 10",
+      "seconds": 9,
+      "seed": 1
+    },
+    "caption": "rate this apology 1 to 10: 'i'm sorry you felt that way.' be honest 👇\n\n#apology #relationships #relatable #communication"
   },
   {
     "code": "igb-cho-01",

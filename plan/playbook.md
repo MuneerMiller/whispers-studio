@@ -1,6 +1,6 @@
 # Viral playbook
 
-This is the living strategy. Every run that writes posts reads it first. The weekly trend scout rewrites the "Right now" section every Monday from fresh research and our own numbers. Keep it short and concrete. Last updated: 2026-11-17 (first version).
+This is the living strategy. Every run that writes posts reads it first. The weekly trend scout rewrites the "Right now" section every Monday from fresh research and our own numbers. Keep it short and concrete. Last updated: 2026-11-17 (scout run 1).
 
 ## Principles that don't change
 - **Win the first second.** The first frame must already say something that stops the thumb: drama, a secret, a dare, a hot take. No intros, no logos, no labels.
@@ -21,16 +21,59 @@ This is the living strategy. Every run that writes posts reads it first. The wee
 - **Highlight the thing:** circles, arrows or a colour pop on the key word (`slam` already colours the last word).
 
 ## Right now (updated weekly by the trend scout)
-- What's working on our accounts: too early. Wait for the first metrics with storyboards in them.
-- Formats to lean on this week: storyboards (drama with reveals, "don't show this to…", birth month or zodiac memes, versus money fights), bingo and tier lists.
-- Hooks to try:
-  - "Only 1% can pause at the right time"
-  - "Don't show this to your best friend"
-  - "She found ___ in his car"
-  - "Rate this excuse 1–10"
-  - "Your ___ based on your birth month"
-- Retire: plain prompt posts (9 views).
+Scout run 2026-11-17 (research from 31 Oct–16 Nov 2026).
+
+**What's working on our accounts** (40 posts, 14–16 Nov; no storyboards posted yet; almost no comments, likes or shares anywhere, so views are the only usable signal; no outliers yet):
+- Stories median 120 views. Best: unpopular opinion "Splitting the bill on a first date is fine" 170, hot take "3 hours to reply" 151 (1 like), text story "I called in sick" 146, tier list "Breakup excuses" 128 (1 like), unsent note 119, guess the ending 105 (1 like).
+- Stories flops: voice story 9, deep question 22, 3am searches 25, prompt post 9.
+- Brand median 149. Best: tier list "Ways people say I love you" 214 (2 likes, the best brand post), hot take "Saying sorry first" 213, deep question "Which friendship ended without goodbye" 183, finish the sentence 160, POV 154.
+- All 6 meme carousels and both bingo cards report 0 views and 0 reach. Check on Instagram whether they really got no reach or whether the numbers are just missing for carousels and images before writing more of them.
+- Note: `metrics.mjs` matches posts by current caption, so 32 of 40 posts show as format "unknown" (captions were rewritten after posting). Joining by permalink with `log/posts.jsonl` gives the numbers above.
+
+**What the research says this week:**
+- Ranking hasn't changed: watch time, sends per reach and likes per reach are the top signals, and sends count more with non-followers. Reels are tested on a small group of non-followers first. Skip rate (people leaving in the first 3s) is the hook metric, so the hook text must be on screen within about half a second.
+- Originality rules now cover photos and carousels too (since 30 Apr 2026). Series linking ended on 28 Oct 2026; for multi-part stories, put "Part 2" in the on-screen hook. Keep the caption and on-screen text about one topic so "Your Algorithm" files the post correctly.
+- What's trending is "structured authenticity": identity statements ("Not everyone who…"), timestamp cold opens ("06:04."), conflict stated in line one, life-stage lines ("Money comes back…"), and setup→punchline memes ("Me: … / Also me:").
+
+**Formats to lean on this week:**
+1. Hot takes and unpopular opinions (`TextReel` flag): our steadiest stories format. Money, texting and etiquette topics.
+2. Tier lists: best brand post, and they get likes on both accounts.
+3. Storyboards built on this week's hook styles: "Not everyone who…", a timestamp cold open into a chat with a redact payoff, "Me: / Also me:", and two-part stories with "Part 2:" as the hook.
+4. Text stories and chat storyboards (conflict in the hook line, twist in the last message).
+5. Brand: warm hot takes, deep questions about friendship, and life-stage lines.
+
+**Hooks to try:**
+- "Not everyone who keeps your secrets is keeping them for you."
+- "02:47. He's still typing."
+- "Me: I'm completely over him. / Also me at 2am:"
+- "Money comes back. These years don't."
+- "Only 1% can pause at the right time."
+- "Part 2: I opened the letter."
+- "My sister borrowed my car. Then this text."
+- "Lending money to a friend is just paying to lose them."
+- "Excuses for leaving someone on read, ranked"
+- "06:04. A text from Dad."
+
+**Retire:**
+- Voice stories (9 views), 3am searches (25) and deep questions on stories (22). Keep deep questions on brand only.
+- Plain prompt posts (9 views).
+- Hold new meme carousels and bingo cards until the 0-reach question is answered.
+- Slow word-by-word openings: frame 0 should already show the hook's first full line.
+
+**Ideas to build** (don't build these from a posting run):
+- `clock` storyboard scene: a big timestamp (e.g. "02:47") that ticks once with a phone-buzz sound, then the line slams in under it, for timestamp cold opens.
+- `meme` storyboard scene: a two-row "Me: … / Also me: …" panel where the second row lands on a beat, so setup→punchline memes don't need three scenes.
+- `instant` option on `slam`/`glitch`: show the whole first line on frame 0 (no word-by-word build), to cut skip rate.
+- Carousel audio: publish meme carousels and tier lists with a soft track (Instagram now lets you replace audio on carousels), since silent carousels may be ranked lower.
+- Fix `metrics.mjs` to match posts by permalink or media id from `log/posts.jsonl`, not by caption.
 
 ## Log of experiments
 Each line gives the date, what was tried and what happened. The scout appends here.
 - 2026-11-17: storyboards and the pause challenge introduced. Results pending.
+- 2026-11-17: identity-statement storyboards ("Not everyone who…": ig-sb-09, igb-sb-05). Results pending.
+- 2026-11-17: timestamp cold opens into a chat with a redact payoff (ig-sb-10, igb-sb-08). Results pending.
+- 2026-11-17: "Me: / Also me:" setup→punchline storyboards (ig-sb-11, igb-sb-07). Results pending.
+- 2026-11-17: two-part story with "Part 2:" as the on-screen hook (ig-sb-12, then ig-sb-13). Results pending.
+- 2026-11-17: life-stage line "Money comes back. These years don't." (igb-sb-06). Results pending.
+- 2026-11-17: pause challenges with a payoff secret: "the group chat has a second group chat" (ig-pause-02) and "someone is quietly proud of you" (igb-pause-02). Results pending.
+- 2026-11-17: more hot takes and tier lists, the best formats on our own numbers (ig-hot-08, ig-tier-03, ig-flg-05, igb-hot-05, igb-tier-02, igb-rate-03). Results pending.
