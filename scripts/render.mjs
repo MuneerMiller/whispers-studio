@@ -29,7 +29,15 @@ if (post.composition === 'BingoCard') {
   if (chrome0) args.push(`--browser-executable=${chrome0}`);
   execFileSync('npx', args, { cwd: 'remotion', stdio: 'inherit' });
   fs.writeFileSync(path.join('work', `${code}.txt`), post.caption);
-  console.log(`rendered work/${code}.jpg`);
+  // As a Reel: 9:16 frame, the card centred on ink, slow push-in, music bed. Image posts barely reach non-followers.
+  const bed = path.resolve('work', `${code}.bed.wav`);
+  execFileSync('python3', ['audio/mixgen.py', 'none', bed, '10', '2'], { stdio: 'inherit' });
+  execFileSync('ffmpeg', ['-loglevel', 'error', '-y', '-loop', '1', '-i', out, '-i', bed, '-t', '10',
+    '-filter_complex', "[0]scale=1080:-2,pad=1080:1920:0:(1920-ih)/2:color=0x0a0d18,zoompan=z='min(1+on*0.0009,1.09)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=300:s=1080x1920:fps=30[v]",
+    '-map', '[v]', '-map', '1:a', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'veryfast', '-c:a', 'aac', '-shortest', path.resolve('work', `${code}.mp4`)], { stdio: 'inherit' });
+  fs.rmSync(out); fs.rmSync(bed);
+  fs.writeFileSync(path.join('work', `${code}.cover`), '1500');
+  console.log(`rendered work/${code}.mp4 (bingo reel)`);
   process.exit(0);
 }
 

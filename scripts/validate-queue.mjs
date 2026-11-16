@@ -48,11 +48,13 @@ for (const p of q) {
   if (p.composition === 'BingoCard' && (pr2.cells?.length !== 24 || pr2.cells.some((x) => x.length > 40))) problems.push(`${where}: bingo needs exactly 24 cells, each up to 40 characters`);
   if (p.composition === 'StoryboardReel') {
     const sc = p.props?.scenes ?? [];
-    const TYPES = ['slam', 'type', 'chat', 'emoji', 'versus', 'redact', 'list', 'glitch', 'zoom', 'question'];
+    const TYPES = ['slam', 'type', 'chat', 'emoji', 'versus', 'redact', 'list', 'glitch', 'zoom', 'question', 'clock', 'meme'];
     if (sc.length < 2 || sc.length > 8) problems.push(`${where}: storyboard needs 2-8 scenes`);
     if (sc.some((x) => !TYPES.includes(x.type))) problems.push(`${where}: scene type must be one of ${TYPES}`);
     if (sc.some((x) => (x.text ?? '').length > 90 || (x.items ?? []).some((i) => i.length > 55))) problems.push(`${where}: scene text up to 90 characters, list items up to 55`);
     if (sc.some((x) => /\p{Extended_Pictographic}/u.test(`${x.text ?? ''}${x.sub ?? ''}${(x.items ?? []).join('')}`))) problems.push(`${where}: emoji only in an 'emoji' scene's emoji field (inline emoji don't render)`);
+    if (sc.some((x) => x.type === 'clock' && !/^\d{2}:\d{2}$/.test(x.time ?? ''))) problems.push(`${where}: clock scenes need time like "02:47"`);
+    if (sc.some((x) => x.type === 'meme' && (!x.me || !x.alsoMe || x.me.length > 60 || x.alsoMe.length > 60))) problems.push(`${where}: meme scenes need me and alsoMe, each up to 60 characters`);
     if (sc.at(-1)?.type !== 'question') problems.push(`${where}: a storyboard ends on a question scene`);
   }
   if (/\bwhispers?\b is a place|opening soon|follow to be first/i.test(p.caption ?? '')) problems.push(`${where}: no ad lines in captions; keep them organic`);

@@ -11,7 +11,8 @@ import {timeline, FPS} from './storyboard-timing.mjs';
 // with transitions and a gentle camera drift. No logos, no labels: just the content.
 // Scene types: slam | type | chat | emoji | versus | redact | list | glitch | zoom | question
 export type Scene = {
-  type: 'slam' | 'type' | 'chat' | 'emoji' | 'versus' | 'redact' | 'list' | 'glitch' | 'zoom' | 'question';
+  type: 'slam' | 'type' | 'chat' | 'emoji' | 'versus' | 'redact' | 'list' | 'glitch' | 'zoom' | 'question' | 'clock' | 'meme';
+  time?: string; me?: string; alsoMe?: string; instant?: boolean;
   text?: string; sub?: string; emoji?: string; items?: string[]; left?: string; right?: string;
   messages?: {from: 'me' | 'them'; text: string}[];
   hidden?: string; // redact: the part revealed after the bar wipes away
@@ -48,16 +49,16 @@ export const storyboardMeta = ({props}: {props: StoryboardProps}) => {
   return {durationInFrames: Math.round(tl[tl.length - 1].end * FPS)};
 };
 
-const Slam: React.FC<{text: string; t: number; fg: string; accent: string}> = ({text, t, fg, accent}) => {
+const Slam: React.FC<{text: string; t: number; fg: string; accent: string; instant?: boolean}> = ({text, t, fg, accent, instant}) => {
   const words = text.split(' ');
   return (
     <div style={{display: 'flex', flexWrap: 'wrap', gap: '0 26px', justifyContent: 'center', padding: '0 70px'}}>
       {words.map((w, i) => {
-        const at = 0.12 + i * 0.28;
-        const k = interpolate(t, [at, at + 0.16], [0, 1], {...clamp, easing: back(2.4)});
+        const at = instant ? -1 : 0.12 + i * 0.28; // instant: the whole line is there on frame 0 (lower skip rate)
+        const k = instant ? interpolate(t, [0, 0.25], [0.85, 1], {...clamp, easing: back(2)}) : interpolate(t, [at, at + 0.16], [0, 1], {...clamp, easing: back(2.4)});
         const shake = t > at && t < at + 0.12 ? Math.sin(t * 120) * 6 : 0;
         const last = i === words.length - 1;
-        return <span key={i} style={{display: 'inline-block', opacity: t < at ? 0 : 1, transform: `translate(${shake}px, 0) scale(${0.3 + 0.7 * k + (1 - k) * 1.6})`, fontFamily: sans, fontWeight: 700, fontSize: text.length > 60 ? 92 : text.length > 30 ? 112 : 138, lineHeight: 1.05, letterSpacing: -2, color: last ? accent : fg}}>{w}</span>;
+        return <span key={i} style={{display: 'inline-block', opacity: t < at ? 0 : 1, transform: instant ? `scale(${k})` : `translate(${shake}px, 0) scale(${0.3 + 0.7 * k + (1 - k) * 1.6})`, fontFamily: sans, fontWeight: 700, fontSize: text.length > 60 ? 92 : text.length > 30 ? 112 : 138, lineHeight: 1.05, letterSpacing: -2, color: last ? accent : fg}}>{w}</span>;
       })}
     </div>
   );
@@ -89,7 +90,35 @@ const SceneView: React.FC<{s: Scene & {start: number; dur: number}; t: number}> 
   const flash = s.transition === 'flash' ? interpolate(local, [0, 0.12], [1, 0], clamp) : 0;
   let body: React.ReactNode = null;
 
-  if (s.type === 'slam') body = <Slam text={s.text ?? ''} t={local} fg={fg} accent={accent} />;
+  if (s.type === 'slam') body = <Slam text={s.text ?? ''} t={local} fg={fg} accent={accent} instant={s.start === 0 && s.instant !== false} />;
+  if (s.type === 'clock') {
+    const [hh, mm] = (s.time ?? '02:47').split(':');
+    const tickMin = local >= 0.65 ? String((parseInt(mm, 10) + 1) % 60).padStart(2, '0') : mm;
+    const colon = Math.floor(local * 2) % 2 === 0;
+    const k = interpolate(local, [1.0, 1.25], [0, 1], {...clamp, easing: back(2)});
+    const buzz = local < 0.5 ? Math.sin(local * 140) * 5 : 0;
+    body = (
+      <div style={{textAlign: 'center', padding: '0 70px'}}>
+        <div style={{transform: `translateX(${buzz}px)`, fontFamily: sans, fontWeight: 700, fontSize: 260, letterSpacing: -6, color: fg, fontVariantNumeric: 'tabular-nums'}}>{hh}<span style={{opacity: colon ? 1 : 0.25}}>:</span>{tickMin}</div>
+        {s.text && <div style={{marginTop: 30, transform: `scale(${k})`, fontFamily: sans, fontWeight: 700, fontSize: 80, lineHeight: 1.1, color: accent}}>{s.text}</div>}
+      </div>
+    );
+  }
+  if (s.type === 'meme') {
+    const k = interpolate(local, [1.05, 1.3], [0, 1], {...clamp, easing: back(2.2)});
+    const row = (label: string, text: string, style: React.CSSProperties) => (
+      <div style={{display: 'flex', gap: 24, alignItems: 'baseline', ...style}}>
+        <span style={{fontFamily: sans, fontWeight: 700, fontSize: 64, color: accent, flexShrink: 0}}>{label}</span>
+        <span style={{fontFamily: sans, fontWeight: 700, fontSize: 70, lineHeight: 1.12, color: fg}}>{text}</span>
+      </div>
+    );
+    body = (
+      <div style={{width: '100%', padding: '0 70px', display: 'flex', flexDirection: 'column', gap: 70}}>
+        {row('Me:', s.me ?? '', {opacity: interpolate(local, [0, 0.2], [0, 1], clamp)})}
+        {row('Also me:', s.alsoMe ?? '', {opacity: local < 1.05 ? 0 : 1, transform: `scale(${k})`, transformOrigin: 'left center'})}
+      </div>
+    );
+  }
   if (s.type === 'zoom') {
     const k = interpolate(local, [0, s.dur], [0.7, 1.25], {...clamp, easing: Easing.in(Easing.quad)});
     body = <div style={{transform: `scale(${k})`, fontFamily: sans, fontWeight: 700, fontSize: 120, lineHeight: 1.02, color: fg, textAlign: 'center', padding: '0 70px', letterSpacing: -2}}>{s.text}</div>;

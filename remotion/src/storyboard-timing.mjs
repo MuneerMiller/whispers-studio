@@ -16,6 +16,8 @@ export const sceneDefault = (s) => {
     case 'glitch': return Math.max(1.4, 0.3 * words + 0.8);
     case 'zoom': return Math.max(1.3, 0.28 * words + 0.7);
     case 'question': return 3.4;
+    case 'clock': return Math.max(2.2, 0.3 * words + 1.4);
+    case 'meme': return Math.max(2.6, 0.05 * ((s.me ?? '').length + (s.alsoMe ?? '').length) + 1.8);
     default: return 2;
   }
 };
@@ -38,7 +40,10 @@ export const soundCues = (scenes) => {
   for (const s of timeline(scenes)) {
     if (s.start > 0 && s.transition !== 'cut') cues.push({ t: s.start, kind: 'whoosh' });
     const words = (s.text ?? '').split(/\s+/).filter(Boolean);
-    if (s.type === 'slam') words.forEach((_, i) => cues.push({ t: s.start + 0.12 + i * 0.28, kind: i === words.length - 1 ? 'boom' : 'tick' }));
+    if (s.type === 'slam' && s.start === 0 && s.instant !== false) cues.push({ t: 0.05, kind: 'boom' });
+    else if (s.type === 'slam') words.forEach((_, i) => cues.push({ t: s.start + 0.12 + i * 0.28, kind: i === words.length - 1 ? 'boom' : 'tick' }));
+    if (s.type === 'clock') cues.push({ t: s.start + 0.05, kind: 'buzz' }, { t: s.start + 0.65, kind: 'tick' }, { t: s.start + 1.0, kind: 'boom' });
+    if (s.type === 'meme') cues.push({ t: s.start + 0.1, kind: 'pop' }, { t: s.start + 1.1, kind: 'boom' });
     if (s.type === 'emoji') cues.push({ t: s.start + 0.05, kind: 'pop' });
     if (s.type === 'versus') cues.push({ t: s.start + 0.1, kind: 'whoosh' }, { t: s.start + 0.9, kind: 'boom' });
     if (s.type === 'redact') cues.push({ t: s.start + s.dur * 0.55, kind: 'ding' });

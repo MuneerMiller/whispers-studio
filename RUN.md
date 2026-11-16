@@ -49,7 +49,7 @@ Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new p
   - So ask for an opinion and a reason ("Agree? Tell us why", "Which one, and why?"). On carousels, name who to send it to ("Send this to the friend who…").
 - **Storyboards come first** (`StoryboardReel`): about half of all new posts. Each one is a short animated story told in 3–6 scenes, with a sound effect on every cut. Plan it like a storyboard:
   - **Scene 1 (the hook, under 2s):** a statement that stops the scroll: drama, a secret, a hot take, "don't show this to…". Use `slam`, `zoom` or `glitch`, with `transition: "cut"`.
-  - **Middle (build-up):** `chat` for texts, `type` for diary or notes, `list` for "things that…", `versus` for picking a side, `emoji` for a beat of reaction.
+  - **Middle (build-up):** `chat` for texts, `type` for diary or notes, `list` for "things that…", `versus` for picking a side, `emoji` for a beat of reaction, `clock` for timestamp cold opens (`time` "02:47" plus `text`), `meme` for "Me: / Also me:" (`me`, `alsoMe`).
   - **The payoff:** `redact`, so the punchline is hidden and then wiped open.
   - **Pause challenge**, about 1 in 8 posts: the hook is "Only 1% can pause at the right time", and one scene gets `"secret": "…"` (and optionally `"secretAt": seconds`), which shows for exactly one frame. Make the secret worth finding.
   - **Last scene:** always a `question`, plus an optional `sub` like "be honest" or "send it to…".
@@ -60,7 +60,7 @@ Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new p
   - **Never:** sexual content, real people, race, religion, gender stereotypes, bodies, self-harm, or anything presented as real when it isn't.
 - **Captions:** they sound like a person, not an ad. Lowercase is fine. Write one or two lines (the hook or question), then 3–4 hashtags. Never "Whispers is a place…", "opening soon", "follow" or "link in bio".
 - **Other formats, in order of priority:**
-  - **Meme carousel** (`MemeCarousel`): a hook slide, then 3–8 relatable one-liners in a post-card look, then a question slide with `sendTo`. This is built to be sent to friends. Use `dark: true` for brand.
+  - **Meme carousel** (`MemeCarousel`): ON HOLD until 1,000+ followers, because image and carousel posts don't reach non-followers. Write the same idea as a storyboard with `list` scenes instead. a hook slide, then 3–8 relatable one-liners in a post-card look, then a question slide with `sendTo`. This is built to be sent to friends. Use `dark: true` for brand.
   - **Text story** (`ChatReel`, stories only): a fictional chat that builds to a twist in the last 1–2 messages, then a question ("Who's wrong?", "What would you do?").
     - It is always fiction, and the caption must contain "Dramatised story." The video labels itself.
     - Keep 5–9 messages, short and texting-style.

@@ -1308,23 +1308,43 @@
   {
     "code": "ig-meme-03",
     "account": "stories",
-    "format": "Meme carousel",
+    "format": "Storyboard list",
     "content_type": "Prompt",
-    "composition": "MemeCarousel",
+    "composition": "StoryboardReel",
     "props": {
-      "hook": "Lies we tell every single day",
-      "slides": [
-        "I'm fine",
-        "I read the terms and conditions",
-        "I'm on my way",
-        "I'll start on Monday",
-        "I'm not mad",
-        "Just one more episode"
-      ],
-      "question": "Which lie did you already tell today?",
-      "sendTo": "Send this to the friend who says 'I'm on my way' from bed.",
-      "handle": "whispers_anon",
-      "dark": false
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Lies we tell every single day",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "I'm fine",
+            "I read the terms and conditions",
+            "I'm on my way"
+          ],
+          "bg": "red"
+        },
+        {
+          "type": "list",
+          "items": [
+            "I'll start on Monday",
+            "I'm not mad",
+            "Just one more episode"
+          ],
+          "bg": "blue"
+        },
+        {
+          "type": "question",
+          "text": "Which lie did you already tell today?",
+          "sub": "send this to the friend who says 'I'm on my way' from bed.",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
     },
     "caption": "Lies we tell every single day 🤥 Which one did you already tell today?\n\n#relatable #memes #funny #truth #whispers"
   },
@@ -1470,22 +1490,43 @@
   {
     "code": "ig-meme-05",
     "account": "stories",
-    "format": "Meme carousel",
+    "format": "Storyboard list",
     "content_type": "Prompt",
-    "composition": "MemeCarousel",
+    "composition": "StoryboardReel",
     "props": {
-      "hook": "Dating at 18 vs dating at 28",
-      "slides": [
-        "18: he didn't text back, my life is over",
-        "28: he didn't text back, great, early night",
-        "18: let's go out every weekend",
-        "28: let's stay in and judge other people's weekends",
-        "18: I can change him",
-        "28: I can change the channel"
-      ],
-      "question": "Which age are you dating like?",
-      "sendTo": "Send this to the friend still dating like they're 18.",
-      "handle": "whispers_anon"
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Dating at 18 vs dating at 28",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "18: he didn't text back, my life is over",
+            "28: he didn't text back, great, early night",
+            "18: let's go out every weekend"
+          ],
+          "bg": "red"
+        },
+        {
+          "type": "list",
+          "items": [
+            "28: let's stay in and judge other people's weekends",
+            "18: I can change him",
+            "28: I can change the channel"
+          ],
+          "bg": "blue"
+        },
+        {
+          "type": "question",
+          "text": "Which age are you dating like?",
+          "sub": "send this to the friend still dating like they're 18.",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
     },
     "caption": "Dating at 18 vs dating at 28 😂 Which age are you dating like?\n\n#dating #relatable #memes #funny #whispers"
   },
@@ -1514,22 +1555,42 @@
   {
     "code": "ig-meme-04",
     "account": "stories",
-    "format": "Meme carousel",
+    "format": "Storyboard list",
     "content_type": "Prompt",
-    "composition": "MemeCarousel",
+    "composition": "StoryboardReel",
     "props": {
-      "hook": "Toxic traits that are lowkey self-care",
-      "slides": [
-        "Leaving a group chat without saying anything",
-        "Cancelling plans and feeling instantly relieved",
-        "Muting someone instead of unfollowing",
-        "Not replying until you have the energy",
-        "Calling a 9pm bedtime 'a night in'"
-      ],
-      "question": "Which toxic trait is yours?",
-      "sendTo": "Send this to the friend who cancelled on you this week.",
-      "handle": "whispers_anon",
-      "dark": false
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Toxic traits that are lowkey self-care",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Leaving a group chat without saying anything",
+            "Cancelling plans and feeling instantly relieved",
+            "Muting someone instead of unfollowing"
+          ],
+          "bg": "red"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Not replying until you have the energy",
+            "Calling a 9pm bedtime 'a night in'"
+          ],
+          "bg": "blue"
+        },
+        {
+          "type": "question",
+          "text": "Which toxic trait is yours?",
+          "sub": "send this to the friend who cancelled on you this week.",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
     },
     "caption": "Toxic traits that are lowkey self-care 😌 Which one is yours?\n\n#relatable #memes #funny #truth #whispers"
   },

@@ -6,13 +6,17 @@ import { account, ig } from './lib.mjs';
 const queue = JSON.parse(fs.readFileSync('plan/queue.json', 'utf8'));
 const norm = (s) => String(s ?? '').normalize('NFC').replace(/\s+/g, ' ').trim().slice(0, 80);
 const byCaption = new Map(queue.map((p) => [norm(p.caption), p]));
+const byCode = new Map(queue.map((p) => [p.code, p]));
+// The posting log knows exactly which media id each code became; captions can change later, ids don't.
+const byMedia = new Map((fs.existsSync('log/posts.jsonl') ? fs.readFileSync('log/posts.jsonl', 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)) : []).map((l) => [l.media_id, l]));
 const out = { updated: new Date().toISOString(), posts: [] };
 
 for (const name of ['stories', 'brand']) {
   const acct = account(name);
   const media = await ig('GET', `/${acct.userId}/media`, { fields: 'id,caption,permalink,timestamp,like_count,comments_count', limit: '100' }, acct.token);
   for (const m of media.data ?? []) {
-    const p = byCaption.get(norm(m.caption));
+    const logged = byMedia.get(m.id);
+    const p = (logged && (byCode.get(logged.code) ?? { code: logged.code, format: logged.format })) ?? byCaption.get(norm(m.caption));
     // Views for Reels; carousels and images sometimes only report reach, so ask for both and keep what comes back.
     let views = null, reach = null, shares = null, saves = null;
     for (const metric of ['views', 'reach', 'shares', 'saved']) {

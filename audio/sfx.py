@@ -33,7 +33,10 @@ def riser():
         a, b = i * len(t) // k, (i + 1) * len(t) // k; f = 300 + 5000 * i / k
         out[a:b] = bp(x[a:b], f * 0.8, min(f * 1.3, sr / 2 - 100))
     return out * (t / t[-1]) ** 2 * 0.35
-MAKE = dict(whoosh=whoosh, boom=boom, tick=tick, pop=pop, ding=ding, glitch=glitch, riser=riser)
+def buzz():
+    t = n(0.45); x = np.sin(2 * np.pi * 150 * t) * (np.sin(2 * np.pi * 9 * t) > 0)
+    return s.sosfilt(s.butter(2, 400, 'lp', fs=sr, output='sos'), x) * 0.6 * np.minimum(1, (0.45 - t) * 20)
+MAKE = dict(buzz=buzz, whoosh=whoosh, boom=boom, tick=tick, pop=pop, ding=ding, glitch=glitch, riser=riser)
 
 fx = np.zeros(len(bed), dtype='float32')
 for c in cues:

@@ -60,6 +60,13 @@ Scout run 2026-11-17 (research from 31 Oct–16 Nov 2026).
 - Hold new meme carousels and bingo cards until the 0-reach question is answered.
 - Slow word-by-word openings: frame 0 should already show the hook's first full line.
 
+**Built on 2026-11-17 (from the scout's ideas):**
+- `clock` scene: `{"type":"clock","time":"02:47","text":"He's still typing."}` gives a phone buzz, the minute ticks over, then the line lands.
+- `meme` scene: `{"type":"meme","me":"…","alsoMe":"…"}`; the second row lands on a boom.
+- The first scene's line is now on screen in full on frame 0 (`instant`, the default for a first `slam`).
+- `metrics.mjs` now matches posts by media id from `log/posts.jsonl`.
+- **Carousels and bingo:** image and carousel posts reach almost no non-followers on a new account with no followers, which is why they showed 0. Unposted meme carousels were turned into storyboard list Reels, and bingo now posts as a Reel (the card with a slow push-in and music). Don't write new `MemeCarousel` posts until the accounts have 1,000+ followers.
+
 **Ideas to build** (don't build these from a posting run):
 - `clock` storyboard scene: a big timestamp (e.g. "02:47") that ticks once with a phone-buzz sound, then the line slams in under it, for timestamp cold opens.
 - `meme` storyboard scene: a two-row "Me: … / Also me: …" panel where the second row lands on a beat, so setup→punchline memes don't need three scenes.
