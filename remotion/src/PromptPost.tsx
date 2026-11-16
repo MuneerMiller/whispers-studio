@@ -37,10 +37,6 @@ export const PromptPost: React.FC<PromptProps> = ({question, sub, cta, audio, se
     <AbsoluteFill style={{background: `radial-gradient(60% 45% at ${x1}% ${y1}%, ${a} 0%, transparent 70%), radial-gradient(60% 45% at ${x2}% ${y2}%, ${b} 0%, transparent 70%), ${INK}`}}>
       {audio && <Audio src={staticFile(audio)} />}
       <AbsoluteFill style={{padding: '0 100px', justifyContent: 'center'}}>
-        <div style={{display: 'flex', alignItems: 'center', gap: 16, marginBottom: 50}}>
-          <Flame size={64} />
-          <span style={{fontFamily: sans, fontWeight: 700, fontSize: 34, letterSpacing: 6, color: BRASS}}>WHISPERS</span>
-        </div>
         {/* frame 0 already shows the whole question (the hook); words only brighten in */}
         <div style={{fontFamily: serif, fontWeight: 500, fontSize: 104, lineHeight: 1.08, color: PAPER}}>
           {words.map((w, i) => (
@@ -48,9 +44,6 @@ export const PromptPost: React.FC<PromptProps> = ({question, sub, cta, audio, se
           ))}
         </div>
         {sub && <div style={{marginTop: 44, opacity: subIn, fontFamily: serif, fontStyle: 'italic', fontSize: 52, color: 'rgba(246,239,226,0.8)'}}>{sub}</div>}
-        {cta && (
-          <div style={{marginTop: 70, alignSelf: 'flex-start', transform: `scale(${ctaIn})`, transformOrigin: 'left center', fontFamily: sans, fontWeight: 700, fontSize: 42, color: INK, background: BRASS, padding: '20px 40px', borderRadius: 999}}>{cta}</div>
-        )}
       </AbsoluteFill>
     </AbsoluteFill>
   );

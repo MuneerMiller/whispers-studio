@@ -33,6 +33,9 @@ For each account, stories first, then brand:
    - About the app: "opening soon, follow so you're first in 🤫". Never "link in bio".
    - Never repeat or quote back anything personal someone shared; just respond to it.
 
+## Note on labels
+The templates no longer show `kicker` or `cta` on screen, so posts look organic (Muneer's call). You can leave those fields in new entries, but the question or statement itself must make the format obvious; the caption carries the nudge to comment.
+
 ## 4. Refill the queue (only when an account has fewer than 12 unposted posts)
 Write 20 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
 - **Formats:** use what's working. Base it on `log/metrics.json` if there are at least 10 posts with numbers; give the top 2 formats by comments per post 2 posts each out of 3, and try the rest in the remaining slots. Without enough numbers, mix all the formats evenly.

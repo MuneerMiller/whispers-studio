@@ -67,9 +67,6 @@ export const EscapeRing: React.FC<{frame: number}> = ({frame}) => {
       {fr.balls.map(([x, y, r, c], i) => (
         <circle key={i} cx={x} cy={y} r={r} fill={PALETTE[c]} stroke="#f6efe2" strokeWidth={3} />
       ))}
-      <text x={540} y={1690} textAnchor="middle" fontFamily="Instrument Sans" fontWeight={700} fontSize={44} fill="#f6efe2" opacity={0.8}>
-        escaped: {fr.escaped}
-      </text>
     </svg>
   );
 };

@@ -38,7 +38,8 @@ The scheduled task's prompt only says to clone this repo and follow `RUN.md`. To
 
 ## Content rules (non-negotiable)
 
-- Never present invented confessions as real users' whispers. Invented stories must say "Dramatised story" on screen and in the caption.
+- Never present invented confessions as real users' whispers. Fiction formats carry a small, quiet "dramatised" tag on screen (the templates add it) and "Dramatised story." in the caption.
+- No other labels on screen (Muneer, Nov 2026): no WHISPERS wordmark, no format names ("Deep question", "POV", "Tier list", "Bingo"), no call-to-action pills, no "swipe" or "opening soon". Posts should feel organic. Put the invitation to comment in the caption instead.
 - Don't use fake whisper numbers, fake countries or fake counts.
 - Pre-launch (now): the app isn't open yet. Don't say "link in bio" or "download the app". Use "Opening soon. Follow to be first in" and invite answers in the comments.
 - Never repost a comment or DM as a confession. Every DM gets the same reply: the app link (once it's live) plus the SADAG line, 0800 567 567, for anyone who sounds at risk.

@@ -47,7 +47,7 @@ export const ChatReel: React.FC<ChatReelProps> = ({hook, contact, messages, ques
         <div style={{width: 96, height: 96, borderRadius: 48, background: 'linear-gradient(135deg,#6b7280,#374151)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: sans, fontWeight: 700, fontSize: 44, color: '#fff'}}>{contact.slice(0, 1).toUpperCase()}</div>
         <div style={{marginTop: 12, fontFamily: sans, fontWeight: 500, fontSize: 34, color: '#fff'}}>{contact}</div>
       </div>
-      <div style={{position: 'absolute', top: 318, left: 0, right: 0, textAlign: 'center', fontFamily: sans, fontWeight: 700, fontSize: 26, letterSpacing: 3, color: BRASS}}>DRAMATISED STORY</div>
+      <div style={{position: 'absolute', top: 318, left: 0, right: 0, textAlign: 'center', fontFamily: sans, fontWeight: 500, fontSize: 22, letterSpacing: 1, color: 'rgba(246,239,226,0.45)'}}>dramatised</div>
       {/* hook bar: on screen from frame 0 */}
       <div style={{position: 'absolute', top: 372, left: 60, right: 60, textAlign: 'center'}}>
         <span style={{fontFamily: sans, fontWeight: 700, fontSize: 52, lineHeight: 1.15, color: INK, background: BRASS, padding: '8px 22px', borderRadius: 16, boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone'}}>{hook}</span>
@@ -74,7 +74,7 @@ export const ChatReel: React.FC<ChatReelProps> = ({hook, contact, messages, ques
         <AbsoluteFill style={{background: `rgba(0,0,0,${0.75 * q})`, justifyContent: 'center', alignItems: 'center', padding: 80}}>
           <div style={{transform: `scale(${q})`, background: '#f6efe2', borderRadius: 40, padding: '56px 50px', textAlign: 'center'}}>
             <div style={{fontFamily: sans, fontWeight: 700, fontSize: 70, lineHeight: 1.12, color: INK}}>{question}</div>
-            <div style={{marginTop: 26, fontFamily: sans, fontWeight: 500, fontSize: 34, color: 'rgba(10,13,24,0.6)'}}>Dramatised story · Whispers</div>
+            <div style={{marginTop: 26, fontFamily: sans, fontWeight: 500, fontSize: 22, color: 'rgba(10,13,24,0.4)'}}>dramatised</div>
           </div>
         </AbsoluteFill>
       )}

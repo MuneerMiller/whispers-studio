@@ -23,7 +23,7 @@ const QuestionCard: React.FC<{t: number; at: number; question: string; label?: s
     <AbsoluteFill style={{background: `rgba(0,0,0,${0.7 * fade(t, at)})`, justifyContent: 'center', alignItems: 'center', padding: 80}}>
       <div style={{transform: `scale(${q})`, background: PAPER, borderRadius: 40, padding: '56px 50px', textAlign: 'center'}}>
         <div style={{fontFamily: sans, fontWeight: 700, fontSize: 68, lineHeight: 1.12, color: INK}}>{question}</div>
-        <div style={{marginTop: 24, fontFamily: sans, fontWeight: 500, fontSize: 32, color: 'rgba(10,13,24,0.6)'}}>{label ?? 'Whispers · opening soon'}</div>
+        {label && <div style={{marginTop: 22, fontFamily: sans, fontWeight: 500, fontSize: 22, color: 'rgba(10,13,24,0.4)'}}>{label}</div>}
       </div>
     </AbsoluteFill>
   );
@@ -41,8 +41,7 @@ export const TierList: React.FC<TierListProps> = ({title, items, question, audio
   return (
     <AbsoluteFill style={{background: INK, padding: '150px 50px 0'}}>
       <Bed audio={audio} />
-      <div style={{fontFamily: sans, fontWeight: 700, fontSize: 34, letterSpacing: 5, color: BRASS}}>TIER LIST</div>
-      <div style={{marginTop: 10, fontFamily: serif, fontWeight: 500, fontSize: title.length > 40 ? 70 : 84, lineHeight: 1.05, color: PAPER}}>{title}</div>
+      <div style={{marginTop: 0, fontFamily: serif, fontWeight: 500, fontSize: title.length > 40 ? 70 : 84, lineHeight: 1.05, color: PAPER}}>{title}</div>
       <div style={{marginTop: 40, display: 'flex', flexDirection: 'column', gap: 12}}>
         {TIERS.map(([tier, col]) => (
           <div key={tier} style={{display: 'flex', minHeight: 170, background: 'rgba(246,239,226,0.06)', borderRadius: 18, overflow: 'hidden'}}>
@@ -82,7 +81,7 @@ export const NotesReel: React.FC<NotesReelProps> = ({title, lines, question, aud
       <Bed audio={audio} />
       <div style={{position: 'absolute', top: 120, left: 60, right: 60, display: 'flex', justifyContent: 'space-between', fontFamily: sans, fontWeight: 500, fontSize: 40, color: '#d29b24'}}><span>‹ Notes</span><span>Done</span></div>
       <div style={{position: 'absolute', top: 200, left: 60, right: 60}}>
-        <div style={{fontFamily: sans, fontWeight: 500, fontSize: 28, color: '#a19d94', textAlign: 'center'}}>Dramatised · unsent</div>
+        <div style={{fontFamily: sans, fontWeight: 500, fontSize: 20, color: '#c9c5bb', textAlign: 'center'}}>dramatised</div>
         <div style={{marginTop: 30, fontFamily: sans, fontWeight: 700, fontSize: 64, lineHeight: 1.1, color: '#1c1b19'}}>{title}</div>
         <div style={{marginTop: 34, display: 'flex', flexDirection: 'column', gap: 26}}>
           {lines.map((l, i) => {
@@ -93,7 +92,7 @@ export const NotesReel: React.FC<NotesReelProps> = ({title, lines, question, aud
           })}
         </div>
       </div>
-      <QuestionCard t={t} at={end} question={question} label="Dramatised · Whispers" />
+      <QuestionCard t={t} at={end} question={question} label="dramatised" />
     </AbsoluteFill>
   );
 };
@@ -153,7 +152,7 @@ export const TwistReel: React.FC<TwistReelProps> = ({hook, setup, ending, questi
       {bg === 'drop' && <BallDrop frame={frame} />}
       {bg === 'spiro' && <Spiro frame={frame} />}
       <AbsoluteFill style={{padding: '130px 70px 0'}}>
-        <div style={{fontFamily: sans, fontWeight: 700, fontSize: 28, letterSpacing: 4, color: BRASS}}>DRAMATISED STORY</div>
+        <div style={{fontFamily: sans, fontWeight: 500, fontSize: 22, letterSpacing: 1, color: 'rgba(246,239,226,0.45)'}}>dramatised</div>
         <div style={{marginTop: 14, alignSelf: 'flex-start'}}><span style={{fontFamily: sans, fontWeight: 700, fontSize: 54, lineHeight: 1.15, color: INK, background: BRASS, padding: '6px 18px', borderRadius: 14, boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone'}}>{hook}</span></div>
         <div style={{marginTop: 40, display: 'flex', flexDirection: 'column', gap: 18}}>
           {setup.map((l, i) => (t < at[i] || t >= reveal ? null : (
@@ -167,7 +166,7 @@ export const TwistReel: React.FC<TwistReelProps> = ({hook, setup, ending, questi
           )}
         </div>
       </AbsoluteFill>
-      <QuestionCard t={t} at={end} question={question} label="Dramatised story · Whispers" />
+      <QuestionCard t={t} at={end} question={question} label="dramatised" />
     </AbsoluteFill>
   );
 };
@@ -197,7 +196,7 @@ export const VoiceStory: React.FC<VoiceStoryProps> = ({hook, words, question, bg
       {bg === 'drop' && <BallDrop frame={frame} />}
       {bg === 'spiro' && <Spiro frame={frame} />}
       <div style={{position: 'absolute', top: 120, left: 60, right: 60, textAlign: 'center'}}>
-        <div style={{fontFamily: sans, fontWeight: 700, fontSize: 28, letterSpacing: 4, color: BRASS}}>DRAMATISED STORY</div>
+        <div style={{fontFamily: sans, fontWeight: 500, fontSize: 22, letterSpacing: 1, color: 'rgba(246,239,226,0.45)'}}>dramatised</div>
         <div style={{marginTop: 14}}><span style={{fontFamily: sans, fontWeight: 700, fontSize: 50, lineHeight: 1.15, color: INK, background: BRASS, padding: '6px 18px', borderRadius: 14, boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone'}}>{hook}</span></div>
       </div>
       {c && t < endAt && (
@@ -207,7 +206,7 @@ export const VoiceStory: React.FC<VoiceStoryProps> = ({hook, words, question, bg
           </span>
         </div>
       )}
-      <QuestionCard t={t} at={endAt} question={question} label="Dramatised story · Whispers" />
+      <QuestionCard t={t} at={endAt} question={question} label="dramatised" />
     </AbsoluteFill>
   );
 };
@@ -219,7 +218,6 @@ export const BingoCard: React.FC<BingoProps> = ({title, cells, question, dark = 
   const grid = [...cells.slice(0, 12), 'FREE: you opened this', ...cells.slice(12, 24)];
   return (
     <AbsoluteFill style={{background: bg, padding: '70px 50px'}}>
-      <div style={{fontFamily: sans, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: BRASS, textAlign: 'center'}}>BINGO</div>
       <div style={{marginTop: 8, fontFamily: serif, fontWeight: 500, fontSize: title.length > 30 ? 66 : 78, lineHeight: 1.05, color: fg, textAlign: 'center'}}>{title}</div>
       <div style={{marginTop: 34, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 8, flex: 1}}>
         {grid.map((c, i) => (
@@ -227,7 +225,6 @@ export const BingoCard: React.FC<BingoProps> = ({title, cells, question, dark = 
         ))}
       </div>
       <div style={{marginTop: 28, fontFamily: sans, fontWeight: 700, fontSize: 40, color: fg, textAlign: 'center'}}>{question}</div>
-      <div style={{marginTop: 8, fontFamily: sans, fontWeight: 500, fontSize: 26, color: dark ? 'rgba(246,239,226,0.5)' : 'rgba(10,13,24,0.5)', textAlign: 'center'}}>Whispers · opening soon</div>
     </AbsoluteFill>
   );
 };

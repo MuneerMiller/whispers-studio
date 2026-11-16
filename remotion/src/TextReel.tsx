@@ -60,9 +60,7 @@ export const TextReel: React.FC<TextReelProps> = ({layout, bg, kicker, title, it
       {bg === 'drop' && <BallDrop frame={frame} />}
       {bg === 'spiro' && <Spiro frame={frame} />}
       <AbsoluteFill style={{padding: busy ? '150px 80px 0' : '0 90px', justifyContent: busy ? 'flex-start' : 'center'}}>
-        <Brand />
-        {kicker && <div style={{marginTop: 34, fontFamily: sans, fontWeight: 700, fontSize: 40, color: BRASS, ...(busy ? stroke : {})}}>{kicker}</div>}
-        <div style={{marginTop: kicker ? 14 : 34, fontFamily: serif, fontWeight: 500, fontSize: titleSize, lineHeight: 1.08, color: PAPER, ...(busy ? stroke : {})}}>
+        <div style={{marginTop: 0, fontFamily: serif, fontWeight: 500, fontSize: titleSize, lineHeight: 1.08, color: PAPER, ...(busy ? stroke : {})}}>
           {typed}{layout === 'finish' && <span style={{opacity: cursor ? 1 : 0, color: BRASS}}>|</span>}
         </div>
 
@@ -103,7 +101,6 @@ export const TextReel: React.FC<TextReelProps> = ({layout, bg, kicker, title, it
           </div>
         )}
 
-        <div style={{marginTop: 54, alignSelf: 'flex-start', transform: `scale(${pop(t, ctaAt)})`, transformOrigin: 'left center', fontFamily: sans, fontWeight: 700, fontSize: 40, color: INK, background: BRASS, padding: '18px 36px', borderRadius: 999}}>{cta}</div>
       </AbsoluteFill>
     </AbsoluteFill>
   );

@@ -32,8 +32,6 @@ export const MemeCarousel: React.FC<MemeCarouselProps> = ({hook, slides, questio
     return (
       <AbsoluteFill style={{background: INK, padding: 90, justifyContent: 'center'}}>
         <div style={{fontFamily: serif, fontWeight: 500, fontSize: hook.length > 50 ? 96 : 116, lineHeight: 1.04, color: PAPER}}>{hook}</div>
-        <div style={{marginTop: 56, display: 'flex', alignItems: 'center', gap: 14, fontFamily: sans, fontWeight: 700, fontSize: 38, color: BRASS}}>swipe →</div>
-        <div style={{position: 'absolute', bottom: 70, left: 90, fontFamily: sans, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: 'rgba(226,185,100,0.8)'}}>WHISPERS</div>
       </AbsoluteFill>
     );
   }
@@ -42,7 +40,6 @@ export const MemeCarousel: React.FC<MemeCarouselProps> = ({hook, slides, questio
       <AbsoluteFill style={{background: INK, padding: 90, justifyContent: 'center'}}>
         <div style={{fontFamily: serif, fontWeight: 500, fontSize: 92, lineHeight: 1.08, color: PAPER}}>{question}</div>
         {sendTo && <div style={{marginTop: 50, fontFamily: sans, fontWeight: 500, fontSize: 44, lineHeight: 1.3, color: 'rgba(246,239,226,0.85)'}}>{sendTo}</div>}
-        <div style={{position: 'absolute', bottom: 70, left: 90, right: 90, fontFamily: sans, fontWeight: 500, fontSize: 30, color: 'rgba(246,239,226,0.55)'}}>Whispers · say it anonymously · opening soon</div>
       </AbsoluteFill>
     );
   }
