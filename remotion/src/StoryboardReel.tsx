@@ -16,6 +16,7 @@ export type Scene = {
   messages?: {from: 'me' | 'them'; text: string}[];
   hidden?: string; // redact: the part revealed after the bar wipes away
   bg?: keyof typeof BGS; transition?: 'cut' | 'slide' | 'zoom' | 'flash'; dur?: number;
+  secret?: string; secretAt?: number; // pause challenge: this text shows for exactly ONE frame, secretAt seconds into the scene
 };
 export type StoryboardProps = {scenes: Scene[]; tag?: string; audio?: string};
 
@@ -171,6 +172,11 @@ const SceneView: React.FC<{s: Scene & {start: number; dur: number}; t: number}> 
     <AbsoluteFill style={{background: bg, opacity: out}}>
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', transform: `${enter} ${drift}`}}>{body}</AbsoluteFill>
       {flash > 0 && <AbsoluteFill style={{background: '#fff', opacity: flash}} />}
+      {s.secret && Math.round(local * FPS) === Math.round((s.secretAt ?? s.dur / 2) * FPS) && (
+        <AbsoluteFill style={{background: accent, justifyContent: 'center', alignItems: 'center', padding: 80}}>
+          <div style={{fontFamily: sans, fontWeight: 700, fontSize: 104, lineHeight: 1.05, color: bg, textAlign: 'center'}}>{s.secret}</div>
+        </AbsoluteFill>
+      )}
     </AbsoluteFill>
   );
 };

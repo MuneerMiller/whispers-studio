@@ -26,6 +26,12 @@ for (const name of ['stories', 'brand']) {
     out.posts.push({ code: p?.code ?? null, account: name, format: p?.format ?? null, posted_at: m.timestamp, permalink: m.permalink, views, reach, shares, saves, likes: m.like_count ?? 0, comments: m.comments_count ?? 0 });
   }
 }
+// Outliers: posts doing 2x or better than their account's median views. These are the ones to remix.
+for (const name of ['stories', 'brand']) {
+  const vs = out.posts.filter((p) => p.account === name && p.views != null).map((p) => p.views).sort((a, b) => a - b);
+  const med = vs.length ? vs[Math.floor(vs.length / 2)] : 0;
+  for (const p of out.posts) if (p.account === name) { p.vs_median = med ? +((p.views ?? 0) / med).toFixed(2) : null; p.outlier = !!med && (p.views ?? 0) >= 2 * med; }
+}
 fs.mkdirSync('log', { recursive: true });
 fs.writeFileSync('log/metrics.json', JSON.stringify(out, null, 2));
 
@@ -38,3 +44,5 @@ for (const p of out.posts) {
 const rows = Object.entries(fmt).map(([k, v]) => ({ format: k, posts: v.posts, comments_per_post: +(v.comments / v.posts).toFixed(2), likes_per_post: +(v.likes / v.posts).toFixed(2), shares_per_post: +(v.shares / v.posts).toFixed(2), views_per_post: Math.round(v.views / v.posts) }))
   .sort((a, b) => b.comments_per_post - a.comments_per_post || b.views_per_post - a.views_per_post);
 console.table(rows);
+const outs = out.posts.filter((p) => p.outlier);
+console.log(outs.length ? `Outliers (2x+ median views): ${outs.map((p) => `${p.code} ${p.format} x${p.vs_median}`).join(', ')}` : 'No outliers yet.');

@@ -881,6 +881,42 @@
     "caption": "My coworker kept stealing my lunch, so I left a note. Their reply… 💀\n\n(dramatised story)\n\n#storytime #work #coworkers #funny #whispers"
   },
   {
+    "code": "ig-pause-01",
+    "account": "stories",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "most people miss it",
+            "even on the third try",
+            "you'll have to scrub back"
+          ],
+          "bg": "red",
+          "secret": "I still have your hoodie. I'm not giving it back.",
+          "secretAt": 1.7
+        },
+        {
+          "type": "question",
+          "text": "What did it say?",
+          "sub": "no cheating",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% can pause at the right time 👀 what did it say?\n\n#pausechallenge #challenge #fyp #relatable"
+  },
+  {
     "code": "ig-meme-03",
     "account": "stories",
     "format": "Meme carousel",
@@ -2322,6 +2358,38 @@
       "seed": 2
     },
     "caption": "What do you need to hear that nobody ever says to you? Say it here. Someone might say it back.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
+  },
+  {
+    "code": "igb-pause-01",
+    "account": "brand",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "ink",
+          "transition": "cut"
+        },
+        {
+          "type": "type",
+          "text": "There's a message hidden in here for you.",
+          "bg": "ink",
+          "secret": "You're doing better than you think.",
+          "secretAt": 1.4
+        },
+        {
+          "type": "question",
+          "text": "Did you catch it?",
+          "sub": "tell us what it said",
+          "bg": "cream",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% can pause at the right time. there's a message in here for you 🤍 did you catch it?\n\n#pausechallenge #wholesome #reminder #fyp"
   },
   {
     "code": "igb-rate-02",

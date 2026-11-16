@@ -36,8 +36,12 @@ For each account, stories first, then brand:
 ## Note on labels
 The templates no longer show `kicker` or `cta` on screen, so posts look organic (Muneer's call). You can leave those fields in new entries, but the question or statement itself must make the format obvious; the caption carries the nudge to comment.
 
+## 3c. Remix winners (every run)
+- Read `plan/playbook.md` (the living strategy) and `log/metrics.json`.
+- If a post has `outlier: true` and fewer than 2 remixes in the queue (codes ending `-rmxN` of it), write 2 variations of it now: the same format and structure, with a new hook and story. Put them at the front of that account's unposted queue.
+
 ## 4. Refill the queue (only when an account has fewer than 12 unposted posts)
-Write 20 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
+Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
 - **Formats:** use what's working. Base it on `log/metrics.json` if there are at least 10 posts with numbers; give the top 2 formats by comments per post 2 posts each out of 3, and try the rest in the remaining slots. Without enough numbers, mix all the formats evenly.
 - **What works best:**
   - These come from research on the 2026 algorithm: DM sends are the strongest signal for reaching new people, followed by watch time and real comments.
@@ -47,6 +51,7 @@ Write 20 new posts for that account into `plan/queue.json`, using the same shape
   - **Scene 1 (the hook, under 2s):** a statement that stops the scroll: drama, a secret, a hot take, "don't show this to…". Use `slam`, `zoom` or `glitch`, with `transition: "cut"`.
   - **Middle (build-up):** `chat` for texts, `type` for diary or notes, `list` for "things that…", `versus` for picking a side, `emoji` for a beat of reaction.
   - **The payoff:** `redact`, so the punchline is hidden and then wiped open.
+  - **Pause challenge**, about 1 in 8 posts: the hook is "Only 1% can pause at the right time", and one scene gets `"secret": "…"` (and optionally `"secretAt": seconds`), which shows for exactly one frame. Make the secret worth finding.
   - **Last scene:** always a `question`, plus an optional `sub` like "be honest" or "send it to…".
   - Vary the background colour per scene (`ink`, `black`, `red`, `yellow`, `blue`, `pink`, `green`, `cream`, `purple`); bold colours stop the scroll.
   - **Emoji:** only in an `emoji` scene's `emoji` field.
