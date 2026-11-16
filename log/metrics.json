@@ -1,6 +1,76 @@
 {
-  "updated": "2026-11-15T06:41:24.884Z",
+  "updated": "2026-11-16T05:41:55.424Z",
   "posts": [
+    {
+      "code": "ig-twist-01",
+      "account": "stories",
+      "format": "Guess the ending",
+      "posted_at": "2026-11-15T20:45:14+0000",
+      "permalink": "https://www.instagram.com/reel/Dfxq0G-DAF0/",
+      "views": 105,
+      "likes": 1,
+      "comments": 0
+    },
+    {
+      "code": "ig-tier-01",
+      "account": "stories",
+      "format": "Tier list",
+      "posted_at": "2026-11-15T18:43:29+0000",
+      "permalink": "https://www.instagram.com/reel/Dfxc4Q0iVWJ/",
+      "views": 128,
+      "likes": 1,
+      "comments": 0
+    },
+    {
+      "code": "ig-hot-04",
+      "account": "stories",
+      "format": "Hot take",
+      "posted_at": "2026-11-15T16:43:50+0000",
+      "permalink": "https://www.instagram.com/reel/DfxPNbNADWm/",
+      "views": 148,
+      "likes": 1,
+      "comments": 0
+    },
+    {
+      "code": "ig-chat-01",
+      "account": "stories",
+      "format": "Text story",
+      "posted_at": "2026-11-15T15:43:41+0000",
+      "permalink": "https://www.instagram.com/reel/DfxISxpnI5l/",
+      "views": 145,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "ig-meme-01",
+      "account": "stories",
+      "format": "Meme carousel",
+      "posted_at": "2026-11-15T12:44:06+0000",
+      "permalink": "https://www.instagram.com/p/DfwzySqlUYq/",
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "ig-wyr-01",
+      "account": "stories",
+      "format": "Would you rather",
+      "posted_at": "2026-11-15T10:43:43+0000",
+      "permalink": "https://www.instagram.com/reel/Dfwl-gtjZH1/",
+      "views": 81,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "ig-cho-01",
+      "account": "stories",
+      "format": "This or that",
+      "posted_at": "2026-11-15T06:42:46+0000",
+      "permalink": "https://www.instagram.com/reel/DfwKaZvk7A2/",
+      "views": 120,
+      "likes": 0,
+      "comments": 0
+    },
     {
       "code": "ig-hot-01",
       "account": "stories",
@@ -17,7 +87,7 @@
       "format": "Finish the sentence",
       "posted_at": "2026-11-14T22:52:13+0000",
       "permalink": "https://www.instagram.com/reel/DfvUjEfDg5l/",
-      "views": 177,
+      "views": 183,
       "likes": 0,
       "comments": 0
     },
@@ -27,7 +97,77 @@
       "format": "Prompt post",
       "posted_at": "2026-11-14T16:12:01+0000",
       "permalink": "https://www.instagram.com/reel/DfumwHvEhsd/",
-      "views": 5,
+      "views": 9,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-notes-01",
+      "account": "brand",
+      "format": "Unsent note",
+      "posted_at": "2026-11-15T20:46:42+0000",
+      "permalink": "https://www.instagram.com/reel/Dfxq_RCiUz3/",
+      "views": 144,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-bingo-01",
+      "account": "brand",
+      "format": "Bingo",
+      "posted_at": "2026-11-15T18:44:06+0000",
+      "permalink": "https://www.instagram.com/p/Dfxc-NAmMD8/",
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-hot-04",
+      "account": "brand",
+      "format": "Hot take",
+      "posted_at": "2026-11-15T16:44:31+0000",
+      "permalink": "https://www.instagram.com/reel/DfxPRCfDcg6/",
+      "views": 213,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-meme-02",
+      "account": "brand",
+      "format": "Meme carousel",
+      "posted_at": "2026-11-15T15:45:45+0000",
+      "permalink": "https://www.instagram.com/p/DfxIksSERba/",
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-meme-01",
+      "account": "brand",
+      "format": "Meme carousel",
+      "posted_at": "2026-11-15T12:46:03+0000",
+      "permalink": "https://www.instagram.com/p/Dfw0BNNkWEm/",
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-hot-01",
+      "account": "brand",
+      "format": "Unpopular opinion",
+      "posted_at": "2026-11-15T10:44:12+0000",
+      "permalink": "https://www.instagram.com/reel/DfwmDT5jLPB/",
+      "views": 134,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "code": "igb-fin-01",
+      "account": "brand",
+      "format": "Finish the sentence",
+      "posted_at": "2026-11-15T06:44:12+0000",
+      "permalink": "https://www.instagram.com/reel/DfwKkQAATYC/",
+      "views": 150,
       "likes": 0,
       "comments": 0
     },
@@ -37,7 +177,7 @@
       "format": "Would you rather",
       "posted_at": "2026-11-14T23:30:20+0000",
       "permalink": "https://www.instagram.com/reel/DfvY6TtAOiO/",
-      "views": 143,
+      "views": 147,
       "likes": 1,
       "comments": 0
     },
@@ -47,7 +187,7 @@
       "format": "This or that",
       "posted_at": "2026-11-14T22:53:29+0000",
       "permalink": "https://www.instagram.com/reel/DfvUsXHDe_b/",
-      "views": 175,
+      "views": 176,
       "likes": 2,
       "comments": 1
     },
