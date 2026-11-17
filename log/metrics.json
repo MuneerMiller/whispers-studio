@@ -1,34 +1,34 @@
 {
-  "updated": "2026-11-16T22:17:59.796Z",
+  "updated": "2026-11-17T05:41:21.560Z",
   "posts": [
     {
-      "code": null,
+      "code": "ig-rnk-01",
       "account": "stories",
-      "format": null,
+      "format": "Ranking",
       "posted_at": "2026-11-16T20:42:58+0000",
       "permalink": "https://www.instagram.com/reel/Df0PWVPDqHF/",
-      "views": 15,
-      "reach": 13,
+      "views": 54,
+      "reach": 50,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.13,
+      "vs_median": 0.45,
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-pov-01",
       "account": "stories",
-      "format": null,
+      "format": "POV",
       "posted_at": "2026-11-16T18:42:47+0000",
       "permalink": "https://www.instagram.com/reel/Df0BmsuDjcc/",
-      "views": 14,
-      "reach": 9,
+      "views": 25,
+      "reach": 20,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.12,
+      "vs_median": 0.21,
       "outlier": false
     },
     {
@@ -47,18 +47,18 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-voice-01",
       "account": "stories",
-      "format": null,
+      "format": "Voice story",
       "posted_at": "2026-11-16T15:45:43+0000",
       "permalink": "https://www.instagram.com/reel/DfztS2eknrl/",
-      "views": 9,
-      "reach": 8,
+      "views": 34,
+      "reach": 20,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.08,
+      "vs_median": 0.29,
       "outlier": false
     },
     {
@@ -77,39 +77,39 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-search-01",
       "account": "stories",
-      "format": null,
+      "format": "3am searches",
       "posted_at": "2026-11-16T11:43:51+0000",
       "permalink": "https://www.instagram.com/reel/DfzRp2lgYFM/",
-      "views": 25,
-      "reach": 21,
+      "views": 29,
+      "reach": 25,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.21,
+      "vs_median": 0.24,
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-deep-01",
       "account": "stories",
-      "format": null,
+      "format": "Deep question",
       "posted_at": "2026-11-16T10:43:34+0000",
       "permalink": "https://www.instagram.com/reel/DfzKwyLGSrc/",
-      "views": 22,
-      "reach": 20,
+      "views": 24,
+      "reach": 22,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.18,
+      "vs_median": 0.2,
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-notes-01",
       "account": "stories",
-      "format": null,
+      "format": "Unsent note",
       "posted_at": "2026-11-16T08:44:59+0000",
       "permalink": "https://www.instagram.com/reel/Dfy9LysirGR/",
       "views": 119,
@@ -122,9 +122,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-meme-02",
       "account": "stories",
-      "format": null,
+      "format": "Meme carousel",
       "posted_at": "2026-11-16T07:44:10+0000",
       "permalink": "https://www.instagram.com/p/Dfy2PtIFXsB/",
       "views": 0,
@@ -137,9 +137,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-bingo-01",
       "account": "stories",
-      "format": null,
+      "format": "Bingo",
       "posted_at": "2026-11-16T05:42:31+0000",
       "permalink": "https://www.instagram.com/p/DfyoVYJjtgr/",
       "views": 0,
@@ -152,9 +152,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-twist-01",
       "account": "stories",
-      "format": null,
+      "format": "Guess the ending",
       "posted_at": "2026-11-15T20:45:14+0000",
       "permalink": "https://www.instagram.com/reel/Dfxq0G-DAF0/",
       "views": 105,
@@ -167,9 +167,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-tier-01",
       "account": "stories",
-      "format": null,
+      "format": "Tier list",
       "posted_at": "2026-11-15T18:43:29+0000",
       "permalink": "https://www.instagram.com/reel/Dfxc4Q0iVWJ/",
       "views": 128,
@@ -197,9 +197,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-chat-01",
       "account": "stories",
-      "format": null,
+      "format": "Text story",
       "posted_at": "2026-11-15T15:43:41+0000",
       "permalink": "https://www.instagram.com/reel/DfxISxpnI5l/",
       "views": 146,
@@ -212,9 +212,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-meme-01",
       "account": "stories",
-      "format": null,
+      "format": "Meme carousel",
       "posted_at": "2026-11-15T12:44:06+0000",
       "permalink": "https://www.instagram.com/p/DfwzySqlUYq/",
       "views": 0,
@@ -227,9 +227,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-wyr-01",
       "account": "stories",
-      "format": null,
+      "format": "Would you rather",
       "posted_at": "2026-11-15T10:43:43+0000",
       "permalink": "https://www.instagram.com/reel/Dfwl-gtjZH1/",
       "views": 124,
@@ -242,9 +242,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "ig-cho-01",
       "account": "stories",
-      "format": null,
+      "format": "This or that",
       "posted_at": "2026-11-15T06:42:46+0000",
       "permalink": "https://www.instagram.com/reel/DfwKaZvk7A2/",
       "views": 120,
@@ -302,18 +302,18 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-cho-02",
       "account": "brand",
-      "format": null,
+      "format": "This or that",
       "posted_at": "2026-11-16T20:44:14+0000",
       "permalink": "https://www.instagram.com/reel/Df0PfgKjCwl/",
-      "views": 38,
-      "reach": 35,
+      "views": 78,
+      "reach": 74,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.26,
+      "vs_median": 0.54,
       "outlier": false
     },
     {
@@ -322,19 +322,19 @@
       "format": "Deep question",
       "posted_at": "2026-11-16T18:44:05+0000",
       "permalink": "https://www.instagram.com/reel/Df0BvqGifO3/",
-      "views": 183,
-      "reach": 157,
+      "views": 185,
+      "reach": 162,
       "shares": 0,
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.27,
+      "vs_median": 1.28,
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-rate-01",
       "account": "brand",
-      "format": null,
+      "format": "Rate it 1-10",
       "posted_at": "2026-11-16T16:43:38+0000",
       "permalink": "https://www.instagram.com/reel/Dfzz9ZTDMa1/",
       "views": 143,
@@ -352,19 +352,19 @@
       "format": "Deep question",
       "posted_at": "2026-11-16T15:46:34+0000",
       "permalink": "https://www.instagram.com/reel/DfztZzOgrMl/",
-      "views": 149,
-      "reach": 131,
+      "views": 151,
+      "reach": 132,
       "shares": 0,
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1.05,
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-meme-03",
       "account": "brand",
-      "format": null,
+      "format": "Meme carousel",
       "posted_at": "2026-11-16T13:45:14+0000",
       "permalink": "https://www.instagram.com/p/DfzflbfoMOO/",
       "views": 0,
@@ -377,9 +377,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-meme-04",
       "account": "brand",
-      "format": null,
+      "format": "Meme carousel",
       "posted_at": "2026-11-16T11:44:44+0000",
       "permalink": "https://www.instagram.com/p/DfzRxtukSM_/",
       "views": 0,
@@ -392,9 +392,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-fin-02",
       "account": "brand",
-      "format": null,
+      "format": "Finish the sentence",
       "posted_at": "2026-11-16T10:44:55+0000",
       "permalink": "https://www.instagram.com/reel/DfzK6OaEwKs/",
       "views": 160,
@@ -422,28 +422,28 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-deep-01",
       "account": "brand",
-      "format": null,
+      "format": "Deep question",
       "posted_at": "2026-11-16T07:44:57+0000",
       "permalink": "https://www.instagram.com/reel/Dfy2TkgCpOl/",
-      "views": 133,
-      "reach": 124,
+      "views": 136,
+      "reach": 126,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.92,
+      "vs_median": 0.94,
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-tier-01",
       "account": "brand",
-      "format": null,
+      "format": "Tier list",
       "posted_at": "2026-11-16T05:43:50+0000",
       "permalink": "https://www.instagram.com/reel/DfyodpIjzLq/",
-      "views": 214,
-      "reach": 176,
+      "views": 215,
+      "reach": 177,
       "shares": 0,
       "saves": 0,
       "likes": 2,
@@ -452,9 +452,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-notes-01",
       "account": "brand",
-      "format": null,
+      "format": "Unsent note",
       "posted_at": "2026-11-15T20:46:42+0000",
       "permalink": "https://www.instagram.com/reel/Dfxq_RCiUz3/",
       "views": 144,
@@ -467,9 +467,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-bingo-01",
       "account": "brand",
-      "format": null,
+      "format": "Bingo",
       "posted_at": "2026-11-15T18:44:06+0000",
       "permalink": "https://www.instagram.com/p/Dfxc-NAmMD8/",
       "views": 0,
@@ -482,9 +482,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-hot-04",
       "account": "brand",
-      "format": null,
+      "format": "Hot take",
       "posted_at": "2026-11-15T16:44:31+0000",
       "permalink": "https://www.instagram.com/reel/DfxPRCfDcg6/",
       "views": 213,
@@ -497,9 +497,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-meme-02",
       "account": "brand",
-      "format": null,
+      "format": "Meme carousel",
       "posted_at": "2026-11-15T15:45:45+0000",
       "permalink": "https://www.instagram.com/p/DfxIksSERba/",
       "views": 0,
@@ -512,9 +512,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-meme-01",
       "account": "brand",
-      "format": null,
+      "format": "Meme carousel",
       "posted_at": "2026-11-15T12:46:03+0000",
       "permalink": "https://www.instagram.com/p/Dfw0BNNkWEm/",
       "views": 0,
@@ -527,9 +527,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-hot-01",
       "account": "brand",
-      "format": null,
+      "format": "Unpopular opinion",
       "posted_at": "2026-11-15T10:44:12+0000",
       "permalink": "https://www.instagram.com/reel/DfwmDT5jLPB/",
       "views": 137,
@@ -542,9 +542,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-fin-01",
       "account": "brand",
-      "format": null,
+      "format": "Finish the sentence",
       "posted_at": "2026-11-15T06:44:12+0000",
       "permalink": "https://www.instagram.com/reel/DfwKkQAATYC/",
       "views": 150,
@@ -557,9 +557,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-wyr-01",
       "account": "brand",
-      "format": null,
+      "format": "Would you rather",
       "posted_at": "2026-11-14T23:30:20+0000",
       "permalink": "https://www.instagram.com/reel/DfvY6TtAOiO/",
       "views": 147,
@@ -587,9 +587,9 @@
       "outlier": false
     },
     {
-      "code": null,
+      "code": "igb-prm-01",
       "account": "brand",
-      "format": null,
+      "format": "Prompt post",
       "posted_at": "2026-11-14T16:12:44+0000",
       "permalink": "https://www.instagram.com/reel/Dfum1VAie0j/",
       "views": 132,
