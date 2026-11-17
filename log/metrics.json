@@ -1,19 +1,34 @@
 {
-  "updated": "2026-11-17T05:41:21.560Z",
+  "updated": "2026-11-17T07:41:38.197Z",
   "posts": [
+    {
+      "code": "ig-sb-09",
+      "account": "stories",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T05:44:16+0000",
+      "permalink": "https://www.instagram.com/reel/Df1NS8ZGUbS/",
+      "views": 27,
+      "reach": 23,
+      "shares": 0,
+      "saves": 0,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 0.23,
+      "outlier": false
+    },
     {
       "code": "ig-rnk-01",
       "account": "stories",
       "format": "Ranking",
       "posted_at": "2026-11-16T20:42:58+0000",
       "permalink": "https://www.instagram.com/reel/Df0PWVPDqHF/",
-      "views": 54,
-      "reach": 50,
+      "views": 57,
+      "reach": 51,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.45,
+      "vs_median": 0.48,
       "outlier": false
     },
     {
@@ -22,13 +37,13 @@
       "format": "POV",
       "posted_at": "2026-11-16T18:42:47+0000",
       "permalink": "https://www.instagram.com/reel/Df0BmsuDjcc/",
-      "views": 25,
-      "reach": 20,
+      "views": 27,
+      "reach": 22,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.21,
+      "vs_median": 0.23,
       "outlier": false
     },
     {
@@ -52,13 +67,13 @@
       "format": "Voice story",
       "posted_at": "2026-11-16T15:45:43+0000",
       "permalink": "https://www.instagram.com/reel/DfztS2eknrl/",
-      "views": 34,
-      "reach": 20,
+      "views": 148,
+      "reach": 127,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.29,
+      "vs_median": 1.24,
       "outlier": false
     },
     {
@@ -82,13 +97,13 @@
       "format": "3am searches",
       "posted_at": "2026-11-16T11:43:51+0000",
       "permalink": "https://www.instagram.com/reel/DfzRp2lgYFM/",
-      "views": 29,
-      "reach": 25,
+      "views": 34,
+      "reach": 29,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.24,
+      "vs_median": 0.29,
       "outlier": false
     },
     {
@@ -97,13 +112,13 @@
       "format": "Deep question",
       "posted_at": "2026-11-16T10:43:34+0000",
       "permalink": "https://www.instagram.com/reel/DfzKwyLGSrc/",
-      "views": 24,
-      "reach": 22,
+      "views": 26,
+      "reach": 24,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.2,
+      "vs_median": 0.22,
       "outlier": false
     },
     {
@@ -302,18 +317,33 @@
       "outlier": false
     },
     {
+      "code": "igb-sb-05",
+      "account": "brand",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T05:46:00+0000",
+      "permalink": "https://www.instagram.com/reel/Df1NgBwlnYd/",
+      "views": 108,
+      "reach": 84,
+      "shares": 0,
+      "saves": 0,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 0.76,
+      "outlier": false
+    },
+    {
       "code": "igb-cho-02",
       "account": "brand",
       "format": "This or that",
       "posted_at": "2026-11-16T20:44:14+0000",
       "permalink": "https://www.instagram.com/reel/Df0PfgKjCwl/",
-      "views": 78,
-      "reach": 74,
+      "views": 80,
+      "reach": 75,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.54,
+      "vs_median": 0.56,
       "outlier": false
     },
     {
@@ -328,7 +358,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.28,
+      "vs_median": 1.29,
       "outlier": false
     },
     {
@@ -343,7 +373,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.99,
+      "vs_median": 1,
       "outlier": false
     },
     {
@@ -358,7 +388,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.05,
+      "vs_median": 1.06,
       "outlier": false
     },
     {
@@ -403,7 +433,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.11,
+      "vs_median": 1.12,
       "outlier": false
     },
     {
@@ -418,7 +448,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.07,
+      "vs_median": 1.08,
       "outlier": false
     },
     {
@@ -433,7 +463,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.94,
+      "vs_median": 0.95,
       "outlier": false
     },
     {
@@ -448,7 +478,7 @@
       "saves": 0,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.49,
+      "vs_median": 1.5,
       "outlier": false
     },
     {
@@ -463,7 +493,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -493,7 +523,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.48,
+      "vs_median": 1.49,
       "outlier": false
     },
     {
@@ -538,7 +568,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.95,
+      "vs_median": 0.96,
       "outlier": false
     },
     {
@@ -553,7 +583,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.04,
+      "vs_median": 1.05,
       "outlier": false
     },
     {
@@ -568,7 +598,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.02,
+      "vs_median": 1.03,
       "outlier": false
     },
     {
@@ -583,7 +613,7 @@
       "saves": 0,
       "likes": 2,
       "comments": 1,
-      "vs_median": 1.22,
+      "vs_median": 1.23,
       "outlier": false
     },
     {
