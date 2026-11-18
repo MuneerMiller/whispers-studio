@@ -1,19 +1,154 @@
 {
-  "updated": "2026-11-17T07:41:38.197Z",
+  "updated": "2026-11-18T05:41:49.058Z",
   "posts": [
+    {
+      "code": "ig-sb-13",
+      "account": "stories",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T20:44:04+0000",
+      "permalink": "https://www.instagram.com/reel/Df20SpUmiLo/",
+      "views": 15,
+      "reach": 11,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.12,
+      "outlier": false
+    },
+    {
+      "code": "ig-flg-05",
+      "account": "stories",
+      "format": "Red flag or fair",
+      "posted_at": "2026-11-17T18:43:27+0000",
+      "permalink": "https://www.instagram.com/reel/Df2mdy0pZzc/",
+      "views": 154,
+      "reach": 113,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.25,
+      "outlier": false
+    },
+    {
+      "code": "ig-pause-02",
+      "account": "stories",
+      "format": "Pause challenge",
+      "posted_at": "2026-11-17T16:44:08+0000",
+      "permalink": "https://www.instagram.com/reel/Df2Y0ORiuU-/",
+      "views": 138,
+      "reach": 104,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.12,
+      "outlier": false
+    },
+    {
+      "code": "ig-sb-12",
+      "account": "stories",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T15:43:11+0000",
+      "permalink": "https://www.instagram.com/reel/Df2R1h8AJZ7/",
+      "views": 121,
+      "reach": 97,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.98,
+      "outlier": false
+    },
+    {
+      "code": "ig-chat-05",
+      "account": "stories",
+      "format": "Text story",
+      "posted_at": "2026-11-17T13:45:11+0000",
+      "permalink": "https://www.instagram.com/reel/Df2EVZpEyQh/",
+      "views": 123,
+      "reach": 106,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1,
+      "outlier": false
+    },
+    {
+      "code": "ig-sb-11",
+      "account": "stories",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T11:43:26+0000",
+      "permalink": "https://www.instagram.com/reel/Df12a42nLPT/",
+      "views": 135,
+      "reach": 106,
+      "shares": 0,
+      "saves": 1,
+      "likes": 2,
+      "comments": 0,
+      "vs_median": 1.1,
+      "outlier": false
+    },
+    {
+      "code": "ig-tier-03",
+      "account": "stories",
+      "format": "Tier list",
+      "posted_at": "2026-11-17T10:42:54+0000",
+      "permalink": "https://www.instagram.com/reel/Df1veQ8ET8u/",
+      "views": 141,
+      "reach": 118,
+      "shares": 0,
+      "saves": 0,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 1.15,
+      "outlier": false
+    },
+    {
+      "code": "ig-sb-10",
+      "account": "stories",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T08:43:20+0000",
+      "permalink": "https://www.instagram.com/reel/Df1hyhAEe-7/",
+      "views": 149,
+      "reach": 120,
+      "shares": 0,
+      "saves": 0,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 1.21,
+      "outlier": false
+    },
+    {
+      "code": "ig-hot-08",
+      "account": "stories",
+      "format": "Hot take",
+      "posted_at": "2026-11-17T07:43:41+0000",
+      "permalink": "https://www.instagram.com/reel/Df1a-NggQ5p/",
+      "views": 157,
+      "reach": 114,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.28,
+      "outlier": false
+    },
     {
       "code": "ig-sb-09",
       "account": "stories",
       "format": "Storyboard",
       "posted_at": "2026-11-17T05:44:16+0000",
       "permalink": "https://www.instagram.com/reel/Df1NS8ZGUbS/",
-      "views": 27,
-      "reach": 23,
+      "views": 112,
+      "reach": 98,
       "shares": 0,
       "saves": 0,
-      "likes": 1,
+      "likes": 2,
       "comments": 0,
-      "vs_median": 0.23,
+      "vs_median": 0.91,
       "outlier": false
     },
     {
@@ -22,13 +157,13 @@
       "format": "Ranking",
       "posted_at": "2026-11-16T20:42:58+0000",
       "permalink": "https://www.instagram.com/reel/Df0PWVPDqHF/",
-      "views": 57,
-      "reach": 51,
-      "shares": 0,
-      "saves": 0,
-      "likes": 0,
+      "views": 111,
+      "reach": 97,
+      "shares": 1,
+      "saves": 1,
+      "likes": 2,
       "comments": 0,
-      "vs_median": 0.48,
+      "vs_median": 0.9,
       "outlier": false
     },
     {
@@ -37,13 +172,13 @@
       "format": "POV",
       "posted_at": "2026-11-16T18:42:47+0000",
       "permalink": "https://www.instagram.com/reel/Df0BmsuDjcc/",
-      "views": 27,
-      "reach": 22,
+      "views": 83,
+      "reach": 62,
       "shares": 0,
       "saves": 0,
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
-      "vs_median": 0.23,
+      "vs_median": 0.67,
       "outlier": false
     },
     {
@@ -58,7 +193,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1,
       "outlier": false
     },
     {
@@ -67,13 +202,13 @@
       "format": "Voice story",
       "posted_at": "2026-11-16T15:45:43+0000",
       "permalink": "https://www.instagram.com/reel/DfztS2eknrl/",
-      "views": 148,
-      "reach": 127,
+      "views": 149,
+      "reach": 128,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.24,
+      "vs_median": 1.21,
       "outlier": false
     },
     {
@@ -88,7 +223,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.01,
+      "vs_median": 0.98,
       "outlier": false
     },
     {
@@ -97,13 +232,13 @@
       "format": "3am searches",
       "posted_at": "2026-11-16T11:43:51+0000",
       "permalink": "https://www.instagram.com/reel/DfzRp2lgYFM/",
-      "views": 34,
-      "reach": 29,
+      "views": 54,
+      "reach": 49,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.29,
+      "vs_median": 0.44,
       "outlier": false
     },
     {
@@ -112,13 +247,13 @@
       "format": "Deep question",
       "posted_at": "2026-11-16T10:43:34+0000",
       "permalink": "https://www.instagram.com/reel/DfzKwyLGSrc/",
-      "views": 26,
-      "reach": 24,
+      "views": 31,
+      "reach": 28,
       "shares": 0,
       "saves": 0,
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
-      "vs_median": 0.22,
+      "vs_median": 0.25,
       "outlier": false
     },
     {
@@ -133,7 +268,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 0.97,
       "outlier": false
     },
     {
@@ -178,7 +313,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.88,
+      "vs_median": 0.85,
       "outlier": false
     },
     {
@@ -193,7 +328,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.08,
+      "vs_median": 1.04,
       "outlier": false
     },
     {
@@ -208,7 +343,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.27,
+      "vs_median": 1.23,
       "outlier": false
     },
     {
@@ -217,13 +352,13 @@
       "format": "Text story",
       "posted_at": "2026-11-15T15:43:41+0000",
       "permalink": "https://www.instagram.com/reel/DfxISxpnI5l/",
-      "views": 146,
-      "reach": 110,
+      "views": 147,
+      "reach": 111,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.23,
+      "vs_median": 1.2,
       "outlier": false
     },
     {
@@ -253,7 +388,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.04,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -268,7 +403,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.01,
+      "vs_median": 0.98,
       "outlier": false
     },
     {
@@ -283,7 +418,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.43,
+      "vs_median": 1.38,
       "outlier": false
     },
     {
@@ -298,7 +433,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.54,
+      "vs_median": 1.49,
       "outlier": false
     },
     {
@@ -313,7 +448,142 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.08,
+      "vs_median": 0.07,
+      "outlier": false
+    },
+    {
+      "code": "igb-rate-03",
+      "account": "brand",
+      "format": "Rate it 1-10",
+      "posted_at": "2026-11-17T20:44:45+0000",
+      "permalink": "https://www.instagram.com/reel/Df20WJgAkPp/",
+      "views": 166,
+      "reach": 148,
+      "shares": 0,
+      "saves": 0,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 1.13,
+      "outlier": false
+    },
+    {
+      "code": "igb-pov-02",
+      "account": "brand",
+      "format": "POV",
+      "posted_at": "2026-11-17T18:43:57+0000",
+      "permalink": "https://www.instagram.com/reel/Df2mi0mknRw/",
+      "views": 189,
+      "reach": 163,
+      "shares": 0,
+      "saves": 0,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 1.29,
+      "outlier": false
+    },
+    {
+      "code": "igb-sb-08",
+      "account": "brand",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T16:44:49+0000",
+      "permalink": "https://www.instagram.com/reel/Df2Y49yCfbq/",
+      "views": 145,
+      "reach": 128,
+      "shares": 0,
+      "saves": 0,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 0.99,
+      "outlier": false
+    },
+    {
+      "code": "igb-pause-02",
+      "account": "brand",
+      "format": "Pause challenge",
+      "posted_at": "2026-11-17T15:44:27+0000",
+      "permalink": "https://www.instagram.com/reel/Df2R_eTD64V/",
+      "views": 143,
+      "reach": 109,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.97,
+      "outlier": false
+    },
+    {
+      "code": "igb-deep-09",
+      "account": "brand",
+      "format": "Deep question",
+      "posted_at": "2026-11-17T13:45:53+0000",
+      "permalink": "https://www.instagram.com/reel/Df2Ead5ifRB/",
+      "views": 141,
+      "reach": 122,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.96,
+      "outlier": false
+    },
+    {
+      "code": "igb-sb-07",
+      "account": "brand",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T11:44:01+0000",
+      "permalink": "https://www.instagram.com/reel/Df12d2SgZas/",
+      "views": 147,
+      "reach": 132,
+      "shares": 0,
+      "saves": 0,
+      "likes": 3,
+      "comments": 0,
+      "vs_median": 1,
+      "outlier": false
+    },
+    {
+      "code": "igb-hot-05",
+      "account": "brand",
+      "format": "Hot take",
+      "posted_at": "2026-11-17T10:44:21+0000",
+      "permalink": "https://www.instagram.com/reel/Df1vo4tDTxp/",
+      "views": 169,
+      "reach": 140,
+      "shares": 0,
+      "saves": 0,
+      "likes": 2,
+      "comments": 0,
+      "vs_median": 1.15,
+      "outlier": false
+    },
+    {
+      "code": "igb-sb-06",
+      "account": "brand",
+      "format": "Storyboard",
+      "posted_at": "2026-11-17T08:44:45+0000",
+      "permalink": "https://www.instagram.com/reel/Df1h85aFLrA/",
+      "views": 159,
+      "reach": 136,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.08,
+      "outlier": false
+    },
+    {
+      "code": "igb-tier-02",
+      "account": "brand",
+      "format": "Tier list",
+      "posted_at": "2026-11-17T07:45:05+0000",
+      "permalink": "https://www.instagram.com/reel/Df1bH3Fkyv3/",
+      "views": 80,
+      "reach": 65,
+      "shares": 0,
+      "saves": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.54,
       "outlier": false
     },
     {
@@ -322,13 +592,13 @@
       "format": "Storyboard",
       "posted_at": "2026-11-17T05:46:00+0000",
       "permalink": "https://www.instagram.com/reel/Df1NgBwlnYd/",
-      "views": 108,
-      "reach": 84,
+      "views": 160,
+      "reach": 145,
       "shares": 0,
       "saves": 0,
-      "likes": 1,
+      "likes": 2,
       "comments": 0,
-      "vs_median": 0.76,
+      "vs_median": 1.09,
       "outlier": false
     },
     {
@@ -337,8 +607,8 @@
       "format": "This or that",
       "posted_at": "2026-11-16T20:44:14+0000",
       "permalink": "https://www.instagram.com/reel/Df0PfgKjCwl/",
-      "views": 80,
-      "reach": 75,
+      "views": 83,
+      "reach": 78,
       "shares": 0,
       "saves": 0,
       "likes": 0,
@@ -358,7 +628,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.29,
+      "vs_median": 1.26,
       "outlier": false
     },
     {
@@ -373,7 +643,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 0.97,
       "outlier": false
     },
     {
@@ -388,7 +658,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.06,
+      "vs_median": 1.03,
       "outlier": false
     },
     {
@@ -433,7 +703,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.12,
+      "vs_median": 1.09,
       "outlier": false
     },
     {
@@ -448,7 +718,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.08,
+      "vs_median": 1.05,
       "outlier": false
     },
     {
@@ -463,7 +733,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.95,
+      "vs_median": 0.93,
       "outlier": false
     },
     {
@@ -478,7 +748,7 @@
       "saves": 0,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.5,
+      "vs_median": 1.46,
       "outlier": false
     },
     {
@@ -487,13 +757,13 @@
       "format": "Unsent note",
       "posted_at": "2026-11-15T20:46:42+0000",
       "permalink": "https://www.instagram.com/reel/Dfxq_RCiUz3/",
-      "views": 144,
-      "reach": 136,
+      "views": 145,
+      "reach": 137,
       "shares": 0,
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.01,
+      "vs_median": 0.99,
       "outlier": false
     },
     {
@@ -523,7 +793,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.49,
+      "vs_median": 1.45,
       "outlier": false
     },
     {
@@ -568,7 +838,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.96,
+      "vs_median": 0.93,
       "outlier": false
     },
     {
@@ -583,7 +853,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.05,
+      "vs_median": 1.02,
       "outlier": false
     },
     {
@@ -598,7 +868,7 @@
       "saves": 0,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1,
       "outlier": false
     },
     {
@@ -613,7 +883,7 @@
       "saves": 0,
       "likes": 2,
       "comments": 1,
-      "vs_median": 1.23,
+      "vs_median": 1.2,
       "outlier": false
     },
     {
@@ -628,7 +898,7 @@
       "saves": 0,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.92,
+      "vs_median": 0.9,
       "outlier": false
     }
   ]
