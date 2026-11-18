@@ -20,6 +20,24 @@ This is the living strategy. Every run that writes posts reads it first. The wee
   - If a format's views hold but watch time is low, shorten it.
 - **Highlight the thing:** circles, arrows or a colour pop on the key word (`slam` already colours the last word).
 
+## Views plan (started 2026-11-18, review on 2026-11-25)
+**Diagnosis:** after 60 posts, every Reel lands at 100–200 views with almost no likes, comments or shares, and no outliers. When everything stalls in the same range, the problem is the account's trust and the retention signals, not one weak hook. Two things made it worse: a brand-new account jumping to 10 near-identical videos a day (it reads like a content farm), and nothing telling us *where* viewers swipe away.
+
+**What changed:**
+1. **Posting: 3 a day per account** (the 12:40, 18:40 and 22:40 runs). The other runs only reply to comments. Run this for 7 days, then compare the median views with the 10-a-day week.
+2. **Retention numbers:** `metrics.mjs` now saves `avg_watch_s` (average watch time) and `skip_rate` (% who swipe away in the first seconds) for every Reel. Judge formats on these first. A good Reel holds a viewer for most of its length and has a skip rate well under 50%.
+3. **Queue reordered:** winners go first, with a weighted mix so the same format never runs back to back. Stories: unpopular opinions, hot takes, red flag or fair, text stories, rate it, tier lists. Brand: hot takes, unpopular opinions, tier lists, POV, deep questions. Losers moved to `plan/parked.json`.
+4. **Storyboards** drop to about 1 in 4 until they beat the median. They averaged 106 views on stories, below the account's 130.
+
+**Rules for every new post from now on (retention first):**
+- **6–10 seconds.** Short Reels get finished and replayed, and a replay counts as watch time. Only stories that need it go longer.
+- **Frame 0 is the hook,** in big, high-contrast text in the middle third of the screen (not hidden under the caption or the buttons). Never fade in from black.
+- **The last frame leads back into the first** (a loop), or ends on a question that makes people rewatch.
+- **One idea per video,** and the caption's first line repeats it in plain words people search for, e.g. "splitting the bill on a first date". Use 3–5 hashtags about the topic, not the same generic set on every post.
+- **Ask a question people want to answer:** "which one and why", "be honest", "what would you do". Never "comment YES".
+
+**What only Muneer can do (Instagram treats automated likes, follows and comments as spam, so the runs don't):** about 10 minutes a day on each account in the Instagram app. Watch Reels in the niche (relationships, confessions, relatable text posts), like a few, leave 2–3 real comments on bigger pages, and reply to anyone who comments. Pin the best post on each profile. Optionally, add a trending sound to a post in the app.
+
 ## Right now (updated weekly by the trend scout)
 Scout run 2026-11-17 (research from 31 Oct–16 Nov 2026).
 
@@ -76,6 +94,7 @@ Scout run 2026-11-17 (research from 31 Oct–16 Nov 2026).
 
 ## Log of experiments
 Each line gives the date, what was tried and what happened. The scout appends here.
+- 2026-11-18: cut from 10 to 3 posts a day per account; queue reordered to the winning formats; losers parked; watch time and skip rate now tracked. Compare median views on 2026-11-25.
 - 2026-11-17: storyboards and the pause challenge introduced. Results pending.
 - 2026-11-17: identity-statement storyboards ("Not everyone who…": ig-sb-09, igb-sb-05). Results pending.
 - 2026-11-17: timestamp cold opens into a chat with a redact payoff (ig-sb-10, igb-sb-08). Results pending.

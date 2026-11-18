@@ -12,7 +12,7 @@ const [cmd, ...rest] = process.argv.slice(2);
 
 if (cmd === 'list') {
   const out = [];
-  const queue = JSON.parse(fs.readFileSync('plan/queue.json', 'utf8'));
+  const queue = ['plan/queue.json', 'plan/parked.json'].filter((f) => fs.existsSync(f)).flatMap((f) => JSON.parse(fs.readFileSync(f, 'utf8')));
   const norm = (s) => String(s ?? '').normalize('NFC').replace(/\s+/g, ' ').trim().slice(0, 80);
   const byCaption = new Map(queue.map((p) => [norm(p.caption), p]));
   const since = Date.now() - 14 * 864e5;

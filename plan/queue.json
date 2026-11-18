@@ -1,18 +1,298 @@
 [
   {
-    "code": "ig-prm-01",
+    "code": "ig-hot-01",
     "account": "stories",
-    "format": "Prompt post",
+    "format": "Unpopular opinion",
     "content_type": "Prompt",
-    "composition": "PromptPost",
-    "seconds": 8,
+    "composition": "TextReel",
+    "seconds": 9,
     "props": {
-      "question": "What have you never said out loud?",
-      "sub": "Not to anyone. Not even once.",
-      "cta": "Say it in the comments",
-      "seed": 0
+      "layout": "flag",
+      "bg": "ring",
+      "title": "Splitting the bill on a first date is fine.",
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 1,
+      "kicker": "Unpopular opinion",
+      "items": [
+        "Agree",
+        "Disagree"
+      ]
     },
-    "caption": "What have you never said out loud? 🤫\n\nSay it in the comments. No judgement here.\n\n#whispers #anonymous #confessions #secrets #unsaid"
+    "caption": "Unpopular opinion: splitting the bill on a first date is fine. Agree or disagree? Fight it out 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-hot-02",
+    "account": "stories",
+    "format": "Unpopular opinion",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "drop",
+      "title": "You don't owe anyone a reply.",
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 2,
+      "kicker": "Unpopular opinion",
+      "items": [
+        "Agree",
+        "Disagree"
+      ]
+    },
+    "caption": "Unpopular opinion: you don't owe anyone a reply. Agree? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-hot-08",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "kicker": "Hot take",
+      "title": "Lending money to a friend is just paying to lose them.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 4
+    },
+    "caption": "lending money to a friend is just paying to lose them. true, or have you been paid back? 👇\n\n#hottake #money #friendship #unpopularopinion"
+  },
+  {
+    "code": "ig-hot-04",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "kicker": "Hot take",
+      "title": "If they take 3 hours to reply, they're just not that into you.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 1
+    },
+    "caption": "If they take 3 hours to reply, they're just not that into you. Agree or are we overthinking? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
+  },
+  {
+    "code": "ig-flg-05",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "spiro",
+      "kicker": "Red flag or fair enough?",
+      "title": "They keep their ex's number 'for emergencies'.",
+      "items": [
+        "Red flag",
+        "Fair enough"
+      ],
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 5
+    },
+    "caption": "they keep their ex's number 'for emergencies'. red flag 🚩 or fair enough? say why\n\n#redflag #dating #exes #relationships"
+  },
+  {
+    "code": "ig-flg-01",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "title": "Checking your partner's location every night.",
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 1,
+      "kicker": "Red flag or fair enough?"
+    },
+    "caption": "Red flag 🚩 or fair enough? Tell us why 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-chat-05",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "My sister borrowed my car. Then this text.",
+      "contact": "Sis",
+      "seed": 11,
+      "messages": [
+        {
+          "from": "them",
+          "text": "quick question"
+        },
+        {
+          "from": "them",
+          "text": "does your car normally make a beeping sound"
+        },
+        {
+          "from": "me",
+          "text": "what did you do"
+        },
+        {
+          "from": "them",
+          "text": "nothing!! it just started"
+        },
+        {
+          "from": "me",
+          "text": "is the orange light on"
+        },
+        {
+          "from": "them",
+          "text": "which one there are 6"
+        },
+        {
+          "from": "me",
+          "text": "where are you"
+        },
+        {
+          "from": "them",
+          "text": "at your ex's house. long story"
+        }
+      ],
+      "question": "What's worse: the car or the location?"
+    },
+    "caption": "my sister borrowed my car and the last text ended me. what's worse here?\n\nDramatised story.\n\n#storytime #siblings #drama #textstory"
+  },
+  {
+    "code": "ig-chat-01",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "I called in sick. My manager replied with this.",
+      "contact": "Manager",
+      "messages": [
+        {
+          "from": "me",
+          "text": "hi, I'm really sick today, won't make it in"
+        },
+        {
+          "from": "them",
+          "text": "no problem, feel better"
+        },
+        {
+          "from": "them",
+          "text": "quick question though"
+        },
+        {
+          "from": "them",
+          "text": "how's the beach?"
+        },
+        {
+          "from": "me",
+          "text": "what beach"
+        },
+        {
+          "from": "them",
+          "text": "you tagged the location"
+        },
+        {
+          "from": "them",
+          "text": "the whole team is watching your story right now"
+        }
+      ],
+      "question": "Fire them or let it slide?",
+      "seed": 10
+    },
+    "caption": "I called in sick. My manager replied with this 💀 Fire them or let it slide?\n\n(dramatised story)\n\n#storytime #work #fail #relatable #whispers"
+  },
+  {
+    "code": "ig-rate-01",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "spiro",
+      "title": "Leaving someone on read for 3 days, then replying 'haha'.",
+      "cta": "Rate it 1 to 10",
+      "seconds": 9,
+      "seed": 3,
+      "kicker": "How bad is it?"
+    },
+    "caption": "How bad is this, 1 to 10? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-tier-03",
+    "account": "stories",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Excuses for leaving someone on read, ranked",
+      "items": [
+        {
+          "text": "'my phone died'",
+          "tier": "D"
+        },
+        {
+          "text": "'I thought I replied in my head'",
+          "tier": "C"
+        },
+        {
+          "text": "'I was busy'",
+          "tier": "B"
+        },
+        {
+          "text": "'I saw it at work and forgot'",
+          "tier": "A"
+        },
+        {
+          "text": "'honestly I needed a break'",
+          "tier": "S"
+        }
+      ],
+      "question": "Which one have you used this week?"
+    },
+    "caption": "excuses for leaving someone on read, ranked by honesty. which tier is wrong? 👀\n\n#leftonread #relatable #texting #funny"
+  },
+  {
+    "code": "ig-rnk-01",
+    "account": "stories",
+    "format": "Ranking",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 13,
+    "props": {
+      "layout": "rank",
+      "bg": "spiro",
+      "title": "Rank these from most to least relatable",
+      "cta": "Comment your order, like 3-1-4-2",
+      "seconds": 13,
+      "seed": 3,
+      "items": [
+        "Pretending to be on a call to avoid someone",
+        "Rehearsing arguments in the shower",
+        "Saying 'on my way' before leaving the house",
+        "Liking a post, then panicking and unliking it"
+      ]
+    },
+    "caption": "Rank them. Most relatable first 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "ig-sb-09",
@@ -55,7 +335,247 @@
     "caption": "not everyone who keeps your secrets is keeping them for you. who's the one friend you'd actually trust?\n\n#friendship #secrets #trustissues #relatable"
   },
   {
-    "code": "ig-hot-08",
+    "code": "ig-meme-03",
+    "account": "stories",
+    "format": "Storyboard list",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Lies we tell every single day",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "I'm fine",
+            "I read the terms and conditions",
+            "I'm on my way"
+          ],
+          "bg": "red"
+        },
+        {
+          "type": "list",
+          "items": [
+            "I'll start on Monday",
+            "I'm not mad",
+            "Just one more episode"
+          ],
+          "bg": "blue"
+        },
+        {
+          "type": "question",
+          "text": "Which lie did you already tell today?",
+          "sub": "send this to the friend who says 'I'm on my way' from bed.",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "Lies we tell every single day 🤥 Which one did you already tell today?\n\n#relatable #memes #funny #truth #whispers"
+  },
+  {
+    "code": "ig-wyr-01",
+    "account": "stories",
+    "format": "Would you rather",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "drop",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 2,
+      "items": [
+        "Read your partner's texts for one day",
+        "Let them read yours"
+      ]
+    },
+    "caption": "Would you rather? No skipping 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-fin-01",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "The thing I'd never tell my mum is…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 1,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "Finish the sentence 👇 The thing I'd never tell my mum is…\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-twist-01",
+    "account": "stories",
+    "format": "Guess the ending",
+    "content_type": "Dramatised",
+    "composition": "TwistReel",
+    "props": {
+      "hook": "Guess the ending",
+      "setup": [
+        "My boyfriend planned a surprise dinner.",
+        "He invited all my friends and told me to dress up.",
+        "Halfway through, he stood up holding a small box..."
+      ],
+      "ending": "...and gave the ring to my best friend. They'd been together for 8 months.",
+      "question": "What would you do next?",
+      "bg": "drop"
+    },
+    "caption": "He planned a surprise dinner with all my friends… guess how it ended.\n\n(dramatised story)\n\n#relatable #dating #relationships #funny #whispers"
+  },
+  {
+    "code": "ig-pause-02",
+    "account": "stories",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "it's on screen for one frame",
+            "most people scroll past",
+            "you'll need to scrub back"
+          ],
+          "bg": "green",
+          "secret": "The group chat has a second group chat. You're not in it.",
+          "secretAt": 1.6
+        },
+        {
+          "type": "question",
+          "text": "What did it say?",
+          "sub": "no reading the comments first",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% catch it on the first try 👀 what did the hidden line say?\n\n#pausechallenge #challenge #groupchat #relatable"
+  },
+  {
+    "code": "ig-meme-01",
+    "account": "stories",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Things everyone does but nobody admits",
+      "slides": [
+        "Rehearsing an argument in the shower and winning every time",
+        "Saying 'I'm 5 minutes away' while still lying in bed",
+        "Reading their message from the notification so they don't see you opened it",
+        "Pretending to text when you walk past someone you know",
+        "Laughing at a voice note you can't actually hear",
+        "Checking who viewed your story before checking who messaged you"
+      ],
+      "question": "Which one are you guilty of? Be honest.",
+      "sendTo": "Send this to the friend who does number 2.",
+      "handle": "whispers_anon",
+      "dark": false
+    },
+    "caption": "Things everyone does but nobody admits. Which number is you? 👀\n\n#relatable #memes #funny #truth #whispers"
+  },
+  {
+    "code": "ig-bingo-01",
+    "account": "stories",
+    "format": "Bingo",
+    "content_type": "Prompt",
+    "composition": "BingoCard",
+    "props": {
+      "title": "Toxic ex bingo",
+      "cells": [
+        "Says 'you're overthinking'",
+        "Liked their ex's photo",
+        "'I'm just not a texter'",
+        "Disappears for 3 days",
+        "'It was just a joke'",
+        "Love bombed in week one",
+        "Still has dating apps",
+        "Hates all your friends",
+        "Owes you money",
+        "Has a 'crazy' ex story",
+        "Only calls when drunk",
+        "Forgot your birthday",
+        "Blames their star sign",
+        "Goes through your phone",
+        "Breadcrumbs you",
+        "Vague posts about you",
+        "Never says sorry",
+        "Gaming till 4am",
+        "Cancels last minute",
+        "Still friends with their ex",
+        "'Let's not label it'",
+        "Texts 'wyd' at 2am",
+        "Rude to waiters",
+        "Mutes you in the group chat"
+      ],
+      "question": "How many did you get?",
+      "dark": true
+    },
+    "caption": "Toxic ex bingo 🚩 How many did you get? Be honest.\n\n#toxicex #redflags #bingo #relatable #whispers"
+  },
+  {
+    "code": "ig-notes-01",
+    "account": "stories",
+    "format": "Unsent note",
+    "content_type": "Dramatised",
+    "composition": "NotesReel",
+    "props": {
+      "title": "unsent text to my ex",
+      "lines": [
+        "I saw you at the shops today.",
+        "You were laughing with someone new.",
+        "I hid behind the cereal aisle like an idiot.",
+        "I'm happy for you. I think.",
+        "Please never find out I wrote this."
+      ],
+      "question": "Would you send it?"
+    },
+    "caption": "An unsent text to an ex. Would you send it?\n\n(dramatised story)\n\n#unsent #ex #feelings #relatable #whispers"
+  },
+  {
+    "code": "ig-hot-03",
+    "account": "stories",
+    "format": "Unpopular opinion",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "spiro",
+      "title": "Best friends shouldn't date each other's exes. Ever.",
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 2,
+      "kicker": "Unpopular opinion",
+      "items": [
+        "Agree",
+        "Disagree"
+      ]
+    },
+    "caption": "Unpopular opinion or just common sense? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-hot-05",
     "account": "stories",
     "format": "Hot take",
     "content_type": "Prompt",
@@ -63,18 +583,247 @@
     "seconds": 9,
     "props": {
       "layout": "flag",
-      "bg": "ring",
+      "bg": "drop",
       "kicker": "Hot take",
-      "title": "Lending money to a friend is just paying to lose them.",
+      "title": "Your partner's phone should be an open book.",
       "items": [
         "Agree",
         "Disagree"
       ],
       "cta": "Agree? Tell us why",
       "seconds": 9,
-      "seed": 4
+      "seed": 2
     },
-    "caption": "lending money to a friend is just paying to lose them. true, or have you been paid back? 👇\n\n#hottake #money #friendship #unpopularopinion"
+    "caption": "Your partner's phone should be an open book. Fair, or a massive invasion of privacy? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
+  },
+  {
+    "code": "ig-hot-06",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "spiro",
+      "kicker": "Hot take",
+      "title": "Staying friends with your ex means you're not over them.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 3
+    },
+    "caption": "Staying friends with your ex means you're not over them. Agree? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
+  },
+  {
+    "code": "ig-flg-04",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "They still follow their ex's mom on Instagram.",
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 0,
+      "kicker": "Red flag or fair enough?"
+    },
+    "caption": "They still follow their ex's mom on Instagram. Red flag 🚩 or fair enough? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-flg-02",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "Still having your ex's number saved under a fake name.",
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 2,
+      "kicker": "Red flag or fair enough?"
+    },
+    "caption": "Red flag 🚩 or fair enough? Defend your answer 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-chat-02",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "My best friend found out what I said about her",
+      "contact": "Bestie",
+      "messages": [
+        {
+          "from": "them",
+          "text": "so are we going to talk about the screenshot"
+        },
+        {
+          "from": "me",
+          "text": "what screenshot"
+        },
+        {
+          "from": "them",
+          "text": "the one where you called my boyfriend 'temporary'"
+        },
+        {
+          "from": "me",
+          "text": "ok in my defence"
+        },
+        {
+          "from": "me",
+          "text": "you've had four 'forever' boyfriends this year"
+        },
+        {
+          "from": "them",
+          "text": "..."
+        },
+        {
+          "from": "them",
+          "text": "he proposed last night"
+        }
+      ],
+      "question": "Who's in the wrong here?",
+      "seed": 10
+    },
+    "caption": "My best friend found out what I said about her boyfriend… then she dropped this. Who's wrong here?\n\n(dramatised story)\n\n#storytime #friendship #drama #relatable #whispers"
+  },
+  {
+    "code": "ig-chat-03",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "A stranger texted me by mistake… then this happened",
+      "contact": "Unknown number",
+      "messages": [
+        {
+          "from": "them",
+          "text": "hey it's me, did you tell him yet??"
+        },
+        {
+          "from": "me",
+          "text": "who is this?"
+        },
+        {
+          "from": "them",
+          "text": "omg wrong number sorry"
+        },
+        {
+          "from": "them",
+          "text": "actually can I ask you something weird"
+        },
+        {
+          "from": "me",
+          "text": "go on"
+        },
+        {
+          "from": "them",
+          "text": "if your fiancé had a second phone would you say something or wait?"
+        },
+        {
+          "from": "me",
+          "text": "say something. obviously"
+        },
+        {
+          "from": "them",
+          "text": "ok. I'm at our wedding rehearsal"
+        },
+        {
+          "from": "them",
+          "text": "he's three tables away texting someone saved as 'Dentist'"
+        }
+      ],
+      "question": "What would you do in her place?",
+      "seed": 10
+    },
+    "caption": "A stranger texted me by mistake… and I wasn't ready for the last message. What would you do?\n\n(dramatised story)\n\n#storytime #wrongnumber #drama #relationships #whispers"
+  },
+  {
+    "code": "ig-rate-02",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "ring",
+      "title": "Checking out someone else while you're on a date.",
+      "cta": "Rate it 1 to 10",
+      "seconds": 9,
+      "seed": 0,
+      "kicker": "How bad is it?"
+    },
+    "caption": "1 = harmless, 10 = unforgivable. Go 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-tier-01",
+    "account": "stories",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Breakup excuses, ranked by honesty",
+      "items": [
+        {
+          "text": "It's not you, it's me",
+          "tier": "D"
+        },
+        {
+          "text": "I need to focus on myself",
+          "tier": "C"
+        },
+        {
+          "text": "I'm not ready for something serious",
+          "tier": "B"
+        },
+        {
+          "text": "We want different things",
+          "tier": "A"
+        },
+        {
+          "text": "I met someone else",
+          "tier": "S"
+        }
+      ],
+      "question": "Which tier is wrong?"
+    },
+    "caption": "Breakup excuses, ranked by honesty. Which tier is wrong? 👀\n\n#relatable #dating #relationships #funny #whispers"
+  },
+  {
+    "code": "ig-rnk-02",
+    "account": "stories",
+    "format": "Ranking",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 13,
+    "props": {
+      "layout": "rank",
+      "bg": "ring",
+      "title": "Rank these from worst to most forgivable",
+      "cta": "Comment your order, like 2-4-1-3",
+      "seconds": 13,
+      "seed": 0,
+      "items": [
+        "Reading someone's diary",
+        "Faking being sick for a week",
+        "Re-gifting a present to the same person",
+        "Lying about your age on a first date"
+      ]
+    },
+    "caption": "Worst first. Go 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "ig-sb-10",
@@ -140,38 +889,323 @@
     "caption": "02:47 and he's still typing… then the real problem came out. who's to blame?\n\nDramatised story.\n\n#storytime #drama #relationships #situationship"
   },
   {
-    "code": "ig-tier-03",
+    "code": "ig-meme-05",
+    "account": "stories",
+    "format": "Storyboard list",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Dating at 18 vs dating at 28",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "18: he didn't text back, my life is over",
+            "28: he didn't text back, great, early night",
+            "18: let's go out every weekend"
+          ],
+          "bg": "red"
+        },
+        {
+          "type": "list",
+          "items": [
+            "28: let's stay in and judge other people's weekends",
+            "18: I can change him",
+            "28: I can change the channel"
+          ],
+          "bg": "blue"
+        },
+        {
+          "type": "question",
+          "text": "Which age are you dating like?",
+          "sub": "send this to the friend still dating like they're 18.",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "Dating at 18 vs dating at 28 😂 Which age are you dating like?\n\n#dating #relatable #memes #funny #whispers"
+  },
+  {
+    "code": "ig-wyr-02",
+    "account": "stories",
+    "format": "Would you rather",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "spiro",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 1,
+      "items": [
+        "Your whole search history goes public",
+        "Every voice note you've ever sent goes public"
+      ]
+    },
+    "caption": "A or B? Explain yourself 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-fin-02",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "drop",
+      "title": "The most petty thing I've ever done was…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 3,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "We all have one. Finish the sentence 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-twist-02",
+    "account": "stories",
+    "format": "Guess the ending",
+    "content_type": "Dramatised",
+    "composition": "TwistReel",
+    "props": {
+      "hook": "Guess the ending",
+      "setup": [
+        "My coworker kept stealing my lunch.",
+        "So I left a note in the bag: 'I know what you did.'",
+        "The next morning there was a reply on my desk..."
+      ],
+      "ending": "'Sorry. I also took your stapler, your plant and your parking spot.'",
+      "question": "Forgive them or report them?",
+      "bg": "ring"
+    },
+    "caption": "My coworker kept stealing my lunch, so I left a note. Their reply… 💀\n\n(dramatised story)\n\n#storytime #work #coworkers #funny #whispers"
+  },
+  {
+    "code": "ig-pause-01",
+    "account": "stories",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "most people miss it",
+            "even on the third try",
+            "you'll have to scrub back"
+          ],
+          "bg": "red",
+          "secret": "I still have your hoodie. I'm not giving it back.",
+          "secretAt": 1.7
+        },
+        {
+          "type": "question",
+          "text": "What did it say?",
+          "sub": "no cheating",
+          "bg": "yellow",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% can pause at the right time 👀 what did it say?\n\n#pausechallenge #challenge #fyp #relatable"
+  },
+  {
+    "code": "ig-meme-02",
+    "account": "stories",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Red flags we all ignore at the start",
+      "slides": [
+        "They're 'bad at texting' but always online",
+        "Every single ex is 'crazy'",
+        "They only call after 11pm",
+        "Their best friend is someone they used to date",
+        "They 'don't do labels' four months in",
+        "They want your password but won't share theirs"
+      ],
+      "question": "Which one did you ignore?",
+      "sendTo": "Send this to the friend who's ignoring number 5 right now.",
+      "handle": "whispers_anon",
+      "dark": false
+    },
+    "caption": "Red flags we all ignore at the start 🚩 Which one did you ignore?\n\n#redflags #dating #relationships #relatable #whispers"
+  },
+  {
+    "code": "ig-hot-07",
+    "account": "stories",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "kicker": "Hot take",
+      "title": "If your friends don't like your partner, they're usually right.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 0
+    },
+    "caption": "If your friends don't like your partner, they're usually right. Agree? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
+  },
+  {
+    "code": "ig-flg-03",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "drop",
+      "title": "Going through your partner's phone when they ask you to hold it.",
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 3,
+      "kicker": "Red flag or fair enough?"
+    },
+    "caption": "Going through your partner's phone when they ask you to hold it. Red flag 🚩 or fair enough? 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
+  },
+  {
+    "code": "ig-chat-04",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "My mom sent this to me instead of my dad",
+      "contact": "Mom",
+      "messages": [
+        {
+          "from": "them",
+          "text": "don't tell her yet but I already paid for it"
+        },
+        {
+          "from": "them",
+          "text": "she's going to cry when she sees it"
+        },
+        {
+          "from": "me",
+          "text": "mom… this is me"
+        },
+        {
+          "from": "them",
+          "text": "WRONG CHAT"
+        },
+        {
+          "from": "them",
+          "text": "forget you saw that"
+        },
+        {
+          "from": "me",
+          "text": "you bought me something??"
+        },
+        {
+          "from": "them",
+          "text": "no. go to sleep"
+        }
+      ],
+      "question": "Would you pretend you never saw it?",
+      "seed": 10
+    },
+    "caption": "My mom sent this to me instead of my dad… would you pretend you never saw it?\n\n(dramatised story)\n\n#storytime #family #wholesome #funny #whispers"
+  },
+  {
+    "code": "ig-rate-03",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "drop",
+      "title": "Pretending you didn't see someone at the shops.",
+      "cta": "Rate it 1 to 10",
+      "seconds": 9,
+      "seed": 1,
+      "kicker": "How bad is it?"
+    },
+    "caption": "We've all done it. How bad is it, 1 to 10? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-tier-02",
     "account": "stories",
     "format": "Tier list",
     "content_type": "Prompt",
     "composition": "TierList",
     "props": {
-      "title": "Excuses for leaving someone on read, ranked",
+      "title": "Texting habits, ranked by how annoying they are",
       "items": [
         {
-          "text": "'my phone died'",
-          "tier": "D"
+          "text": "Replying 'k'",
+          "tier": "S"
         },
         {
-          "text": "'I thought I replied in my head'",
-          "tier": "C"
-        },
-        {
-          "text": "'I was busy'",
-          "tier": "B"
-        },
-        {
-          "text": "'I saw it at work and forgot'",
+          "text": "5 minute voice notes",
           "tier": "A"
         },
         {
-          "text": "'honestly I needed a break'",
-          "tier": "S"
+          "text": "'lol' and nothing else",
+          "tier": "B"
+        },
+        {
+          "text": "Double texting",
+          "tier": "C"
+        },
+        {
+          "text": "Using full stops.",
+          "tier": "D"
         }
       ],
-      "question": "Which one have you used this week?"
+      "question": "Wrong tier? Fix it below"
     },
-    "caption": "excuses for leaving someone on read, ranked by honesty. which tier is wrong? 👀\n\n#leftonread #relatable #texting #funny"
+    "caption": "Texting habits, ranked by how annoying they are. Wrong tier? Fix it below 👇\n\n#relatable #dating #relationships #funny #whispers"
+  },
+  {
+    "code": "ig-rnk-03",
+    "account": "stories",
+    "format": "Ranking",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 13,
+    "props": {
+      "layout": "rank",
+      "bg": "drop",
+      "title": "Rank these from most to least awkward",
+      "cta": "Comment your order, like 4-1-3-2",
+      "seconds": 13,
+      "seed": 1,
+      "items": [
+        "Waving back at someone who wasn't waving at you",
+        "Saying 'you too' when the waiter says enjoy your meal",
+        "Being caught talking to yourself",
+        "Laughing at a joke you didn't hear"
+      ]
+    },
+    "caption": "Most awkward first 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "ig-sb-11",
@@ -214,52 +1248,85 @@
     "caption": "me: totally over it. also me at 2am: rereading the whole chat 💀 what's your 2am relapse?\n\n#relatable #exes #2am #memes"
   },
   {
-    "code": "ig-chat-05",
+    "code": "ig-meme-04",
     "account": "stories",
-    "format": "Text story",
-    "content_type": "Dramatised",
-    "composition": "ChatReel",
+    "format": "Storyboard list",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
     "props": {
-      "hook": "My sister borrowed my car. Then this text.",
-      "contact": "Sis",
-      "seed": 11,
-      "messages": [
+      "scenes": [
         {
-          "from": "them",
-          "text": "quick question"
+          "type": "slam",
+          "text": "Toxic traits that are lowkey self-care",
+          "bg": "black",
+          "transition": "cut"
         },
         {
-          "from": "them",
-          "text": "does your car normally make a beeping sound"
+          "type": "list",
+          "items": [
+            "Leaving a group chat without saying anything",
+            "Cancelling plans and feeling instantly relieved",
+            "Muting someone instead of unfollowing"
+          ],
+          "bg": "red"
         },
         {
-          "from": "me",
-          "text": "what did you do"
+          "type": "list",
+          "items": [
+            "Not replying until you have the energy",
+            "Calling a 9pm bedtime 'a night in'"
+          ],
+          "bg": "blue"
         },
         {
-          "from": "them",
-          "text": "nothing!! it just started"
-        },
-        {
-          "from": "me",
-          "text": "is the orange light on"
-        },
-        {
-          "from": "them",
-          "text": "which one there are 6"
-        },
-        {
-          "from": "me",
-          "text": "where are you"
-        },
-        {
-          "from": "them",
-          "text": "at your ex's house. long story"
+          "type": "question",
+          "text": "Which toxic trait is yours?",
+          "sub": "send this to the friend who cancelled on you this week.",
+          "bg": "yellow",
+          "transition": "flash"
         }
-      ],
-      "question": "What's worse: the car or the location?"
+      ]
     },
-    "caption": "my sister borrowed my car and the last text ended me. what's worse here?\n\nDramatised story.\n\n#storytime #siblings #drama #textstory"
+    "caption": "Toxic traits that are lowkey self-care 😌 Which one is yours?\n\n#relatable #memes #funny #truth #whispers"
+  },
+  {
+    "code": "ig-wyr-03",
+    "account": "stories",
+    "format": "Would you rather",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 3,
+      "items": [
+        "Know exactly what everyone thinks of you",
+        "Never find out"
+      ]
+    },
+    "caption": "Choose wisely 👀\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "ig-fin-03",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "spiro",
+      "title": "I've never told anyone that I…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 0,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "Anonymous accounts welcome. Finish the sentence 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "ig-sb-12",
@@ -304,64 +1371,6 @@
     "caption": "a box showed up from my ex's mom. at the bottom: a letter she never sent me. open it or burn it?\n\nDramatised story.\n\n#storytime #exes #drama #whatwouldyoudo"
   },
   {
-    "code": "ig-pause-02",
-    "account": "stories",
-    "format": "Pause challenge",
-    "content_type": "Prompt",
-    "composition": "StoryboardReel",
-    "props": {
-      "scenes": [
-        {
-          "type": "slam",
-          "text": "Only 1% can pause at the right time.",
-          "bg": "black",
-          "transition": "cut"
-        },
-        {
-          "type": "list",
-          "items": [
-            "it's on screen for one frame",
-            "most people scroll past",
-            "you'll need to scrub back"
-          ],
-          "bg": "green",
-          "secret": "The group chat has a second group chat. You're not in it.",
-          "secretAt": 1.6
-        },
-        {
-          "type": "question",
-          "text": "What did it say?",
-          "sub": "no reading the comments first",
-          "bg": "yellow",
-          "transition": "flash"
-        }
-      ]
-    },
-    "caption": "only 1% catch it on the first try 👀 what did the hidden line say?\n\n#pausechallenge #challenge #groupchat #relatable"
-  },
-  {
-    "code": "ig-flg-05",
-    "account": "stories",
-    "format": "Red flag or fair",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "spiro",
-      "kicker": "Red flag or fair enough?",
-      "title": "They keep their ex's number 'for emergencies'.",
-      "items": [
-        "Red flag",
-        "Fair enough"
-      ],
-      "cta": "Say why in the comments",
-      "seconds": 9,
-      "seed": 5
-    },
-    "caption": "they keep their ex's number 'for emergencies'. red flag 🚩 or fair enough? say why\n\n#redflag #dating #exes #relationships"
-  },
-  {
     "code": "ig-sb-13",
     "account": "stories",
     "format": "Storyboard",
@@ -402,348 +1411,6 @@
       ]
     },
     "caption": "part 2: i finally opened the letter, and the person who hid it wasn't my ex. who's the villain?\n\nDramatised story.\n\n#storytime #part2 #betrayal #drama"
-  },
-  {
-    "code": "ig-fin-01",
-    "account": "stories",
-    "format": "Finish the sentence",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "finish",
-      "bg": "ring",
-      "title": "The thing I'd never tell my mum is…",
-      "cta": "Finish it in the comments",
-      "seconds": 10,
-      "seed": 1,
-      "kicker": "Finish the sentence"
-    },
-    "caption": "Finish the sentence 👇 The thing I'd never tell my mum is…\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-hot-01",
-    "account": "stories",
-    "format": "Unpopular opinion",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "ring",
-      "title": "Splitting the bill on a first date is fine.",
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 1,
-      "kicker": "Unpopular opinion",
-      "items": [
-        "Agree",
-        "Disagree"
-      ]
-    },
-    "caption": "Unpopular opinion: splitting the bill on a first date is fine. Agree or disagree? Fight it out 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-meme-01",
-    "account": "stories",
-    "format": "Meme carousel",
-    "content_type": "Prompt",
-    "composition": "MemeCarousel",
-    "props": {
-      "hook": "Things everyone does but nobody admits",
-      "slides": [
-        "Rehearsing an argument in the shower and winning every time",
-        "Saying 'I'm 5 minutes away' while still lying in bed",
-        "Reading their message from the notification so they don't see you opened it",
-        "Pretending to text when you walk past someone you know",
-        "Laughing at a voice note you can't actually hear",
-        "Checking who viewed your story before checking who messaged you"
-      ],
-      "question": "Which one are you guilty of? Be honest.",
-      "sendTo": "Send this to the friend who does number 2.",
-      "handle": "whispers_anon",
-      "dark": false
-    },
-    "caption": "Things everyone does but nobody admits. Which number is you? 👀\n\n#relatable #memes #funny #truth #whispers"
-  },
-  {
-    "code": "ig-cho-01",
-    "account": "stories",
-    "format": "This or that",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "drop",
-      "title": "Which would you rather admit?",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 2,
-      "items": [
-        "You read their messages while they slept",
-        "You still check your ex's profile every week"
-      ]
-    },
-    "caption": "Be honest. Which one would you rather admit to? A or B 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-wyr-01",
-    "account": "stories",
-    "format": "Would you rather",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "drop",
-      "title": "Would you rather…",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 2,
-      "items": [
-        "Read your partner's texts for one day",
-        "Let them read yours"
-      ]
-    },
-    "caption": "Would you rather? No skipping 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-tier-01",
-    "account": "stories",
-    "format": "Tier list",
-    "content_type": "Prompt",
-    "composition": "TierList",
-    "props": {
-      "title": "Breakup excuses, ranked by honesty",
-      "items": [
-        {
-          "text": "It's not you, it's me",
-          "tier": "D"
-        },
-        {
-          "text": "I need to focus on myself",
-          "tier": "C"
-        },
-        {
-          "text": "I'm not ready for something serious",
-          "tier": "B"
-        },
-        {
-          "text": "We want different things",
-          "tier": "A"
-        },
-        {
-          "text": "I met someone else",
-          "tier": "S"
-        }
-      ],
-      "question": "Which tier is wrong?"
-    },
-    "caption": "Breakup excuses, ranked by honesty. Which tier is wrong? 👀\n\n#relatable #dating #relationships #funny #whispers"
-  },
-  {
-    "code": "ig-chat-01",
-    "account": "stories",
-    "format": "Text story",
-    "content_type": "Dramatised",
-    "composition": "ChatReel",
-    "props": {
-      "hook": "I called in sick. My manager replied with this.",
-      "contact": "Manager",
-      "messages": [
-        {
-          "from": "me",
-          "text": "hi, I'm really sick today, won't make it in"
-        },
-        {
-          "from": "them",
-          "text": "no problem, feel better"
-        },
-        {
-          "from": "them",
-          "text": "quick question though"
-        },
-        {
-          "from": "them",
-          "text": "how's the beach?"
-        },
-        {
-          "from": "me",
-          "text": "what beach"
-        },
-        {
-          "from": "them",
-          "text": "you tagged the location"
-        },
-        {
-          "from": "them",
-          "text": "the whole team is watching your story right now"
-        }
-      ],
-      "question": "Fire them or let it slide?",
-      "seed": 10
-    },
-    "caption": "I called in sick. My manager replied with this 💀 Fire them or let it slide?\n\n(dramatised story)\n\n#storytime #work #fail #relatable #whispers"
-  },
-  {
-    "code": "ig-twist-01",
-    "account": "stories",
-    "format": "Guess the ending",
-    "content_type": "Dramatised",
-    "composition": "TwistReel",
-    "props": {
-      "hook": "Guess the ending",
-      "setup": [
-        "My boyfriend planned a surprise dinner.",
-        "He invited all my friends and told me to dress up.",
-        "Halfway through, he stood up holding a small box..."
-      ],
-      "ending": "...and gave the ring to my best friend. They'd been together for 8 months.",
-      "question": "What would you do next?",
-      "bg": "drop"
-    },
-    "caption": "He planned a surprise dinner with all my friends… guess how it ended.\n\n(dramatised story)\n\n#relatable #dating #relationships #funny #whispers"
-  },
-  {
-    "code": "ig-hot-04",
-    "account": "stories",
-    "format": "Hot take",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "ring",
-      "kicker": "Hot take",
-      "title": "If they take 3 hours to reply, they're just not that into you.",
-      "items": [
-        "Agree",
-        "Disagree"
-      ],
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 1
-    },
-    "caption": "If they take 3 hours to reply, they're just not that into you. Agree or are we overthinking? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
-  },
-  {
-    "code": "ig-bingo-01",
-    "account": "stories",
-    "format": "Bingo",
-    "content_type": "Prompt",
-    "composition": "BingoCard",
-    "props": {
-      "title": "Toxic ex bingo",
-      "cells": [
-        "Says 'you're overthinking'",
-        "Liked their ex's photo",
-        "'I'm just not a texter'",
-        "Disappears for 3 days",
-        "'It was just a joke'",
-        "Love bombed in week one",
-        "Still has dating apps",
-        "Hates all your friends",
-        "Owes you money",
-        "Has a 'crazy' ex story",
-        "Only calls when drunk",
-        "Forgot your birthday",
-        "Blames their star sign",
-        "Goes through your phone",
-        "Breadcrumbs you",
-        "Vague posts about you",
-        "Never says sorry",
-        "Gaming till 4am",
-        "Cancels last minute",
-        "Still friends with their ex",
-        "'Let's not label it'",
-        "Texts 'wyd' at 2am",
-        "Rude to waiters",
-        "Mutes you in the group chat"
-      ],
-      "question": "How many did you get?",
-      "dark": true
-    },
-    "caption": "Toxic ex bingo 🚩 How many did you get? Be honest.\n\n#toxicex #redflags #bingo #relatable #whispers"
-  },
-  {
-    "code": "ig-meme-02",
-    "account": "stories",
-    "format": "Meme carousel",
-    "content_type": "Prompt",
-    "composition": "MemeCarousel",
-    "props": {
-      "hook": "Red flags we all ignore at the start",
-      "slides": [
-        "They're 'bad at texting' but always online",
-        "Every single ex is 'crazy'",
-        "They only call after 11pm",
-        "Their best friend is someone they used to date",
-        "They 'don't do labels' four months in",
-        "They want your password but won't share theirs"
-      ],
-      "question": "Which one did you ignore?",
-      "sendTo": "Send this to the friend who's ignoring number 5 right now.",
-      "handle": "whispers_anon",
-      "dark": false
-    },
-    "caption": "Red flags we all ignore at the start 🚩 Which one did you ignore?\n\n#redflags #dating #relationships #relatable #whispers"
-  },
-  {
-    "code": "ig-notes-01",
-    "account": "stories",
-    "format": "Unsent note",
-    "content_type": "Dramatised",
-    "composition": "NotesReel",
-    "props": {
-      "title": "unsent text to my ex",
-      "lines": [
-        "I saw you at the shops today.",
-        "You were laughing with someone new.",
-        "I hid behind the cereal aisle like an idiot.",
-        "I'm happy for you. I think.",
-        "Please never find out I wrote this."
-      ],
-      "question": "Would you send it?"
-    },
-    "caption": "An unsent text to an ex. Would you send it?\n\n(dramatised story)\n\n#unsent #ex #feelings #relatable #whispers"
-  },
-  {
-    "code": "ig-deep-01",
-    "account": "stories",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "spiro",
-      "kicker": "Deep question",
-      "title": "Who are you when nobody's watching?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 1
-    },
-    "caption": "Who are you when nobody's watching? Be honest. Nobody knows it's you.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "ig-search-01",
-    "account": "stories",
-    "format": "3am searches",
-    "content_type": "Prompt",
-    "composition": "SearchReel",
-    "props": {
-      "hook": "Things we search at 3am but never admit",
-      "query": "is it normal to ",
-      "suggestions": [
-        "miss someone you never dated",
-        "check their profile every day",
-        "talk to myself in the shower",
-        "think about a school crush"
-      ],
-      "question": "Which one have you searched?"
-    },
-    "caption": "Things we search at 3am but never admit. Which one have you searched? 👀\n\n#3am #relatable #overthinking #funny #whispers"
   },
   {
     "code": "ig-sb-01",
@@ -806,50 +1473,6 @@
     "caption": "she found a hoodie in his car… and it wasn't hers 😳 do you tell the brother?\n\n(dramatised story)\n\n#storytime #cheating #drama #relationships"
   },
   {
-    "code": "ig-chat-02",
-    "account": "stories",
-    "format": "Text story",
-    "content_type": "Dramatised",
-    "composition": "ChatReel",
-    "props": {
-      "hook": "My best friend found out what I said about her",
-      "contact": "Bestie",
-      "messages": [
-        {
-          "from": "them",
-          "text": "so are we going to talk about the screenshot"
-        },
-        {
-          "from": "me",
-          "text": "what screenshot"
-        },
-        {
-          "from": "them",
-          "text": "the one where you called my boyfriend 'temporary'"
-        },
-        {
-          "from": "me",
-          "text": "ok in my defence"
-        },
-        {
-          "from": "me",
-          "text": "you've had four 'forever' boyfriends this year"
-        },
-        {
-          "from": "them",
-          "text": "..."
-        },
-        {
-          "from": "them",
-          "text": "he proposed last night"
-        }
-      ],
-      "question": "Who's in the wrong here?",
-      "seed": 10
-    },
-    "caption": "My best friend found out what I said about her boyfriend… then she dropped this. Who's wrong here?\n\n(dramatised story)\n\n#storytime #friendship #drama #relatable #whispers"
-  },
-  {
     "code": "ig-sb-02",
     "account": "stories",
     "format": "Storyboard",
@@ -891,20 +1514,6 @@
     "caption": "don't show this to your best friend 👀 how many did you count?\n\n#friendship #fakefriends #redflags #relatable"
   },
   {
-    "code": "ig-voice-01",
-    "account": "stories",
-    "format": "Voice story",
-    "content_type": "Dramatised",
-    "composition": "VoiceStory",
-    "props": {
-      "hook": "My neighbour left notes on my car",
-      "story": "Every morning for a month, my neighbour left a sticky note on my car. Just one word. Smile. I thought it was creepy, so one night I waited up to catch them. It was the old man from number four. He said his wife used to leave him notes like that. Since she passed, he leaves one for whoever looks like they need it most.",
-      "question": "Creepy or the sweetest thing ever?",
-      "bg": "drop"
-    },
-    "caption": "Every morning someone left a note on my car. I finally caught them.\n\n(dramatised story)\n\n#storytime #wholesome #neighbours #faithinhumanity #whispers"
-  },
-  {
     "code": "ig-sb-03",
     "account": "stories",
     "format": "Storyboard",
@@ -934,28 +1543,6 @@
       ]
     },
     "caption": "your partner earns double what you do. who pays? pick a side 👇\n\n#money #relationships #debate #50/50"
-  },
-  {
-    "code": "ig-hot-05",
-    "account": "stories",
-    "format": "Hot take",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "drop",
-      "kicker": "Hot take",
-      "title": "Your partner's phone should be an open book.",
-      "items": [
-        "Agree",
-        "Disagree"
-      ],
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 2
-    },
-    "caption": "Your partner's phone should be an open book. Fair, or a massive invasion of privacy? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
   },
   {
     "code": "ig-sb-04",
@@ -990,24 +1577,6 @@
       ]
     },
     "caption": "things you should NEVER tell your partner 🤐 which one ends it?\n\n#relationships #secrets #couples #relatable"
-  },
-  {
-    "code": "ig-pov-01",
-    "account": "stories",
-    "format": "POV",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "props": {
-      "layout": "question",
-      "bg": "spiro",
-      "kicker": "POV",
-      "title": "You said 'I'm fine' and they actually believed you.",
-      "cta": "Been there? Tell us",
-      "seconds": 9,
-      "seed": 2
-    },
-    "caption": "POV: you said 'I'm fine' and they actually believed you.\n\n#pov #relatable #feelings #honesty #whispers",
-    "seconds": 9
   },
   {
     "code": "ig-sb-05",
@@ -1045,29 +1614,6 @@
       "tag": "dramatised"
     },
     "caption": "he was 2 hours late because of his horoscope 💀 rate this excuse 1–10\n\n(dramatised story)\n\n#dating #excuses #funny #relatable"
-  },
-  {
-    "code": "ig-rnk-01",
-    "account": "stories",
-    "format": "Ranking",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 13,
-    "props": {
-      "layout": "rank",
-      "bg": "spiro",
-      "title": "Rank these from most to least relatable",
-      "cta": "Comment your order, like 3-1-4-2",
-      "seconds": 13,
-      "seed": 3,
-      "items": [
-        "Pretending to be on a call to avoid someone",
-        "Rehearsing arguments in the shower",
-        "Saying 'on my way' before leaving the house",
-        "Liking a post, then panicking and unliking it"
-      ]
-    },
-    "caption": "Rank them. Most relatable first 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "ig-sb-06",
@@ -1128,40 +1674,6 @@
     "caption": "your toxic trait based on your birth month 😭 which month got you?\n\n#toxictraits #birthmonth #relatable #funny"
   },
   {
-    "code": "ig-tier-02",
-    "account": "stories",
-    "format": "Tier list",
-    "content_type": "Prompt",
-    "composition": "TierList",
-    "props": {
-      "title": "Texting habits, ranked by how annoying they are",
-      "items": [
-        {
-          "text": "Replying 'k'",
-          "tier": "S"
-        },
-        {
-          "text": "5 minute voice notes",
-          "tier": "A"
-        },
-        {
-          "text": "'lol' and nothing else",
-          "tier": "B"
-        },
-        {
-          "text": "Double texting",
-          "tier": "C"
-        },
-        {
-          "text": "Using full stops.",
-          "tier": "D"
-        }
-      ],
-      "question": "Wrong tier? Fix it below"
-    },
-    "caption": "Texting habits, ranked by how annoying they are. Wrong tier? Fix it below 👇\n\n#relatable #dating #relationships #funny #whispers"
-  },
-  {
     "code": "ig-sb-07",
     "account": "stories",
     "format": "Storyboard",
@@ -1189,24 +1701,6 @@
       ]
     },
     "caption": "people who say 'I'm just honest' are usually just rude. agree or am I wrong? 👇\n\n#unpopularopinion #hottake #debate #honesty"
-  },
-  {
-    "code": "ig-deep-02",
-    "account": "stories",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "ring",
-      "kicker": "Deep question",
-      "title": "What do you pretend not to care about?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 2
-    },
-    "caption": "What do you pretend not to care about? We all have one.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
   },
   {
     "code": "ig-sb-08",
@@ -1251,887 +1745,250 @@
     "caption": "I found my mom's old diary… one name on every page 😶 do you ask her?\n\n(dramatised story)\n\n#storytime #family #secrets #drama"
   },
   {
-    "code": "ig-twist-02",
-    "account": "stories",
-    "format": "Guess the ending",
-    "content_type": "Dramatised",
-    "composition": "TwistReel",
-    "props": {
-      "hook": "Guess the ending",
-      "setup": [
-        "My coworker kept stealing my lunch.",
-        "So I left a note in the bag: 'I know what you did.'",
-        "The next morning there was a reply on my desk..."
-      ],
-      "ending": "'Sorry. I also took your stapler, your plant and your parking spot.'",
-      "question": "Forgive them or report them?",
-      "bg": "ring"
-    },
-    "caption": "My coworker kept stealing my lunch, so I left a note. Their reply… 💀\n\n(dramatised story)\n\n#storytime #work #coworkers #funny #whispers"
-  },
-  {
-    "code": "ig-pause-01",
-    "account": "stories",
-    "format": "Pause challenge",
-    "content_type": "Prompt",
-    "composition": "StoryboardReel",
-    "props": {
-      "scenes": [
-        {
-          "type": "slam",
-          "text": "Only 1% can pause at the right time.",
-          "bg": "black",
-          "transition": "cut"
-        },
-        {
-          "type": "list",
-          "items": [
-            "most people miss it",
-            "even on the third try",
-            "you'll have to scrub back"
-          ],
-          "bg": "red",
-          "secret": "I still have your hoodie. I'm not giving it back.",
-          "secretAt": 1.7
-        },
-        {
-          "type": "question",
-          "text": "What did it say?",
-          "sub": "no cheating",
-          "bg": "yellow",
-          "transition": "flash"
-        }
-      ]
-    },
-    "caption": "only 1% can pause at the right time 👀 what did it say?\n\n#pausechallenge #challenge #fyp #relatable"
-  },
-  {
-    "code": "ig-meme-03",
-    "account": "stories",
-    "format": "Storyboard list",
-    "content_type": "Prompt",
-    "composition": "StoryboardReel",
-    "props": {
-      "scenes": [
-        {
-          "type": "slam",
-          "text": "Lies we tell every single day",
-          "bg": "black",
-          "transition": "cut"
-        },
-        {
-          "type": "list",
-          "items": [
-            "I'm fine",
-            "I read the terms and conditions",
-            "I'm on my way"
-          ],
-          "bg": "red"
-        },
-        {
-          "type": "list",
-          "items": [
-            "I'll start on Monday",
-            "I'm not mad",
-            "Just one more episode"
-          ],
-          "bg": "blue"
-        },
-        {
-          "type": "question",
-          "text": "Which lie did you already tell today?",
-          "sub": "send this to the friend who says 'I'm on my way' from bed.",
-          "bg": "yellow",
-          "transition": "flash"
-        }
-      ]
-    },
-    "caption": "Lies we tell every single day 🤥 Which one did you already tell today?\n\n#relatable #memes #funny #truth #whispers"
-  },
-  {
-    "code": "ig-search-02",
-    "account": "stories",
-    "format": "3am searches",
-    "content_type": "Prompt",
-    "composition": "SearchReel",
-    "props": {
-      "hook": "Searches we'd die if anyone saw",
-      "query": "how to tell if ",
-      "suggestions": [
-        "my friend is secretly jealous",
-        "they read my message",
-        "my ex still thinks about me",
-        "I'm the toxic one"
-      ],
-      "question": "Be honest. Which one?"
-    },
-    "caption": "Searches we'd die if anyone saw 🙈 Be honest, which one?\n\n#searchhistory #relatable #overthinking #funny #whispers"
-  },
-  {
-    "code": "ig-chat-03",
-    "account": "stories",
-    "format": "Text story",
-    "content_type": "Dramatised",
-    "composition": "ChatReel",
-    "props": {
-      "hook": "A stranger texted me by mistake… then this happened",
-      "contact": "Unknown number",
-      "messages": [
-        {
-          "from": "them",
-          "text": "hey it's me, did you tell him yet??"
-        },
-        {
-          "from": "me",
-          "text": "who is this?"
-        },
-        {
-          "from": "them",
-          "text": "omg wrong number sorry"
-        },
-        {
-          "from": "them",
-          "text": "actually can I ask you something weird"
-        },
-        {
-          "from": "me",
-          "text": "go on"
-        },
-        {
-          "from": "them",
-          "text": "if your fiancé had a second phone would you say something or wait?"
-        },
-        {
-          "from": "me",
-          "text": "say something. obviously"
-        },
-        {
-          "from": "them",
-          "text": "ok. I'm at our wedding rehearsal"
-        },
-        {
-          "from": "them",
-          "text": "he's three tables away texting someone saved as 'Dentist'"
-        }
-      ],
-      "question": "What would you do in her place?",
-      "seed": 10
-    },
-    "caption": "A stranger texted me by mistake… and I wasn't ready for the last message. What would you do?\n\n(dramatised story)\n\n#storytime #wrongnumber #drama #relationships #whispers"
-  },
-  {
-    "code": "ig-voice-02",
-    "account": "stories",
-    "format": "Voice story",
-    "content_type": "Dramatised",
-    "composition": "VoiceStory",
-    "props": {
-      "hook": "I sent my boss a voice note meant for my friend",
-      "story": "I recorded a two minute rant about my boss and hit send. To my boss. I watched it get delivered. Then played. Then he started typing. I didn't breathe for a full minute. His reply? Fair points. Can we talk about number three on Monday? I got a raise.",
-      "question": "Would you have unsent it?",
-      "bg": "ring"
-    },
-    "caption": "I sent my boss a voice note rant meant for my friend… his reply 😳\n\n(dramatised story)\n\n#storytime #work #boss #fail #whispers"
-  },
-  {
-    "code": "ig-rate-01",
-    "account": "stories",
-    "format": "Rate it 1-10",
+    "code": "igb-hot-05",
+    "account": "brand",
+    "format": "Hot take",
     "content_type": "Prompt",
     "composition": "TextReel",
     "seconds": 9,
     "props": {
-      "layout": "scale",
-      "bg": "spiro",
-      "title": "Leaving someone on read for 3 days, then replying 'haha'.",
-      "cta": "Rate it 1 to 10",
+      "layout": "flag",
+      "bg": "gradient",
+      "kicker": "Hot take",
+      "title": "You don't owe someone a birthday invite just because they invited you.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
       "seconds": 9,
-      "seed": 3,
-      "kicker": "How bad is it?"
+      "seed": 3
     },
-    "caption": "How bad is this, 1 to 10? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+    "caption": "you don't owe someone a birthday invite just because they invited you. fair, or petty? 👇\n\n#hottake #friendship #etiquette #unpopularopinion"
   },
   {
-    "code": "ig-pov-02",
-    "account": "stories",
+    "code": "igb-hot-04",
+    "account": "brand",
+    "format": "Hot take",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "kicker": "Hot take",
+      "title": "Saying sorry first doesn't mean you were wrong.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 1
+    },
+    "caption": "Saying sorry first doesn't mean you were wrong. Agree? 🤍\n\n#hottake #relationships #datingadvice #unpopularopinion"
+  },
+  {
+    "code": "igb-hot-01",
+    "account": "brand",
+    "format": "Unpopular opinion",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "title": "It's okay to outgrow your friends.",
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 0,
+      "kicker": "Unpopular opinion",
+      "items": [
+        "Agree",
+        "Disagree"
+      ]
+    },
+    "caption": "Hard truth or hot take? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-hot-02",
+    "account": "brand",
+    "format": "Unpopular opinion",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "title": "Some apologies come too late to matter.",
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 1,
+      "kicker": "Unpopular opinion",
+      "items": [
+        "Agree",
+        "Disagree"
+      ]
+    },
+    "caption": "Do you agree? 🤍\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-tier-02",
+    "account": "brand",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Ways friends say sorry, ranked",
+      "items": [
+        {
+          "text": "'sorry you feel that way'",
+          "tier": "D"
+        },
+        {
+          "text": "A meme and acting normal",
+          "tier": "C"
+        },
+        {
+          "text": "Showing up with your favourite snack",
+          "tier": "B"
+        },
+        {
+          "text": "A voice note that rambles",
+          "tier": "A"
+        },
+        {
+          "text": "'I was wrong. I'm sorry.'",
+          "tier": "S"
+        }
+      ],
+      "question": "Which one is underrated?"
+    },
+    "caption": "ways friends say sorry, ranked. which one deserves a higher tier? 🤍\n\n#friendship #apology #wholesome #relatable"
+  },
+  {
+    "code": "igb-tier-01",
+    "account": "brand",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Ways people say 'I love you' without saying it",
+      "items": [
+        {
+          "text": "'Text me when you get home'",
+          "tier": "S"
+        },
+        {
+          "text": "Saving you the last bite",
+          "tier": "S"
+        },
+        {
+          "text": "Remembering your order",
+          "tier": "A"
+        },
+        {
+          "text": "Sending you memes daily",
+          "tier": "A"
+        },
+        {
+          "text": "Fixing your charger cable",
+          "tier": "B"
+        }
+      ],
+      "question": "What would you put in S tier?"
+    },
+    "caption": "Ways people say 'I love you' without saying it. What's your S tier? 🤍\n\n#lovelanguage #wholesome #relationships #friendship #whispers"
+  },
+  {
+    "code": "igb-pov-02",
+    "account": "brand",
+    "format": "POV",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "question",
+      "bg": "gradient",
+      "kicker": "POV",
+      "title": "A friend sends a photo with 'this reminded me of you' and it's oddly accurate.",
+      "cta": "Who sends you these?",
+      "seconds": 9,
+      "seed": 2
+    },
+    "caption": "pov: a friend sends 'this reminded me of you' and it's weirdly accurate. who does this for you?\n\n#pov #friendship #wholesome #bestfriend"
+  },
+  {
+    "code": "igb-pov-01",
+    "account": "brand",
     "format": "POV",
     "content_type": "Prompt",
     "composition": "TextReel",
     "props": {
       "layout": "question",
-      "bg": "ring",
+      "bg": "gradient",
       "kicker": "POV",
-      "title": "Your ex's new partner looks exactly like you.",
-      "cta": "What do you do?",
+      "title": "Someone remembered the small thing you mentioned once.",
+      "cta": "Who did this for you?",
       "seconds": 9,
-      "seed": 1
+      "seed": 0
     },
-    "caption": "POV: your ex's new partner looks exactly like you. What do you do?\n\n#pov #ex #dating #funny #whispers",
+    "caption": "POV: someone remembered the small thing you mentioned once. Who did this for you? 🤍\n\n#pov #wholesome #friendship #kindness #whispers",
     "seconds": 9
   },
   {
-    "code": "ig-deep-03",
-    "account": "stories",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "drop",
-      "kicker": "Deep question",
-      "title": "What would you do if nobody you knew could ever find out?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 3
-    },
-    "caption": "What would you do if nobody you knew could ever find out? Keep it within the rules 👀\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "ig-meme-05",
-    "account": "stories",
-    "format": "Storyboard list",
-    "content_type": "Prompt",
-    "composition": "StoryboardReel",
-    "props": {
-      "scenes": [
-        {
-          "type": "slam",
-          "text": "Dating at 18 vs dating at 28",
-          "bg": "black",
-          "transition": "cut"
-        },
-        {
-          "type": "list",
-          "items": [
-            "18: he didn't text back, my life is over",
-            "28: he didn't text back, great, early night",
-            "18: let's go out every weekend"
-          ],
-          "bg": "red"
-        },
-        {
-          "type": "list",
-          "items": [
-            "28: let's stay in and judge other people's weekends",
-            "18: I can change him",
-            "28: I can change the channel"
-          ],
-          "bg": "blue"
-        },
-        {
-          "type": "question",
-          "text": "Which age are you dating like?",
-          "sub": "send this to the friend still dating like they're 18.",
-          "bg": "yellow",
-          "transition": "flash"
-        }
-      ]
-    },
-    "caption": "Dating at 18 vs dating at 28 😂 Which age are you dating like?\n\n#dating #relatable #memes #funny #whispers"
-  },
-  {
-    "code": "ig-hot-06",
-    "account": "stories",
-    "format": "Hot take",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "spiro",
-      "kicker": "Hot take",
-      "title": "Staying friends with your ex means you're not over them.",
-      "items": [
-        "Agree",
-        "Disagree"
-      ],
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 3
-    },
-    "caption": "Staying friends with your ex means you're not over them. Agree? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
-  },
-  {
-    "code": "ig-meme-04",
-    "account": "stories",
-    "format": "Storyboard list",
-    "content_type": "Prompt",
-    "composition": "StoryboardReel",
-    "props": {
-      "scenes": [
-        {
-          "type": "slam",
-          "text": "Toxic traits that are lowkey self-care",
-          "bg": "black",
-          "transition": "cut"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Leaving a group chat without saying anything",
-            "Cancelling plans and feeling instantly relieved",
-            "Muting someone instead of unfollowing"
-          ],
-          "bg": "red"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Not replying until you have the energy",
-            "Calling a 9pm bedtime 'a night in'"
-          ],
-          "bg": "blue"
-        },
-        {
-          "type": "question",
-          "text": "Which toxic trait is yours?",
-          "sub": "send this to the friend who cancelled on you this week.",
-          "bg": "yellow",
-          "transition": "flash"
-        }
-      ]
-    },
-    "caption": "Toxic traits that are lowkey self-care 😌 Which one is yours?\n\n#relatable #memes #funny #truth #whispers"
-  },
-  {
-    "code": "ig-flg-01",
-    "account": "stories",
-    "format": "Red flag or fair",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "gradient",
-      "title": "Checking your partner's location every night.",
-      "cta": "Say why in the comments",
-      "seconds": 9,
-      "seed": 1,
-      "kicker": "Red flag or fair enough?"
-    },
-    "caption": "Red flag 🚩 or fair enough? Tell us why 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-deep-04",
-    "account": "stories",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "spiro",
-      "kicker": "Deep question",
-      "title": "What did you stop telling people because they never listened?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 0
-    },
-    "caption": "What did you stop telling people because they never listened? We're listening.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "ig-chat-04",
-    "account": "stories",
-    "format": "Text story",
-    "content_type": "Dramatised",
-    "composition": "ChatReel",
-    "props": {
-      "hook": "My mom sent this to me instead of my dad",
-      "contact": "Mom",
-      "messages": [
-        {
-          "from": "them",
-          "text": "don't tell her yet but I already paid for it"
-        },
-        {
-          "from": "them",
-          "text": "she's going to cry when she sees it"
-        },
-        {
-          "from": "me",
-          "text": "mom… this is me"
-        },
-        {
-          "from": "them",
-          "text": "WRONG CHAT"
-        },
-        {
-          "from": "them",
-          "text": "forget you saw that"
-        },
-        {
-          "from": "me",
-          "text": "you bought me something??"
-        },
-        {
-          "from": "them",
-          "text": "no. go to sleep"
-        }
-      ],
-      "question": "Would you pretend you never saw it?",
-      "seed": 10
-    },
-    "caption": "My mom sent this to me instead of my dad… would you pretend you never saw it?\n\n(dramatised story)\n\n#storytime #family #wholesome #funny #whispers"
-  },
-  {
-    "code": "ig-hot-07",
-    "account": "stories",
-    "format": "Hot take",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "ring",
-      "kicker": "Hot take",
-      "title": "If your friends don't like your partner, they're usually right.",
-      "items": [
-        "Agree",
-        "Disagree"
-      ],
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 0
-    },
-    "caption": "If your friends don't like your partner, they're usually right. Agree? 👇\n\n#hottake #relationships #datingadvice #unpopularopinion"
-  },
-  {
-    "code": "ig-flg-04",
-    "account": "stories",
-    "format": "Red flag or fair",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "ring",
-      "title": "They still follow their ex's mom on Instagram.",
-      "cta": "Say why in the comments",
-      "seconds": 9,
-      "seed": 0,
-      "kicker": "Red flag or fair enough?"
-    },
-    "caption": "They still follow their ex's mom on Instagram. Red flag 🚩 or fair enough? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-deep-05",
-    "account": "stories",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "ring",
-      "kicker": "Deep question",
-      "title": "Which place can you never go back to, and why?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 1
-    },
-    "caption": "Which place can you never go back to, and why? A city, a house, a person's car. Anything.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "ig-hot-02",
-    "account": "stories",
-    "format": "Unpopular opinion",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "drop",
-      "title": "You don't owe anyone a reply.",
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 2,
-      "kicker": "Unpopular opinion",
-      "items": [
-        "Agree",
-        "Disagree"
-      ]
-    },
-    "caption": "Unpopular opinion: you don't owe anyone a reply. Agree? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-wyr-02",
-    "account": "stories",
-    "format": "Would you rather",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "spiro",
-      "title": "Would you rather…",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 1,
-      "items": [
-        "Your whole search history goes public",
-        "Every voice note you've ever sent goes public"
-      ]
-    },
-    "caption": "A or B? Explain yourself 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-flg-02",
-    "account": "stories",
-    "format": "Red flag or fair",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "ring",
-      "title": "Still having your ex's number saved under a fake name.",
-      "cta": "Say why in the comments",
-      "seconds": 9,
-      "seed": 2,
-      "kicker": "Red flag or fair enough?"
-    },
-    "caption": "Red flag 🚩 or fair enough? Defend your answer 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-rate-02",
-    "account": "stories",
-    "format": "Rate it 1-10",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "scale",
-      "bg": "ring",
-      "title": "Checking out someone else while you're on a date.",
-      "cta": "Rate it 1 to 10",
-      "seconds": 9,
-      "seed": 0,
-      "kicker": "How bad is it?"
-    },
-    "caption": "1 = harmless, 10 = unforgivable. Go 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-cho-02",
-    "account": "stories",
-    "format": "This or that",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "spiro",
-      "title": "Which secret would you rather keep forever?",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 1,
-      "items": [
-        "Who you really voted for",
-        "How much you actually earn"
-      ]
-    },
-    "caption": "No middle option. A or B? 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-fin-02",
-    "account": "stories",
-    "format": "Finish the sentence",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "finish",
-      "bg": "drop",
-      "title": "The most petty thing I've ever done was…",
-      "cta": "Finish it in the comments",
-      "seconds": 10,
-      "seed": 3,
-      "kicker": "Finish the sentence"
-    },
-    "caption": "We all have one. Finish the sentence 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-hot-03",
-    "account": "stories",
-    "format": "Unpopular opinion",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "spiro",
-      "title": "Best friends shouldn't date each other's exes. Ever.",
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 2,
-      "kicker": "Unpopular opinion",
-      "items": [
-        "Agree",
-        "Disagree"
-      ]
-    },
-    "caption": "Unpopular opinion or just common sense? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-rnk-02",
-    "account": "stories",
-    "format": "Ranking",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 13,
-    "props": {
-      "layout": "rank",
-      "bg": "ring",
-      "title": "Rank these from worst to most forgivable",
-      "cta": "Comment your order, like 2-4-1-3",
-      "seconds": 13,
-      "seed": 0,
-      "items": [
-        "Reading someone's diary",
-        "Faking being sick for a week",
-        "Re-gifting a present to the same person",
-        "Lying about your age on a first date"
-      ]
-    },
-    "caption": "Worst first. Go 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-wyr-03",
-    "account": "stories",
-    "format": "Would you rather",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "ring",
-      "title": "Would you rather…",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 3,
-      "items": [
-        "Know exactly what everyone thinks of you",
-        "Never find out"
-      ]
-    },
-    "caption": "Choose wisely 👀\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-rate-03",
-    "account": "stories",
-    "format": "Rate it 1-10",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "scale",
-      "bg": "drop",
-      "title": "Pretending you didn't see someone at the shops.",
-      "cta": "Rate it 1 to 10",
-      "seconds": 9,
-      "seed": 1,
-      "kicker": "How bad is it?"
-    },
-    "caption": "We've all done it. How bad is it, 1 to 10? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-flg-03",
-    "account": "stories",
-    "format": "Red flag or fair",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "drop",
-      "title": "Going through your partner's phone when they ask you to hold it.",
-      "cta": "Say why in the comments",
-      "seconds": 9,
-      "seed": 3,
-      "kicker": "Red flag or fair enough?"
-    },
-    "caption": "Going through your partner's phone when they ask you to hold it. Red flag 🚩 or fair enough? 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-cho-03",
-    "account": "stories",
-    "format": "This or that",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "ring",
-      "title": "Which would you rather they never find out?",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 2,
-      "items": [
-        "You still love your ex",
-        "You never loved them at all"
-      ]
-    },
-    "caption": "Pick one. A or B 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-fin-03",
-    "account": "stories",
-    "format": "Finish the sentence",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "finish",
-      "bg": "spiro",
-      "title": "I've never told anyone that I…",
-      "cta": "Finish it in the comments",
-      "seconds": 10,
-      "seed": 0,
-      "kicker": "Finish the sentence"
-    },
-    "caption": "Anonymous accounts welcome. Finish the sentence 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-rnk-03",
-    "account": "stories",
-    "format": "Ranking",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 13,
-    "props": {
-      "layout": "rank",
-      "bg": "drop",
-      "title": "Rank these from most to least awkward",
-      "cta": "Comment your order, like 4-1-3-2",
-      "seconds": 13,
-      "seed": 1,
-      "items": [
-        "Waving back at someone who wasn't waving at you",
-        "Saying 'you too' when the waiter says enjoy your meal",
-        "Being caught talking to yourself",
-        "Laughing at a joke you didn't hear"
-      ]
-    },
-    "caption": "Most awkward first 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-prm-02",
-    "account": "stories",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "ring",
-      "title": "What's a secret you'd only tell a stranger?",
-      "cta": "Tell us in the comments",
-      "seconds": 9,
-      "seed": 2
-    },
-    "caption": "What's a secret you'd only tell a stranger? 🤫\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-prm-03",
-    "account": "stories",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "drop",
-      "title": "What's the nicest thing you've never told someone?",
-      "cta": "Say it in the comments",
-      "seconds": 9,
-      "seed": 0
-    },
-    "caption": "Not every secret is a bad one. What's the nicest thing you've never told someone? 💛\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-prm-06",
-    "account": "stories",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "drop",
-      "title": "What's the pettiest reason you've stopped talking to someone?",
-      "cta": "Tell us in the comments",
-      "seconds": 9,
-      "seed": 3
-    },
-    "caption": "The pettier the better 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-prm-04",
-    "account": "stories",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "spiro",
-      "title": "What's something you pretend to like?",
-      "cta": "Say it in the comments",
-      "seconds": 9,
-      "seed": 1
-    },
-    "caption": "Be honest. What do you only pretend to like? 👀\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "ig-prm-07",
-    "account": "stories",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "spiro",
-      "title": "What's a 'small' lie you tell every single day?",
-      "cta": "Tell us in the comments",
-      "seconds": 9,
-      "seed": 0
-    },
-    "caption": "Be honest. Everyone has one 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "ig-prm-05",
-    "account": "stories",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "ring",
-      "title": "What lie have you told for so long it's basically true now?",
-      "cta": "Tell us in the comments",
-      "seconds": 9,
-      "seed": 3
-    },
-    "caption": "The lie that became your life story. Go 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-prm-01",
+    "code": "igb-deep-09",
     "account": "brand",
-    "format": "Prompt post",
+    "format": "Deep question",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 11,
+    "props": {
+      "layout": "question",
+      "bg": "gradient",
+      "kicker": "Deep question",
+      "title": "Who taught you something they don't know they taught you?",
+      "cta": "Sit with it. Then answer.",
+      "seconds": 11,
+      "seed": 4
+    },
+    "caption": "who taught you something they don't even know they taught you? tell us what it was.\n\n#deepquestions #gratitude #selfreflection #thoughts"
+  },
+  {
+    "code": "igb-rate-03",
+    "account": "brand",
+    "format": "Rate it 1-10",
     "content_type": "Prompt",
     "composition": "TextReel",
     "seconds": 9,
     "props": {
-      "layout": "question",
+      "layout": "scale",
       "bg": "gradient",
-      "title": "What do you wish you could say to someone, but can't?",
-      "cta": "Say it in the comments",
+      "kicker": "How bad is it?",
+      "title": "An apology that starts with 'I'm sorry you felt that way'.",
+      "cta": "Rate it 1 to 10",
       "seconds": 9,
-      "seed": 3
+      "seed": 1
     },
-    "caption": "What do you wish you could say to someone, but can't? 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
+    "caption": "rate this apology 1 to 10: 'i'm sorry you felt that way.' be honest 👇\n\n#apology #relationships #relatable #communication"
+  },
+  {
+    "code": "igb-fin-01",
+    "account": "brand",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "gradient",
+      "title": "If I could say one thing anonymously, it would be…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 2,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "Finish the sentence 👇 If I could say one thing anonymously, it would be…\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "igb-sb-05",
@@ -2168,38 +2025,216 @@
     "caption": "not everyone who stays quiet has nothing to say. who's the quiet one in your group?\n\n#friendship #introvert #relatable #kindness"
   },
   {
-    "code": "igb-tier-02",
+    "code": "igb-wyr-01",
     "account": "brand",
-    "format": "Tier list",
+    "format": "Would you rather",
     "content_type": "Prompt",
-    "composition": "TierList",
+    "composition": "TextReel",
+    "seconds": 10,
     "props": {
-      "title": "Ways friends say sorry, ranked",
+      "layout": "choice",
+      "bg": "gradient",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 1,
       "items": [
-        {
-          "text": "'sorry you feel that way'",
-          "tier": "D"
-        },
-        {
-          "text": "A meme and acting normal",
-          "tier": "C"
-        },
-        {
-          "text": "Showing up with your favourite snack",
-          "tier": "B"
-        },
-        {
-          "text": "A voice note that rambles",
-          "tier": "A"
-        },
-        {
-          "text": "'I was wrong. I'm sorry.'",
-          "tier": "S"
-        }
-      ],
-      "question": "Which one is underrated?"
+        "Get a letter from your future self",
+        "Send one to your past self"
+      ]
     },
-    "caption": "ways friends say sorry, ranked. which one deserves a higher tier? 🤍\n\n#friendship #apology #wholesome #relatable"
+    "caption": "Get a letter from your future self / Send one to your past self? A or B? 🤍\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-pause-02",
+    "account": "brand",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "it's there for one frame",
+            "blink and it's gone",
+            "scrub back slowly"
+          ],
+          "bg": "blue",
+          "secret": "If you found this: someone is quietly proud of you today.",
+          "secretAt": 1.6
+        },
+        {
+          "type": "question",
+          "text": "What did it say?",
+          "sub": "then send it to someone who needs it",
+          "bg": "pink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% find the hidden line 👀 what did it say?\n\n#pausechallenge #challenge #wholesome #goodvibes"
+  },
+  {
+    "code": "igb-meme-01",
+    "account": "brand",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Small things that mean a lot",
+      "slides": [
+        "Someone remembering how you take your coffee",
+        "A voice note instead of a text",
+        "'Text me when you get home'",
+        "Being included in the group photo",
+        "Someone saving you a seat"
+      ],
+      "question": "What small thing means the most to you?",
+      "sendTo": "Send this to someone who does one of these for you.",
+      "handle": "whispers_app",
+      "dark": true
+    },
+    "caption": "Small things that mean a lot 🤍 What's yours?\n\n#wholesome #relatable #friendship #kindness #whispers"
+  },
+  {
+    "code": "igb-bingo-01",
+    "account": "brand",
+    "format": "Bingo",
+    "content_type": "Prompt",
+    "composition": "BingoCard",
+    "props": {
+      "title": "Good friend bingo",
+      "cells": [
+        "Remembers your coffee order",
+        "Sends you memes daily",
+        "Hypes your outfit",
+        "Shows up when it matters",
+        "Knows your 'I'm fine' face",
+        "Texts 'home safe?'",
+        "Keeps your secrets",
+        "Laughs at your bad jokes",
+        "Calls instead of texting",
+        "Brings snacks",
+        "Tells you the truth",
+        "Defends you when you're not there",
+        "Remembers your birthday",
+        "Shares their food",
+        "Plans the hangouts",
+        "Checks on you after a bad day",
+        "Sends voice notes",
+        "Celebrates your small wins",
+        "Doesn't keep score",
+        "Drives you home",
+        "Makes silence feel okay",
+        "Gets on with your family",
+        "Holds your bag",
+        "Never makes you feel like a burden"
+      ],
+      "question": "How many does your best friend have?",
+      "dark": true
+    },
+    "caption": "Good friend bingo 💛 How many does your best friend have?\n\n#friendship #bestfriend #bingo #wholesome #whispers"
+  },
+  {
+    "code": "igb-notes-01",
+    "account": "brand",
+    "format": "Unsent note",
+    "content_type": "Dramatised",
+    "composition": "NotesReel",
+    "props": {
+      "title": "note to my younger self",
+      "lines": [
+        "You'll stop apologising for taking up space.",
+        "The friends who stay are the ones who matter.",
+        "That thing you're scared of? You survive it.",
+        "Be nicer to yourself. I'm still learning."
+      ],
+      "question": "What would you tell yours?"
+    },
+    "caption": "A note to a younger self. What would you tell yours? 🤍\n\n(dramatised story)\n\n#notetoself #youngerself #growth #feelings #whispers"
+  },
+  {
+    "code": "igb-hot-03",
+    "account": "brand",
+    "format": "Unpopular opinion",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "gradient",
+      "title": "Being single is underrated.",
+      "cta": "Agree? Tell us why",
+      "seconds": 9,
+      "seed": 3,
+      "kicker": "Unpopular opinion",
+      "items": [
+        "Agree",
+        "Disagree"
+      ]
+    },
+    "caption": "Agree or disagree? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-deep-01",
+    "account": "brand",
+    "format": "Deep question",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 11,
+    "props": {
+      "layout": "question",
+      "bg": "gradient",
+      "kicker": "Deep question",
+      "title": "What's something you forgave but never forgot?",
+      "cta": "Sit with it. Then answer.",
+      "seconds": 11,
+      "seed": 0
+    },
+    "caption": "What's something you forgave but never forgot? Take your time with this one.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
+  },
+  {
+    "code": "igb-rate-01",
+    "account": "brand",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "gradient",
+      "title": "How chaotic was your week?",
+      "cta": "Drop a number",
+      "seconds": 9,
+      "seed": 2,
+      "kicker": "Rate it"
+    },
+    "caption": "How chaotic was your week? 1 = calm, 10 = complete chaos 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-fin-02",
+    "account": "brand",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "gradient",
+      "title": "The thing I wish I'd said before it was too late is…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 1,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "Some things stay unsaid. Finish the sentence 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "igb-sb-06",
@@ -2237,26 +2272,133 @@
     "caption": "money comes back. these years don't. which moment would you go back to for one more hour?\n\n#nostalgia #friendship #deepthoughts #memories"
   },
   {
-    "code": "igb-hot-05",
+    "code": "igb-wyr-02",
     "account": "brand",
-    "format": "Hot take",
+    "format": "Would you rather",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "gradient",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 0,
+      "items": [
+        "Hear one secret about you that everyone knows",
+        "Tell one secret nobody knows"
+      ]
+    },
+    "caption": "Which one? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-pause-01",
+    "account": "brand",
+    "format": "Pause challenge",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "ink",
+          "transition": "cut"
+        },
+        {
+          "type": "type",
+          "text": "There's a message hidden in here for you.",
+          "bg": "ink",
+          "secret": "You're doing better than you think.",
+          "secretAt": 1.4
+        },
+        {
+          "type": "question",
+          "text": "Did you catch it?",
+          "sub": "tell us what it said",
+          "bg": "cream",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% can pause at the right time. there's a message in here for you 🤍 did you catch it?\n\n#pausechallenge #wholesome #reminder #fyp"
+  },
+  {
+    "code": "igb-meme-02",
+    "account": "brand",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Things we never say out loud",
+      "slides": [
+        "I miss who we used to be",
+        "I'm scared of falling behind",
+        "I wish I'd said goodbye properly",
+        "I'm jealous of how easy it looks for you",
+        "I'm actually proud of how far I've come"
+      ],
+      "question": "Which one have you never said?",
+      "sendTo": "Send this to someone you'd say one of these to.",
+      "handle": "whispers_app",
+      "dark": true
+    },
+    "caption": "Things we never say out loud. Which one have you never said? 🤍\n\n#unsaid #feelings #relatable #honesty #whispers"
+  },
+  {
+    "code": "igb-deep-02",
+    "account": "brand",
+    "format": "Deep question",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 11,
+    "props": {
+      "layout": "question",
+      "bg": "gradient",
+      "kicker": "Deep question",
+      "title": "What are you still waiting for someone to apologise for?",
+      "cta": "Sit with it. Then answer.",
+      "seconds": 11,
+      "seed": 1
+    },
+    "caption": "What are you still waiting for someone to apologise for? You don't have to say who.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
+  },
+  {
+    "code": "igb-rate-02",
+    "account": "brand",
+    "format": "Rate it 1-10",
     "content_type": "Prompt",
     "composition": "TextReel",
     "seconds": 9,
     "props": {
-      "layout": "flag",
+      "layout": "scale",
       "bg": "gradient",
-      "kicker": "Hot take",
-      "title": "You don't owe someone a birthday invite just because they invited you.",
-      "items": [
-        "Agree",
-        "Disagree"
-      ],
-      "cta": "Agree? Tell us why",
+      "title": "How much do you actually say what you mean?",
+      "cta": "Drop a number",
       "seconds": 9,
-      "seed": 3
+      "seed": 3,
+      "kicker": "Honesty check"
     },
-    "caption": "you don't owe someone a birthday invite just because they invited you. fair, or petty? 👇\n\n#hottake #friendship #etiquette #unpopularopinion"
+    "caption": "1 = never, 10 = always. Be honest 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-fin-03",
+    "account": "brand",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "gradient",
+      "title": "Nobody knows this, but I'm actually proud that I…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 0,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "Brag anonymously. Finish the sentence ✨\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "igb-sb-07",
@@ -2299,7 +2441,50 @@
     "caption": "me: fully independent adult. also me: texting my mum about eggs 🥚 what do you still ask your parents?\n\n#relatable #adulting #family #funny"
   },
   {
-    "code": "igb-deep-09",
+    "code": "igb-wyr-03",
+    "account": "brand",
+    "format": "Would you rather",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "gradient",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 2,
+      "items": [
+        "Be remembered for one kind thing",
+        "Be famous for one big thing"
+      ]
+    },
+    "caption": "A or B? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+  },
+  {
+    "code": "igb-meme-04",
+    "account": "brand",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "props": {
+      "hook": "Things that are NOT love",
+      "slides": [
+        "Checking their phone every night",
+        "Being jealous of every friend they have",
+        "Making them earn your forgiveness",
+        "Days of silent treatment",
+        "Needing their passwords to feel safe"
+      ],
+      "question": "Which one did you used to think was love?",
+      "sendTo": "Send this to someone who needs to see it today.",
+      "handle": "whispers_app",
+      "dark": true
+    },
+    "caption": "Things that are NOT love. Which one did you used to think was love?\n\n#healthyrelationships #love #redflags #growth #whispers"
+  },
+  {
+    "code": "igb-deep-03",
     "account": "brand",
     "format": "Deep question",
     "content_type": "Prompt",
@@ -2309,48 +2494,30 @@
       "layout": "question",
       "bg": "gradient",
       "kicker": "Deep question",
-      "title": "Who taught you something they don't know they taught you?",
+      "title": "Which friendship ended without anyone saying goodbye?",
       "cta": "Sit with it. Then answer.",
       "seconds": 11,
-      "seed": 4
+      "seed": 2
     },
-    "caption": "who taught you something they don't even know they taught you? tell us what it was.\n\n#deepquestions #gratitude #selfreflection #thoughts"
+    "caption": "Which friendship ended without anyone saying goodbye? Some just fade. Tell us about yours.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
   },
   {
-    "code": "igb-pause-02",
+    "code": "igb-fin-05",
     "account": "brand",
-    "format": "Pause challenge",
+    "format": "Finish the sentence",
     "content_type": "Prompt",
-    "composition": "StoryboardReel",
+    "composition": "TextReel",
+    "seconds": 10,
     "props": {
-      "scenes": [
-        {
-          "type": "slam",
-          "text": "Only 1% can pause at the right time.",
-          "bg": "black",
-          "transition": "cut"
-        },
-        {
-          "type": "list",
-          "items": [
-            "it's there for one frame",
-            "blink and it's gone",
-            "scrub back slowly"
-          ],
-          "bg": "blue",
-          "secret": "If you found this: someone is quietly proud of you today.",
-          "secretAt": 1.6
-        },
-        {
-          "type": "question",
-          "text": "What did it say?",
-          "sub": "then send it to someone who needs it",
-          "bg": "pink",
-          "transition": "flash"
-        }
-      ]
+      "layout": "finish",
+      "bg": "gradient",
+      "title": "The best thing that happened to me this year was…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 0,
+      "kicker": "Finish the sentence"
     },
-    "caption": "only 1% find the hidden line 👀 what did it say?\n\n#pausechallenge #challenge #wholesome #goodvibes"
+    "caption": "Let's hear the good stuff ✨\n\n#whispers #anonymous #relatable #unpopularopinion"
   },
   {
     "code": "igb-sb-08",
@@ -2406,282 +2573,29 @@
     "caption": "06:04, a text from dad about a bird. then i found out what's in his wallet 🥹 what has someone kept for you?\n\nDramatised story.\n\n#wholesome #family #dad #storytime"
   },
   {
-    "code": "igb-pov-02",
-    "account": "brand",
-    "format": "POV",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "kicker": "POV",
-      "title": "A friend sends a photo with 'this reminded me of you' and it's oddly accurate.",
-      "cta": "Who sends you these?",
-      "seconds": 9,
-      "seed": 2
-    },
-    "caption": "pov: a friend sends 'this reminded me of you' and it's weirdly accurate. who does this for you?\n\n#pov #friendship #wholesome #bestfriend"
-  },
-  {
-    "code": "igb-rate-03",
-    "account": "brand",
-    "format": "Rate it 1-10",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "scale",
-      "bg": "gradient",
-      "kicker": "How bad is it?",
-      "title": "An apology that starts with 'I'm sorry you felt that way'.",
-      "cta": "Rate it 1 to 10",
-      "seconds": 9,
-      "seed": 1
-    },
-    "caption": "rate this apology 1 to 10: 'i'm sorry you felt that way.' be honest 👇\n\n#apology #relationships #relatable #communication"
-  },
-  {
-    "code": "igb-cho-01",
-    "account": "brand",
-    "format": "This or that",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "gradient",
-      "title": "Which is harder to say?",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 0,
-      "items": [
-        "I'm sorry",
-        "I need help"
-      ]
-    },
-    "caption": "Which is harder to say out loud? A or B 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-wyr-01",
-    "account": "brand",
-    "format": "Would you rather",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "gradient",
-      "title": "Would you rather…",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 1,
-      "items": [
-        "Get a letter from your future self",
-        "Send one to your past self"
-      ]
-    },
-    "caption": "Get a letter from your future self / Send one to your past self? A or B? 🤍\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-meme-01",
+    "code": "igb-meme-03",
     "account": "brand",
     "format": "Meme carousel",
     "content_type": "Prompt",
     "composition": "MemeCarousel",
     "props": {
-      "hook": "Small things that mean a lot",
+      "hook": "Green flags in a friend",
       "slides": [
-        "Someone remembering how you take your coffee",
-        "A voice note instead of a text",
-        "'Text me when you get home'",
-        "Being included in the group photo",
-        "Someone saving you a seat"
+        "They hype you up when you're not in the room",
+        "They remember the small things you said months ago",
+        "They don't make you compete for their attention",
+        "They tell you the truth, kindly",
+        "You can sit in silence and it's not awkward"
       ],
-      "question": "What small thing means the most to you?",
-      "sendTo": "Send this to someone who does one of these for you.",
+      "question": "Which green flag do your friends have?",
+      "sendTo": "Send this to the friend with the most green flags.",
       "handle": "whispers_app",
       "dark": true
     },
-    "caption": "Small things that mean a lot 🤍 What's yours?\n\n#wholesome #relatable #friendship #kindness #whispers"
+    "caption": "Green flags in a friend 💚 Which one does your best friend have?\n\n#greenflags #friendship #wholesome #bestfriend #whispers"
   },
   {
-    "code": "igb-fin-01",
-    "account": "brand",
-    "format": "Finish the sentence",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "finish",
-      "bg": "gradient",
-      "title": "If I could say one thing anonymously, it would be…",
-      "cta": "Finish it in the comments",
-      "seconds": 10,
-      "seed": 2,
-      "kicker": "Finish the sentence"
-    },
-    "caption": "Finish the sentence 👇 If I could say one thing anonymously, it would be…\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-hot-01",
-    "account": "brand",
-    "format": "Unpopular opinion",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "gradient",
-      "title": "It's okay to outgrow your friends.",
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 0,
-      "kicker": "Unpopular opinion",
-      "items": [
-        "Agree",
-        "Disagree"
-      ]
-    },
-    "caption": "Hard truth or hot take? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-bingo-01",
-    "account": "brand",
-    "format": "Bingo",
-    "content_type": "Prompt",
-    "composition": "BingoCard",
-    "props": {
-      "title": "Good friend bingo",
-      "cells": [
-        "Remembers your coffee order",
-        "Sends you memes daily",
-        "Hypes your outfit",
-        "Shows up when it matters",
-        "Knows your 'I'm fine' face",
-        "Texts 'home safe?'",
-        "Keeps your secrets",
-        "Laughs at your bad jokes",
-        "Calls instead of texting",
-        "Brings snacks",
-        "Tells you the truth",
-        "Defends you when you're not there",
-        "Remembers your birthday",
-        "Shares their food",
-        "Plans the hangouts",
-        "Checks on you after a bad day",
-        "Sends voice notes",
-        "Celebrates your small wins",
-        "Doesn't keep score",
-        "Drives you home",
-        "Makes silence feel okay",
-        "Gets on with your family",
-        "Holds your bag",
-        "Never makes you feel like a burden"
-      ],
-      "question": "How many does your best friend have?",
-      "dark": true
-    },
-    "caption": "Good friend bingo 💛 How many does your best friend have?\n\n#friendship #bestfriend #bingo #wholesome #whispers"
-  },
-  {
-    "code": "igb-meme-02",
-    "account": "brand",
-    "format": "Meme carousel",
-    "content_type": "Prompt",
-    "composition": "MemeCarousel",
-    "props": {
-      "hook": "Things we never say out loud",
-      "slides": [
-        "I miss who we used to be",
-        "I'm scared of falling behind",
-        "I wish I'd said goodbye properly",
-        "I'm jealous of how easy it looks for you",
-        "I'm actually proud of how far I've come"
-      ],
-      "question": "Which one have you never said?",
-      "sendTo": "Send this to someone you'd say one of these to.",
-      "handle": "whispers_app",
-      "dark": true
-    },
-    "caption": "Things we never say out loud. Which one have you never said? 🤍\n\n#unsaid #feelings #relatable #honesty #whispers"
-  },
-  {
-    "code": "igb-notes-01",
-    "account": "brand",
-    "format": "Unsent note",
-    "content_type": "Dramatised",
-    "composition": "NotesReel",
-    "props": {
-      "title": "note to my younger self",
-      "lines": [
-        "You'll stop apologising for taking up space.",
-        "The friends who stay are the ones who matter.",
-        "That thing you're scared of? You survive it.",
-        "Be nicer to yourself. I'm still learning."
-      ],
-      "question": "What would you tell yours?"
-    },
-    "caption": "A note to a younger self. What would you tell yours? 🤍\n\n(dramatised story)\n\n#notetoself #youngerself #growth #feelings #whispers"
-  },
-  {
-    "code": "igb-hot-04",
-    "account": "brand",
-    "format": "Hot take",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "gradient",
-      "kicker": "Hot take",
-      "title": "Saying sorry first doesn't mean you were wrong.",
-      "items": [
-        "Agree",
-        "Disagree"
-      ],
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 1
-    },
-    "caption": "Saying sorry first doesn't mean you were wrong. Agree? 🤍\n\n#hottake #relationships #datingadvice #unpopularopinion"
-  },
-  {
-    "code": "igb-tier-01",
-    "account": "brand",
-    "format": "Tier list",
-    "content_type": "Prompt",
-    "composition": "TierList",
-    "props": {
-      "title": "Ways people say 'I love you' without saying it",
-      "items": [
-        {
-          "text": "'Text me when you get home'",
-          "tier": "S"
-        },
-        {
-          "text": "Saving you the last bite",
-          "tier": "S"
-        },
-        {
-          "text": "Remembering your order",
-          "tier": "A"
-        },
-        {
-          "text": "Sending you memes daily",
-          "tier": "A"
-        },
-        {
-          "text": "Fixing your charger cable",
-          "tier": "B"
-        }
-      ],
-      "question": "What would you put in S tier?"
-    },
-    "caption": "Ways people say 'I love you' without saying it. What's your S tier? 🤍\n\n#lovelanguage #wholesome #relationships #friendship #whispers"
-  },
-  {
-    "code": "igb-deep-01",
+    "code": "igb-deep-04",
     "account": "brand",
     "format": "Deep question",
     "content_type": "Prompt",
@@ -2691,33 +2605,15 @@
       "layout": "question",
       "bg": "gradient",
       "kicker": "Deep question",
-      "title": "What's something you forgave but never forgot?",
+      "title": "What's the one conversation you keep replaying in your head?",
       "cta": "Sit with it. Then answer.",
       "seconds": 11,
-      "seed": 0
+      "seed": 3
     },
-    "caption": "What's something you forgave but never forgot? Take your time with this one.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
+    "caption": "What's the one conversation you keep replaying in your head? No names needed.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
   },
   {
-    "code": "igb-pov-01",
-    "account": "brand",
-    "format": "POV",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "kicker": "POV",
-      "title": "Someone remembered the small thing you mentioned once.",
-      "cta": "Who did this for you?",
-      "seconds": 9,
-      "seed": 0
-    },
-    "caption": "POV: someone remembered the small thing you mentioned once. Who did this for you? 🤍\n\n#pov #wholesome #friendship #kindness #whispers",
-    "seconds": 9
-  },
-  {
-    "code": "igb-fin-02",
+    "code": "igb-fin-04",
     "account": "brand",
     "format": "Finish the sentence",
     "content_type": "Prompt",
@@ -2726,35 +2622,13 @@
     "props": {
       "layout": "finish",
       "bg": "gradient",
-      "title": "The thing I wish I'd said before it was too late is…",
+      "title": "If my younger self could see me now, they'd…",
       "cta": "Finish it in the comments",
       "seconds": 10,
-      "seed": 1,
+      "seed": 2,
       "kicker": "Finish the sentence"
     },
-    "caption": "Some things stay unsaid. Finish the sentence 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-meme-04",
-    "account": "brand",
-    "format": "Meme carousel",
-    "content_type": "Prompt",
-    "composition": "MemeCarousel",
-    "props": {
-      "hook": "Things that are NOT love",
-      "slides": [
-        "Checking their phone every night",
-        "Being jealous of every friend they have",
-        "Making them earn your forgiveness",
-        "Days of silent treatment",
-        "Needing their passwords to feel safe"
-      ],
-      "question": "Which one did you used to think was love?",
-      "sendTo": "Send this to someone who needs to see it today.",
-      "handle": "whispers_app",
-      "dark": true
-    },
-    "caption": "Things that are NOT love. Which one did you used to think was love?\n\n#healthyrelationships #love #redflags #growth #whispers"
+    "caption": "Finish the sentence 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
   },
   {
     "code": "igb-sb-01",
@@ -2792,26 +2666,22 @@
     "caption": "someone out there still thinks about the thing you said when you were 15. what's yours?\n\n#nostalgia #deepthoughts #relatable #feelings"
   },
   {
-    "code": "igb-meme-03",
+    "code": "igb-deep-05",
     "account": "brand",
-    "format": "Meme carousel",
+    "format": "Deep question",
     "content_type": "Prompt",
-    "composition": "MemeCarousel",
+    "composition": "TextReel",
+    "seconds": 11,
     "props": {
-      "hook": "Green flags in a friend",
-      "slides": [
-        "They hype you up when you're not in the room",
-        "They remember the small things you said months ago",
-        "They don't make you compete for their attention",
-        "They tell you the truth, kindly",
-        "You can sit in silence and it's not awkward"
-      ],
-      "question": "Which green flag do your friends have?",
-      "sendTo": "Send this to the friend with the most green flags.",
-      "handle": "whispers_app",
-      "dark": true
+      "layout": "question",
+      "bg": "gradient",
+      "kicker": "Deep question",
+      "title": "When did you last feel completely understood?",
+      "cta": "Sit with it. Then answer.",
+      "seconds": 11,
+      "seed": 0
     },
-    "caption": "Green flags in a friend 💚 Which one does your best friend have?\n\n#greenflags #friendship #wholesome #bestfriend #whispers"
+    "caption": "When did you last feel completely understood? Think about it for a second.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
   },
   {
     "code": "igb-sb-02",
@@ -2846,7 +2716,7 @@
     "caption": "text the first person you thought of. who was it? (no names) 🫶\n\n#friendship #love #wholesome #sendthis"
   },
   {
-    "code": "igb-deep-02",
+    "code": "igb-deep-06",
     "account": "brand",
     "format": "Deep question",
     "content_type": "Prompt",
@@ -2856,12 +2726,12 @@
       "layout": "question",
       "bg": "gradient",
       "kicker": "Deep question",
-      "title": "What are you still waiting for someone to apologise for?",
+      "title": "What are you outgrowing right now?",
       "cta": "Sit with it. Then answer.",
       "seconds": 11,
       "seed": 1
     },
-    "caption": "What are you still waiting for someone to apologise for? You don't have to say who.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
+    "caption": "What are you outgrowing right now? People, places, habits. Anything.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
   },
   {
     "code": "igb-sb-03",
@@ -2894,22 +2764,22 @@
     "caption": "after an argument, are you the one who says sorry first or the one who waits? be honest 👇\n\n#relationships #honesty #friendship #feelings"
   },
   {
-    "code": "igb-rate-01",
+    "code": "igb-deep-07",
     "account": "brand",
-    "format": "Rate it 1-10",
+    "format": "Deep question",
     "content_type": "Prompt",
     "composition": "TextReel",
-    "seconds": 9,
+    "seconds": 11,
     "props": {
-      "layout": "scale",
+      "layout": "question",
       "bg": "gradient",
-      "title": "How chaotic was your week?",
-      "cta": "Drop a number",
-      "seconds": 9,
-      "seed": 2,
-      "kicker": "Rate it"
+      "kicker": "Deep question",
+      "title": "What do you need to hear that nobody ever says to you?",
+      "cta": "Sit with it. Then answer.",
+      "seconds": 11,
+      "seed": 2
     },
-    "caption": "How chaotic was your week? 1 = calm, 10 = complete chaos 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+    "caption": "What do you need to hear that nobody ever says to you? Say it here. Someone might say it back.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
   },
   {
     "code": "igb-sb-04",
@@ -2946,249 +2816,6 @@
     "caption": "things that hit different after 25. what would you add? 👇\n\n#adulting #relatable #growingup #wholesome"
   },
   {
-    "code": "igb-deep-03",
-    "account": "brand",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "kicker": "Deep question",
-      "title": "Which friendship ended without anyone saying goodbye?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 2
-    },
-    "caption": "Which friendship ended without anyone saying goodbye? Some just fade. Tell us about yours.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "igb-cho-02",
-    "account": "brand",
-    "format": "This or that",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "gradient",
-      "title": "Which would you rather hear?",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 2,
-      "items": [
-        "I'm proud of you",
-        "I forgive you"
-      ]
-    },
-    "caption": "I'm proud of you / I forgive you? A or B? 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-deep-04",
-    "account": "brand",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "kicker": "Deep question",
-      "title": "What's the one conversation you keep replaying in your head?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 3
-    },
-    "caption": "What's the one conversation you keep replaying in your head? No names needed.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "igb-wyr-02",
-    "account": "brand",
-    "format": "Would you rather",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "gradient",
-      "title": "Would you rather…",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 0,
-      "items": [
-        "Hear one secret about you that everyone knows",
-        "Tell one secret nobody knows"
-      ]
-    },
-    "caption": "Which one? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-deep-05",
-    "account": "brand",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "kicker": "Deep question",
-      "title": "When did you last feel completely understood?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 0
-    },
-    "caption": "When did you last feel completely understood? Think about it for a second.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "igb-hot-02",
-    "account": "brand",
-    "format": "Unpopular opinion",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "gradient",
-      "title": "Some apologies come too late to matter.",
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 1,
-      "kicker": "Unpopular opinion",
-      "items": [
-        "Agree",
-        "Disagree"
-      ]
-    },
-    "caption": "Do you agree? 🤍\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-fin-03",
-    "account": "brand",
-    "format": "Finish the sentence",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "finish",
-      "bg": "gradient",
-      "title": "Nobody knows this, but I'm actually proud that I…",
-      "cta": "Finish it in the comments",
-      "seconds": 10,
-      "seed": 0,
-      "kicker": "Finish the sentence"
-    },
-    "caption": "Brag anonymously. Finish the sentence ✨\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-deep-06",
-    "account": "brand",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "kicker": "Deep question",
-      "title": "What are you outgrowing right now?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 1
-    },
-    "caption": "What are you outgrowing right now? People, places, habits. Anything.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "igb-deep-07",
-    "account": "brand",
-    "format": "Deep question",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 11,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "kicker": "Deep question",
-      "title": "What do you need to hear that nobody ever says to you?",
-      "cta": "Sit with it. Then answer.",
-      "seconds": 11,
-      "seed": 2
-    },
-    "caption": "What do you need to hear that nobody ever says to you? Say it here. Someone might say it back.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "igb-pause-01",
-    "account": "brand",
-    "format": "Pause challenge",
-    "content_type": "Prompt",
-    "composition": "StoryboardReel",
-    "props": {
-      "scenes": [
-        {
-          "type": "slam",
-          "text": "Only 1% can pause at the right time.",
-          "bg": "ink",
-          "transition": "cut"
-        },
-        {
-          "type": "type",
-          "text": "There's a message hidden in here for you.",
-          "bg": "ink",
-          "secret": "You're doing better than you think.",
-          "secretAt": 1.4
-        },
-        {
-          "type": "question",
-          "text": "Did you catch it?",
-          "sub": "tell us what it said",
-          "bg": "cream",
-          "transition": "flash"
-        }
-      ]
-    },
-    "caption": "only 1% can pause at the right time. there's a message in here for you 🤍 did you catch it?\n\n#pausechallenge #wholesome #reminder #fyp"
-  },
-  {
-    "code": "igb-rate-02",
-    "account": "brand",
-    "format": "Rate it 1-10",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "scale",
-      "bg": "gradient",
-      "title": "How much do you actually say what you mean?",
-      "cta": "Drop a number",
-      "seconds": 9,
-      "seed": 3,
-      "kicker": "Honesty check"
-    },
-    "caption": "1 = never, 10 = always. Be honest 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-cho-03",
-    "account": "brand",
-    "format": "This or that",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "gradient",
-      "title": "Which is harder to admit?",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 3,
-      "items": [
-        "I'm lonely",
-        "I'm jealous"
-      ]
-    },
-    "caption": "Which one is harder to say out loud? 👇\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
     "code": "igb-deep-08",
     "account": "brand",
     "format": "Deep question",
@@ -3205,220 +2832,5 @@
       "seed": 3
     },
     "caption": "If this chapter of your life had a title, what would it be? One line. Go.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
-  },
-  {
-    "code": "igb-fin-05",
-    "account": "brand",
-    "format": "Finish the sentence",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "finish",
-      "bg": "gradient",
-      "title": "The best thing that happened to me this year was…",
-      "cta": "Finish it in the comments",
-      "seconds": 10,
-      "seed": 0,
-      "kicker": "Finish the sentence"
-    },
-    "caption": "Let's hear the good stuff ✨\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-fin-04",
-    "account": "brand",
-    "format": "Finish the sentence",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "finish",
-      "bg": "gradient",
-      "title": "If my younger self could see me now, they'd…",
-      "cta": "Finish it in the comments",
-      "seconds": 10,
-      "seed": 2,
-      "kicker": "Finish the sentence"
-    },
-    "caption": "Finish the sentence 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-wyr-03",
-    "account": "brand",
-    "format": "Would you rather",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 10,
-    "props": {
-      "layout": "choice",
-      "bg": "gradient",
-      "title": "Would you rather…",
-      "cta": "Which one, and why?",
-      "seconds": 10,
-      "seed": 2,
-      "items": [
-        "Be remembered for one kind thing",
-        "Be famous for one big thing"
-      ]
-    },
-    "caption": "A or B? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-hot-03",
-    "account": "brand",
-    "format": "Unpopular opinion",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "flag",
-      "bg": "gradient",
-      "title": "Being single is underrated.",
-      "cta": "Agree? Tell us why",
-      "seconds": 9,
-      "seed": 3,
-      "kicker": "Unpopular opinion",
-      "items": [
-        "Agree",
-        "Disagree"
-      ]
-    },
-    "caption": "Agree or disagree? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-prm-02",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "Who do you owe an apology to?",
-      "cta": "Say it in the comments",
-      "seconds": 9,
-      "seed": 0
-    },
-    "caption": "You don't have to name them. Who do you owe an apology to? 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-prm-07",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "What's one thing you'd tell your 16-year-old self?",
-      "cta": "Say it in the comments",
-      "seconds": 9,
-      "seed": 3
-    },
-    "caption": "One sentence. What would you tell them? 🤍\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-prm-03",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "What's a small thing that made your week?",
-      "cta": "Tell us in the comments",
-      "seconds": 9,
-      "seed": 3
-    },
-    "caption": "Not every whisper is heavy. What made your week? ☀️\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-prm-08",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 8,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "Describe your week in one word.",
-      "cta": "One word in the comments",
-      "seconds": 8,
-      "seed": 2
-    },
-    "caption": "One word. Go 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-prm-04",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "What would you say if nobody could ever trace it back to you?",
-      "cta": "Say it in the comments",
-      "seconds": 9,
-      "seed": 1
-    },
-    "caption": "No names. No judgement. What would you say? 🤫\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-prm-05",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "What's the kindest thing a stranger ever did for you?",
-      "cta": "Tell us in the comments",
-      "seconds": 9,
-      "seed": 0
-    },
-    "caption": "Some strangers stay with you. Tell us yours 💛\n\n#whispers #anonymous #confessions #secrets #relatable"
-  },
-  {
-    "code": "igb-prm-09",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "What's a compliment you still think about?",
-      "cta": "Tell us in the comments",
-      "seconds": 9,
-      "seed": 1
-    },
-    "caption": "The ones that stick 🤍\n\n#whispers #anonymous #relatable #unpopularopinion"
-  },
-  {
-    "code": "igb-prm-06",
-    "account": "brand",
-    "format": "Prompt post",
-    "content_type": "Prompt",
-    "composition": "TextReel",
-    "seconds": 9,
-    "props": {
-      "layout": "question",
-      "bg": "gradient",
-      "title": "What are you carrying that nobody knows about?",
-      "cta": "Say it in the comments",
-      "seconds": 9,
-      "seed": 2
-    },
-    "caption": "You don't have to carry it alone. 🤍\n\n#whispers #anonymous #confessions #secrets #relatable"
   }
 ]

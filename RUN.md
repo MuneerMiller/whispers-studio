@@ -6,11 +6,13 @@ Each run starts on a fresh machine and follows this file from top to bottom. CLA
 1. `python3 -m pip install --break-system-packages -q -r audio/requirements.txt`, then `cd remotion && npm ci && cd ..`.
 2. `node scripts/check.mjs`. If anything says FAIL, stop and report which check failed (variable names only).
 
-## 2. Numbers (first run of the day only, the 07:40 run; runs are at 07:40, 09:40, 10:40, 12:40, 13:40, 15:40, 17:40, 18:40, 20:40 and 22:40, so 10 posts per account a day)
+## 2. Numbers (first run of the day only, the 07:40 run; runs are at 07:40, 09:40, 10:40, 12:40, 13:40, 15:40, 17:40, 18:40, 20:40 and 22:40)
 1. `node scripts/metrics.mjs`. It writes `log/metrics.json` and prints which formats get the most comments, likes and views.
 2. Keep the table for the report and for step 4.
 
-## 3. Post
+## 3. Post (only on the 12:40, 18:40 and 22:40 runs, so 3 posts per account a day)
+Since 18 Nov 2026, every post stalled at 100–200 views, which points at the account, not one weak video. New accounts that post 10 near-identical videos a day look like a content farm. So we post fewer, better videos at the times our global audience is awake (Europe midday, Europe evening and US morning, US afternoon). On every other run, skip steps 3 and 3c and only reply to comments (3b). Check the time with `TZ=Africa/Johannesburg date +%H`: post only if the hour is 12, 18 or 22.
+
 For each account, stories first, then brand:
 1. `CODE=$(node scripts/next.mjs <account>)`. If it exits with an error, skip that account and report why. Never guess: a guess could double-post. If it prints nothing, the queue is empty: go to step 4 first, then come back.
 2. `node scripts/render.mjs $CODE`. A video lands in `work/$CODE.mp4`; a carousel lands as JPEG slides in the folder `work/$CODE/`. Check it: for a video, frames at 0s, 1.5s and the last second (`ffmpeg -ss <t> -i work/$CODE.mp4 -frames:v 1 <png>`); for a carousel, look at every slide. The hook must be readable, with nothing cut off and no typos. If it's broken, fix the entry in `plan/queue.json` (shorter text usually fixes it) and render again. If it's still broken, skip it and report.
@@ -42,12 +44,13 @@ The templates no longer show `kicker` or `cta` on screen, so posts look organic 
 
 ## 4. Refill the queue (only when an account has fewer than 12 unposted posts)
 Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
-- **Formats:** use what's working. Base it on `log/metrics.json` if there are at least 10 posts with numbers; give the top 2 formats by comments per post 2 posts each out of 3, and try the rest in the remaining slots. Without enough numbers, mix all the formats evenly.
+- **Formats:** use what's working. Comments are still near zero, so rank formats by **views, average watch time (`avg_watch_s`) and skip rate (`skip_rate`, lower is better)** in `log/metrics.json`. Give the top 3 formats two-thirds of the new posts and try the rest in the remaining slots.
+- **Don't write parked formats.** Formats that flopped are in `plan/parked.json`: prompt posts, 3am searches, voice stories, and deep questions, POV and this-or-that on the stories account. Bring one back only as a single test post, and only if the playbook says so.
 - **What works best:**
   - These come from research on the 2026 algorithm: DM sends are the strongest signal for reaching new people, followed by watch time and real comments.
   - **Keyword-fishing CTAs are penalised:** "comment YES", "tag a friend", "share if…".
   - So ask for an opinion and a reason ("Agree? Tell us why", "Which one, and why?"). On carousels, name who to send it to ("Send this to the friend who…").
-- **Storyboards come first** (`StoryboardReel`): about half of all new posts. Each one is a short animated story told in 3–6 scenes, with a sound effect on every cut. Plan it like a storyboard:
+- **Storyboards** (`StoryboardReel`): about 1 in 4 new posts until their median views beat the account's median; then go back to about half. Each one is a short animated story told in 3–6 scenes, with a sound effect on every cut. Plan it like a storyboard:
   - **Scene 1 (the hook, under 2s):** a statement that stops the scroll: drama, a secret, a hot take, "don't show this to…". Use `slam`, `zoom` or `glitch`, with `transition: "cut"`.
   - **Middle (build-up):** `chat` for texts, `type` for diary or notes, `list` for "things that…", `versus` for picking a side, `emoji` for a beat of reaction, `clock` for timestamp cold opens (`time` "02:47" plus `text`), `meme` for "Me: / Also me:" (`me`, `alsoMe`).
   - **The payoff:** `redact`, so the punchline is hidden and then wiped open.
