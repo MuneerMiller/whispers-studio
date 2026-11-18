@@ -36,6 +36,13 @@ This is the living strategy. Every run that writes posts reads it first. The wee
 - **One idea per video,** and the caption's first line repeats it in plain words people search for, e.g. "splitting the bill on a first date". Use 3–5 hashtags about the topic, not the same generic set on every post.
 - **Ask a question people want to answer:** "which one and why", "be honest", "what would you do". Never "comment YES".
 
+**First retention numbers (18 Nov, 54 Reels with watch time and skip rate):**
+- **Movement in the first second decides everything.** The still `gradient` background (every brand text post) had an 80% skip rate and 2.2s average watch time. Text over the moving `ring` background had 38% skip and 6.3s watch, the best of all. Tier lists did 43% and 5.8s. The still gradient is now banned.
+- **The stories account held viewers far better than brand** (skip 35–60% vs 68–98%), almost entirely because of the backgrounds.
+- **Storyboards lost 69% in the first seconds** (4.0s watch, 11 posts), even though they're animated. Their first frame doesn't stop people. Keep them at 1 in 4, and open every one with the boldest line already fully on screen over a moving background.
+- **Chat stories and voice stories hold the people who stay** (7.8–9.2s watch), so story formats work once the opening lands.
+- **Targets:** skip rate under 40%, and average watch time over 60% of the video's length.
+
 **What only Muneer can do (Instagram treats automated likes, follows and comments as spam, so the runs don't):** about 10 minutes a day on each account in the Instagram app. Watch Reels in the niche (relationships, confessions, relatable text posts), like a few, leave 2–3 real comments on bigger pages, and reply to anyone who comments. Pin the best post on each profile. Optionally, add a trending sound to a post in the app.
 
 ## Right now (updated weekly by the trend scout)

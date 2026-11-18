@@ -21,7 +21,8 @@ for (const p of q) {
     if (!pr.cta || pr.cta.length > 34) problems.push(`${where}: cta missing or over 34 characters`);
     if (pr.layout === 'choice' && (pr.items?.length !== 2 || pr.items.some((i) => i.length > 60))) problems.push(`${where}: choice needs exactly 2 items, each up to 60 characters`);
     if (pr.layout === 'rank' && (!(pr.items?.length >= 3 && pr.items.length <= 5) || pr.items.some((i) => i.length > 55))) problems.push(`${where}: rank needs 3-5 items, each up to 55 characters`);
-    if (p.account === 'brand' && pr.bg !== 'gradient') problems.push(`${where}: brand posts use the gradient background`);
+    // The still gradient lost 80% of viewers in the first seconds (18 Nov 2026 numbers); moving backgrounds held them far better.
+    if (pr.bg === 'gradient') problems.push(`${where}: don't use the still gradient background; use ring (best) or drop`);
   }
   if (p.composition === 'MemeCarousel') {
     const pr = p.props ?? {};

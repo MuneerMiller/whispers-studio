@@ -87,7 +87,7 @@ Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new p
   - **Stories:** rotate through all formats, never the same format twice in a row. Favour fiction with a twist (text story, guess the ending, voice story), meme carousels, tier lists and bingo, then hot takes, POV and deep questions.
   - **Brand:** warmer. Carousels, bingo, tier lists, unsent notes to a younger self, deep questions and POV.
   - Plain prompt posts last.
-- **Backgrounds:** stories rotate `ring`, `drop`, `spiro` and `gradient`; brand always uses `gradient`.
+- **Backgrounds:** both accounts use `ring` for about 2 in 3 posts and `drop` for the rest. Never use `gradient`: it's a still image, and 80% of viewers swiped away within 2 seconds (18 Nov numbers). `ring` kept the most viewers.
 - **Writing:**
   - Questions people can answer in one second (A or B, a number, one word) and topics they'll argue about: dating, friendships, family, work, money habits, guilty habits, petty behaviour, social etiquette.
   - Stories can be cheeky and spicy, within Instagram's rules. Brand is warmer: kindness, honesty, growth, nostalgia, small wins.
