@@ -6,7 +6,7 @@ Each run starts on a fresh machine and follows this file from top to bottom. CLA
 1. `python3 -m pip install --break-system-packages -q -r audio/requirements.txt`, then `cd remotion && npm ci && cd ..`.
 2. `node scripts/check.mjs`. If anything says FAIL, stop and report which check failed (variable names only).
 
-## 2. Numbers (first run of the day only, the 07:40 run; runs are at 07:40, 09:40, 10:40, 12:40, 13:40, 15:40, 17:40, 18:40, 20:40 and 22:40)
+## 2. Numbers (the 07:40 run, and any run where `log/metrics.json` has no `skip_rate` field yet; runs are at 07:40, 09:40, 10:40, 12:40, 13:40, 15:40, 17:40, 18:40, 20:40 and 22:40)
 1. `node scripts/metrics.mjs`. It writes `log/metrics.json` and prints which formats get the most comments, likes and views.
 2. Keep the table for the report and for step 4.
 
