@@ -30,7 +30,7 @@
     "seconds": 9,
     "props": {
       "layout": "flag",
-      "bg": "drop",
+      "bg": "ring",
       "title": "You don't owe anyone a reply.",
       "cta": "Agree? Tell us why",
       "seconds": 9,
@@ -386,7 +386,7 @@
     "seconds": 10,
     "props": {
       "layout": "choice",
-      "bg": "drop",
+      "bg": "ring",
       "title": "Would you rather…",
       "cta": "Which one, and why?",
       "seconds": 10,
@@ -583,7 +583,7 @@
     "seconds": 9,
     "props": {
       "layout": "flag",
-      "bg": "drop",
+      "bg": "ring",
       "kicker": "Hot take",
       "title": "Your partner's phone should be an open book.",
       "items": [
@@ -961,7 +961,7 @@
     "seconds": 10,
     "props": {
       "layout": "finish",
-      "bg": "drop",
+      "bg": "ring",
       "title": "The most petty thing I've ever done was…",
       "cta": "Finish it in the comments",
       "seconds": 10,
@@ -1079,7 +1079,7 @@
     "seconds": 9,
     "props": {
       "layout": "flag",
-      "bg": "drop",
+      "bg": "ring",
       "title": "Going through your partner's phone when they ask you to hold it.",
       "cta": "Say why in the comments",
       "seconds": 9,
@@ -1141,7 +1141,7 @@
     "seconds": 9,
     "props": {
       "layout": "scale",
-      "bg": "drop",
+      "bg": "ring",
       "title": "Pretending you didn't see someone at the shops.",
       "cta": "Rate it 1 to 10",
       "seconds": 9,
@@ -1193,7 +1193,7 @@
     "seconds": 13,
     "props": {
       "layout": "rank",
-      "bg": "drop",
+      "bg": "ring",
       "title": "Rank these from most to least awkward",
       "cta": "Comment your order, like 4-1-3-2",
       "seconds": 13,
@@ -1775,7 +1775,7 @@
     "seconds": 9,
     "props": {
       "layout": "flag",
-      "bg": "drop",
+      "bg": "ring",
       "kicker": "Hot take",
       "title": "Saying sorry first doesn't mean you were wrong.",
       "items": [
@@ -1909,7 +1909,7 @@
     "seconds": 9,
     "props": {
       "layout": "question",
-      "bg": "drop",
+      "bg": "ring",
       "kicker": "POV",
       "title": "A friend sends a photo with 'this reminded me of you' and it's oddly accurate.",
       "cta": "Who sends you these?",
@@ -1963,7 +1963,7 @@
     "seconds": 9,
     "props": {
       "layout": "scale",
-      "bg": "drop",
+      "bg": "ring",
       "kicker": "How bad is it?",
       "title": "An apology that starts with 'I'm sorry you felt that way'.",
       "cta": "Rate it 1 to 10",
@@ -2169,7 +2169,7 @@
     "seconds": 9,
     "props": {
       "layout": "flag",
-      "bg": "drop",
+      "bg": "ring",
       "title": "Being single is underrated.",
       "cta": "Agree? Tell us why",
       "seconds": 9,
@@ -2227,7 +2227,7 @@
     "seconds": 10,
     "props": {
       "layout": "finish",
-      "bg": "drop",
+      "bg": "ring",
       "title": "The thing I wish I'd said before it was too late is…",
       "cta": "Finish it in the comments",
       "seconds": 10,
@@ -2373,7 +2373,7 @@
     "seconds": 9,
     "props": {
       "layout": "scale",
-      "bg": "drop",
+      "bg": "ring",
       "title": "How much do you actually say what you mean?",
       "cta": "Drop a number",
       "seconds": 9,
@@ -2492,7 +2492,7 @@
     "seconds": 11,
     "props": {
       "layout": "question",
-      "bg": "drop",
+      "bg": "ring",
       "kicker": "Deep question",
       "title": "Which friendship ended without anyone saying goodbye?",
       "cta": "Sit with it. Then answer.",
@@ -2621,7 +2621,7 @@
     "seconds": 10,
     "props": {
       "layout": "finish",
-      "bg": "drop",
+      "bg": "ring",
       "title": "If my younger self could see me now, they'd…",
       "cta": "Finish it in the comments",
       "seconds": 10,
@@ -2772,7 +2772,7 @@
     "seconds": 11,
     "props": {
       "layout": "question",
-      "bg": "drop",
+      "bg": "ring",
       "kicker": "Deep question",
       "title": "What do you need to hear that nobody ever says to you?",
       "cta": "Sit with it. Then answer.",
