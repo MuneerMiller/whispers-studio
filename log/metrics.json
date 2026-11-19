@@ -1,22 +1,76 @@
 {
-  "updated": "2026-11-18T07:43:52.759Z",
+  "updated": "2026-11-19T05:41:50.136Z",
   "posts": [
+    {
+      "code": "ig-rate-01",
+      "account": "stories",
+      "format": "Rate it 1-10",
+      "posted_at": "2026-11-18T20:45:45+0000",
+      "permalink": "https://www.instagram.com/reel/Df5ZQLECGqS/",
+      "views": 149,
+      "reach": 109,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 5.2,
+      "skip_rate": 47.3,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.21,
+      "outlier": false
+    },
+    {
+      "code": "ig-flg-01",
+      "account": "stories",
+      "format": "Red flag or fair",
+      "posted_at": "2026-11-18T16:42:24+0000",
+      "permalink": "https://www.instagram.com/reel/Df49aIsD0Pe/",
+      "views": 167,
+      "reach": 109,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 7.7,
+      "skip_rate": 33.6,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.36,
+      "outlier": false
+    },
+    {
+      "code": "ig-hot-02",
+      "account": "stories",
+      "format": "Unpopular opinion",
+      "posted_at": "2026-11-18T10:43:34+0000",
+      "permalink": "https://www.instagram.com/reel/Df4UV2PDw94/",
+      "views": 19,
+      "reach": 12,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 3.4,
+      "skip_rate": 64.3,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.15,
+      "outlier": false
+    },
     {
       "code": "ig-fin-01",
       "account": "stories",
       "format": "Finish the sentence",
       "posted_at": "2026-11-18T05:44:21+0000",
       "permalink": "https://www.instagram.com/reel/Df3yGyAAD-V/",
-      "views": 140,
+      "views": 141,
       "reach": 104,
       "shares": 0,
       "saves": 0,
       "reposts": null,
       "avg_watch_s": 5.5,
-      "skip_rate": 46.2,
+      "skip_rate": 45.7,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.14,
+      "vs_median": 1.15,
       "outlier": false
     },
     {
@@ -25,16 +79,16 @@
       "format": "Storyboard",
       "posted_at": "2026-11-17T20:44:04+0000",
       "permalink": "https://www.instagram.com/reel/Df20SpUmiLo/",
-      "views": 18,
-      "reach": 14,
+      "views": 114,
+      "reach": 101,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 4.2,
-      "skip_rate": 68.8,
+      "avg_watch_s": 1.7,
+      "skip_rate": 90.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.15,
+      "vs_median": 0.93,
       "outlier": false
     },
     {
@@ -151,16 +205,16 @@
       "format": "Storyboard",
       "posted_at": "2026-11-17T08:43:20+0000",
       "permalink": "https://www.instagram.com/reel/Df1hyhAEe-7/",
-      "views": 149,
-      "reach": 120,
+      "views": 150,
+      "reach": 122,
       "shares": 0,
       "saves": 0,
       "reposts": null,
       "avg_watch_s": 7.3,
-      "skip_rate": 42.4,
+      "skip_rate": 42.1,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.21,
+      "vs_median": 1.22,
       "outlier": false
     },
     {
@@ -560,21 +614,75 @@
       "outlier": false
     },
     {
+      "code": "igb-wyr-02",
+      "account": "brand",
+      "format": "Would you rather",
+      "posted_at": "2026-11-18T20:46:27+0000",
+      "permalink": "https://www.instagram.com/reel/Df5ZVn9jK-c/",
+      "views": 211,
+      "reach": 140,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 7.5,
+      "skip_rate": 43.9,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 1.41,
+      "outlier": false
+    },
+    {
+      "code": "igb-hot-03",
+      "account": "brand",
+      "format": "Unpopular opinion",
+      "posted_at": "2026-11-18T16:44:04+0000",
+      "permalink": "https://www.instagram.com/reel/Df49mfikfAb/",
+      "views": 36,
+      "reach": 26,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 4.7,
+      "skip_rate": 50,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.24,
+      "outlier": false
+    },
+    {
+      "code": "igb-hot-02",
+      "account": "brand",
+      "format": "Unpopular opinion",
+      "posted_at": "2026-11-18T10:45:13+0000",
+      "permalink": "https://www.instagram.com/reel/Df4UiX5EyNb/",
+      "views": 92,
+      "reach": 61,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 6.9,
+      "skip_rate": 34.4,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 0.61,
+      "outlier": false
+    },
+    {
       "code": "igb-cho-01",
       "account": "brand",
       "format": "This or that",
       "posted_at": "2026-11-18T05:44:59+0000",
       "permalink": "https://www.instagram.com/reel/Df3yLAEjNw-/",
-      "views": 8,
-      "reach": 6,
-      "shares": 0,
+      "views": 126,
+      "reach": 98,
+      "shares": 21,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 0.8,
-      "skip_rate": 75,
-      "likes": 0,
-      "comments": 0,
-      "vs_median": 0.05,
+      "avg_watch_s": 3.9,
+      "skip_rate": 65.3,
+      "likes": 2,
+      "comments": 1,
+      "vs_median": 0.84,
       "outlier": false
     },
     {
@@ -592,7 +700,7 @@
       "skip_rate": 70.7,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.13,
+      "vs_median": 1.11,
       "outlier": false
     },
     {
@@ -610,7 +718,7 @@
       "skip_rate": 66,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.29,
+      "vs_median": 1.26,
       "outlier": false
     },
     {
@@ -619,16 +727,16 @@
       "format": "Storyboard",
       "posted_at": "2026-11-17T16:44:49+0000",
       "permalink": "https://www.instagram.com/reel/Df2Y49yCfbq/",
-      "views": 146,
-      "reach": 129,
+      "views": 152,
+      "reach": 133,
       "shares": 0,
       "saves": 0,
       "reposts": null,
       "avg_watch_s": 4.2,
-      "skip_rate": 89.3,
+      "skip_rate": 88.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.99,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -646,7 +754,7 @@
       "skip_rate": 75.4,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.11,
+      "vs_median": 1.09,
       "outlier": false
     },
     {
@@ -664,7 +772,7 @@
       "skip_rate": 66.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.96,
+      "vs_median": 0.94,
       "outlier": false
     },
     {
@@ -673,13 +781,13 @@
       "format": "Storyboard",
       "posted_at": "2026-11-17T11:44:01+0000",
       "permalink": "https://www.instagram.com/reel/Df12d2SgZas/",
-      "views": 147,
-      "reach": 132,
+      "views": 150,
+      "reach": 134,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 2.9,
-      "skip_rate": 74.6,
+      "avg_watch_s": 2.8,
+      "skip_rate": 75,
       "likes": 3,
       "comments": 0,
       "vs_median": 1,
@@ -700,7 +808,7 @@
       "skip_rate": 66,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.15,
+      "vs_median": 1.13,
       "outlier": false
     },
     {
@@ -718,7 +826,7 @@
       "skip_rate": 80.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.08,
+      "vs_median": 1.06,
       "outlier": false
     },
     {
@@ -736,7 +844,7 @@
       "skip_rate": 42.4,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.54,
+      "vs_median": 0.53,
       "outlier": false
     },
     {
@@ -754,7 +862,7 @@
       "skip_rate": 77.4,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.09,
+      "vs_median": 1.07,
       "outlier": false
     },
     {
@@ -772,7 +880,7 @@
       "skip_rate": 80.3,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.56,
+      "vs_median": 0.55,
       "outlier": false
     },
     {
@@ -790,7 +898,7 @@
       "skip_rate": 78.4,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.26,
+      "vs_median": 1.23,
       "outlier": false
     },
     {
@@ -808,7 +916,7 @@
       "skip_rate": 93.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.97,
+      "vs_median": 0.95,
       "outlier": false
     },
     {
@@ -826,7 +934,7 @@
       "skip_rate": 85.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -871,8 +979,8 @@
       "format": "Finish the sentence",
       "posted_at": "2026-11-16T10:44:55+0000",
       "permalink": "https://www.instagram.com/reel/DfzK6OaEwKs/",
-      "views": 160,
-      "reach": 151,
+      "views": 161,
+      "reach": 152,
       "shares": 0,
       "saves": 0,
       "reposts": null,
@@ -880,7 +988,7 @@
       "skip_rate": 90.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.09,
+      "vs_median": 1.07,
       "outlier": false
     },
     {
@@ -898,7 +1006,7 @@
       "skip_rate": 69.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.05,
+      "vs_median": 1.03,
       "outlier": false
     },
     {
@@ -916,7 +1024,7 @@
       "skip_rate": 86,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.93,
+      "vs_median": 0.91,
       "outlier": false
     },
     {
@@ -934,7 +1042,7 @@
       "skip_rate": 57.1,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.46,
+      "vs_median": 1.43,
       "outlier": false
     },
     {
@@ -952,7 +1060,7 @@
       "skip_rate": 82.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.99,
+      "vs_median": 0.97,
       "outlier": false
     },
     {
@@ -988,7 +1096,7 @@
       "skip_rate": 83.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.45,
+      "vs_median": 1.42,
       "outlier": false
     },
     {
@@ -1042,7 +1150,7 @@
       "skip_rate": 97.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.93,
+      "vs_median": 0.91,
       "outlier": false
     },
     {
@@ -1060,7 +1168,7 @@
       "skip_rate": 79.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.02,
+      "vs_median": 1,
       "outlier": false
     },
     {
@@ -1078,7 +1186,7 @@
       "skip_rate": 88.7,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 0.98,
       "outlier": false
     },
     {
@@ -1096,7 +1204,7 @@
       "skip_rate": 70.9,
       "likes": 2,
       "comments": 1,
-      "vs_median": 1.2,
+      "vs_median": 1.17,
       "outlier": false
     },
     {
@@ -1114,7 +1222,7 @@
       "skip_rate": 84.5,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.9,
+      "vs_median": 0.88,
       "outlier": false
     }
   ]
