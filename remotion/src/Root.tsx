@@ -6,6 +6,7 @@ import {MemeCarousel, memeCarouselMeta} from './MemeCarousel';
 import {ChatReel, chatReelMeta} from './ChatReel';
 import {TierList, tierListMeta, NotesReel, notesReelMeta, SearchReel, searchReelMeta, TwistReel, twistReelMeta, VoiceStory, voiceStoryMeta, BingoCard} from './MoreReels';
 import {StoryboardReel, storyboardMeta} from './StoryboardReel';
+import {StoryTime} from './StoryTime';
 import {Phone3D} from './Phone3D';
 import {TextReel, textReelMetadata} from './TextReel';
 import {PromptPost, promptDuration} from './PromptPost';
@@ -42,6 +43,9 @@ export const RemotionRoot: React.FC = () => (
       defaultProps={{title: 'Red flag bingo', cells: Array.from({length: 24}, (_, i) => `cell ${i + 1}`), question: 'How many did you get?'}} />
     <Composition id="StoryboardReel" component={StoryboardReel} calculateMetadata={storyboardMeta} durationInFrames={300} fps={30} width={1080} height={1920}
       defaultProps={{scenes: [{type: 'slam' as const, text: 'Say the thing.'}]}} />
+    <Composition id="StoryTime" component={StoryTime} durationInFrames={30} fps={30} width={1080} height={1920}
+      defaultProps={{hook: '', words: [], duration: 1}}
+      calculateMetadata={({props}) => ({durationInFrames: Math.ceil(((props as any).duration + ((props as any).end ? 2.4 : 0.6)) * 30)})} />
     <Composition id="Phone3D" component={Phone3D} durationInFrames={150} fps={30} width={1080} height={1920}
       defaultProps={{hook: 'She saw the notification first.', messages: [{from: 'them' as const, text: 'did you tell her yet?'}, {from: 'me' as const, text: 'tell her what'}, {from: 'them' as const, text: 'about us'}, {from: 'me' as const, text: 'delete this'}]}} />
   </>
