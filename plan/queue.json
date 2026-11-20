@@ -2459,7 +2459,7 @@
         "Be famous for one big thing"
       ]
     },
-    "caption": "A or B? 👇\n\n#whispers #anonymous #relatable #unpopularopinion"
+    "caption": "Remembered for one kind thing, or famous for one big thing? Which one, and why? 👇\n\n#wouldyourather #kindness #legacy #deepthoughts"
   },
   {
     "code": "igb-meme-04",
@@ -2832,5 +2832,573 @@
       "seed": 3
     },
     "caption": "If this chapter of your life had a title, what would it be? One line. Go.\n\n#deepquestions #selfreflection #honesty #thoughts #whispers"
+  },
+  {
+    "code": "igb-tier-03",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Tier list",
+    "composition": "TierList",
+    "props": {
+      "title": "Ways people say 'I missed you', ranked",
+      "items": [
+        {
+          "text": "'long time no see'",
+          "tier": "D"
+        },
+        {
+          "text": "liking a photo from 2019",
+          "tier": "C"
+        },
+        {
+          "text": "'saw this and thought of you'",
+          "tier": "B"
+        },
+        {
+          "text": "a 6-minute voice note",
+          "tier": "A"
+        },
+        {
+          "text": "turning up at your door",
+          "tier": "S"
+        }
+      ],
+      "question": "Which one gets you every time?"
+    },
+    "caption": "ways people say 'i missed you', ranked. which one gets you every time, and why? send it to the friend who does the S tier 🤍\n\n#friendship #missingyou #wholesome #bestfriend"
+  },
+  {
+    "code": "igb-hot-06",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Hot take",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "bg": "ring",
+      "seconds": 9,
+      "layout": "flag",
+      "kicker": "Hot take",
+      "title": "If they only call when they need something, they are not your friend.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seed": 0
+    },
+    "caption": "if they only call when they need something, they're not your friend. agree, or too harsh? tell us why 👇\n\n#hottake #friendship #boundaries #realtalk"
+  },
+  {
+    "code": "igb-wyr-04",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Would you rather",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "bg": "ring",
+      "seconds": 10,
+      "layout": "choice",
+      "title": "Pick one. Forever.",
+      "cta": "Which one, and why?",
+      "seed": 3,
+      "items": [
+        "Always know what people really think of you",
+        "Never find out"
+      ]
+    },
+    "caption": "always know what people really think of you, or never find out? which one, and why? 👇\n\n#wouldyourather #honesty #deepthoughts #relatable"
+  },
+  {
+    "code": "igb-sb-09",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Storyboard",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Send this to the friend who's always 'on my way'",
+          "bg": "yellow",
+          "transition": "cut"
+        },
+        {
+          "type": "clock",
+          "time": "19:02",
+          "text": "'on my way'",
+          "bg": "ink"
+        },
+        {
+          "type": "clock",
+          "time": "19:38",
+          "text": "'5 min away'",
+          "bg": "blue"
+        },
+        {
+          "type": "emoji",
+          "emoji": "🙃",
+          "bg": "pink"
+        },
+        {
+          "type": "redact",
+          "text": "What they were actually doing:",
+          "hidden": "choosing an outfit",
+          "bg": "red"
+        },
+        {
+          "type": "question",
+          "text": "How late is too late?",
+          "sub": "send it to them",
+          "bg": "ink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "the friend who's always 'on my way' (they haven't left yet). how late is too late? send it to them 👇\n\n#friendship #relatable #runninglate #bestfriend"
+  },
+  {
+    "code": "igb-tier-04",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Tier list",
+    "composition": "TierList",
+    "props": {
+      "title": "Small wins, ranked by how good they feel",
+      "items": [
+        {
+          "text": "green lights all the way home",
+          "tier": "D"
+        },
+        {
+          "text": "money in an old jacket",
+          "tier": "C"
+        },
+        {
+          "text": "your bed after a long day",
+          "tier": "B"
+        },
+        {
+          "text": "someone knows your usual order",
+          "tier": "A"
+        },
+        {
+          "text": "laughing until you cry",
+          "tier": "S"
+        }
+      ],
+      "question": "What's your S tier small win?"
+    },
+    "caption": "small wins, ranked by how good they feel. what's your S tier small win, and why? 👇\n\n#smallwins #goodvibes #wholesome #relatable"
+  },
+  {
+    "code": "igb-hot-07",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Hot take",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "bg": "ring",
+      "seconds": 9,
+      "layout": "flag",
+      "kicker": "Hot take",
+      "title": "Being 20 minutes early is just as awkward as being late.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seed": 1
+    },
+    "caption": "being 20 minutes early is just as awkward as being late. agree or disagree? tell us why 👇\n\n#hottake #etiquette #punctuality #relatable"
+  },
+  {
+    "code": "igb-wyr-05",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Would you rather",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "bg": "ring",
+      "seconds": 10,
+      "layout": "choice",
+      "title": "Your best friend has to pick one:",
+      "cta": "Which one, and why?",
+      "seed": 0,
+      "items": [
+        "Tell you the brutal truth, always",
+        "Protect your feelings, always"
+      ]
+    },
+    "caption": "would you want your best friend to always tell you the brutal truth, or always protect your feelings? which one, and why? 👇\n\n#wouldyourather #bestfriend #honesty #friendship"
+  },
+  {
+    "code": "igb-rate-04",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Rate it 1-10",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "bg": "ring",
+      "seconds": 9,
+      "layout": "scale",
+      "kicker": "How bad is it?",
+      "title": "Cancelling plans by text 10 minutes before you were meant to meet.",
+      "cta": "Rate it 1 to 10",
+      "seed": 2
+    },
+    "caption": "cancelling plans 10 minutes before you meet, by text. rate it 1 to 10, and be honest 👇\n\n#cancelledplans #friendship #etiquette #relatable"
+  },
+  {
+    "code": "igb-tier-05",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Tier list",
+    "composition": "TierList",
+    "props": {
+      "title": "First-date green flags, ranked",
+      "items": [
+        {
+          "text": "asks one question back",
+          "tier": "D"
+        },
+        {
+          "text": "shows up on time",
+          "tier": "C"
+        },
+        {
+          "text": "kind to the waiter",
+          "tier": "B"
+        },
+        {
+          "text": "remembers what you said earlier",
+          "tier": "A"
+        },
+        {
+          "text": "makes you feel safe being weird",
+          "tier": "S"
+        }
+      ],
+      "question": "What's missing from S tier?"
+    },
+    "caption": "first-date green flags, ranked. what's missing from S tier? tell us why 👇\n\n#greenflags #dating #firstdate #relationships"
+  },
+  {
+    "code": "igb-hot-08",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Hot take",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "bg": "ring",
+      "seconds": 9,
+      "layout": "flag",
+      "kicker": "Hot take",
+      "title": "You can love your family and still need distance from them.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seed": 2
+    },
+    "caption": "you can love your family and still need distance from them. agree? tell us why 🤍\n\n#hottake #family #boundaries #growth"
+  },
+  {
+    "code": "igb-sb-10",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Storyboard",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "zoom",
+          "text": "Don't watch this if you said you'd sleep early tonight",
+          "bg": "purple",
+          "transition": "cut"
+        },
+        {
+          "type": "meme",
+          "me": "I'm sleeping at 10 tonight",
+          "alsoMe": "watching videos at 2am",
+          "bg": "ink"
+        },
+        {
+          "type": "meme",
+          "me": "I'm saving money this month",
+          "alsoMe": "buying a snack for emotional support",
+          "bg": "green"
+        },
+        {
+          "type": "emoji",
+          "emoji": "💀",
+          "bg": "yellow"
+        },
+        {
+          "type": "question",
+          "text": "Which one are you right now?",
+          "sub": "be honest",
+          "bg": "black",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "said you'd sleep early tonight? same. which one are you right now, be honest 👇\n\n#relatable #meme #sleepschedule #adulting"
+  },
+  {
+    "code": "igb-wyr-06",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Would you rather",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "bg": "ring",
+      "seconds": 10,
+      "layout": "choice",
+      "title": "Would you rather have…",
+      "cta": "Which one, and why?",
+      "seed": 1,
+      "items": [
+        "One friend who would do anything for you",
+        "Ten friends who are always fun"
+      ]
+    },
+    "caption": "one friend who'd do anything for you, or ten who are always fun? which one, and why? 👇\n\n#wouldyourather #friendship #bestfriend #realtalk"
+  },
+  {
+    "code": "igb-tier-06",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Tier list",
+    "composition": "TierList",
+    "props": {
+      "title": "Ways to make up after a fight, ranked",
+      "items": [
+        {
+          "text": "'whatever.'",
+          "tier": "D"
+        },
+        {
+          "text": "acting like nothing happened",
+          "tier": "C"
+        },
+        {
+          "text": "sending a funny meme",
+          "tier": "B"
+        },
+        {
+          "text": "'can we start over?'",
+          "tier": "A"
+        },
+        {
+          "text": "a hug mid-sentence",
+          "tier": "S"
+        }
+      ],
+      "question": "Which one works on you?"
+    },
+    "caption": "ways to make up after a fight, ranked. which one actually works on you, and why? 👇\n\n#relationships #makeup #communication #wholesome"
+  },
+  {
+    "code": "igb-pov-03",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "POV",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "bg": "ring",
+      "seconds": 9,
+      "layout": "question",
+      "kicker": "POV",
+      "title": "You finally said no without explaining yourself, and nothing bad happened.",
+      "cta": "When did you last do this?",
+      "seed": 3
+    },
+    "caption": "pov: you said no without explaining yourself and nothing bad happened. when did you last do this? 🤍\n\n#pov #boundaries #growth #selfrespect"
+  },
+  {
+    "code": "igb-hot-09",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Hot take",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "bg": "ring",
+      "seconds": 9,
+      "layout": "flag",
+      "kicker": "Hot take",
+      "title": "Replying 'haha' to a long message is worse than not replying.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seed": 3
+    },
+    "caption": "replying 'haha' to a long message is worse than not replying at all. agree or disagree? tell us why 👇\n\n#hottake #texting #friendship #relatable"
+  },
+  {
+    "code": "igb-pause-03",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Pause challenge",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Only 1% can pause at the right time.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "it's there for one frame",
+            "most people miss it",
+            "go back and try again"
+          ],
+          "bg": "green",
+          "secret": "Text your best friend 'I know what you did' and wait.",
+          "secretAt": 1.6
+        },
+        {
+          "type": "question",
+          "text": "What did it say?",
+          "sub": "send it to someone who'll miss it",
+          "bg": "red",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "only 1% catch the hidden line 👀 what did it say? (and did you do it?)\n\n#pausechallenge #challenge #bestfriend #funny"
+  },
+  {
+    "code": "igb-tier-07",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Tier list",
+    "composition": "TierList",
+    "props": {
+      "title": "Friend group roles, ranked",
+      "items": [
+        {
+          "text": "never replies in the chat",
+          "tier": "D"
+        },
+        {
+          "text": "always '5 minutes away'",
+          "tier": "C"
+        },
+        {
+          "text": "the group photographer",
+          "tier": "B"
+        },
+        {
+          "text": "plans every trip",
+          "tier": "A"
+        },
+        {
+          "text": "checks on everyone quietly",
+          "tier": "S"
+        }
+      ],
+      "question": "Which one are you? Be honest"
+    },
+    "caption": "friend group roles, ranked. which one are you, be honest? send it to your S tier friend 🤍\n\n#friendgroup #friendship #bestfriend #relatable"
+  },
+  {
+    "code": "igb-hot-10",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Unpopular opinion",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "bg": "ring",
+      "seconds": 9,
+      "layout": "flag",
+      "kicker": "Unpopular opinion",
+      "title": "Voice notes over 2 minutes should come with a warning.",
+      "items": [
+        "Agree",
+        "Disagree"
+      ],
+      "cta": "Agree? Tell us why",
+      "seed": 0
+    },
+    "caption": "voice notes over 2 minutes should come with a warning. agree, or are you the 2-minute person? 👇\n\n#unpopularopinion #voicenotes #texting #relatable"
+  },
+  {
+    "code": "igb-wyr-07",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Would you rather",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "bg": "ring",
+      "seconds": 10,
+      "layout": "choice",
+      "title": "Would you rather relive…",
+      "cta": "Which one, and why?",
+      "seed": 2,
+      "items": [
+        "Your best day, exactly the same",
+        "Your worst day, with a do-over"
+      ]
+    },
+    "caption": "relive your best day exactly the same, or your worst day with a do-over? which one, and why? 👇\n\n#wouldyourather #nostalgia #deepthoughts #growth"
+  },
+  {
+    "code": "igb-sb-11",
+    "account": "brand",
+    "content_type": "Prompt",
+    "format": "Storyboard",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "glitch",
+          "text": "Unpopular opinion: replying fast isn't desperate.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "versus",
+          "left": "Reply in 2 minutes",
+          "right": "Wait 3 hours to look busy",
+          "bg": "blue"
+        },
+        {
+          "type": "type",
+          "text": "checking if they saw it. they saw it.",
+          "bg": "ink"
+        },
+        {
+          "type": "redact",
+          "text": "The truth nobody admits:",
+          "hidden": "we all reply fast to the right person",
+          "bg": "pink"
+        },
+        {
+          "type": "question",
+          "text": "Which one are you?",
+          "sub": "be honest",
+          "bg": "cream",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "replying fast isn't desperate. are you a 2-minute replier or a wait-3-hours one? be honest 👇\n\n#texting #dating #relatable #unpopularopinion"
   }
 ]
