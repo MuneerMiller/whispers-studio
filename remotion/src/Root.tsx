@@ -6,7 +6,7 @@ import {MemeCarousel, memeCarouselMeta} from './MemeCarousel';
 import {ChatReel, chatReelMeta} from './ChatReel';
 import {TierList, tierListMeta, NotesReel, notesReelMeta, SearchReel, searchReelMeta, TwistReel, twistReelMeta, VoiceStory, voiceStoryMeta, BingoCard} from './MoreReels';
 import {StoryboardReel, storyboardMeta} from './StoryboardReel';
-import {Toon} from './Toon';
+import {Toon, Story} from './Toon';
 import {Film} from './Film';
 import {StoryTime} from './StoryTime';
 import {Phone3D} from './Phone3D';
@@ -45,6 +45,9 @@ export const RemotionRoot: React.FC = () => (
       defaultProps={{title: 'Red flag bingo', cells: Array.from({length: 24}, (_, i) => `cell ${i + 1}`), question: 'How many did you get?'}} />
     <Composition id="StoryboardReel" component={StoryboardReel} calculateMetadata={storyboardMeta} durationInFrames={300} fps={30} width={1080} height={1920}
       defaultProps={{scenes: [{type: 'slam' as const, text: 'Say the thing.'}]}} />
+    <Composition id="Story" component={Story} durationInFrames={30} fps={30} width={1080} height={1920}
+      defaultProps={{words: [], duration: 1, shots: [{at: 0, set: 'cafe' as const}], cast: {}}}
+      calculateMetadata={({props}) => ({durationInFrames: Math.ceil(((props as any).duration + ((props as any).end ? 3 : 0.6)) * 30)})} />
     <Composition id="Toon" component={Toon} durationInFrames={30} fps={30} width={1080} height={1920}
       defaultProps={{words: [], duration: 1, shots: [{at: 0, cam: {x: 0, y: 0, zoom: 1}}], cast: {}}}
       calculateMetadata={({props}) => ({durationInFrames: Math.ceil(((props as any).duration + ((props as any).end ? 2.6 : 0.6)) * 30)})} />

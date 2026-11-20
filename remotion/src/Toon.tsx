@@ -3,13 +3,14 @@ import {AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame, Easing} f
 import '@fontsource/instrument-sans/700.css';
 import '@fontsource/instrument-sans/500.css';
 import '@fontsource/newsreader/400.css';
+import {Chat, Whispers} from './Film';
 
 // Toon: cartoon characters acting out a story. A character is a puppet with a look (skin, hair, top)
 // and, per moment, an emotion and a pose. A shot is a camera move over a set (here: the dinner table)
 // plus what each character feels and does during it. Captions run on top, like the Film format.
 export type Emotion = 'neutral' | 'happy' | 'smirk' | 'shocked' | 'angry' | 'sad' | 'guilty' | 'cry';
 export type Look = {skin: string; hair: string; hairStyle: 'long' | 'short' | 'bun' | 'bald'; top: string; beard?: boolean; grey?: boolean};
-type Act = {emotion?: Emotion; look?: 'left' | 'right' | 'front' | 'down'; lift?: boolean; sweat?: boolean; lean?: number};
+type Act = {emotion?: Emotion; look?: 'left' | 'right' | 'front' | 'down'; lift?: boolean; sweat?: boolean; lean?: number; phone?: boolean};
 type Word = {w: string; s: number; e: number};
 export type ToonShot = {at: number; cam: {x: number; y: number; zoom: number}; camTo?: {x: number; y: number; zoom: number}; acts?: Record<string, Act>; insert?: 'screenshot'; shake?: boolean};
 export type ToonProps = {words: Word[]; duration: number; shots: ToonShot[]; cast: Record<string, Look & {x: number}>; audio?: string; hook?: string; end?: string; tag?: boolean};
@@ -75,8 +76,10 @@ export const Character: React.FC<{look: Look; act: Act; t: number; blinkSeed?: n
         <Hair look={look} />
         {act.sweat && <path d={`M70 ${-40 + (t * 40) % 40} q8 14 0 22 q-8 -8 0 -22z`} fill="#9fd8ff" />}
       </g>
+      {act.phone && <g transform="translate(-10, 150) rotate(-8)"><rect x={-38} y={-70} width={76} height={136} rx={14} fill="#111" /><rect x={-32} y={-62} width={64} height={118} rx={9} fill="#9fc3ff" opacity={0.9} /></g>}
+      {act.phone && <ellipse cx={0} cy={-10} rx={110} ry={120} fill="#9fc3ff" opacity={0.12} />}
       {/* hands on the table / lifting */}
-      <ellipse cx={-70} cy={act.lift ? 210 : 300} rx={26} ry={22} fill={look.skin} />
+      <ellipse cx={act.phone ? -40 : -70} cy={act.lift ? 210 : act.phone ? 220 : 300} rx={26} ry={22} fill={look.skin} />
       <ellipse cx={70} cy={300} rx={26} ry={22} fill={look.skin} />
     </g>
   );
@@ -169,6 +172,163 @@ export const Toon: React.FC<ToonProps> = ({words, duration, shots, cast, audio, 
       {end && t >= endAt && (
         <AbsoluteFill style={{background: `rgba(0,0,0,${0.55 * endK})`, alignItems: 'center', justifyContent: 'center', padding: 80, textAlign: 'center'}}>
           <span style={{opacity: endK, fontFamily: sans, fontWeight: 700, fontSize: 92, lineHeight: 1.1, color: '#fff', WebkitTextStroke: '14px #000', paintOrder: 'stroke fill'}}>{end}</span>
+        </AbsoluteFill>
+      )}
+      {tag && <div style={{position: 'absolute', bottom: 330, left: 0, right: 0, textAlign: 'center', fontFamily: sans, fontWeight: 500, fontSize: 24, color: 'rgba(255,255,255,0.5)'}}>dramatised</div>}
+    </AbsoluteFill>
+  );
+};
+
+// ---------- Story mode: several sets, phone inserts, quieter sound design ----------
+type Msg = {from: string; text: string; me?: boolean; at: number};
+type SetName = 'cafe' | 'bedroom' | 'driveway' | 'dinner';
+export type StoryShot = {
+  at: number; set?: SetName; people?: string[]; cam?: {x: number; y: number; zoom: number}; camTo?: {x: number; y: number; zoom: number};
+  acts?: Record<string, Act>; shake?: boolean;
+  phone?: {kind: 'chat'; title: string; msgs: Msg[]} | {kind: 'whispers'; text: string; meta?: string; highlight?: string} | {kind: 'notify'; from: string; text: string} | {kind: 'screenshot'};
+};
+export type StoryProps = {words: Word[]; duration: number; shots: StoryShot[]; cast: Record<string, Look>; audio?: string; hook?: string; end?: string; tag?: boolean};
+
+const SLOTS: Record<SetName, number[]> = {cafe: [820, 1340], bedroom: [1080], driveway: [], dinner: [700, 960, 1200, 1460]};
+const SCALE: Record<SetName, number> = {cafe: 1.35, bedroom: 1.5, driveway: 1, dinner: 1.12};
+
+const SetBack: React.FC<{set: SetName; t: number}> = ({set, t}) => {
+  if (set === 'cafe') return (<g>
+    <rect width={2160} height={1920} fill="#e9d8c4" />
+    {[0, 1, 2].map((i) => <g key={i}><rect x={420 + i * 460} y={180} width={380} height={520} rx={16} fill="#bfe3f5" /><rect x={420 + i * 460} y={180} width={380} height={520} rx={16} fill="none" stroke="#7a5a44" strokeWidth={16} /><circle cx={540 + i * 460} cy={300} r={40} fill="#fff" opacity={0.6} /></g>)}
+    <rect x={0} y={760} width={2160} height={30} fill="#7a5a44" />
+    {[300, 1860].map((x) => <g key={x}><rect x={x - 20} y={560} width={40} height={200} fill="#3d6b3a" /><circle cx={x} cy={520} r={90} fill="#4f8a4a" /></g>)}
+  </g>);
+  if (set === 'bedroom') return (<g>
+    <rect width={2160} height={1920} fill="#141a2e" />
+    <rect x={1400} y={240} width={420} height={560} rx={10} fill="#0b1022" stroke="#2a3150" strokeWidth={18} />
+    <circle cx={1660} cy={360} r={46} fill="#e9eeff" opacity={0.85} />
+    {[0, 1, 2, 3, 4, 5, 6].map((i) => <rect key={i} x={1410} y={260 + i * 78} width={400} height={20} fill="#2a3150" opacity={0.7} />)}
+    <rect x={260} y={1180} width={1640} height={760} rx={40} fill="#2b3558" />
+    <rect x={300} y={1060} width={520} height={200} rx={60} fill="#cfd6ea" />
+  </g>);
+  if (set === 'driveway') {
+    const flicker = (Math.floor(t * 9) % 7 === 0) ? 0.35 : 1;
+    return (<g>
+      <rect width={2160} height={1920} fill="#0d1226" />
+      {[...Array(40)].map((_, i) => <circle key={i} cx={(i * 397) % 2160} cy={(i * 131) % 520} r={2 + (i % 3)} fill="#fff" opacity={0.5} />)}
+      <path d="M380 760 L1080 360 L1780 760 Z" fill="#26263a" />
+      <rect x={440} y={760} width={1280} height={760} fill="#33344d" />
+      <rect x={640} y={1000} width={880} height={520} fill="#1b1a24" />
+      <rect x={640} y={1000} width={880} height={70} fill="#4a4b66" />
+      <ellipse cx={1080} cy={1080} rx={300} ry={60} fill="#ffcf8a" opacity={0.25 * flicker} />
+      <circle cx={1080} cy={1090} r={14} fill="#ffe2b0" opacity={flicker} />
+      {/* the covered car */}
+      <path d="M760 1500 Q780 1300 900 1260 Q1080 1200 1260 1260 Q1380 1300 1400 1500 Z" fill="#2e3140" />
+      <path d="M820 1490 Q840 1330 940 1300 Q1080 1260 1220 1300 Q1320 1330 1340 1490" fill="none" stroke="#454a5e" strokeWidth={10} />
+      <circle cx={1820} cy={980} r={16} fill="#ffcf8a" opacity={flicker} /><ellipse cx={1820} cy={990} rx={160} ry={120} fill="#ffcf8a" opacity={0.12 * flicker} />
+      <rect x={0} y={1500} width={2160} height={420} fill="#151621" />
+      <path d="M760 1920 L960 1500 L1200 1500 L1400 1920 Z" fill="#20212e" />
+    </g>);
+  }
+  return (<g>
+    <defs><radialGradient id="lamp2" cx="50%" cy="35%" r="60%"><stop offset="0%" stopColor="#ffcf8a" stopOpacity={0.5} /><stop offset="100%" stopColor="#ffcf8a" stopOpacity={0} /></radialGradient></defs>
+    <rect width={2160} height={1920} fill="#2e2230" />
+    <rect x={1500} y={260} width={340} height={460} rx={10} fill="#11162a" stroke="#4a3a35" strokeWidth={18} />
+    <line x1={1080} y1={0} x2={1080} y2={420} stroke="#1a1414" strokeWidth={6} />
+    <path d="M990 420 Q1080 360 1170 420 Z" fill="#c9a45c" />
+    <ellipse cx={1080} cy={700} rx={900} ry={700} fill="url(#lamp2)" />
+  </g>);
+};
+const SetFront: React.FC<{set: SetName; plateLift: number}> = ({set, plateLift}) => {
+  if (set === 'cafe') return (<g>
+    <ellipse cx={1080} cy={1380} rx={760} ry={150} fill="#c9a07a" /><rect x={320} y={1380} width={1520} height={600} fill="#a77d5a" /><ellipse cx={1080} cy={1360} rx={740} ry={130} fill="#d9b48c" />
+    {[860, 1300].map((x) => <g key={x}><rect x={x - 50} y={1270} width={100} height={90} rx={16} fill="#f4efe8" /><ellipse cx={x} cy={1272} rx={50} ry={14} fill="#6b3f22" /></g>)}
+    <g transform="translate(1180,1340)"><rect x={-40} y={-14} width={80} height={24} rx={6} fill="#111" /></g>
+  </g>);
+  if (set === 'bedroom') return <rect x={240} y={1500} width={1680} height={500} rx={50} fill="#3a4677" />;
+  if (set === 'dinner') return (<g>
+    <ellipse cx={1080} cy={1360} rx={980} ry={190} fill="#5a3522" /><rect x={100} y={1360} width={1960} height={600} fill="#3e2416" /><ellipse cx={1080} cy={1340} rx={960} ry={170} fill="#6e4229" />
+    {[700, 1200, 1460].map((x, i) => <g key={i}><ellipse cx={x} cy={1330} rx={120} ry={34} fill="#efe9df" /><ellipse cx={x} cy={1326} rx={80} ry={22} fill="#d9d1c4" /></g>)}
+    <g transform={`translate(0, ${-plateLift * 60})`}><ellipse cx={960} cy={1330} rx={120} ry={34} fill="#efe9df" /><ellipse cx={960} cy={1326} rx={80} ry={22} fill="#d9d1c4" /></g>
+    {plateLift > 0.2 && <rect x={910} y={1318} width={100} height={20} rx={4} fill="#fff" opacity={plateLift} />}
+  </g>);
+  return null;
+};
+
+const NotifyBanner: React.FC<{from: string; text: string; t: number}> = ({from, text, t}) => {
+  const k = interpolate(t - 0.3, [0, 0.3], [0, 1], {...clamp, easing: Easing.out(Easing.back(1.5))});
+  return (
+    <div style={{position: 'absolute', top: 160, left: 40, right: 40, transform: `translateY(${(1 - k) * -220}px)`, opacity: k}}>
+      <div style={{background: 'rgba(40,40,44,0.94)', borderRadius: 40, padding: '26px 30px', fontFamily: sans, boxShadow: '0 20px 60px rgba(0,0,0,0.6)'}}>
+        <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+          <div style={{width: 56, height: 56, borderRadius: 14, background: 'linear-gradient(#5cf777,#0bbd2a)'}} />
+          <div style={{flex: 1, color: '#fff', fontSize: 32, fontWeight: 700}}>{from}</div>
+          <div style={{color: 'rgba(255,255,255,0.5)', fontSize: 26}}>now</div>
+        </div>
+        <div style={{marginTop: 12, color: '#fff', fontSize: 38, lineHeight: 1.25}}>{text}</div>
+      </div>
+    </div>
+  );
+};
+
+export const Story: React.FC<StoryProps> = ({words, duration, shots, cast, audio, hook, end, tag = true}) => {
+  const frame = useCurrentFrame();
+  const t = frame / 30;
+  const endAt = duration + 0.2;
+  const idx = shots.reduce((k, s, i) => (t >= s.at ? i : k), 0);
+  // a shot without its own set keeps the last one (phone inserts sit over it)
+  const base = [...shots.slice(0, idx + 1)].reverse().find((s) => s.set) ?? shots[0];
+  const shot = shots[idx];
+  const st = t - shot.at;
+  const len = (shots[idx + 1]?.at ?? endAt + 2.6) - shot.at;
+  const camShot = shot.cam ? shot : base;
+  const cst = t - camShot.at;
+  const clen = camShot === shot ? len : (shots[idx + 1]?.at ?? endAt + 2.6) - camShot.at;
+  const p = interpolate(cst, [0, clen], [0, 1], {...clamp, easing: ease});
+  const c0 = camShot.cam ?? {x: 0, y: 0, zoom: 1}; const c1 = camShot.camTo ?? c0;
+  const cam = {x: c0.x + (c1.x - c0.x) * p, y: c0.y + (c1.y - c0.y) * p, zoom: c0.zoom + (c1.zoom - c0.zoom) * p};
+  const set = base.set ?? 'dinner';
+  const acts: Record<string, Act> = {};
+  for (const s of shots.slice(0, idx + 1)) { if (s.set && s !== shots[0]) { /* new set: keep acts */ } Object.assign(acts, s.acts ?? {}); }
+  const liftAt = shots.find((s) => s.acts && Object.values(s.acts).some((a) => a.lift))?.at;
+  const plateLift = liftAt != null ? interpolate(t, [liftAt, liftAt + 0.5], [0, 1], clamp) : 0;
+  const shake = shot.shake ? Math.sin(t * 50) * 7 * Math.max(0, 1 - st * 2) : 0;
+  const people = base.people ?? [];
+  const chunks: {ws: Word[]; s: number; e: number}[] = [];
+  let cur: Word[] = [];
+  words.forEach((w, i) => { cur.push(w); const next = words[i + 1]; if (cur.length >= 3 || /[.,?!:…]$/.test(w.w) || !next) { chunks.push({ws: cur, s: cur[0].s, e: next ? next.s : w.e + 0.4}); cur = []; } });
+  const c = t < endAt ? (chunks.find((ch) => t >= ch.s && t < ch.e) ?? (t < (chunks[0]?.s ?? 0) ? chunks[0] : undefined)) : undefined;
+  const endK = interpolate(t - endAt, [0, 0.3], [0, 1], clamp);
+  const full = shot.phone && (shot.phone.kind === 'chat' || shot.phone.kind === 'whispers');
+  const capTop = full ? 1420 : 1420;
+  return (
+    <AbsoluteFill style={{background: '#120d10', overflow: 'hidden'}}>
+      {audio && <Audio src={staticFile(audio)} />}
+      <AbsoluteFill style={{transform: `translate(${shake}px,0) scale(${cam.zoom}) translate(${-cam.x}px, ${-cam.y}px)`, transformOrigin: '540px 960px'}}>
+        <svg width={2160} height={1920} viewBox="0 0 2160 1920" style={{position: 'absolute', left: -540, top: 0}}>
+          <SetBack set={set} t={t} />
+          {people.map((id, i) => cast[id] && (
+            <g key={id} transform={`translate(${SLOTS[set][i] ?? 1080}, ${set === 'bedroom' ? 900 : 860}) scale(${SCALE[set]})`}><Character look={cast[id]} act={acts[id] ?? {}} t={t} blinkSeed={i * 1.3} /></g>
+          ))}
+          <SetFront set={set} plateLift={plateLift} />
+        </svg>
+      </AbsoluteFill>
+      {shot.phone?.kind === 'chat' && <Chat title={shot.phone.title} msgs={shot.phone.msgs} t={st} />}
+      {shot.phone?.kind === 'whispers' && <Whispers text={shot.phone.text} meta={shot.phone.meta} highlight={shot.phone.highlight} t={st} />}
+      {shot.phone?.kind === 'notify' && <NotifyBanner from={shot.phone.from} text={shot.phone.text} t={st} />}
+      {shot.phone?.kind === 'screenshot' && <Screenshot t={st} />}
+      {!full && <AbsoluteFill style={{boxShadow: 'inset 0 0 260px rgba(0,0,0,0.7)'}} />}
+      {hook && t < 2.6 && (
+        <div style={{position: 'absolute', top: 200, left: 70, right: 70, textAlign: 'center', opacity: interpolate(t, [2.3, 2.6], [1, 0], clamp)}}>
+          <span style={{fontFamily: sans, fontWeight: 700, fontSize: 56, lineHeight: 1.32, color: '#111', background: '#fff', padding: '8px 20px', borderRadius: 16, boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone'}}>{hook}</span>
+        </div>
+      )}
+      {c && (
+        <div style={{position: 'absolute', top: capTop, left: 40, right: 40, textAlign: 'center', transform: `scale(${interpolate(t - c.s, [0, 0.09], [0.85, 1], clamp)})`}}>
+          <span style={{fontFamily: sans, fontWeight: 700, fontSize: 100, lineHeight: 1.04, letterSpacing: -2, WebkitTextStroke: '16px #000', paintOrder: 'stroke fill', textTransform: 'lowercase'}}>
+            {c.ws.map((w, i) => <span key={i} style={{color: t >= w.s && t < w.e + 0.1 ? '#FFE14D' : '#fff'}}>{w.w}{i < c.ws.length - 1 ? ' ' : ''}</span>)}
+          </span>
+        </div>
+      )}
+      {end && t >= endAt && (
+        <AbsoluteFill style={{background: `rgba(0,0,0,${0.55 * endK})`, alignItems: 'center', justifyContent: 'center', padding: 80, textAlign: 'center'}}>
+          <span style={{opacity: endK, fontFamily: sans, fontWeight: 700, fontSize: 88, lineHeight: 1.12, color: '#fff', WebkitTextStroke: '14px #000', paintOrder: 'stroke fill'}}>{end}</span>
         </AbsoluteFill>
       )}
       {tag && <div style={{position: 'absolute', bottom: 330, left: 0, right: 0, textAlign: 'center', fontFamily: sans, fontWeight: 500, fontSize: 24, color: 'rgba(255,255,255,0.5)'}}>dramatised</div>}

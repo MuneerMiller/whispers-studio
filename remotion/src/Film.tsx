@@ -34,7 +34,7 @@ const Scene: React.FC<{src: string; t: number; len: number; push?: number; tint?
 );
 
 // iPhone-ish chat screen, full frame (screen-recording style)
-const Chat: React.FC<{title: string; msgs: Msg[]; t: number}> = ({title, msgs, t}) => (
+export const Chat: React.FC<{title: string; msgs: Msg[]; t: number}> = ({title, msgs, t}) => (
   <AbsoluteFill style={{background: '#000', fontFamily: sans}}>
     <div style={{height: 250, background: 'rgba(28,28,30,0.96)', borderBottom: '1px solid #2c2c2e', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 26}}>
       <div style={{width: 92, height: 92, borderRadius: 46, background: 'linear-gradient(#8e8e93,#636366)', display: 'grid', placeItems: 'center', color: '#fff', fontSize: 40, fontWeight: 700}}>{title.slice(0, 1)}</div>
@@ -74,7 +74,7 @@ const Notify: React.FC<{src: string; from: string; text: string; t: number; len:
 };
 
 // The Whispers app: the feed slides up, one post types itself; a word can be lit at the end.
-const Whispers: React.FC<{text: string; meta?: string; highlight?: string; t: number}> = ({text, meta = '2:14 AM', highlight, t}) => {
+export const Whispers: React.FC<{text: string; meta?: string; highlight?: string; t: number}> = ({text, meta = '2:14 AM', highlight, t}) => {
   const open = interpolate(t, [0, 0.35], [0, 1], {...clamp, easing: ease});
   const shown = Math.floor(text.length * interpolate(t, [0.45, 0.45 + text.length * 0.04], [0, 1], clamp));
   const done = shown >= text.length;
