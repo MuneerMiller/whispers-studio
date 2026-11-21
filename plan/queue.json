@@ -2639,25 +2639,20 @@
     "props": {
       "scenes": [
         {
-          "type": "type",
-          "text": "Someone out there",
-          "bg": "ink",
+          "type": "slam",
+          "text": "Someone still thinks about what you said at 15.",
+          "bg": "black",
           "transition": "cut"
         },
         {
           "type": "type",
-          "text": "still thinks about the thing you said",
+          "text": "you forgot it. they never did.",
           "bg": "ink"
-        },
-        {
-          "type": "slam",
-          "text": "when you were 15.",
-          "bg": "black"
         },
         {
           "type": "question",
           "text": "What's something you said that you still think about?",
-          "bg": "ink",
+          "bg": "purple",
           "transition": "flash",
           "dur": 4
         }
