@@ -1,6 +1,60 @@
 {
-  "updated": "2026-11-21T05:41:32.653Z",
+  "updated": "2026-11-22T05:41:15.630Z",
   "posts": [
+    {
+      "code": "ig-meme-05",
+      "account": "stories",
+      "format": "Storyboard list",
+      "posted_at": "2026-11-21T20:43:18+0000",
+      "permalink": "https://www.instagram.com/reel/DgBHXPCD4ER/",
+      "views": 132,
+      "reach": 113,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 4.5,
+      "skip_rate": 63.5,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.05,
+      "outlier": false
+    },
+    {
+      "code": "ig-rnk-02",
+      "account": "stories",
+      "format": "Ranking",
+      "posted_at": "2026-11-21T16:43:28+0000",
+      "permalink": "https://www.instagram.com/reel/DgAr6M2iMDz/",
+      "views": 126,
+      "reach": 104,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 5.9,
+      "skip_rate": 43.1,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1,
+      "outlier": false
+    },
+    {
+      "code": "ig-rate-02",
+      "account": "stories",
+      "format": "Rate it 1-10",
+      "posted_at": "2026-11-21T10:43:03+0000",
+      "permalink": "https://www.instagram.com/reel/DgACq_niPxS/",
+      "views": 181,
+      "reach": 116,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 7.7,
+      "skip_rate": 39.1,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.44,
+      "outlier": false
+    },
     {
       "code": "ig-chat-03",
       "account": "stories",
@@ -16,7 +70,7 @@
       "skip_rate": 60,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.96,
+      "vs_median": 0.95,
       "outlier": false
     },
     {
@@ -34,7 +88,7 @@
       "skip_rate": 35.7,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.57,
+      "vs_median": 1.56,
       "outlier": false
     },
     {
@@ -52,7 +106,7 @@
       "skip_rate": 37.4,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.59,
+      "vs_median": 1.58,
       "outlier": false
     },
     {
@@ -70,7 +124,7 @@
       "skip_rate": 47,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.22,
+      "vs_median": 1.21,
       "outlier": false
     },
     {
@@ -88,7 +142,7 @@
       "skip_rate": 41.4,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.19,
+      "vs_median": 1.18,
       "outlier": false
     },
     {
@@ -124,7 +178,7 @@
       "skip_rate": 48.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.24,
+      "vs_median": 1.23,
       "outlier": false
     },
     {
@@ -142,7 +196,7 @@
       "skip_rate": 34.3,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.35,
+      "vs_median": 1.34,
       "outlier": false
     },
     {
@@ -178,7 +232,7 @@
       "skip_rate": 46.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.14,
+      "vs_median": 1.13,
       "outlier": false
     },
     {
@@ -196,7 +250,7 @@
       "skip_rate": 90.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.93,
+      "vs_median": 0.92,
       "outlier": false
     },
     {
@@ -214,7 +268,7 @@
       "skip_rate": 43.5,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.25,
+      "vs_median": 1.24,
       "outlier": false
     },
     {
@@ -232,7 +286,7 @@
       "skip_rate": 53.2,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.14,
+      "vs_median": 1.13,
       "outlier": false
     },
     {
@@ -268,7 +322,7 @@
       "skip_rate": 55.4,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 0.99,
       "outlier": false
     },
     {
@@ -286,7 +340,7 @@
       "skip_rate": 65.8,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.11,
+      "vs_median": 1.1,
       "outlier": false
     },
     {
@@ -304,7 +358,7 @@
       "skip_rate": 36.1,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.15,
+      "vs_median": 1.14,
       "outlier": false
     },
     {
@@ -322,7 +376,7 @@
       "skip_rate": 42.5,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.22,
+      "vs_median": 1.21,
       "outlier": false
     },
     {
@@ -340,7 +394,7 @@
       "skip_rate": 32.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.27,
+      "vs_median": 1.26,
       "outlier": false
     },
     {
@@ -358,7 +412,7 @@
       "skip_rate": 64.8,
       "likes": 2,
       "comments": 0,
-      "vs_median": 0.91,
+      "vs_median": 0.9,
       "outlier": false
     },
     {
@@ -394,7 +448,7 @@
       "skip_rate": 62.9,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.68,
+      "vs_median": 0.67,
       "outlier": false
     },
     {
@@ -412,7 +466,7 @@
       "skip_rate": 74.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 0.99,
       "outlier": false
     },
     {
@@ -430,7 +484,7 @@
       "skip_rate": 33.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.19,
+      "vs_median": 1.18,
       "outlier": false
     },
     {
@@ -448,7 +502,7 @@
       "skip_rate": 70.5,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.98,
+      "vs_median": 0.97,
       "outlier": false
     },
     {
@@ -466,7 +520,7 @@
       "skip_rate": 66.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.45,
+      "vs_median": 0.44,
       "outlier": false
     },
     {
@@ -502,7 +556,7 @@
       "skip_rate": 65.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.97,
+      "vs_median": 0.96,
       "outlier": false
     },
     {
@@ -556,7 +610,7 @@
       "skip_rate": 62.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.86,
+      "vs_median": 0.85,
       "outlier": false
     },
     {
@@ -574,7 +628,7 @@
       "skip_rate": 38.1,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.04,
+      "vs_median": 1.03,
       "outlier": false
     },
     {
@@ -592,7 +646,7 @@
       "skip_rate": 37.9,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.23,
+      "vs_median": 1.22,
       "outlier": false
     },
     {
@@ -610,7 +664,7 @@
       "skip_rate": 49.5,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.2,
+      "vs_median": 1.19,
       "outlier": false
     },
     {
@@ -646,7 +700,7 @@
       "skip_rate": 53.5,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.99,
+      "vs_median": 0.98,
       "outlier": false
     },
     {
@@ -664,7 +718,7 @@
       "skip_rate": 58.3,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.98,
+      "vs_median": 0.97,
       "outlier": false
     },
     {
@@ -682,7 +736,7 @@
       "skip_rate": 35.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.38,
+      "vs_median": 1.37,
       "outlier": false
     },
     {
@@ -700,7 +754,7 @@
       "skip_rate": 27.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.48,
+      "vs_median": 1.47,
       "outlier": false
     },
     {
@@ -722,6 +776,60 @@
       "outlier": false
     },
     {
+      "code": "igb-deep-05",
+      "account": "brand",
+      "format": "Deep question",
+      "posted_at": "2026-11-21T20:44:32+0000",
+      "permalink": "https://www.instagram.com/reel/DgBHhiBjjm-/",
+      "views": 25,
+      "reach": 22,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 5.7,
+      "skip_rate": 31.8,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.17,
+      "outlier": false
+    },
+    {
+      "code": "igb-sb-01",
+      "account": "brand",
+      "format": "Storyboard",
+      "posted_at": "2026-11-21T16:45:45+0000",
+      "permalink": "https://www.instagram.com/reel/DgAsL69gC2r/",
+      "views": 147,
+      "reach": 126,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 2.6,
+      "skip_rate": 72.7,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 1,
+      "outlier": false
+    },
+    {
+      "code": "igb-fin-04",
+      "account": "brand",
+      "format": "Finish the sentence",
+      "posted_at": "2026-11-21T10:44:27+0000",
+      "permalink": "https://www.instagram.com/reel/DgAC05vDJ_m/",
+      "views": 230,
+      "reach": 173,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 5.6,
+      "skip_rate": 43.1,
+      "likes": 1,
+      "comments": 0,
+      "vs_median": 1.56,
+      "outlier": false
+    },
+    {
       "code": "igb-deep-04",
       "account": "brand",
       "format": "Deep question",
@@ -736,7 +844,7 @@
       "skip_rate": 44.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.59,
+      "vs_median": 0.61,
       "outlier": false
     },
     {
@@ -754,7 +862,7 @@
       "skip_rate": 41.9,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.53,
+      "vs_median": 1.56,
       "outlier": false
     },
     {
@@ -772,7 +880,7 @@
       "skip_rate": 33.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.71,
+      "vs_median": 0.72,
       "outlier": false
     },
     {
@@ -790,7 +898,7 @@
       "skip_rate": 44.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.69,
+      "vs_median": 0.7,
       "outlier": false
     },
     {
@@ -808,7 +916,7 @@
       "skip_rate": 48,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.46,
+      "vs_median": 1.49,
       "outlier": false
     },
     {
@@ -817,16 +925,16 @@
       "format": "Pause challenge",
       "posted_at": "2026-11-19T10:44:20+0000",
       "permalink": "https://www.instagram.com/reel/Df65OhgkSXF/",
-      "views": 178,
-      "reach": 146,
+      "views": 181,
+      "reach": 149,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 4.1,
-      "skip_rate": 67.1,
+      "avg_watch_s": 4,
+      "skip_rate": 67.8,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.19,
+      "vs_median": 1.23,
       "outlier": false
     },
     {
@@ -844,7 +952,7 @@
       "skip_rate": 43.9,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.41,
+      "vs_median": 1.44,
       "outlier": false
     },
     {
@@ -880,7 +988,7 @@
       "skip_rate": 34.4,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.61,
+      "vs_median": 0.63,
       "outlier": false
     },
     {
@@ -898,7 +1006,7 @@
       "skip_rate": 65.3,
       "likes": 2,
       "comments": 1,
-      "vs_median": 0.84,
+      "vs_median": 0.86,
       "outlier": false
     },
     {
@@ -916,7 +1024,7 @@
       "skip_rate": 70.9,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.11,
+      "vs_median": 1.14,
       "outlier": false
     },
     {
@@ -934,7 +1042,7 @@
       "skip_rate": 66,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.26,
+      "vs_median": 1.29,
       "outlier": false
     },
     {
@@ -952,7 +1060,7 @@
       "skip_rate": 88.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.01,
+      "vs_median": 1.03,
       "outlier": false
     },
     {
@@ -970,7 +1078,7 @@
       "skip_rate": 75.4,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.09,
+      "vs_median": 1.11,
       "outlier": false
     },
     {
@@ -988,7 +1096,7 @@
       "skip_rate": 66.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.94,
+      "vs_median": 0.96,
       "outlier": false
     },
     {
@@ -1006,7 +1114,7 @@
       "skip_rate": 75,
       "likes": 3,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 1.02,
       "outlier": false
     },
     {
@@ -1024,7 +1132,7 @@
       "skip_rate": 66,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.13,
+      "vs_median": 1.15,
       "outlier": false
     },
     {
@@ -1042,7 +1150,7 @@
       "skip_rate": 80.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.06,
+      "vs_median": 1.08,
       "outlier": false
     },
     {
@@ -1060,7 +1168,7 @@
       "skip_rate": 42.4,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.53,
+      "vs_median": 0.54,
       "outlier": false
     },
     {
@@ -1078,7 +1186,7 @@
       "skip_rate": 77.4,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.07,
+      "vs_median": 1.09,
       "outlier": false
     },
     {
@@ -1096,7 +1204,7 @@
       "skip_rate": 80.3,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.55,
+      "vs_median": 0.56,
       "outlier": false
     },
     {
@@ -1114,7 +1222,7 @@
       "skip_rate": 78.4,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.23,
+      "vs_median": 1.26,
       "outlier": false
     },
     {
@@ -1132,7 +1240,7 @@
       "skip_rate": 93.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.95,
+      "vs_median": 0.97,
       "outlier": false
     },
     {
@@ -1150,7 +1258,7 @@
       "skip_rate": 85.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.01,
+      "vs_median": 1.03,
       "outlier": false
     },
     {
@@ -1204,7 +1312,7 @@
       "skip_rate": 90.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.07,
+      "vs_median": 1.1,
       "outlier": false
     },
     {
@@ -1222,7 +1330,7 @@
       "skip_rate": 69.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1.05,
       "outlier": false
     },
     {
@@ -1240,7 +1348,7 @@
       "skip_rate": 86,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.91,
+      "vs_median": 0.93,
       "outlier": false
     },
     {
@@ -1258,7 +1366,7 @@
       "skip_rate": 57.1,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.43,
+      "vs_median": 1.46,
       "outlier": false
     },
     {
@@ -1276,7 +1384,7 @@
       "skip_rate": 82.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.97,
+      "vs_median": 0.99,
       "outlier": false
     },
     {
@@ -1312,7 +1420,7 @@
       "skip_rate": 83.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.42,
+      "vs_median": 1.45,
       "outlier": false
     },
     {
@@ -1366,7 +1474,7 @@
       "skip_rate": 97.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.91,
+      "vs_median": 0.93,
       "outlier": false
     },
     {
@@ -1384,7 +1492,7 @@
       "skip_rate": 79.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 1.02,
       "outlier": false
     },
     {
@@ -1402,7 +1510,7 @@
       "skip_rate": 88.7,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.98,
+      "vs_median": 1,
       "outlier": false
     },
     {
@@ -1420,7 +1528,7 @@
       "skip_rate": 70.9,
       "likes": 2,
       "comments": 1,
-      "vs_median": 1.17,
+      "vs_median": 1.2,
       "outlier": false
     },
     {
@@ -1438,7 +1546,7 @@
       "skip_rate": 84.5,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.88,
+      "vs_median": 0.9,
       "outlier": false
     }
   ]
