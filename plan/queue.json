@@ -990,6 +990,275 @@
     "caption": "My coworker kept stealing my lunch, so I left a note. Their reply… 💀\n\n(dramatised story)\n\n#storytime #work #coworkers #funny #whispers"
   },
   {
+    "code": "ig-flg-06",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "They text their ex 'happy birthday' every single year.",
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 2,
+      "kicker": "Red flag or fair enough?"
+    },
+    "caption": "texting your ex happy birthday every year. red flag 🚩 or just polite? pick a side and say why 👇\n\n#redflags #exes #dating #relationships"
+  },
+  {
+    "code": "ig-sb-14",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "It's NO-vember.",
+          "bg": "red",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "no texting him back",
+            "no 'one more episode' at 3am",
+            "no checking who viewed my story",
+            "no saying sorry when it wasn't my fault"
+          ],
+          "bg": "black"
+        },
+        {
+          "type": "emoji",
+          "emoji": "🙅",
+          "bg": "yellow"
+        },
+        {
+          "type": "question",
+          "text": "What's on your NO list?",
+          "sub": "one week left. be honest",
+          "bg": "ink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "it's NO-vember and this is my list. what's one thing you're saying no to before december? 👇\n\n#november #relatable #boundaries #memes"
+  },
+  {
+    "code": "ig-fin-04",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "Everyone my age is getting engaged, and I'm still…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 4,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "everyone my age is getting engaged and i'm still… finish it. the pettier the better 👇\n\n#relatable #adulting #single #funny"
+  },
+  {
+    "code": "ig-hard-01",
+    "account": "stories",
+    "format": "Which is harder",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Which is harder to say to an ex?",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 1,
+      "items": [
+        "I was wrong",
+        "I miss you"
+      ]
+    },
+    "caption": "which is harder to say to an ex: 'i was wrong' or 'i miss you'? pick one and tell us why 👇\n\n#exes #relationships #honesty #relatable"
+  },
+  {
+    "code": "ig-chat-06",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "My sister added me to the wrong group chat",
+      "contact": "Sis",
+      "seed": 11,
+      "messages": [
+        {
+          "from": "them",
+          "text": "ok is everyone in for saturday??"
+        },
+        {
+          "from": "them",
+          "text": "remember she CANNOT find out"
+        },
+        {
+          "from": "me",
+          "text": "find out what"
+        },
+        {
+          "from": "them",
+          "text": "oh no"
+        },
+        {
+          "from": "them",
+          "text": "wrong chat ignore that"
+        },
+        {
+          "from": "me",
+          "text": "is it a surprise party for me"
+        },
+        {
+          "from": "them",
+          "text": "it's your ex's engagement party"
+        },
+        {
+          "from": "them",
+          "text": "you weren't invited"
+        }
+      ],
+      "question": "Would you show up anyway?"
+    },
+    "caption": "my sister added me to the wrong group chat and now i know too much. would you show up anyway? 👀\n\nDramatised story.\n\n#storytime #drama #exes #groupchat"
+  },
+  {
+    "code": "ig-rate-04",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "ring",
+      "title": "Watching every story they post but never answering their texts.",
+      "cta": "Rate it 1 to 10",
+      "seconds": 9,
+      "seed": 1,
+      "kicker": "How bad is it?"
+    },
+    "caption": "watching every story but never replying to the texts. 1 = harmless, 10 = villain behaviour. what's your number? 👇\n\n#texting #dating #relatable #redflags"
+  },
+  {
+    "code": "ig-sb-15",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Dear Santa, all I want this year is",
+          "bg": "green",
+          "transition": "cut"
+        },
+        {
+          "type": "emoji",
+          "emoji": "🎅",
+          "bg": "red"
+        },
+        {
+          "type": "redact",
+          "text": "for them to",
+          "hidden": "text first. Just once.",
+          "bg": "black"
+        },
+        {
+          "type": "question",
+          "text": "What's on your list?",
+          "sub": "the real one",
+          "bg": "purple",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "dear santa, all i want is for them to text first. just once. what's on your real list? 👇\n\n#christmas #texting #relatable #memes"
+  },
+  {
+    "code": "ig-flg-07",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "They have a 'close friends' story and you're not on it.",
+      "cta": "Say why in the comments",
+      "seconds": 9,
+      "seed": 5,
+      "kicker": "Red flag or fair enough?"
+    },
+    "caption": "your partner has a close friends story and you're not on it. red flag 🚩 or fair enough? tell us why 👇\n\n#relationships #redflags #instagram #dating"
+  },
+  {
+    "code": "ig-tier-04",
+    "account": "stories",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "'We need to talk' texts, ranked by how scared you should be",
+      "items": [
+        {
+          "text": "'we need to talk' (no context)",
+          "tier": "S"
+        },
+        {
+          "text": "'are you free later?'",
+          "tier": "A"
+        },
+        {
+          "text": "'can I ask you something'",
+          "tier": "B"
+        },
+        {
+          "text": "'random question'",
+          "tier": "C"
+        },
+        {
+          "text": "'call me when you can'",
+          "tier": "D"
+        }
+      ],
+      "question": "Wrong tier? Fix it below"
+    },
+    "caption": "'we need to talk' texts, ranked by how scared you should be. which one ruins your whole day? 👇\n\n#texting #relatable #anxiety #relationships"
+  },
+  {
+    "code": "ig-fin-05",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "I feel like I haven't done much this year, except…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 2,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "i feel like i haven't done much this year except… finish it, chaos welcome 👇\n\n#yearinreview #relatable #2026 #funny"
+  },
+  {
     "code": "ig-pause-01",
     "account": "stories",
     "format": "Pause challenge",
@@ -2757,6 +3026,246 @@
       ]
     },
     "caption": "after an argument, are you the one who says sorry first or the one who waits? be honest 👇\n\n#relationships #honesty #friendship #feelings"
+  },
+  {
+    "code": "igb-hard-01",
+    "account": "brand",
+    "format": "Which is harder",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Which is harder to say?",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 2,
+      "items": [
+        "I miss you",
+        "I'm proud of you"
+      ]
+    },
+    "caption": "which is harder to say out loud: 'i miss you' or 'i'm proud of you'? send it to the person you need to say it to 🤍\n\n#honesty #friendship #relationships #feelings"
+  },
+  {
+    "code": "igb-sb-12",
+    "account": "brand",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "It's NO-vember.",
+          "bg": "black",
+          "transition": "cut"
+        },
+        {
+          "type": "list",
+          "items": [
+            "no more shrinking to fit in",
+            "no saying yes when I mean no",
+            "no apologising for resting",
+            "no chasing people who never call back"
+          ],
+          "bg": "green"
+        },
+        {
+          "type": "question",
+          "text": "What are you saying no to?",
+          "sub": "send it to someone who needs this",
+          "bg": "pink",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "no-vember list: no shrinking, no fake yeses, no chasing. what are you saying no to this month? 👇\n\n#boundaries #selfgrowth #november #wholesome"
+  },
+  {
+    "code": "igb-fin-06",
+    "account": "brand",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "Everyone my age is buying houses. I'm just proud I…",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 5,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "everyone my age is buying houses and i'm just proud i… finish it. small wins count here ✨\n\n#smallwins #adulting #relatable #growingup"
+  },
+  {
+    "code": "igb-deep-10",
+    "account": "brand",
+    "format": "Deep question",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 11,
+    "props": {
+      "layout": "question",
+      "bg": "ring",
+      "title": "Who do you owe a thank-you you never said?",
+      "cta": "Sit with it. Then answer.",
+      "seconds": 11,
+      "seed": 3,
+      "kicker": "Deep question"
+    },
+    "caption": "who do you owe a thank-you you never said? no names needed, just tell us what they did 🤍\n\n#gratitude #deepquestions #friendship #thoughts"
+  },
+  {
+    "code": "igb-rate-05",
+    "account": "brand",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "ring",
+      "title": "How good are you at letting people go?",
+      "cta": "Drop a number",
+      "seconds": 9,
+      "seed": 2,
+      "kicker": "Honesty check"
+    },
+    "caption": "how good are you at letting people go? 1 = still holding on, 10 = gone without a goodbye. be honest 👇\n\n#lettinggo #selfgrowth #friendship #honesty"
+  },
+  {
+    "code": "igb-hard-02",
+    "account": "brand",
+    "format": "Which is harder",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Which is harder to hear?",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 4,
+      "items": [
+        "'You've changed'",
+        "'I'm not mad, just disappointed'"
+      ]
+    },
+    "caption": "which hurts more to hear: 'you've changed' or 'i'm not mad, just disappointed'? pick one and say why 👇\n\n#family #friendship #feelings #relatable"
+  },
+  {
+    "code": "igb-tier-08",
+    "account": "brand",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Ways friends say 'I care' without saying it, ranked",
+      "items": [
+        {
+          "text": "Sending a meme at 1am",
+          "tier": "C"
+        },
+        {
+          "text": "Saving you the last slice",
+          "tier": "B"
+        },
+        {
+          "text": "'Text me when you're home'",
+          "tier": "A"
+        },
+        {
+          "text": "Remembering the tiny thing you said",
+          "tier": "A"
+        },
+        {
+          "text": "Showing up without being asked",
+          "tier": "S"
+        }
+      ],
+      "question": "What's missing from S tier?"
+    },
+    "caption": "ways friends say 'i care' without saying it, ranked. send this to the friend who does the S tier one 🤍\n\n#friendship #bestfriend #wholesome #lovelanguages"
+  },
+  {
+    "code": "igb-sb-13",
+    "account": "brand",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Dear Santa, I don't want anything this year.",
+          "bg": "red",
+          "transition": "cut"
+        },
+        {
+          "type": "redact",
+          "text": "I just want",
+          "hidden": "the group chat to be as loud as it used to be.",
+          "bg": "black"
+        },
+        {
+          "type": "emoji",
+          "emoji": "🥹",
+          "bg": "cream"
+        },
+        {
+          "type": "question",
+          "text": "What would you ask for?",
+          "sub": "send it to the group chat",
+          "bg": "blue",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "dear santa, i just want the group chat loud again. what would you ask for? send this to yours 🥹\n\n#christmas #friendship #groupchat #nostalgia"
+  },
+  {
+    "code": "igb-fin-07",
+    "account": "brand",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "A small win from this year nobody clapped for:",
+      "cta": "Finish it in the comments",
+      "seconds": 10,
+      "seed": 6,
+      "kicker": "Finish the sentence"
+    },
+    "caption": "a small win from this year that nobody clapped for. tell us yours and we'll clap 👏\n\n#smallwins #proudofyou #yearinreview #wholesome"
+  },
+  {
+    "code": "igb-wyr-08",
+    "account": "brand",
+    "format": "Would you rather",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Would you rather…",
+      "cta": "Which one, and why?",
+      "seconds": 10,
+      "seed": 5,
+      "items": [
+        "Get one letter from your future self",
+        "Send one letter to your younger self"
+      ]
+    },
+    "caption": "would you rather get one honest letter from your future self, or send one to your younger self? 👇\n\n#wouldyourather #selfgrowth #deepquestions #thoughts"
   },
   {
     "code": "igb-deep-07",

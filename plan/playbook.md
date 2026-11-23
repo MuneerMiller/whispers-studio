@@ -1,6 +1,6 @@
 # Viral playbook
 
-This is the living strategy. Every run that writes posts reads it first. The weekly trend scout rewrites the "Right now" section every Monday from fresh research and our own numbers. Keep it short and concrete. Last updated: 2026-11-17 (scout run 1).
+This is the living strategy. Every run that writes posts reads it first. The weekly trend scout rewrites the "Right now" section every Monday from fresh research and our own numbers. Keep it short and concrete. Last updated: 2026-11-23 (scout run 2).
 
 ## Principles that don't change
 - **Win the first second.** The first frame must already say something that stops the thumb: drama, a secret, a dare, a hot take. No intros, no logos, no labels.
@@ -46,58 +46,64 @@ This is the living strategy. Every run that writes posts reads it first. The wee
 **What only Muneer can do (Instagram treats automated likes, follows and comments as spam, so the runs don't):** about 10 minutes a day on each account in the Instagram app. Watch Reels in the niche (relationships, confessions, relatable text posts), like a few, leave 2–3 real comments on bigger pages, and reply to anyone who comments. Pin the best post on each profile. Optionally, add a trending sound to a post in the app.
 
 ## Right now (updated weekly by the trend scout)
-Scout run 2026-11-17 (research from 31 Oct–16 Nov 2026).
+Scout run 2026-11-23 (our posts 14–22 Nov; research from 14–21 Nov 2026).
 
-**What's working on our accounts** (40 posts, 14–16 Nov; no storyboards posted yet; almost no comments, likes or shares anywhere, so views are the only usable signal; no outliers yet):
-- Stories median 120 views. Best: unpopular opinion "Splitting the bill on a first date is fine" 170, hot take "3 hours to reply" 151 (1 like), text story "I called in sick" 146, tier list "Breakup excuses" 128 (1 like), unsent note 119, guess the ending 105 (1 like).
-- Stories flops: voice story 9, deep question 22, 3am searches 25, prompt post 9.
-- Brand median 149. Best: tier list "Ways people say I love you" 214 (2 likes, the best brand post), hot take "Saying sorry first" 213, deep question "Which friendship ended without goodbye" 183, finish the sentence 160, POV 154.
-- All 6 meme carousels and both bingo cards report 0 views and 0 reach. Check on Instagram whether they really got no reach or whether the numbers are just missing for carousels and images before writing more of them.
-- Note: `metrics.mjs` matches posts by current caption, so 32 of 40 posts show as format "unknown" (captions were rewritten after posting). Joining by permalink with `log/posts.jsonl` gives the numbers above.
+**What's working on our accounts** (84 Reels with numbers; still no outliers, since nothing reached 2x median; comments ≈ 0, so judge on views, skip rate, watch time and sends):
+- **Stories is improving, brand is flat.** Stories median 132 overall, but **152 for the 15 posts since the 3-a-day change on 18 Nov** (last week 120). Brand median 151, also 151 since 18 Nov. The full comparison is still due 25 Nov.
+- **Red flag or fair is our best format.** Median 183 views, 37.7% skip, 7.0s watch over 4 stories posts. Best: "They still follow their ex's mom on Instagram" 199, "Still having your ex's number saved under a fake name" 196.
+- **Other low-skip stories formats:** finish the sentence ("The most petty thing I've ever done was…" 186, 35% skip, 2 likes), rate it 1–10 ("Checking out someone else on a date" 181, 39% skip) and tier lists (37% skip).
+- **Brand best:** deep question "What are you outgrowing right now?" 235; finish the sentence "Best thing that happened this year" 230 (11.1s watch, the longest watch on either account) and 230 for igb-fin-04; rate it "How much do you say what you mean?" 219; would you rather 211.
+- **The one real send signal:** brand "Which is harder to say? I'm sorry / I need help" (igb-cho-01) got **21 shares from 98 reach (21% sends per reach)**, while 1% counts as excellent for cold audiences. It got only 126 views because it ran on the old still gradient. The format (two short, heavy phrases, pick one) is worth remixing on the moving background. The next best was 2 shares (ig-wyr-02).
+- **Storyboards still lose people at the start.** Stories: 123 median, 66.5% skip, 4.0s watch. Brand: 152 median, 77.8% skip, 2.9s watch. Storyboard lists were worst (101 views, 67% skip). Rendered check today: after the hook cuts, a `list` scene shows ~0.4s of empty black before item 1 appears.
+- **Brand skips far more than stories on the same `ring` background** (63% vs 44%). The difference is the writing. Brand hot takes with Agree/Disagree buttons get 2.6s watch and 75% skip ("Saying sorry first…" 213 views, 84% skip), and brand unpopular opinions have a 92 median. Concrete, specific scenarios hold people; abstract statements don't.
 
 **What the research says this week:**
-- Ranking hasn't changed: watch time, sends per reach and likes per reach are the top signals, and sends count more with non-followers. Reels are tested on a small group of non-followers first. Skip rate (people leaving in the first 3s) is the hook metric, so the hook text must be on screen within about half a second.
-- Originality rules now cover photos and carousels too (since 30 Apr 2026). Series linking ended on 28 Oct 2026; for multi-part stories, put "Part 2" in the on-screen hook. Keep the caption and on-screen text about one topic so "Your Algorithm" files the post correctly.
-- What's trending is "structured authenticity": identity statements ("Not everyone who…"), timestamp cold opens ("06:04."), conflict stated in line one, life-stage lines ("Money comes back…"), and setup→punchline memes ("Me: … / Also me:").
+- **No ranking change.** No announced change for Oct or Nov. Watch time, sends per reach and likes per reach are still the main signals, and sends matter most with non-followers ([Ethical SMM, 15 Nov](https://ethicalsmm.com/blog/instagram-updates-november-2026); [Flock Social, 14 Nov](https://flocksocial.com/blog/instagram-algorithm)). One blog benchmark puts above 1% sends per reach as excellent for cold audiences ([Onwards and Up](https://onwardsandup.co.uk/instagram-trial-reels-small-creators/)). Meta reportedly tightened filtering of "low-quality" content in Reels and Explore around 18 Nov ([Dainik Jagran](https://english.dainikjagranmpcg.com/technology/instagram-to-limit-inappropriate-content-in-reels-explore-and-feed/article-44825), single source), another reason to keep volume low and every post distinct. Mosseri's only November feature was editing Stories for 15 minutes after posting (18 Nov, [Gizmodo](https://gizmodo.com/instagram-now-lets-you-edit-stories-you-already-posted-2000841943)).
+- **Year-end text-overlay trends** ([NewEngen, 20 Nov](https://newengen.com/insights/instagram-trends/)):
+  - "It's NO-vember": stacked "NO" lines naming habits to drop. It expires on 1 Dec.
+  - "Dear Santa, I'm a size…": a wishlist joke with a twist.
+  - "I feel like I haven't done much this year": year-end reflection.
+  - "No, no, no… yes!": a run of no's that ends on a yes payoff.
+- **Emotional hooks are outperforming neutral ones** ([Lightreel, 21 Nov](https://lightreel.ai/blogs/whats-trending-on-instagram)):
+  - Life-stage contrast: "Everyone my age is [milestone], and I'm still [problem]."
+  - "Things I stopped doing."
+  - Stark text on black before anything else.
+  - Lightreel also lists an "Is it cheating?" couples debate, which fits our red flag format.
+  - Carousels had no breakout this week.
+- **"Zoom in" hidden message** ([InMagic, 16 Nov](https://inmagic.ai/top-10-instagram-reels-to-try-this-week/)): tiny text that viewers have to zoom or pause to read. It's the same mechanic as our pause challenge, and evidence that it's still working.
+- I found no new Robert McKeaveney material this week, so the tactics above stand.
 
 **Formats to lean on this week:**
-1. Hot takes and unpopular opinions (`TextReel` flag): our steadiest stories format. Money, texting and etiquette topics.
-2. Tier lists: best brand post, and they get likes on both accounts.
-3. Storyboards built on this week's hook styles: "Not everyone who…", a timestamp cold open into a chat with a redact payoff, "Me: / Also me:", and two-part stories with "Part 2:" as the hook.
-4. Text stories and chat storyboards (conflict in the hook line, twist in the last message).
-5. Brand: warm hot takes, deep questions about friendship, and life-stage lines.
+1. **Red flag or fair** (stories): concrete "is it cheating?"-style scenarios about exes, phones, stories and close friends. No Agree/Disagree buttons.
+2. **"Which is harder"** (`TextReel` choice, both accounts, new format name so we can track it): two short, heavy phrases ("I miss you" / "I'm proud of you"). The caption names who to send it to. This is the send play.
+3. **Finish the sentence with this week's hooks:** life-stage contrast ("Everyone my age is…, and I'm still…") and year-end lines ("I haven't done much this year, except…", "A small win nobody clapped for").
+4. **Rate it 1–10 and tier lists:** lowest skip after red flags.
+5. **Seasonal storyboards, at most 1 in 5:** NO-vember until 30 Nov, then "Dear Santa" through December. Open on stark text, put the punchline in a `redact`, and end on a sendable question.
+- **Brand:** prioritise deep questions and finish the sentence over hot takes.
 
 **Hooks to try:**
-- "Not everyone who keeps your secrets is keeping them for you."
-- "02:47. He's still typing."
-- "Me: I'm completely over him. / Also me at 2am:"
-- "Money comes back. These years don't."
-- "Only 1% can pause at the right time."
-- "Part 2: I opened the letter."
-- "My sister borrowed my car. Then this text."
-- "Lending money to a friend is just paying to lose them."
-- "Excuses for leaving someone on read, ranked"
-- "06:04. A text from Dad."
+- "They text their ex 'happy birthday' every single year."
+- "They have a 'close friends' story and you're not on it."
+- "Which is harder to say to an ex? I was wrong / I miss you"
+- "Which is harder to hear? 'You've changed' / 'I'm not mad, just disappointed'"
+- "Everyone my age is getting engaged, and I'm still…"
+- "Everyone my age is buying houses. I'm just proud I…"
+- "I feel like I haven't done much this year, except…"
+- "It's NO-vember." (until 30 Nov)
+- "Dear Santa, all I want this year is…" (redact: "for them to text first. Just once.")
+- "'We need to talk' texts, ranked by how scared you should be"
 
 **Retire:**
-- Voice stories (9 views), 3am searches (25) and deep questions on stories (22). Keep deep questions on brand only.
-- Plain prompt posts (9 views).
-- Hold new meme carousels and bingo cards until the 0-reach question is answered.
-- Slow word-by-word openings: frame 0 should already show the hook's first full line.
-
-**Built on 2026-11-17 (from the scout's ideas):**
-- `clock` scene: `{"type":"clock","time":"02:47","text":"He's still typing."}` gives a phone buzz, the minute ticks over, then the line lands.
-- `meme` scene: `{"type":"meme","me":"…","alsoMe":"…"}`; the second row lands on a boom.
-- The first scene's line is now on screen in full on frame 0 (`instant`, the default for a first `slam`).
-- `metrics.mjs` now matches posts by media id from `log/posts.jsonl`.
-- **Carousels and bingo:** image and carousel posts reach almost no non-followers on a new account with no followers, which is why they showed 0. Unposted meme carousels were turned into storyboard list Reels, and bingo now posts as a Reel (the card with a slow push-in and music). Don't write new `MemeCarousel` posts until the accounts have 1,000+ followers.
+- Brand hot takes and unpopular opinions with Agree/Disagree buttons: 75% skip and 2.6s watch, with a 92 median for unpopular opinions. Already-queued ones can run, but write no new ones this week.
+- Storyboard `list` posts until the empty-start fix below is built (101 views, 67% skip).
+- NO-vember posts after 30 Nov. If one is still unposted on 1 Dec, skip it.
+- Still retired: voice stories, 3am searches, deep questions on stories, plain prompt posts, new meme carousels and bingo cards, and the still gradient.
 
 **Ideas to build** (don't build these from a posting run):
-- `clock` storyboard scene: a big timestamp (e.g. "02:47") that ticks once with a phone-buzz sound, then the line slams in under it, for timestamp cold opens.
-- `meme` storyboard scene: a two-row "Me: … / Also me: …" panel where the second row lands on a beat, so setup→punchline memes don't need three scenes.
-- `instant` option on `slam`/`glitch`: show the whole first line on frame 0 (no word-by-word build), to cut skip rate.
-- Carousel audio: publish meme carousels and tier lists with a soft track (Instagram now lets you replace audio on carousels), since silent carousels may be ranked lower.
-- Fix `metrics.mjs` to match posts by permalink or media id from `log/posts.jsonl`, not by caption.
+- **List scene opens full:** a storyboard `list` scene should show item 1 on its first frame. Right now it shows ~0.4s of empty black after the cut, the likely cause of part of the storyboards' 66–78% skip.
+- **`fineprint` storyboard scene** for the "zoom in" trend: one normal line plus a second line in very small text (about 18px) that stays up for the whole scene, so viewers zoom or pause to read it, e.g. `{"type":"fineprint","text":"Read the small print.","small":"…"}`.
+- **`center` option on TextReel `choice` and `question`:** put the title in the middle third at about 1.5x size (it's now small, top-left) and A/B test it against the current layout on "Which is harder" posts.
+- **"No, no, no… yes!" scene:** 3–4 lines each stamped with a red NO on a beat, then a final line stamped with a green YES, for the year-end trend.
 
 ## Log of experiments
 Each line gives the date, what was tried and what happened. The scout appends here.
@@ -110,3 +116,9 @@ Each line gives the date, what was tried and what happened. The scout appends he
 - 2026-11-17: life-stage line "Money comes back. These years don't." (igb-sb-06). Results pending.
 - 2026-11-17: pause challenges with a payoff secret: "the group chat has a second group chat" (ig-pause-02) and "someone is quietly proud of you" (igb-pause-02). Results pending.
 - 2026-11-17: more hot takes and tier lists, the best formats on our own numbers (ig-hot-08, ig-tier-03, ig-flg-05, igb-hot-05, igb-tier-02, igb-rate-03). Results pending.
+- 2026-11-23: "Which is harder" A/B on the moving ring background, remixing the 21-share brand post (ig-hard-01, igb-hard-01, igb-hard-02). Watch sends per reach. Results pending.
+- 2026-11-23: red flag or fair with "is it cheating?"-style scenarios (ig-flg-06, ig-flg-07). Results pending.
+- 2026-11-23: life-stage contrast finish-the-sentence, "Everyone my age is…" (ig-fin-04, igb-fin-06). Results pending.
+- 2026-11-23: year-end reflection prompts (ig-fin-05 "haven't done much this year", igb-fin-07 "small win nobody clapped for"). Results pending.
+- 2026-11-23: seasonal storyboards: NO-vember (ig-sb-14, igb-sb-12; expire 1 Dec) and Dear Santa with a redact payoff (ig-sb-15, igb-sb-13). Results pending.
+- 2026-11-23: other posts: rate it "watching stories but ignoring texts" (ig-rate-04), tier list "'We need to talk' texts" (ig-tier-04), friendship tier list remixing the best brand tier (igb-tier-08), deep question (igb-deep-10), rate it (igb-rate-05) and would you rather (igb-wyr-08). Results pending.
