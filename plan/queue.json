@@ -1022,19 +1022,28 @@
           "transition": "cut"
         },
         {
-          "type": "list",
-          "items": [
-            "no texting him back",
-            "no 'one more episode' at 3am",
-            "no checking who viewed my story",
-            "no saying sorry when it wasn't my fault"
-          ],
-          "bg": "black"
+          "type": "slam",
+          "text": "no texting him back",
+          "bg": "black",
+          "transition": "cut"
         },
         {
-          "type": "emoji",
-          "emoji": "🙅",
-          "bg": "yellow"
+          "type": "slam",
+          "text": "no 'one more episode' at 3am",
+          "bg": "yellow",
+          "transition": "cut"
+        },
+        {
+          "type": "slam",
+          "text": "no checking who viewed my story",
+          "bg": "purple",
+          "transition": "cut"
+        },
+        {
+          "type": "slam",
+          "text": "no saying sorry when it wasn't my fault",
+          "bg": "green",
+          "transition": "cut"
         },
         {
           "type": "question",
@@ -3063,14 +3072,28 @@
           "transition": "cut"
         },
         {
-          "type": "list",
-          "items": [
-            "no more shrinking to fit in",
-            "no saying yes when I mean no",
-            "no apologising for resting",
-            "no chasing people who never call back"
-          ],
-          "bg": "green"
+          "type": "slam",
+          "text": "no more shrinking to fit in",
+          "bg": "green",
+          "transition": "cut"
+        },
+        {
+          "type": "slam",
+          "text": "no saying yes when I mean no",
+          "bg": "purple",
+          "transition": "cut"
+        },
+        {
+          "type": "slam",
+          "text": "no apologising for resting",
+          "bg": "blue",
+          "transition": "cut"
+        },
+        {
+          "type": "slam",
+          "text": "no chasing people who never call back",
+          "bg": "yellow",
+          "transition": "cut"
         },
         {
           "type": "question",
