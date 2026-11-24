@@ -80,6 +80,18 @@ if (post.composition === 'VoiceStory') {
   voice.vo = vo;
   lengths.VoiceStory = () => voice.duration + 3.4;
 }
+// Spoken hook (A/B test from 24 Nov): a TextReel with `props.voice: true` reads its hook aloud from the first
+// frame (props.say, or the title), because the one narrated Reel kept far more viewers past second 1 than
+// silent text. The video stays at least as long as planned and always leaves time to answer after the voice.
+if (post.composition === 'TextReel' && P.voice) {
+  const story = path.join('work', `${code}.story.txt`);
+  fs.writeFileSync(story, String(P.say || P.title).replace(/[…]+$/, '...'));
+  const vo = path.join('work', `${code}.vo.wav`), words = path.join('work', `${code}.words.json`);
+  execFileSync('python3', ['audio/tts_story.py', story, vo, words], { stdio: 'inherit' });
+  const spoken = JSON.parse(fs.readFileSync(words, 'utf8'));
+  voice = { vo, duration: spoken.duration, textOnly: true };
+  lengths.TextReel = () => Math.max(post.seconds ?? P.seconds ?? 8, spoken.duration + 4);
+}
 if (post.composition === 'StoryboardReel') {
   const { totalSeconds } = await import('../remotion/src/storyboard-timing.mjs');
   lengths.StoryboardReel = () => totalSeconds(P.scenes);
@@ -99,7 +111,7 @@ if (post.composition === 'StoryboardReel') {
 }
 
 const out = path.resolve('work', `${code}.mp4`);
-const args = ['remotion', 'render', 'src/index.ts', post.composition, out, `--props=${JSON.stringify({ ...post.props, ...(voice ? { words: voice.words, duration: voice.duration, story: undefined } : {}), audio })}`, '--log=error'];
+const args = ['remotion', 'render', 'src/index.ts', post.composition, out, `--props=${JSON.stringify({ ...post.props, ...(voice && !voice.textOnly ? { words: voice.words, duration: voice.duration, story: undefined } : {}), ...(voice?.textOnly ? { seconds } : {}), audio })}`, '--log=error'];
 const chrome = findChrome();
 if (chrome) args.push(`--browser-executable=${chrome}`);
 try {

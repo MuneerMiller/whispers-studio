@@ -10,8 +10,8 @@ Each run starts on a fresh machine and follows this file from top to bottom. CLA
 1. `node scripts/metrics.mjs`. It writes `log/metrics.json` and prints which formats get the most comments, likes and views.
 2. Keep the table for the report and for step 4.
 
-## 3. Post (only on the 12:40, 18:40 and 22:40 runs, so 3 posts per account a day)
-Since 18 Nov 2026, every post stalled at 100–200 views, which points at the account, not one weak video. New accounts that post 10 near-identical videos a day look like a content farm. So we post fewer, better videos at the times our global audience is awake (Europe midday, Europe evening and US morning, US afternoon). On every other run, skip steps 3 and 3c and only reply to comments (3b). Check the time with `TZ=Africa/Johannesburg date +%H`: post only if the hour is 12, 18 or 22.
+## 3. Post (only on the 09:40, 13:40, 18:40 and 22:40 runs, so 4 posts per account a day)
+Muneer moved us from 3 to 4 a day on 24 Nov 2026. The slots are spread about 4–5 hours apart so posts don't compete with each other, and they cover our global audience: Europe morning (09:40), Europe lunch (13:40), Europe evening and US morning (18:40), and US afternoon (22:40). We still don't go back to 10 a day: near-identical videos in bulk look like a content farm. On every other run, skip steps 3 and 3c and only reply to comments (3b). Check the time with `TZ=Africa/Johannesburg date +%H`: post only if the hour is 09, 13, 18 or 22.
 
 For each account, stories first, then brand:
 1. `CODE=$(node scripts/next.mjs <account>)`. If it exits with an error, skip that account and report why. Never guess: a guess could double-post. If it prints nothing, the queue is empty: go to step 4 first, then come back.
@@ -45,12 +45,18 @@ The templates no longer show `kicker` or `cta` on screen, so posts look organic 
 ## 4. Refill the queue (only when an account has fewer than 12 unposted posts)
 Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new posts for that account into `plan/queue.json`, using the same shape as the existing entries.
 - **Formats:** use what's working. Comments are still near zero, so rank formats by **views, average watch time (`avg_watch_s`) and skip rate (`skip_rate`, lower is better)** in `log/metrics.json`. Give the top 3 formats two-thirds of the new posts and try the rest in the remaining slots.
-- **Don't write parked formats.** Formats that flopped are in `plan/parked.json`: prompt posts, 3am searches, voice stories, and deep questions, POV and this-or-that on the stories account. Bring one back only as a single test post, and only if the playbook says so.
+- **Don't write parked formats.** Formats that flopped are in `plan/parked.json`: prompt posts, 3am searches, unsent notes, storyboard `list` posts, hot takes and unpopular opinions on the brand account, and deep questions, POV and this-or-that on the stories account. Bring one back only as a single test post, and only if the playbook says so.
+- **Rules from the 24 Nov review (read the playbook's "24 Nov plan" for why):**
+  - **Spoken hook test:** give every other new `TextReel` `"voice": true` and `"ab": "voice"`, and the rest `"ab": "silent"`. A voiced post also gets `"say"`: the hook as you'd say it out loud, under 15 words, ending on the question (for example "They text their ex happy birthday. Every single year. Red flag, or fair?"). Never put emoji or hashtags in `say`.
+  - **Voice stories are back as a test**, about 1 in 8 stories posts, on `ring`: they kept the most viewers of any format (33% skip, 9.2s watch). Same rules as before: fiction, a twist or warm payoff in the last line, "Dramatised story." in the caption.
+  - **Storyboards: at most 1 in 8 posts**, never a `list` scene first, and the hook scene must be the boldest line fully on screen from frame 0. They lose 72% of viewers in the first seconds.
+  - **Lean on what holds people:** red flag or fair, "which is harder" (two short, heavy phrases), rate it 1–10, finish the sentence. On brand, also deep questions. These have the lowest skip rates and the only real shares.
+  - **Every post is built to be sent:** the caption names who to send it to when it fits ("send it to the friend who…"). One send is worth more than many likes for reaching new people.
 - **What works best:**
   - These come from research on the 2026 algorithm: DM sends are the strongest signal for reaching new people, followed by watch time and real comments.
   - **Keyword-fishing CTAs are penalised:** "comment YES", "tag a friend", "share if…".
   - So ask for an opinion and a reason ("Agree? Tell us why", "Which one, and why?"). On carousels, name who to send it to ("Send this to the friend who…").
-- **Storyboards** (`StoryboardReel`): about 1 in 4 new posts until their median views beat the account's median; then go back to about half. Each one is a short animated story told in 3–6 scenes, with a sound effect on every cut. Plan it like a storyboard:
+- **Storyboards** (`StoryboardReel`): at most 1 in 8 new posts (24 Nov rule above) until their skip rate drops under 50%; then about 1 in 4. Each one is a short animated story told in 3–6 scenes, with a sound effect on every cut. Plan it like a storyboard:
   - **Scene 1 (the hook, under 2s):** a statement that stops the scroll: drama, a secret, a hot take, "don't show this to…". Use `slam`, `zoom` or `glitch`, with `transition: "cut"`.
   - **Middle (build-up):** `chat` for texts, `type` for diary or notes, `list` for "things that…", `versus` for picking a side, `emoji` for a beat of reaction, `clock` for timestamp cold opens (`time` "02:47" plus `text`), `meme` for "Me: / Also me:" (`me`, `alsoMe`).
   - **The payoff:** `redact`, so the punchline is hidden and then wiped open.
@@ -94,11 +100,15 @@ Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new p
   - Write for everyone, wherever they are; never target one country.
   - No real people or brands. Nothing sexual, nothing about self-harm, and no "how are you really" check-ins (nobody replies to comments yet).
   - Don't repeat a question already in the queue.
-- **Captions:** start with the question or statement itself, so every caption starts differently. Then add one short nudge to comment, then this paragraph, then 4–5 general hashtags:
-  "Whispers is a place to say what you can't say anywhere else, anonymously. Opening soon. Follow to be first in."
+- **Captions (this replaces the older caption rules above):**
+  - Start with the question or statement itself, in the plain words people search for ("texting your ex happy birthday every year"), so every caption starts differently and Instagram knows the topic.
+  - Then one short nudge to answer or send it ("pick one and say why", "send it to the friend who…").
+  - Then 3–5 hashtags about this post's topic, not the same generic set every time.
+  - No "Whispers is a place…" paragraph, no "opening soon", "follow" or "link in bio" in captions: they read like an ad. The bio and comment replies carry "opening soon".
 - **Codes:** continue the numbering: stories codes are `ig-<format>-NN`, brand codes are `igb-<format>-NN`.
 - Run `node scripts/validate-queue.mjs` and fix everything it lists. Then render 2 of the new posts and check their frames as in step 3.
 
 ## 5. Save and report
 1. `node scripts/save.mjs "Run <date> <time>: <what happened>"` saves `log/` and `plan/` to GitHub. If it fails, report the error; don't retry by other means.
-2. Report: anything URGENT from comments first; then for each account, the code, format and post link (or why it was skipped), and the number of comments replied to and skipped; whether the queue was refilled; and, on the 07:40 run, the top 3 formats by comments per post. Keep it short.
+2. On the 07:40 run, also compare the spoken-hook test: median `skip_rate`, `avg_watch_s` and views for posted entries with `"ab": "voice"` against `"ab": "silent"` (match codes in `plan/queue.json` to `log/metrics.json`), and add one line to the report.
+3. Report: anything URGENT from comments first; then for each account, the code, format and post link (or why it was skipped), and the number of comments replied to and skipped; whether the queue was refilled; and, on the 07:40 run, the top 3 formats by comments per post. Keep it short.

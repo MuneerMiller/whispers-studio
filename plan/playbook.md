@@ -1,6 +1,6 @@
 # Viral playbook
 
-This is the living strategy. Every run that writes posts reads it first. The weekly trend scout rewrites the "Right now" section every Monday from fresh research and our own numbers. Keep it short and concrete. Last updated: 2026-11-23 (scout run 2).
+This is the living strategy. Every run that writes posts reads it first. The weekly trend scout rewrites the "Right now" section every Monday from fresh research and our own numbers. Keep it short and concrete. Last updated: 2026-11-24 (24 Nov plan added).
 
 ## Principles that don't change
 - **Win the first second.** The first frame must already say something that stops the thumb: drama, a secret, a dare, a hot take. No intros, no logos, no labels.
@@ -44,6 +44,28 @@ This is the living strategy. Every run that writes posts reads it first. The wee
 - **Targets:** skip rate under 40%, and average watch time over 60% of the video's length.
 
 **What only Muneer can do (Instagram treats automated likes, follows and comments as spam, so the runs don't):** about 10 minutes a day on each account in the Instagram app. Watch Reels in the niche (relationships, confessions, relatable text posts), like a few, leave 2–3 real comments on bigger pages, and reply to anyone who comments. Pin the best post on each profile. Optionally, add a trending sound to a post in the app.
+
+## 24 Nov plan (Muneer asked for research and fixes in every area, and 4 posts a day)
+**Where we are (98 Reels):** since 18 Nov viewers stay longer (stories skip 55% → 46%, watch 4.9s → 5.8s; brand skip 80% → 46%, watch 2.8s → 6.0s), but views haven't moved: about 150 a post on both accounts, best 243. Skip rate barely predicts views (correlation -0.13), so every post is stuck in Instagram's first test audience of about 100–200 people and none has been pushed further. Comments are near zero, and the only real sends were one post (21 shares).
+
+**What the research says (Nov 2026):**
+- Instagram ranks Reels mainly on watch time and completion, sends per reach, and likes per reach. Sends matter most for reaching non-followers ([SocialPilot](https://www.socialpilot.co/blog/instagram-reels-algorithm), [Buffer](https://buffer.com/resources/instagram-algorithms/)).
+- Skip-rate benchmarks: under 20% good, 20–30% healthy, 30–40% needs work, over 40% a problem ([Retensis](https://retensis.com/blog/instagram-reels-skip-rate-benchmarks-2026)). We're at 36–75%, so **the first second is still the biggest problem**.
+- Fixes that work: content from the first second, a high-contrast text hook on frame 0, movement within half a second, and **sound from frame 0 (a spoken line or a sharp sound, never silence)**.
+- Keyword captions help Instagram's search and topic matching more than hashtags.
+- Replying to comments goes with about 21% more engagement per post ([Buffer, 700k posts](https://buffer.com/resources/instagram-comments-engagement/)). The runs already reply; Muneer's 10 minutes in the app still help.
+- Trial Reels (shown to non-followers first) unlock at 1,000 followers. Use them from then on to test hooks.
+- Our own best evidence agrees: the one narrated Reel had the lowest skip (33%) and the longest watch (9.2s). Silent text over music averages 47% skip.
+
+**What changed today:**
+1. **4 posts a day per account,** at 09:40, 13:40, 18:40 and 22:40 (Johannesburg time).
+2. **Spoken hook A/B test:** `TextReel` now reads its hook aloud from frame 0 when `props.voice` is true (render.mjs, Kokoro voice). Every other text post is voiced; entries carry `"ab": "voice"` or `"ab": "silent"`. The 07:40 run reports the comparison. **Decision rule:** after 15 voiced posts, if voiced skip is 5+ points lower, voice every text post.
+3. **Voice stories are back,** about 1 in 8 stories posts.
+4. **Parked:** storyboards cut to at most 1 in 8 (72% skip, 2.4s watch), storyboard lists, unsent notes (74% skip), and brand hot takes and unpopular opinions (75% skip, 64 median views). 18 queued posts moved to `plan/parked.json`.
+5. **16 new posts at the front of the queues,** built on the winners: "which is harder" (the only real send signal), red flag or fair, rate it, finish the sentence, and brand deep questions.
+6. **Captions:** no more "Whispers is a place… opening soon" paragraph, which read like an ad. Plain searchable first line, one nudge to answer or send, 3–5 topic hashtags.
+
+**Still to build** (bigger levers, not done in this change): a bigger, centred hook on frame 0 (`center` option, see Ideas to build); storyboard `list` scenes that open full.
 
 ## Right now (updated weekly by the trend scout)
 Scout run 2026-11-23 (our posts 14–22 Nov; research from 14–21 Nov 2026).
@@ -122,3 +144,7 @@ Each line gives the date, what was tried and what happened. The scout appends he
 - 2026-11-23: year-end reflection prompts (ig-fin-05 "haven't done much this year", igb-fin-07 "small win nobody clapped for"). Results pending.
 - 2026-11-23: seasonal storyboards: NO-vember (ig-sb-14, igb-sb-12; expire 1 Dec) and Dear Santa with a redact payoff (ig-sb-15, igb-sb-13). Results pending.
 - 2026-11-23: other posts: rate it "watching stories but ignoring texts" (ig-rate-04), tier list "'We need to talk' texts" (ig-tier-04), friendship tier list remixing the best brand tier (igb-tier-08), deep question (igb-deep-10), rate it (igb-rate-05) and would you rather (igb-wyr-08). Results pending.
+- 2026-11-24: 4 posts a day per account (09:40, 13:40, 18:40, 22:40). Compare median views per post with 18–23 Nov on 1 Dec.
+- 2026-11-24: spoken-hook A/B on TextReels (`ab: voice` vs `ab: silent`), starting with ig-hard-02, ig-rate-05, ig-flg-09, igb-hard-03, igb-rate-06, igb-wyr-09, igb-fin-09 and every other queued text post. Watch skip rate first.
+- 2026-11-24: voice story back as a test (ig-voice-02, ring background). Watch skip rate and watch time.
+- 2026-11-24: captions without the "Whispers is a place…" paragraph, with a searchable first line. Results pending.
