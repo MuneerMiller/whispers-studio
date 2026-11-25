@@ -20,7 +20,7 @@ This is the living strategy. Every run that writes posts reads it first. The wee
   - If a format's views hold but watch time is low, shorten it.
 - **Highlight the thing:** circles, arrows or a colour pop on the key word (`slam` already colours the last word).
 
-## Views plan (started 2026-11-18, review on 2026-11-25)
+## Views plan (started 2026-11-18, reviewed 2026-11-25, next review 2026-12-01)
 **Diagnosis:** after 60 posts, every Reel lands at 100–200 views with almost no likes, comments or shares, and no outliers. When everything stalls in the same range, the problem is the account's trust and the retention signals, not one weak hook. Two things made it worse: a brand-new account jumping to 10 near-identical videos a day (it reads like a content farm), and nothing telling us *where* viewers swipe away.
 
 **What changed:**
@@ -42,6 +42,20 @@ This is the living strategy. Every run that writes posts reads it first. The wee
 - **Storyboards lost 69% in the first seconds** (4.0s watch, 11 posts), even though they're animated. Their first frame doesn't stop people. Keep them at 1 in 4, and open every one with the boldest line already fully on screen over a moving background.
 - **Chat stories and voice stories hold the people who stay** (7.8–9.2s watch), so story formats work once the opening lands.
 - **Targets:** skip rate under 40%, and average watch time over 60% of the video's length.
+
+**Review, 25 Nov (median per post):**
+
+| | 14–17 Nov (10/day) | 18–23 Nov (3/day) | 24 Nov (4/day, early) |
+|---|---|---|---|
+| Stories views / skip / watch | 124 / 55% / 4.9s | 150 / 46% / 5.9s | 162 / 35% / 6.7s |
+| Brand views / skip / watch | 150 / 80% / 2.8s | 149 / 46% / 6.0s | 70 / 37% / 8.2s* |
+
+\* The 24 Nov brand posts were only 9–20 hours old at the snapshot, so their views are still climbing.
+- **Verdict: keep 4 a day (Muneer's call on 24 Nov), never go back to 10.** Fewer posts didn't cost views, and retention improved every step: skip rate fell from 55–80% to 35–37%, close to the 30% "healthy" line. Watch time is up 40–190%.
+- **The problem left is reach, not retention:** views are still stuck at about 150. The next lever is sends and the first test audience, so keep building "send it to…" posts, and use Trial Reels when we reach 1,000 followers.
+- **Spoken hook test, first 8 posts:** voiced 31% skip vs silent 39%, too early to decide (rule: 15 voiced posts).
+- **Check:** ig-rate-05 (stories, 24 Nov 18:42) shows 0 views and 0 reach after 13 hours. Look at it in the app: it may be held or not eligible to be recommended.
+- **Next review:** 1 Dec, with a full week at 4 a day.
 
 **What only Muneer can do (Instagram treats automated likes, follows and comments as spam, so the runs don't):** about 10 minutes a day on each account in the Instagram app. Watch Reels in the niche (relationships, confessions, relatable text posts), like a few, leave 2–3 real comments on bigger pages, and reply to anyone who comments. Pin the best post on each profile. Optionally, add a trending sound to a post in the app.
 
