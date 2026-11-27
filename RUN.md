@@ -51,6 +51,7 @@ Read `plan/playbook.md` first and follow its "Right now" section. Write 20 new p
   - **Voice stories are back as a test**, about 1 in 8 stories posts, on `ring`: they kept the most viewers of any format (33% skip, 9.2s watch). Same rules as before: fiction, a twist or warm payoff in the last line, "Dramatised story." in the caption.
   - **Storyboards: at most 1 in 8 posts**, never a `list` scene first, and the hook scene must be the boldest line fully on screen from frame 0. They lose 72% of viewers in the first seconds.
   - **Lean on what holds people:** red flag or fair, "which is harder" (two short, heavy phrases), rate it 1–10, finish the sentence. On brand, also deep questions. These have the lowest skip rates and the only real shares.
+  - **Brand, from 27 Nov:** finish-the-sentence and deep-question posts reached only 29–44 people each (24–26 Nov), against 96–265 for "which is harder", rate it and tier lists. On brand, write at most 1 in 8 of each until their median views pass 100. Stories is unchanged.
   - **Every post is built to be sent:** the caption names who to send it to when it fits ("send it to the friend who…"). One send is worth more than many likes for reaching new people.
 - **What works best:**
   - These come from research on the 2026 algorithm: DM sends are the strongest signal for reaching new people, followed by watch time and real comments.
