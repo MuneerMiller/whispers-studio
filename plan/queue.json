@@ -3653,5 +3653,477 @@
     },
     "caption": "relive your best day exactly the same, or your worst day with a do-over? which one, and why? \ud83d\udc47\n\n#wouldyourather #nostalgia #deepthoughts #growth",
     "ab": "voice"
+  },
+  {
+    "code": "ig-flg-10",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "They rename you in their phone after every argument.",
+      "cta": "Say why in the comments",
+      "kicker": "Red flag or fair enough?",
+      "seconds": 9,
+      "seed": 1,
+      "voice": true,
+      "say": "They rename you in their phone after every argument. Red flag, or fair?"
+    },
+    "caption": "renaming your partner in your phone after every fight. red flag or fair enough? say why \ud83d\udc47\n\n#relationships #redflags #couples #texting",
+    "ab": "voice"
+  },
+  {
+    "code": "ig-hard-04",
+    "account": "stories",
+    "format": "Which is harder",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Which is harder to say to your parents?",
+      "cta": "Which one, and why?",
+      "items": [
+        "I made a mistake",
+        "I need help with money"
+      ],
+      "seconds": 10,
+      "seed": 2
+    },
+    "caption": "telling your parents 'i made a mistake' or 'i need help with money': which is harder? pick one and say why. send it to your sibling \ud83d\udc40\n\n#family #parents #money #honesty",
+    "ab": "silent"
+  },
+  {
+    "code": "ig-rate-07",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "ring",
+      "title": "Reading their texts from the notification so it doesn't show 'seen'.",
+      "cta": "Rate it 1 to 10",
+      "kicker": "How bad is it?",
+      "seconds": 9,
+      "seed": 3,
+      "voice": true,
+      "say": "Reading their texts from the notification so it doesn't say seen. One to ten?"
+    },
+    "caption": "reading messages from the notification so they don't see you read it. how bad is it, 1 to 10? send it to the friend who does this \ud83d\udc47\n\n#texting #friends #relatable #leftonread",
+    "ab": "voice"
+  },
+  {
+    "code": "ig-voice-03",
+    "account": "stories",
+    "format": "Voice story",
+    "content_type": "Dramatised",
+    "composition": "VoiceStory",
+    "props": {
+      "hook": "My leftovers kept disappearing, so I set a trap",
+      "story": "Every night my leftovers vanished. My roommate swore it wasn't her. So I made the spiciest curry of my life, labelled it do not touch, and waited. Midnight. I hear coughing from the kitchen. I walk in, ready to win. It's not my roommate. It's her boyfriend. Who apparently had a key. And had been living with us for three weeks.",
+      "question": "Who do you confront first?",
+      "bg": "ring"
+    },
+    "caption": "roommate kept eating my leftovers so i set a spicy trap\u2026 it wasn't her \ud83d\ude33 who do you confront first?\n\nDramatised story.\n\n#roommates #storytime #flatmates #drama"
+  },
+  {
+    "code": "ig-flg-11",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "Their phone wallpaper is still a photo with their ex. 'It's just a nice photo.'",
+      "cta": "Say why in the comments",
+      "kicker": "Red flag or fair enough?",
+      "seconds": 9,
+      "seed": 4
+    },
+    "caption": "still having your ex on your phone wallpaper because 'it's a nice photo'. red flag or fair? tell us why \ud83d\udc47\n\n#exes #redflags #dating #relationships",
+    "ab": "silent"
+  },
+  {
+    "code": "ig-hard-05",
+    "account": "stories",
+    "format": "Which is harder",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Which is harder to hear from your best friend?",
+      "cta": "Which one, and why?",
+      "items": [
+        "You've changed",
+        "I'm moving away"
+      ],
+      "seconds": 10,
+      "seed": 5,
+      "voice": true,
+      "say": "Which is harder to hear from your best friend? You've changed, or I'm moving away?"
+    },
+    "caption": "hearing 'you've changed' or 'i'm moving away' from your best friend: which hurts more? pick one and say why. send it to your best friend \ud83e\udec2\n\n#bestfriends #friendship #bff #relatable",
+    "ab": "voice"
+  },
+  {
+    "code": "ig-fin-07",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "The text I'm most glad I never sent said\u2026",
+      "cta": "Finish it in the comments",
+      "kicker": "Finish the sentence",
+      "seconds": 10,
+      "seed": 6
+    },
+    "caption": "the text i'm most glad i never sent\u2026 finish it below. we've all got one \ud83d\udc47\n\n#texting #unsent #exes #relatable",
+    "ab": "silent"
+  },
+  {
+    "code": "ig-rate-08",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "ring",
+      "title": "Leaving the group chat without saying a word.",
+      "cta": "Rate it 1 to 10",
+      "kicker": "How bad is it?",
+      "seconds": 9,
+      "seed": 7,
+      "voice": true,
+      "say": "Leaving the group chat without saying a word. One to ten?"
+    },
+    "caption": "leaving a group chat without saying anything. how rude is it, 1 to 10? send it to the group chat and see who flinches\n\n#groupchat #friends #etiquette #relatable",
+    "ab": "voice"
+  },
+  {
+    "code": "ig-flg-12",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "They still share their location with their ex. 'For safety.'",
+      "cta": "Say why in the comments",
+      "kicker": "Red flag or fair enough?",
+      "seconds": 9,
+      "seed": 8
+    },
+    "caption": "sharing your location with your ex 'for safety'. red flag or fair enough? explain yourself \ud83d\udc47\n\n#exes #redflags #locationsharing #relationships",
+    "ab": "silent"
+  },
+  {
+    "code": "ig-tier-05",
+    "account": "stories",
+    "format": "Tier list",
+    "content_type": "Prompt",
+    "composition": "TierList",
+    "props": {
+      "title": "Excuses for not replying, ranked by how believable they are",
+      "items": [
+        {
+          "text": "'My phone died' (for 3 days)",
+          "tier": "D"
+        },
+        {
+          "text": "'Didn't see it' (posted a story)",
+          "tier": "D"
+        },
+        {
+          "text": "'I've been so busy'",
+          "tier": "C"
+        },
+        {
+          "text": "'I replied in my head'",
+          "tier": "B"
+        },
+        {
+          "text": "'I fell asleep'",
+          "tier": "A"
+        },
+        {
+          "text": "'I needed time to think'",
+          "tier": "S"
+        }
+      ],
+      "question": "Wrong tier? Argue below"
+    },
+    "caption": "excuses for not replying to texts, ranked by how believable they are. which one is yours? send it to the worst replier you know \ud83d\udc47\n\n#texting #leftonread #friends #funny"
+  },
+  {
+    "code": "ig-hard-06",
+    "account": "stories",
+    "format": "Which is harder",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Which is harder to forgive?",
+      "cta": "Which one, and why?",
+      "items": [
+        "A friend who lied",
+        "A friend who left"
+      ],
+      "seconds": 10,
+      "seed": 9,
+      "voice": true,
+      "say": "Which is harder to forgive? A friend who lied, or a friend who left?"
+    },
+    "caption": "forgiving a friend who lied vs a friend who just left: which is harder? pick one and say why \ud83d\udc47\n\n#friendship #forgiveness #trust #relatable",
+    "ab": "voice"
+  },
+  {
+    "code": "ig-rate-09",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "ring",
+      "title": "Re-gifting a present to someone in the same friend group.",
+      "cta": "Rate it 1 to 10",
+      "kicker": "How bad is it?",
+      "seconds": 9,
+      "seed": 1
+    },
+    "caption": "re-gifting a present inside the same friend group. how risky is it, 1 to 10? send it to the friend who gave you that candle \ud83c\udf81\n\n#christmas #gifts #regifting #friends",
+    "ab": "silent"
+  },
+  {
+    "code": "ig-sb-16",
+    "account": "stories",
+    "format": "Storyboard",
+    "content_type": "Prompt",
+    "composition": "StoryboardReel",
+    "props": {
+      "scenes": [
+        {
+          "type": "slam",
+          "text": "Dear Santa, I've been good this year. Mostly.",
+          "bg": "red",
+          "transition": "cut"
+        },
+        {
+          "type": "type",
+          "text": "Except for the screenshots I sent to the group chat.",
+          "bg": "cream"
+        },
+        {
+          "type": "redact",
+          "text": "And every time I said I'm 5 minutes away",
+          "hidden": "from my bed.",
+          "bg": "black"
+        },
+        {
+          "type": "emoji",
+          "emoji": "\ud83e\udee3",
+          "bg": "yellow"
+        },
+        {
+          "type": "question",
+          "text": "How good were you really, 1 to 10?",
+          "sub": "be honest",
+          "bg": "blue",
+          "transition": "flash"
+        }
+      ]
+    },
+    "caption": "dear santa, i've been good this year\u2026 mostly. how good were you really, 1 to 10? send it to the friend who's always '5 minutes away'\n\n#christmas #dearsanta #relatable #memes"
+  },
+  {
+    "code": "ig-flg-13",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "They have a second account you found out about by accident.",
+      "cta": "Say why in the comments",
+      "kicker": "Red flag or fair enough?",
+      "seconds": 9,
+      "seed": 2,
+      "voice": true,
+      "say": "They have a second account you found out about by accident. Red flag, or fair?"
+    },
+    "caption": "finding out your partner has a second account by accident. red flag or fair? say why \ud83d\udc47\n\n#redflags #finsta #relationships #trust",
+    "ab": "voice"
+  },
+  {
+    "code": "ig-hard-07",
+    "account": "stories",
+    "format": "Which is harder",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "choice",
+      "bg": "ring",
+      "title": "Which is harder to say first in a fight?",
+      "cta": "Which one, and why?",
+      "items": [
+        "I'm sorry",
+        "You were right"
+      ],
+      "seconds": 10,
+      "seed": 3
+    },
+    "caption": "saying 'i'm sorry' or 'you were right' first in a fight: which is harder? pick one and tell us why. send it to the one who never says either \ud83d\udc40\n\n#couples #arguments #relationships #honesty",
+    "ab": "silent"
+  },
+  {
+    "code": "ig-chat-07",
+    "account": "stories",
+    "format": "Text story",
+    "content_type": "Dramatised",
+    "composition": "ChatReel",
+    "props": {
+      "hook": "A stranger texted me asking for my best friend's number",
+      "contact": "Unknown number",
+      "messages": [
+        {
+          "from": "them",
+          "text": "hey sorry, is this Jess's friend?"
+        },
+        {
+          "from": "me",
+          "text": "who's asking"
+        },
+        {
+          "from": "them",
+          "text": "we met last night and I forgot to get her number"
+        },
+        {
+          "from": "them",
+          "text": "she said you'd vouch for me"
+        },
+        {
+          "from": "me",
+          "text": "vouch for what exactly"
+        },
+        {
+          "from": "them",
+          "text": "that I'm not weird"
+        },
+        {
+          "from": "me",
+          "text": "you're texting a stranger at 7am"
+        },
+        {
+          "from": "them",
+          "text": "fair. tell her the person who has her phone says hi"
+        },
+        {
+          "from": "me",
+          "text": "she's been looking for her phone all morning"
+        }
+      ],
+      "question": "Do you give them the number?",
+      "seed": 7
+    },
+    "caption": "a stranger texted asking for my best friend's number\u2026 then said they had her phone. do you give it to them?\n\nDramatised story.\n\n#storytime #texting #bestfriends #funny"
+  },
+  {
+    "code": "ig-rate-10",
+    "account": "stories",
+    "format": "Rate it 1-10",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "scale",
+      "bg": "ring",
+      "title": "Cancelling because you're 'sick', then posting from somewhere else.",
+      "cta": "Rate it 1 to 10",
+      "kicker": "How bad is it?",
+      "seconds": 9,
+      "seed": 4,
+      "voice": true,
+      "say": "Cancelling because you're sick, then posting from somewhere else. One to ten?"
+    },
+    "caption": "cancelling plans because you're 'sick' and then posting from somewhere else. how bad, 1 to 10? send it to the friend who got caught \ud83d\udc47\n\n#cancelledplans #friends #caughtout #relatable",
+    "ab": "voice"
+  },
+  {
+    "code": "ig-fin-08",
+    "account": "stories",
+    "format": "Finish the sentence",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 10,
+    "props": {
+      "layout": "finish",
+      "bg": "ring",
+      "title": "I knew the friendship was over when\u2026",
+      "cta": "Finish it in the comments",
+      "kicker": "Finish the sentence",
+      "seconds": 10,
+      "seed": 5
+    },
+    "caption": "the moment you knew a friendship was over. finish the sentence below \ud83d\udc47\n\n#friendship #exfriends #growingapart #relatable",
+    "ab": "silent"
+  },
+  {
+    "code": "ig-voice-04",
+    "account": "stories",
+    "format": "Voice story",
+    "content_type": "Dramatised",
+    "composition": "VoiceStory",
+    "props": {
+      "hook": "A stranger paid for my coffee and left a note",
+      "story": "Worst morning of the year. Missed the bus, spilled water on my laptop, cried in the queue at the caf\u00e9. When I got to the counter, the barista said it was already paid for. There was a note on the cup. You don't know me, but last year someone did this for me on my worst day. Pass it on. I've done it eleven times since.",
+      "question": "Would you pass it on?",
+      "bg": "ring"
+    },
+    "caption": "a stranger paid for my coffee on my worst day and left a note on the cup \ud83e\udd79 would you pass it on?\n\nDramatised story.\n\n#kindness #wholesome #storytime #payitforward"
+  },
+  {
+    "code": "ig-flg-14",
+    "account": "stories",
+    "format": "Red flag or fair",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 9,
+    "props": {
+      "layout": "flag",
+      "bg": "ring",
+      "title": "They tell their best friend about your fights before they talk to you.",
+      "cta": "Say why in the comments",
+      "kicker": "Red flag or fair enough?",
+      "seconds": 9,
+      "seed": 6,
+      "voice": true,
+      "say": "They tell their best friend about your fights before they talk to you. Red flag, or fair?"
+    },
+    "caption": "telling your best friend about every fight before talking to your partner. red flag or fair? tell us why \ud83d\udc47\n\n#relationships #redflags #couples #communication",
+    "ab": "voice"
   }
 ]
