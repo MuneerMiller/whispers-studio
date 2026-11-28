@@ -2,34 +2,226 @@
   "version": 1,
   "note": "Steps the Whispers Poster app follows inside Instagram. Regexes, case-insensitive; {handle} and {caption} are filled in per job. First version written from Instagram's usual labels (Nov 2026); correct it from a recording or a screen dump (see phone/README.md).",
   "dismiss": [
-    {"any_text": "^(not now|maybe later|skip|got it|ok|okay|dismiss|close)$", "clickable": true},
-    {"desc": "^(close|dismiss)$", "clickable": true}
+    {
+      "any_text": "^(not now|maybe later|got it|ok|okay|dismiss)$",
+      "clickable": true
+    }
   ],
   "flows": {
     "switch_account": [
-      {"do": "launch", "value": "com.instagram.android", "after": 2500, "note": "open Instagram"},
-      {"do": "click", "any": [{"desc": "^profile$"}, {"id": "profile_tab"}], "timeout": 10000, "note": "profile tab"},
-      {"do": "skip_rest_if", "any": [{"id": "action_bar_(large_)?title", "text": "^{handle}$"}, {"text": "^{handle}$", "id": "username"}], "note": "already on the right account"},
-      {"do": "click", "any": [{"id": "action_bar_(large_)?title"}, {"id": "action_bar_title_chevron"}, {"text": "^whispers_(anon|app)$"}], "timeout": 6000, "note": "open the account switcher"},
-      {"do": "click", "text": "^{handle}$", "timeout": 6000, "note": "pick the account"},
-      {"do": "wait", "value": "3000"}
+      {
+        "do": "launch",
+        "value": "com.instagram.android",
+        "after": 2500,
+        "note": "open Instagram"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "desc": "^profile$"
+          },
+          {
+            "id": "profile_tab"
+          }
+        ],
+        "timeout": 10000,
+        "note": "profile tab"
+      },
+      {
+        "do": "skip_rest_if",
+        "any": [
+          {
+            "id": "action_bar_(large_)?title",
+            "text": "^{handle}$"
+          },
+          {
+            "text": "^{handle}$",
+            "id": "username"
+          }
+        ],
+        "note": "already on the right account"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "id": "action_bar_(large_)?title"
+          },
+          {
+            "id": "action_bar_title_chevron"
+          },
+          {
+            "text": "^whispers_(anon|app)$"
+          }
+        ],
+        "timeout": 6000,
+        "note": "open the account switcher"
+      },
+      {
+        "do": "click",
+        "text": "^{handle}$",
+        "timeout": 6000,
+        "note": "pick the account"
+      },
+      {
+        "do": "wait",
+        "value": "3000"
+      }
     ],
     "post_reel": [
-      {"do": "share_video", "after": 3000, "note": "hand the video to Instagram"},
-      {"do": "click", "any": [{"any_text": "^reels?$"}, {"any_text": "^new reel$"}], "timeout": 12000, "note": "choose Reel in Instagram's share menu"},
-      {"do": "click", "any": [{"any_text": "^(add audio|audio|music)$"}, {"id": "(music|audio)"}], "timeout": 15000, "after": 2500, "note": "open the music picker"},
-      {"do": "click", "any_text": "^trending$", "optional": true, "timeout": 4000, "note": "Trending tab, if shown"},
-      {"do": "click", "any": [{"id": "(track|song|music_list|audio_list).*(row|item|container|title)"}, {"id": "(track|song).*title"}], "timeout": 10000, "after": 2500, "note": "pick the first trending song"},
-      {"do": "click", "any": [{"any_text": "^(done|add|use|select|next)$", "clickable": true}, {"desc": "^(done|add|next)$"}], "timeout": 10000, "after": 2500, "note": "confirm the song"},
-      {"do": "click", "any": [{"any_text": "^next$"}, {"desc": "^next$"}], "timeout": 15000, "after": 3000, "note": "go to the caption screen"},
-      {"do": "click", "any": [{"any_text": "^next$"}, {"desc": "^next$"}], "optional": true, "timeout": 3000, "after": 2500, "note": "second Next, on some versions"},
-      {"do": "set_text", "value": "{caption}", "any": [{"hint": "(write|add) a caption"}, {"any_text": "(write|add) a caption"}, {"id": "caption"}], "timeout": 10000, "note": "type the caption"},
-      {"do": "back", "after": 800, "note": "close the keyboard"},
-      {"do": "click", "any": [{"any_text": "^share$", "clickable": true}, {"desc": "^share$"}], "timeout": 10000, "after": 8000, "final": true, "note": "post it"}
+      {
+        "do": "share_video",
+        "after": 3000,
+        "note": "hand the video to Instagram"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "any_text": "^reels?$"
+          },
+          {
+            "any_text": "^new reel$"
+          }
+        ],
+        "timeout": 12000,
+        "note": "choose Reel in Instagram's share menu"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "any_text": "^(add audio|audio|music)$"
+          },
+          {
+            "id": "(music|audio)"
+          }
+        ],
+        "timeout": 15000,
+        "after": 2500,
+        "note": "open the music picker"
+      },
+      {
+        "do": "click",
+        "any_text": "^trending$",
+        "optional": true,
+        "timeout": 4000,
+        "note": "Trending tab, if shown"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "id": "(track|song|music_list|audio_list).*(row|item|container|title)"
+          },
+          {
+            "id": "(track|song).*title"
+          }
+        ],
+        "timeout": 10000,
+        "after": 2500,
+        "note": "pick the first trending song"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "any_text": "^(done|add|use|select|next)$",
+            "clickable": true
+          },
+          {
+            "desc": "^(done|add|next)$"
+          }
+        ],
+        "timeout": 10000,
+        "after": 2500,
+        "note": "confirm the song"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "any_text": "^next$"
+          },
+          {
+            "desc": "^next$"
+          }
+        ],
+        "timeout": 15000,
+        "after": 3000,
+        "note": "go to the caption screen"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "any_text": "^next$"
+          },
+          {
+            "desc": "^next$"
+          }
+        ],
+        "optional": true,
+        "timeout": 3000,
+        "after": 2500,
+        "note": "second Next, on some versions"
+      },
+      {
+        "do": "set_text",
+        "value": "{caption}",
+        "any": [
+          {
+            "hint": "(write|add) a caption"
+          },
+          {
+            "any_text": "(write|add) a caption"
+          },
+          {
+            "id": "caption"
+          }
+        ],
+        "timeout": 10000,
+        "note": "type the caption"
+      },
+      {
+        "do": "back",
+        "after": 800,
+        "note": "close the keyboard"
+      },
+      {
+        "do": "click",
+        "any": [
+          {
+            "any_text": "^share$",
+            "clickable": true
+          },
+          {
+            "desc": "^share$"
+          }
+        ],
+        "timeout": 10000,
+        "after": 8000,
+        "final": true,
+        "note": "post it"
+      }
     ],
     "dry_cleanup": [
-      {"do": "back"}, {"do": "back"}, {"do": "back"},
-      {"do": "click", "any_text": "^(discard|discard reel|start over)$", "optional": true, "timeout": 3000}
+      {
+        "do": "back"
+      },
+      {
+        "do": "back"
+      },
+      {
+        "do": "back"
+      },
+      {
+        "do": "click",
+        "any_text": "^(discard|discard reel|start over)$",
+        "optional": true,
+        "timeout": 3000
+      }
     ]
   }
 }

@@ -1,0 +1,11 @@
+{
+  "id": "dry-run-test",
+  "code": "test",
+  "account": "brand",
+  "handle": "whispers_app",
+  "format": "Test",
+  "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+  "caption": "test caption (dry run, never posted)",
+  "not_before": "2026-01-01T00:00:00Z",
+  "expires": "2099-01-01T00:00:00Z"
+}
