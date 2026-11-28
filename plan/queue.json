@@ -1535,6 +1535,24 @@
     "caption": "my sister borrowed my car for one night and left a wedding ring in the cup holder. then i checked the dashcam. part 2 tomorrow \ud83d\udc40\n\nDramatised story.\n\n#storytime #cheating #sisters #betrayal"
   },
   {
+    "code": "ig-tht-01",
+    "account": "stories",
+    "format": "Thought",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 7,
+    "ab": "exp-thought",
+    "props": {
+      "layout": "question",
+      "bg": "ring",
+      "title": "i'm lowkey a horrible texter. i see your message, plan to reply later, then just\u2026 don't",
+      "cta": "just me?",
+      "seconds": 7,
+      "seed": 1
+    },
+    "caption": "not me doing this to everyone i love \ud83d\ude2d\n\n#relatable #texting #leftonread"
+  },
+  {
     "code": "ig-flg-03",
     "account": "stories",
     "format": "Red flag or fair",
@@ -1552,6 +1570,24 @@
     },
     "caption": "Going through your partner's phone when they ask you to hold it. Red flag \ud83d\udea9 or fair enough? \ud83d\udc47\n\n#whispers #anonymous #confessions #secrets #relatable",
     "ab": "silent"
+  },
+  {
+    "code": "ig-ask-01",
+    "account": "stories",
+    "format": "Ask confess",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 6,
+    "ab": "exp-askconfess",
+    "props": {
+      "layout": "question",
+      "bg": "ring",
+      "title": "guys i'm bored. tell me a random confession",
+      "cta": "comments are open",
+      "seconds": 6,
+      "seed": 1
+    },
+    "caption": "go. nobody knows it's you \ud83e\udd2b\n\n#confessions #anonymous #tellme"
   },
   {
     "code": "ig-chat-04",
@@ -3370,6 +3406,24 @@
     "caption": "texts that actually mean 'i'm not okay'. which one do you send the most? check on the friend who always says they're fine \ud83e\udd0d\n\n#mentalhealth #imfine #friendship #texting"
   },
   {
+    "code": "igb-tht-01",
+    "account": "brand",
+    "format": "Thought",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 7,
+    "ab": "exp-thought",
+    "props": {
+      "layout": "question",
+      "bg": "ring",
+      "title": "i wonder if anyone ever makes up fake scenarios about me the way i do about them",
+      "cta": "just me?",
+      "seconds": 7,
+      "seed": 1
+    },
+    "caption": "is it just me or\u2026 \ud83e\udee0\n\n#overthinking #relatable #daydreaming"
+  },
+  {
     "code": "igb-tier-03",
     "account": "brand",
     "content_type": "Prompt",
@@ -3402,6 +3456,24 @@
       "question": "Which one gets you every time?"
     },
     "caption": "ways people say 'i missed you', ranked. which one gets you every time, and why? send it to the friend who does the S tier \ud83e\udd0d\n\n#friendship #missingyou #wholesome #bestfriend"
+  },
+  {
+    "code": "igb-ask-01",
+    "account": "brand",
+    "format": "Ask confess",
+    "content_type": "Prompt",
+    "composition": "TextReel",
+    "seconds": 6,
+    "ab": "exp-askconfess",
+    "props": {
+      "layout": "question",
+      "bg": "ring",
+      "title": "tell me something you've never told anyone. i won't judge",
+      "cta": "comments are open",
+      "seconds": 6,
+      "seed": 1
+    },
+    "caption": "say it here. it stays here \ud83e\udd0d\n\n#confessions #anonymous #honesty"
   },
   {
     "code": "igb-wyr-04",
