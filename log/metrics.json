@@ -1,6 +1,78 @@
 {
-  "updated": "2026-11-27T05:41:10.955Z",
+  "updated": "2026-11-28T05:41:30.423Z",
   "posts": [
+    {
+      "code": "ig-pause-01",
+      "account": "stories",
+      "format": "Pause challenge",
+      "posted_at": "2026-11-27T20:44:09+0000",
+      "permalink": "https://www.instagram.com/reel/DgQkPC3x2uF/",
+      "views": 84,
+      "reach": 72,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 3.3,
+      "skip_rate": 77.8,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0.59,
+      "outlier": false
+    },
+    {
+      "code": "ig-fin-05",
+      "account": "stories",
+      "format": "Finish the sentence",
+      "posted_at": "2026-11-27T16:43:19+0000",
+      "permalink": "https://www.instagram.com/reel/DgQIrPhBL8w/",
+      "views": 164,
+      "reach": 112,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 6.5,
+      "skip_rate": 42.5,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.15,
+      "outlier": false
+    },
+    {
+      "code": "ig-tier-04",
+      "account": "stories",
+      "format": "Tier list",
+      "posted_at": "2026-11-27T11:43:27+0000",
+      "permalink": "https://www.instagram.com/reel/DgPmWZpJ3EV/",
+      "views": 0,
+      "reach": 0,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 0,
+      "skip_rate": 0,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 0,
+      "outlier": false
+    },
+    {
+      "code": "ig-flg-07",
+      "account": "stories",
+      "format": "Red flag or fair",
+      "posted_at": "2026-11-27T07:43:07+0000",
+      "permalink": "https://www.instagram.com/reel/DgPK3VoqTjG/",
+      "views": 179,
+      "reach": 118,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 7.2,
+      "skip_rate": 44.1,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.26,
+      "outlier": false
+    },
     {
       "code": "ig-sb-15",
       "account": "stories",
@@ -1100,21 +1172,93 @@
       "outlier": false
     },
     {
+      "code": "igb-deep-07",
+      "account": "brand",
+      "format": "Deep question",
+      "posted_at": "2026-11-27T20:44:49+0000",
+      "permalink": "https://www.instagram.com/reel/DgQkTnPhFQK/",
+      "views": 230,
+      "reach": 161,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 6.8,
+      "skip_rate": 39.1,
+      "likes": 0,
+      "comments": 0,
+      "vs_median": 1.54,
+      "outlier": false
+    },
+    {
+      "code": "igb-wyr-08",
+      "account": "brand",
+      "format": "Would you rather",
+      "posted_at": "2026-11-27T16:45:07+0000",
+      "permalink": "https://www.instagram.com/reel/DgQI3rMqOGK/",
+      "views": 229,
+      "reach": 154,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 6.7,
+      "skip_rate": 44.9,
+      "likes": 1,
+      "comments": 2,
+      "vs_median": 1.54,
+      "outlier": false
+    },
+    {
+      "code": "igb-fin-07",
+      "account": "brand",
+      "format": "Finish the sentence",
+      "posted_at": "2026-11-27T11:44:44+0000",
+      "permalink": "https://www.instagram.com/reel/DgPmf4_hwjF/",
+      "views": 203,
+      "reach": 132,
+      "shares": 0,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 6.9,
+      "skip_rate": 41.4,
+      "likes": 2,
+      "comments": 0,
+      "vs_median": 1.36,
+      "outlier": false
+    },
+    {
+      "code": "igb-sb-13",
+      "account": "brand",
+      "format": "Storyboard",
+      "posted_at": "2026-11-27T07:44:33+0000",
+      "permalink": "https://www.instagram.com/reel/DgPLAyJiHqN/",
+      "views": 185,
+      "reach": 162,
+      "shares": 7,
+      "saves": 0,
+      "reposts": null,
+      "avg_watch_s": 2.7,
+      "skip_rate": 79.3,
+      "likes": 3,
+      "comments": 0,
+      "vs_median": 1.24,
+      "outlier": false
+    },
+    {
       "code": "igb-tier-08",
       "account": "brand",
       "format": "Tier list",
       "posted_at": "2026-11-26T20:45:15+0000",
       "permalink": "https://www.instagram.com/reel/DgN_j6GhYPm/",
-      "views": 204,
-      "reach": 159,
+      "views": 205,
+      "reach": 160,
       "shares": 0,
       "saves": 1,
       "reposts": null,
       "avg_watch_s": 6.5,
-      "skip_rate": 36.9,
+      "skip_rate": 36.6,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.41,
+      "vs_median": 1.38,
       "outlier": false
     },
     {
@@ -1123,16 +1267,16 @@
       "format": "Which is harder",
       "posted_at": "2026-11-26T16:44:47+0000",
       "permalink": "https://www.instagram.com/reel/DgNkCyfzyg8/",
-      "views": 120,
-      "reach": 77,
+      "views": 121,
+      "reach": 78,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 8.4,
-      "skip_rate": 35.5,
+      "avg_watch_s": 8.3,
+      "skip_rate": 35.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.83,
+      "vs_median": 0.81,
       "outlier": false
     },
     {
@@ -1141,16 +1285,16 @@
       "format": "Rate it 1-10",
       "posted_at": "2026-11-26T11:45:13+0000",
       "permalink": "https://www.instagram.com/reel/DgNBxHttW3X/",
-      "views": 265,
-      "reach": 169,
+      "views": 266,
+      "reach": 170,
       "shares": 0,
       "saves": 0,
       "reposts": null,
       "avg_watch_s": 6.6,
-      "skip_rate": 37.1,
+      "skip_rate": 36.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.83,
+      "vs_median": 1.79,
       "outlier": false
     },
     {
@@ -1159,13 +1303,13 @@
       "format": "Deep question",
       "posted_at": "2026-11-26T07:44:52+0000",
       "permalink": "https://www.instagram.com/reel/DgMmRdxhLHP/",
-      "views": 34,
-      "reach": 20,
+      "views": 35,
+      "reach": 21,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 8.1,
-      "skip_rate": 35,
+      "avg_watch_s": 7.7,
+      "skip_rate": 38.1,
       "likes": 0,
       "comments": 0,
       "vs_median": 0.23,
@@ -1177,13 +1321,13 @@
       "format": "Rate it 1-10",
       "posted_at": "2026-11-25T20:45:27+0000",
       "permalink": "https://www.instagram.com/reel/DgLay23tdez/",
-      "views": 41,
-      "reach": 27,
+      "views": 42,
+      "reach": 28,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 6.2,
-      "skip_rate": 37,
+      "avg_watch_s": 6.1,
+      "skip_rate": 35.7,
       "likes": 0,
       "comments": 0,
       "vs_median": 0.28,
@@ -1195,13 +1339,13 @@
       "format": "Finish the sentence",
       "posted_at": "2026-11-25T16:45:15+0000",
       "permalink": "https://www.instagram.com/reel/DgK_TPyIYNf/",
-      "views": 29,
-      "reach": 23,
+      "views": 30,
+      "reach": 24,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 6.1,
-      "skip_rate": 39.1,
+      "avg_watch_s": 6,
+      "skip_rate": 37.5,
       "likes": 0,
       "comments": 0,
       "vs_median": 0.2,
@@ -1213,13 +1357,13 @@
       "format": "Would you rather",
       "posted_at": "2026-11-25T11:45:16+0000",
       "permalink": "https://www.instagram.com/reel/DgKc-MWK5es/",
-      "views": 96,
-      "reach": 63,
+      "views": 98,
+      "reach": 64,
       "shares": 0,
       "saves": 0,
       "reposts": null,
       "avg_watch_s": 6.5,
-      "skip_rate": 47.6,
+      "skip_rate": 46.9,
       "likes": 0,
       "comments": 0,
       "vs_median": 0.66,
@@ -1231,16 +1375,16 @@
       "format": "Which is harder",
       "posted_at": "2026-11-25T07:44:03+0000",
       "permalink": "https://www.instagram.com/reel/DgKBXdOKuQm/",
-      "views": 208,
-      "reach": 155,
+      "views": 209,
+      "reach": 156,
       "shares": 0,
       "saves": 0,
       "reposts": null,
       "avg_watch_s": 5.4,
-      "skip_rate": 56.5,
+      "skip_rate": 56.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.43,
+      "vs_median": 1.4,
       "outlier": false
     },
     {
@@ -1249,13 +1393,13 @@
       "format": "Deep question",
       "posted_at": "2026-11-24T20:44:11+0000",
       "permalink": "https://www.instagram.com/reel/DgI12IPDRcf/",
-      "views": 44,
-      "reach": 28,
+      "views": 45,
+      "reach": 29,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 8.3,
-      "skip_rate": 37.9,
+      "avg_watch_s": 8.2,
+      "skip_rate": 36.7,
       "likes": 0,
       "comments": 0,
       "vs_median": 0.3,
@@ -1267,16 +1411,16 @@
       "format": "Rate it 1-10",
       "posted_at": "2026-11-24T16:43:39+0000",
       "permalink": "https://www.instagram.com/reel/DgIaUnnEdqT/",
-      "views": 109,
-      "reach": 74,
+      "views": 110,
+      "reach": 75,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 6.1,
-      "skip_rate": 40.5,
+      "avg_watch_s": 6,
+      "skip_rate": 41.3,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.75,
+      "vs_median": 0.74,
       "outlier": false
     },
     {
@@ -1285,13 +1429,13 @@
       "format": "Finish the sentence",
       "posted_at": "2026-11-24T11:45:35+0000",
       "permalink": "https://www.instagram.com/reel/DgH4Nukilq0/",
-      "views": 40,
-      "reach": 25,
+      "views": 41,
+      "reach": 26,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 8.1,
-      "skip_rate": 36,
+      "avg_watch_s": 7.9,
+      "skip_rate": 34.6,
       "likes": 0,
       "comments": 0,
       "vs_median": 0.28,
@@ -1303,16 +1447,16 @@
       "format": "Which is harder",
       "posted_at": "2026-11-24T07:45:14+0000",
       "permalink": "https://www.instagram.com/reel/DgHcs-TlVcT/",
-      "views": 96,
-      "reach": 61,
+      "views": 97,
+      "reach": 62,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 8.4,
-      "skip_rate": 32.3,
+      "avg_watch_s": 8.3,
+      "skip_rate": 31.7,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.66,
+      "vs_median": 0.65,
       "outlier": false
     },
     {
@@ -1321,13 +1465,13 @@
       "format": "Finish the sentence",
       "posted_at": "2026-11-23T20:44:03+0000",
       "permalink": "https://www.instagram.com/reel/DgGRCdOgWly/",
-      "views": 27,
-      "reach": 20,
+      "views": 28,
+      "reach": 21,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 6.7,
-      "skip_rate": 45,
+      "avg_watch_s": 6.4,
+      "skip_rate": 47.6,
       "likes": 0,
       "comments": 0,
       "vs_median": 0.19,
@@ -1348,7 +1492,7 @@
       "skip_rate": 48.1,
       "likes": 2,
       "comments": 0,
-      "vs_median": 0.62,
+      "vs_median": 0.6,
       "outlier": false
     },
     {
@@ -1366,7 +1510,7 @@
       "skip_rate": 45.5,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.48,
+      "vs_median": 1.44,
       "outlier": false
     },
     {
@@ -1384,7 +1528,7 @@
       "skip_rate": 74.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.04,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -1402,7 +1546,7 @@
       "skip_rate": 41.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.63,
+      "vs_median": 1.58,
       "outlier": false
     },
     {
@@ -1420,7 +1564,7 @@
       "skip_rate": 76.6,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.19,
+      "vs_median": 1.16,
       "outlier": false
     },
     {
@@ -1438,7 +1582,7 @@
       "skip_rate": 34.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.2,
+      "vs_median": 0.19,
       "outlier": false
     },
     {
@@ -1456,7 +1600,7 @@
       "skip_rate": 72.3,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1,
       "outlier": false
     },
     {
@@ -1474,7 +1618,7 @@
       "skip_rate": 43.1,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.59,
+      "vs_median": 1.54,
       "outlier": false
     },
     {
@@ -1492,7 +1636,7 @@
       "skip_rate": 45.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.62,
+      "vs_median": 0.6,
       "outlier": false
     },
     {
@@ -1510,7 +1654,7 @@
       "skip_rate": 41.9,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.59,
+      "vs_median": 1.54,
       "outlier": false
     },
     {
@@ -1528,7 +1672,7 @@
       "skip_rate": 33.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.73,
+      "vs_median": 0.71,
       "outlier": false
     },
     {
@@ -1546,7 +1690,7 @@
       "skip_rate": 44.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.71,
+      "vs_median": 0.69,
       "outlier": false
     },
     {
@@ -1564,7 +1708,7 @@
       "skip_rate": 48,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.51,
+      "vs_median": 1.47,
       "outlier": false
     },
     {
@@ -1573,16 +1717,16 @@
       "format": "Pause challenge",
       "posted_at": "2026-11-19T10:44:20+0000",
       "permalink": "https://www.instagram.com/reel/Df65OhgkSXF/",
-      "views": 188,
-      "reach": 157,
+      "views": 189,
+      "reach": 158,
       "shares": 0,
       "saves": 0,
       "reposts": null,
-      "avg_watch_s": 3.9,
-      "skip_rate": 69.2,
+      "avg_watch_s": 3.8,
+      "skip_rate": 69.4,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.3,
+      "vs_median": 1.27,
       "outlier": false
     },
     {
@@ -1600,7 +1744,7 @@
       "skip_rate": 43.9,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.46,
+      "vs_median": 1.42,
       "outlier": false
     },
     {
@@ -1618,7 +1762,7 @@
       "skip_rate": 50,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.25,
+      "vs_median": 0.24,
       "outlier": false
     },
     {
@@ -1636,7 +1780,7 @@
       "skip_rate": 34.4,
       "likes": 1,
       "comments": 0,
-      "vs_median": 0.63,
+      "vs_median": 0.62,
       "outlier": false
     },
     {
@@ -1654,7 +1798,7 @@
       "skip_rate": 65.3,
       "likes": 2,
       "comments": 1,
-      "vs_median": 0.87,
+      "vs_median": 0.85,
       "outlier": false
     },
     {
@@ -1672,7 +1816,7 @@
       "skip_rate": 70.9,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.15,
+      "vs_median": 1.12,
       "outlier": false
     },
     {
@@ -1690,7 +1834,7 @@
       "skip_rate": 66,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.3,
+      "vs_median": 1.27,
       "outlier": false
     },
     {
@@ -1708,7 +1852,7 @@
       "skip_rate": 88.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.05,
+      "vs_median": 1.02,
       "outlier": false
     },
     {
@@ -1726,7 +1870,7 @@
       "skip_rate": 75.4,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.12,
+      "vs_median": 1.09,
       "outlier": false
     },
     {
@@ -1744,7 +1888,7 @@
       "skip_rate": 66.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.97,
+      "vs_median": 0.95,
       "outlier": false
     },
     {
@@ -1762,7 +1906,7 @@
       "skip_rate": 75,
       "likes": 3,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -1780,7 +1924,7 @@
       "skip_rate": 66,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.17,
+      "vs_median": 1.13,
       "outlier": false
     },
     {
@@ -1798,7 +1942,7 @@
       "skip_rate": 80.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.1,
+      "vs_median": 1.07,
       "outlier": false
     },
     {
@@ -1816,7 +1960,7 @@
       "skip_rate": 42.4,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.55,
+      "vs_median": 0.54,
       "outlier": false
     },
     {
@@ -1834,7 +1978,7 @@
       "skip_rate": 77.4,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.1,
+      "vs_median": 1.07,
       "outlier": false
     },
     {
@@ -1852,7 +1996,7 @@
       "skip_rate": 80.3,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.57,
+      "vs_median": 0.56,
       "outlier": false
     },
     {
@@ -1870,7 +2014,7 @@
       "skip_rate": 78.4,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.28,
+      "vs_median": 1.24,
       "outlier": false
     },
     {
@@ -1888,7 +2032,7 @@
       "skip_rate": 93.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.99,
+      "vs_median": 0.96,
       "outlier": false
     },
     {
@@ -1906,7 +2050,7 @@
       "skip_rate": 85.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.04,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -1960,7 +2104,7 @@
       "skip_rate": 90.1,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.11,
+      "vs_median": 1.08,
       "outlier": false
     },
     {
@@ -1978,7 +2122,7 @@
       "skip_rate": 69.2,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.06,
+      "vs_median": 1.03,
       "outlier": false
     },
     {
@@ -1996,7 +2140,7 @@
       "skip_rate": 86,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.94,
+      "vs_median": 0.91,
       "outlier": false
     },
     {
@@ -2014,7 +2158,7 @@
       "skip_rate": 57.1,
       "likes": 2,
       "comments": 0,
-      "vs_median": 1.48,
+      "vs_median": 1.44,
       "outlier": false
     },
     {
@@ -2032,7 +2176,7 @@
       "skip_rate": 82.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1,
+      "vs_median": 0.97,
       "outlier": false
     },
     {
@@ -2068,7 +2212,7 @@
       "skip_rate": 83.8,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.47,
+      "vs_median": 1.43,
       "outlier": false
     },
     {
@@ -2122,7 +2266,7 @@
       "skip_rate": 97.6,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.94,
+      "vs_median": 0.92,
       "outlier": false
     },
     {
@@ -2140,7 +2284,7 @@
       "skip_rate": 79.7,
       "likes": 0,
       "comments": 0,
-      "vs_median": 1.03,
+      "vs_median": 1.01,
       "outlier": false
     },
     {
@@ -2158,7 +2302,7 @@
       "skip_rate": 88.7,
       "likes": 1,
       "comments": 0,
-      "vs_median": 1.01,
+      "vs_median": 0.99,
       "outlier": false
     },
     {
@@ -2176,7 +2320,7 @@
       "skip_rate": 70.9,
       "likes": 2,
       "comments": 1,
-      "vs_median": 1.21,
+      "vs_median": 1.18,
       "outlier": false
     },
     {
@@ -2194,7 +2338,7 @@
       "skip_rate": 84.5,
       "likes": 0,
       "comments": 0,
-      "vs_median": 0.91,
+      "vs_median": 0.89,
       "outlier": false
     }
   ]
