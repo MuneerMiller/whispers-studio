@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "note": "Phone posting (the Whispers Poster Android app). Off until Muneer has installed and tested the app. When on, the 13:40 post of each account goes through the phone with a trending song instead of the API.",
+  "slotHour": 13,
+  "notBeforeHour": 12,
+  "expiresHour": 23
+}

@@ -5,6 +5,7 @@ Each run starts on a fresh machine and follows this file from top to bottom. CLA
 ## 1. Setup and checks
 1. `python3 -m pip install --break-system-packages -q -r audio/requirements.txt`, then `cd remotion && npm ci && cd ..`.
 2. `node scripts/check.mjs`. If anything says FAIL, stop and report which check failed (variable names only).
+3. `node scripts/phone-sweep.mjs` (every run): logs posts the phone has made, drops expired phone jobs, and deletes their Cloudinary copies. Report any line that says MISSED.
 
 ## 2. Numbers (the 07:40 run, and any run where `log/metrics.json` has no `skip_rate` field yet; runs are at 07:40, 09:40, 10:40, 12:40, 13:40, 15:40, 17:40, 18:40, 20:40 and 22:40)
 1. `node scripts/metrics.mjs`. It writes `log/metrics.json` and prints which formats get the most comments, likes and views.
@@ -16,7 +17,8 @@ Muneer moved us from 3 to 4 a day on 24 Nov 2026. The slots are spread about 4â€
 For each account, stories first, then brand:
 1. `CODE=$(node scripts/next.mjs <account>)`. If it exits with an error, skip that account and report why. Never guess: a guess could double-post. If it prints nothing, the queue is empty: go to step 4 first, then come back.
 2. `node scripts/render.mjs $CODE`. A video lands in `work/$CODE.mp4`; a carousel lands as JPEG slides in the folder `work/$CODE/`. Check it: for a video, frames at 0s, 1.5s and the last second (`ffmpeg -ss <t> -i work/$CODE.mp4 -frames:v 1 <png>`); for a carousel, look at every slide. The hook must be readable, with nothing cut off and no typos. If it's broken, fix the entry in `plan/queue.json` (shorter text usually fixes it) and render again. If it's still broken, skip it and report.
-3. `node scripts/publish.mjs --account <account> --file <work/$CODE.mp4, or the folder work/$CODE for a carousel> --caption-file work/$CODE.txt --code $CODE --format "<format>"`. Run it once only: if it errors after "PUBLISHED" was printed, don't run it again.
+3. **Phone slot:** on the 13:40 run, if `phone/config.json` has `"enabled": true`, pick a video post that suits a trending song (not a narrated or voiced one, since the song would clash with the voice; a carousel can't go to the phone either). Then run `node scripts/phone-job.mjs $CODE` instead of publish.mjs: the Whispers Poster app on Muneer's phone posts it in the Instagram app with a trending song before 23:00. Skip steps 3 and 4 for that account.
+   Otherwise: `node scripts/publish.mjs --account <account> --file <work/$CODE.mp4, or the folder work/$CODE for a carousel> --caption-file work/$CODE.txt --code $CODE --format "<format>"`. Run it once only: if it errors after "PUBLISHED" was printed, don't run it again.
 4. Confirm it printed "deleted Cloudinary copy" and that `work/` is empty.
 
 ## 3b. Reply to comments (every run)

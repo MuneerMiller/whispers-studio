@@ -21,5 +21,7 @@ try {
   console.error(`next.mjs: could not read ${name}'s posts from Instagram: ${e.message}`);
   process.exit(2);
 }
+// A post handed to the phone (phone/jobs.json) is not posted yet, but it isn't the API's to post either.
+if (fs.existsSync('phone/jobs.json')) for (const j of JSON.parse(fs.readFileSync('phone/jobs.json', 'utf8'))) done.add(j.code);
 const next = queue.find((p) => !done.has(p.code));
 if (next) console.log(next.code);
