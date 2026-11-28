@@ -1,0 +1,14 @@
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/ink</item>
+        <item name="android:statusBarColor">@color/ink</item>
+        <item name="android:navigationBarColor">@color/ink</item>
+        <item name="android:colorAccent">@color/brass</item>
+    </style>
+    <style name="Invisible" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <color name="ink">#0C0F1D</color>
+    <color name="brass">#C9A45C</color>
+    <string name="a11y_desc">Whispers Poster posts the day\'s Whispers video in the Instagram app for you, with a trending song. It only acts inside Instagram and only when a post is due.</string>
+</resources>

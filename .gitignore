@@ -9,3 +9,7 @@ remotion/public/*.mp4
 *.mp4
 *.mov
 *.wav
+phone/app/**/build/
+phone/app/.gradle/
+phone/app/local.properties
+*.apk
