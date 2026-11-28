@@ -81,6 +81,34 @@ This is the living strategy. Every run that writes posts reads it first. The wee
 
 **Still to build** (bigger levers, not done in this change): a bigger, centred hook on frame 0 (`center` option, see Ideas to build); storyboard `list` scenes that open full.
 
+## Test batch 28 Nov (from the study chat's PLAYBOOK v3; Muneer said go)
+Source of truth for research is now `C:\Users\munee\Videos\VideoStudy\PLAYBOOK.md` (the study chat). This section is how we apply it.
+
+**Account-level fixes first (28 Nov):** the two accounts now post at different times (stories 09:40/18:40, brand 12:40/20:40) and 2 a day each instead of 4. Until 28 Nov every stories post went out within 5 minutes of a brand post. Muneer to check Account status → "What can't be recommended" on both.
+
+**All six go on stories (@whispers_anon), one a day, so the comparison is fair.** Read the 3-second hold, average watch time, reach, comments and shares at 48 hours and 7 days, then give Muneer the links and numbers for the study chat.
+
+1. **Statement:** `ig-tht-01` (already queued, first-person thought).
+2. **Prompt:** `ig-ask-01` (already queued, "tell me a confession").
+3-5. **Notes from strangers** (new composition `NotesFromStrangers`, to build once footage arrives). Layout copied from Hunter Prosper (PLAYBOOK 8.2):
+   - 0-6s: hands writing the question on a card (Muneer films it), question as large white text, no voice, quiet song.
+   - Then 3 notes, 48-64 words each, about 15s per note, each over one continuous calm clip; cut on the note change.
+   - Captions: white sans-serif, centred, 2 lines, 2-5 words at a time, lower middle, phrase by phrase.
+   - Last 2s: "What would yours say?" Caption ends with an invitation to write theirs in the comments.
+   - **Notes must be real:** written by people Muneer asks (friends, family), anonymous, by hand on a card. Fallback only if that fails: notes written by Claude, tagged "dramatised" on screen and in the caption.
+   - Questions: (a) "What's something you never got to say to someone?" (b) "What do you wish your parents knew about you?" (c) "What moment would you live again if you could?"
+6. **Low-poly "you" story** (Blender on Muneer's PC, about 45s, silent captions, soft piano). Dramatised tag.
+   - Frame 0: "You get one more ordinary day with your dad." and a clock "24:00:00" already ticking (every frame changes).
+   - 3s (21:14:08) morning kitchen, he burns the toast: "He burns the toast. Like always."
+   - 10s (15:02:51) the car, he sings off-key: "This time you don't change the station."
+   - 18s (09:47:30) the garage, he explains how to fix something: "You actually listen."
+   - 26s (03:12:09) dinner: "He asks if you're okay. You say yes. You mean thank you."
+   - 34s (00:41:00) the porch at night: "You still haven't said it."
+   - 40s the clock runs out to 00:00:00 and freezes.
+   - 42-47s end card: "What would you do with the last hour?" / "SAY IT or JUST STAY" (A or B) / "send this to your dad".
+   - Caption: "one more ordinary day with your dad. what would you do with the last hour? say it, or just stay? Dramatised story." plus 3-4 hashtags.
+   - Style: flat colours, chunky shapes, warm light, no faces with detail (the low-poly look of tinyplanetlab and _paradox_pixel). Part 1 of a "One more day" series (mom, best friend, grandparent next).
+
 ## Right now (updated weekly by the trend scout)
 Scout run 2026-11-23 (our posts 14–22 Nov; research from 14–21 Nov 2026).
 
