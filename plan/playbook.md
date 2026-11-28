@@ -162,3 +162,4 @@ Each line gives the date, what was tried and what happened. The scout appends he
 - 2026-11-24: spoken-hook A/B on TextReels (`ab: voice` vs `ab: silent`), starting with ig-hard-02, ig-rate-05, ig-flg-09, igb-hard-03, igb-rate-06, igb-wyr-09, igb-fin-09 and every other queued text post. Watch skip rate first.
 - 2026-11-24: voice story back as a test (ig-voice-02, ring background). Watch skip rate and watch time.
 - 2026-11-24: captions without the "Whispers is a place…" paragraph, with a searchable first line. Results pending.
+- 2026-11-28: experiment track started (1 in 4 posts): exp-longstory (ig-lst-01/02, a two-part dashcam story, Part 2 four posts later) and exp-carousel (igb-car-05/06) first, then exp-today and exp-pov. Reason: every format lands at the same reach (~115 accounts), so the ceiling is account-level, not format-level. Scale an experiment at 1.5x the account's median views after 5 posts; otherwise drop it.

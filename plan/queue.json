@@ -1520,6 +1520,21 @@
     "ab": "voice"
   },
   {
+    "code": "ig-lst-01",
+    "account": "stories",
+    "format": "Long story",
+    "content_type": "Dramatised",
+    "composition": "VoiceStory",
+    "ab": "exp-longstory",
+    "props": {
+      "hook": "My sister borrowed my car and came back with a stranger's wedding ring",
+      "story": "My sister borrowed my car for one night. Next morning I found a wedding ring in the cup holder. Not hers. She's not married. I asked her about it and she went pale and said she had no idea. So I checked the car's dashcam. At eleven forty that night, my sister parked outside a house I'd never seen. A man got in the passenger seat. And when he turned his face to the camera, I knew exactly who he was. It was my husband.",
+      "question": "What would you do first?",
+      "bg": "ring"
+    },
+    "caption": "my sister borrowed my car for one night and left a wedding ring in the cup holder. then i checked the dashcam. part 2 tomorrow \ud83d\udc40\n\nDramatised story.\n\n#storytime #cheating #sisters #betrayal"
+  },
+  {
     "code": "ig-flg-03",
     "account": "stories",
     "format": "Red flag or fair",
@@ -1602,6 +1617,21 @@
     },
     "caption": "We've all done it. How bad is it, 1 to 10? \ud83d\udc47\n\n#whispers #anonymous #relatable #unpopularopinion",
     "ab": "voice"
+  },
+  {
+    "code": "ig-lst-02",
+    "account": "stories",
+    "format": "Long story",
+    "content_type": "Dramatised",
+    "composition": "VoiceStory",
+    "ab": "exp-longstory",
+    "props": {
+      "hook": "Part 2: I didn't scream. I made a plan.",
+      "story": "I didn't scream. I didn't cry. I put the ring in a little box and wrapped it like a present. That Sunday at family lunch, I handed it to my husband in front of everyone and said, you left this in my car. Then I played the dashcam clip on the TV. My sister walked out. My mum dropped her fork. And my husband looked at me and said, it's not what you think. It never is, is it? I moved out that night. The ring? I sold it and paid for my divorce lawyer.",
+      "question": "Would you have done it in front of everyone?",
+      "bg": "ring"
+    },
+    "caption": "part 2 of the dashcam story: i gave my husband the ring back at sunday lunch. in front of everyone \ud83d\ude36\n\nDramatised story.\n\n#storytime #cheating #revenge #familydrama"
   },
   {
     "code": "ig-tier-02",
@@ -3317,6 +3347,29 @@
     "ab": "voice"
   },
   {
+    "code": "igb-car-05",
+    "account": "brand",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "ab": "exp-carousel",
+    "props": {
+      "hook": "5 texts that actually mean 'I'm not okay'",
+      "slides": [
+        "'lol I'm fine'",
+        "'it's whatever honestly'",
+        "'don't worry about me'",
+        "'I'm just tired'",
+        "'haha yeah'"
+      ],
+      "question": "Which one do you send the most?",
+      "sendTo": "Send this to the friend who always says 'I'm fine'.",
+      "handle": "whispers_app",
+      "dark": true
+    },
+    "caption": "texts that actually mean 'i'm not okay'. which one do you send the most? check on the friend who always says they're fine \ud83e\udd0d\n\n#mentalhealth #imfine #friendship #texting"
+  },
+  {
     "code": "igb-tier-03",
     "account": "brand",
     "content_type": "Prompt",
@@ -3405,6 +3458,29 @@
       "question": "What's your S tier small win?"
     },
     "caption": "small wins, ranked by how good they feel. what's your S tier small win, and why? \ud83d\udc47\n\n#smallwins #goodvibes #wholesome #relatable"
+  },
+  {
+    "code": "igb-car-06",
+    "account": "brand",
+    "format": "Meme carousel",
+    "content_type": "Prompt",
+    "composition": "MemeCarousel",
+    "ab": "exp-carousel",
+    "props": {
+      "hook": "Things people only admit anonymously",
+      "slides": [
+        "I still check my ex's profile",
+        "I'm jealous of my best friend",
+        "I pretend to be busy so I don't have to go out",
+        "I've never felt good enough for my family",
+        "I miss who I was before this year"
+      ],
+      "question": "Which one could you say out loud?",
+      "sendTo": "Send this to someone you'd tell the truth to.",
+      "handle": "whispers_app",
+      "dark": true
+    },
+    "caption": "things people only admit anonymously. which one could you actually say out loud? \ud83e\udd0d\n\n#confessions #honesty #relatable #anonymous"
   },
   {
     "code": "igb-wyr-05",
